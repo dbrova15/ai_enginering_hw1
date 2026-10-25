@@ -1,0 +1,204 @@
+{
+  "document_id": "HR-0982",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0982.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:09:24.257536+00:00",
+  "latency_seconds": 5.326658700010739,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-252",
+            "object": "chat.completion",
+            "created": 1792955369,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"OTA updates\",\n  \"purpose\": \"to explain the importance and benefits of over-the-air (OTA) updates for IoT devices\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"IEEE\",\n      \"role\": \"OTA update method\"\n    },\n    {\n      \"name\": \"cellular\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"3G/4G/5G\",\n      \"role\": \"OTA update method\"\n    },\n    {\n      \"name\": \"Bluetooth\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"IEEE\",\n      \"role\": \"OTA update method\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"device heterogeneity\",\n      \"name\": \"device configuration\",\n      \"value\": \"varies\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"connectivity and bandwidth limitations\",\n      \"name\": \"internet connectivity\",\n      \"value\": \"limited or intermittent\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"security concerns\",\n      \"name\": \"security measures\",\n      \"value\": \"proper authentication and authorization\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"scalability and management\",\n      \"name\": \"device fleet size\",\n      \"value\": \"large\",\n      \"unit\": \"varies\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"cellular\",\n    \"Bluetooth\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Arduino Cloud OTA\",\n    \"Arduino Cloud Editor\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2421,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 390,
+              "total_tokens": 2811
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.2003864999860525
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2421,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 390,
+        "total_tokens": 2811
+      },
+      "generation_id": "chatcmpl-252",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"OTA updates\",\n  \"purpose\": \"to explain the importance and benefits of over-the-air (OTA) updates for IoT devices\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"IEEE\",\n      \"role\": \"OTA update method\"\n    },\n    {\n      \"name\": \"cellular\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"3G/4G/5G\",\n      \"role\": \"OTA update method\"\n    },\n    {\n      \"name\": \"Bluetooth\",\n      \"model\": \"wireless communication protocol\",\n      \"manufacturer\": \"IEEE\",\n      \"role\": \"OTA update method\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"device heterogeneity\",\n      \"name\": \"device configuration\",\n      \"value\": \"varies\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"connectivity and bandwidth limitations\",\n      \"name\": \"internet connectivity\",\n      \"value\": \"limited or intermittent\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"security concerns\",\n      \"name\": \"security measures\",\n      \"value\": \"proper authentication and authorization\",\n      \"unit\": \"varies\"\n    },\n    {\n      \"subject\": \"scalability and management\",\n      \"name\": \"device fleet size\",\n      \"value\": \"large\",\n      \"unit\": \"varies\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"cellular\",\n    \"Bluetooth\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Arduino Cloud OTA\",\n    \"Arduino Cloud Editor\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "devices_automation",
+        "main_subject": "OTA updates",
+        "purpose": "to explain the importance and benefits of over-the-air (OTA) updates for IoT devices",
+        "components": [
+          {
+            "name": "Wi-Fi",
+            "model": "wireless communication protocol",
+            "manufacturer": "IEEE",
+            "role": "OTA update method"
+          },
+          {
+            "name": "cellular",
+            "model": "wireless communication protocol",
+            "manufacturer": "3G/4G/5G",
+            "role": "OTA update method"
+          },
+          {
+            "name": "Bluetooth",
+            "model": "wireless communication protocol",
+            "manufacturer": "IEEE",
+            "role": "OTA update method"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "device heterogeneity",
+            "name": "device configuration",
+            "value": "varies",
+            "unit": "varies"
+          },
+          {
+            "subject": "connectivity and bandwidth limitations",
+            "name": "internet connectivity",
+            "value": "limited or intermittent",
+            "unit": "varies"
+          },
+          {
+            "subject": "security concerns",
+            "name": "security measures",
+            "value": "proper authentication and authorization",
+            "unit": "varies"
+          },
+          {
+            "subject": "scalability and management",
+            "name": "device fleet size",
+            "value": "large",
+            "unit": "varies"
+          }
+        ],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "cellular",
+          "Bluetooth"
+        ],
+        "software_tools": [
+          "Arduino Cloud",
+          "Arduino Cloud OTA",
+          "Arduino Cloud Editor"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "devices_automation",
+    "main_subject": "OTA updates",
+    "purpose": "to explain the importance and benefits of over-the-air (OTA) updates for IoT devices",
+    "components": [
+      {
+        "name": "Wi-Fi",
+        "model": "wireless communication protocol",
+        "manufacturer": "IEEE",
+        "role": "OTA update method"
+      },
+      {
+        "name": "cellular",
+        "model": "wireless communication protocol",
+        "manufacturer": "3G/4G/5G",
+        "role": "OTA update method"
+      },
+      {
+        "name": "Bluetooth",
+        "model": "wireless communication protocol",
+        "manufacturer": "IEEE",
+        "role": "OTA update method"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "device heterogeneity",
+        "name": "device configuration",
+        "value": "varies",
+        "unit": "varies"
+      },
+      {
+        "subject": "connectivity and bandwidth limitations",
+        "name": "internet connectivity",
+        "value": "limited or intermittent",
+        "unit": "varies"
+      },
+      {
+        "subject": "security concerns",
+        "name": "security measures",
+        "value": "proper authentication and authorization",
+        "unit": "varies"
+      },
+      {
+        "subject": "scalability and management",
+        "name": "device fleet size",
+        "value": "large",
+        "unit": "varies"
+      }
+    ],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "cellular",
+      "Bluetooth"
+    ],
+    "software_tools": [
+      "Arduino Cloud",
+      "Arduino Cloud OTA",
+      "Arduino Cloud Editor"
+    ]
+  },
+  "error": null
+}

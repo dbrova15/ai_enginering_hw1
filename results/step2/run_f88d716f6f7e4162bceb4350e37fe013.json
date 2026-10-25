@@ -1,0 +1,282 @@
+{
+  "document_id": "HR-0164",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0164.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:10:02.839955+00:00",
+  "latency_seconds": 5.777597000007518,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-58",
+            "object": "chat.completion",
+            "created": 1792955408,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"robotics_actuators\", \"main_subject\": \"robotic platform\", \"purpose\": \"description of the robotic platform\", \"components\": [{\"name\": \"micro-dynamometer\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"motor\"}, {\"name\": \"motor\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"motor\"}, {\"name\": \"reducer\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"reducer\"}, {\"name\": \"wheel\", \"model\": \"3pi n20\", \"manufacturer\": \"brand Y\", \"role\": \"wheel\"}, {\"name\": \"line sensor\", \"model\": \"5 units\", \"manufacturer\": \"brand Z\", \"role\": \"sensor\"}, {\"name\": \"driver\", \"model\": \"brand X\", \"manufacturer\": \"brand X\", \"role\": \"driver\"}, {\"name\": \"microcontroller\", \"model\": \"Arduino Nano\", \"manufacturer\": \"brand X\", \"role\": \"controller\"}, {\"name\": \"battery\", \"model\": \"18650\", \"manufacturer\": \"brand X\", \"role\": \"power source\"}, {\"name\": \"permutation\", \"model\": \"brand X\", \"manufacturer\": \"brand X\", \"role\": \"permutation\"}], \"technical_parameters\": [{\"subject\": \"motor speed\", \"name\": \"1000 RPM\", \"value\": \"1000\", \"unit\": \"RPM\"}, {\"subject\": \"motor power\", \"name\": \"6V\", \"value\": \"6V\", \"unit\": \"V\"}, {\"subject\": \"reducer speed\", \"name\": \"1000 RPM\", \"value\": \"1000\", \"unit\": \"RPM\"}, {\"subject\": \"reducer power\", \"name\": \"6V\", \"value\": \"6V\", \"unit\": \"V\"}, {\"subject\": \"wheel diameter\", \"name\": \"3pi n20\", \"value\": \"3pi n20\", \"unit\": \"mm\"}], \"interfaces_protocols\": [\"\"], \"software_tools\": [\"Arduino IDE\", \"schematic capture software\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 838,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 479,
+              "total_tokens": 1317
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.646482100011781
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 838,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 479,
+        "total_tokens": 1317
+      },
+      "generation_id": "chatcmpl-58",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"robotics_actuators\", \"main_subject\": \"robotic platform\", \"purpose\": \"description of the robotic platform\", \"components\": [{\"name\": \"micro-dynamometer\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"motor\"}, {\"name\": \"motor\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"motor\"}, {\"name\": \"reducer\", \"model\": \"6V, 1000 RPM\", \"manufacturer\": \"brand X\", \"role\": \"reducer\"}, {\"name\": \"wheel\", \"model\": \"3pi n20\", \"manufacturer\": \"brand Y\", \"role\": \"wheel\"}, {\"name\": \"line sensor\", \"model\": \"5 units\", \"manufacturer\": \"brand Z\", \"role\": \"sensor\"}, {\"name\": \"driver\", \"model\": \"brand X\", \"manufacturer\": \"brand X\", \"role\": \"driver\"}, {\"name\": \"microcontroller\", \"model\": \"Arduino Nano\", \"manufacturer\": \"brand X\", \"role\": \"controller\"}, {\"name\": \"battery\", \"model\": \"18650\", \"manufacturer\": \"brand X\", \"role\": \"power source\"}, {\"name\": \"permutation\", \"model\": \"brand X\", \"manufacturer\": \"brand X\", \"role\": \"permutation\"}], \"technical_parameters\": [{\"subject\": \"motor speed\", \"name\": \"1000 RPM\", \"value\": \"1000\", \"unit\": \"RPM\"}, {\"subject\": \"motor power\", \"name\": \"6V\", \"value\": \"6V\", \"unit\": \"V\"}, {\"subject\": \"reducer speed\", \"name\": \"1000 RPM\", \"value\": \"1000\", \"unit\": \"RPM\"}, {\"subject\": \"reducer power\", \"name\": \"6V\", \"value\": \"6V\", \"unit\": \"V\"}, {\"subject\": \"wheel diameter\", \"name\": \"3pi n20\", \"value\": \"3pi n20\", \"unit\": \"mm\"}], \"interfaces_protocols\": [\"\"], \"software_tools\": [\"Arduino IDE\", \"schematic capture software\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "robotic platform",
+        "purpose": "description of the robotic platform",
+        "components": [
+          {
+            "name": "micro-dynamometer",
+            "model": "6V, 1000 RPM",
+            "manufacturer": "brand X",
+            "role": "motor"
+          },
+          {
+            "name": "motor",
+            "model": "6V, 1000 RPM",
+            "manufacturer": "brand X",
+            "role": "motor"
+          },
+          {
+            "name": "reducer",
+            "model": "6V, 1000 RPM",
+            "manufacturer": "brand X",
+            "role": "reducer"
+          },
+          {
+            "name": "wheel",
+            "model": "3pi n20",
+            "manufacturer": "brand Y",
+            "role": "wheel"
+          },
+          {
+            "name": "line sensor",
+            "model": "5 units",
+            "manufacturer": "brand Z",
+            "role": "sensor"
+          },
+          {
+            "name": "driver",
+            "model": "brand X",
+            "manufacturer": "brand X",
+            "role": "driver"
+          },
+          {
+            "name": "microcontroller",
+            "model": "Arduino Nano",
+            "manufacturer": "brand X",
+            "role": "controller"
+          },
+          {
+            "name": "battery",
+            "model": "18650",
+            "manufacturer": "brand X",
+            "role": "power source"
+          },
+          {
+            "name": "permutation",
+            "model": "brand X",
+            "manufacturer": "brand X",
+            "role": "permutation"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "motor speed",
+            "name": "1000 RPM",
+            "value": "1000",
+            "unit": "RPM"
+          },
+          {
+            "subject": "motor power",
+            "name": "6V",
+            "value": "6V",
+            "unit": "V"
+          },
+          {
+            "subject": "reducer speed",
+            "name": "1000 RPM",
+            "value": "1000",
+            "unit": "RPM"
+          },
+          {
+            "subject": "reducer power",
+            "name": "6V",
+            "value": "6V",
+            "unit": "V"
+          },
+          {
+            "subject": "wheel diameter",
+            "name": "3pi n20",
+            "value": "3pi n20",
+            "unit": "mm"
+          }
+        ],
+        "interfaces_protocols": [
+          ""
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "schematic capture software"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "robotic platform",
+    "purpose": "description of the robotic platform",
+    "components": [
+      {
+        "name": "micro-dynamometer",
+        "model": "6V, 1000 RPM",
+        "manufacturer": "brand X",
+        "role": "motor"
+      },
+      {
+        "name": "motor",
+        "model": "6V, 1000 RPM",
+        "manufacturer": "brand X",
+        "role": "motor"
+      },
+      {
+        "name": "reducer",
+        "model": "6V, 1000 RPM",
+        "manufacturer": "brand X",
+        "role": "reducer"
+      },
+      {
+        "name": "wheel",
+        "model": "3pi n20",
+        "manufacturer": "brand Y",
+        "role": "wheel"
+      },
+      {
+        "name": "line sensor",
+        "model": "5 units",
+        "manufacturer": "brand Z",
+        "role": "sensor"
+      },
+      {
+        "name": "driver",
+        "model": "brand X",
+        "manufacturer": "brand X",
+        "role": "driver"
+      },
+      {
+        "name": "microcontroller",
+        "model": "Arduino Nano",
+        "manufacturer": "brand X",
+        "role": "controller"
+      },
+      {
+        "name": "battery",
+        "model": "18650",
+        "manufacturer": "brand X",
+        "role": "power source"
+      },
+      {
+        "name": "permutation",
+        "model": "brand X",
+        "manufacturer": "brand X",
+        "role": "permutation"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "motor speed",
+        "name": "1000 RPM",
+        "value": "1000",
+        "unit": "RPM"
+      },
+      {
+        "subject": "motor power",
+        "name": "6V",
+        "value": "6V",
+        "unit": "V"
+      },
+      {
+        "subject": "reducer speed",
+        "name": "1000 RPM",
+        "value": "1000",
+        "unit": "RPM"
+      },
+      {
+        "subject": "reducer power",
+        "name": "6V",
+        "value": "6V",
+        "unit": "V"
+      },
+      {
+        "subject": "wheel diameter",
+        "name": "3pi n20",
+        "value": "3pi n20",
+        "unit": "mm"
+      }
+    ],
+    "interfaces_protocols": [
+      ""
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "schematic capture software"
+    ]
+  },
+  "error": null
+}

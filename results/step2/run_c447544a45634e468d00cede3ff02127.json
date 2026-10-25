@@ -1,0 +1,178 @@
+{
+  "document_id": "HR-0463",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0463.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:08:59.481968+00:00",
+  "latency_seconds": 4.559371700044721,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-556",
+            "object": "chat.completion",
+            "created": 1792955344,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"IoT\",\n  \"purpose\": \"configuring Raspberry Pi GPIO using Python in Arduino Cloud\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": \"IoT device\",\n      \"manufacturer\": \"Raspberry Pi Foundation\",\n      \"role\": \"main device\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": \"light-emitting diode\",\n      \"manufacturer\": \"Various\",\n      \"role\": \"actuator\"\n    },\n    {\n      \"name\": \"Push button\",\n      \"model\": \"switch\",\n      \"manufacturer\": \"Various\",\n      \"role\": \"sensor\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"gpiochip\",\n      \"name\": \"gpiochip\",\n      \"value\": \"raspberrypi-bcm2835\",\n      \"unit\": \"unit\"\n    },\n    {\n      \"subject\": \"gpio lines\",\n      \"name\": \"gpio lines\",\n      \"value\": \"17,23\",\n      \"unit\": \"pin\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"https://arduino.cloud/api\",\n    \"https://api.github.com\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Python\",\n    \"Raspberry Pi OS\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1195,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 301,
+              "total_tokens": 1496
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.431530299945734
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1195,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 301,
+        "total_tokens": 1496
+      },
+      "generation_id": "chatcmpl-556",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"IoT\",\n  \"purpose\": \"configuring Raspberry Pi GPIO using Python in Arduino Cloud\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": \"IoT device\",\n      \"manufacturer\": \"Raspberry Pi Foundation\",\n      \"role\": \"main device\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": \"light-emitting diode\",\n      \"manufacturer\": \"Various\",\n      \"role\": \"actuator\"\n    },\n    {\n      \"name\": \"Push button\",\n      \"model\": \"switch\",\n      \"manufacturer\": \"Various\",\n      \"role\": \"sensor\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"gpiochip\",\n      \"name\": \"gpiochip\",\n      \"value\": \"raspberrypi-bcm2835\",\n      \"unit\": \"unit\"\n    },\n    {\n      \"subject\": \"gpio lines\",\n      \"name\": \"gpio lines\",\n      \"value\": \"17,23\",\n      \"unit\": \"pin\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"https://arduino.cloud/api\",\n    \"https://api.github.com\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Python\",\n    \"Raspberry Pi OS\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "IoT",
+        "purpose": "configuring Raspberry Pi GPIO using Python in Arduino Cloud",
+        "components": [
+          {
+            "name": "Raspberry Pi",
+            "model": "IoT device",
+            "manufacturer": "Raspberry Pi Foundation",
+            "role": "main device"
+          },
+          {
+            "name": "LED",
+            "model": "light-emitting diode",
+            "manufacturer": "Various",
+            "role": "actuator"
+          },
+          {
+            "name": "Push button",
+            "model": "switch",
+            "manufacturer": "Various",
+            "role": "sensor"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "gpiochip",
+            "name": "gpiochip",
+            "value": "raspberrypi-bcm2835",
+            "unit": "unit"
+          },
+          {
+            "subject": "gpio lines",
+            "name": "gpio lines",
+            "value": "17,23",
+            "unit": "pin"
+          }
+        ],
+        "interfaces_protocols": [
+          "https://arduino.cloud/api",
+          "https://api.github.com"
+        ],
+        "software_tools": [
+          "Arduino Cloud",
+          "Python",
+          "Raspberry Pi OS"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "IoT",
+    "purpose": "configuring Raspberry Pi GPIO using Python in Arduino Cloud",
+    "components": [
+      {
+        "name": "Raspberry Pi",
+        "model": "IoT device",
+        "manufacturer": "Raspberry Pi Foundation",
+        "role": "main device"
+      },
+      {
+        "name": "LED",
+        "model": "light-emitting diode",
+        "manufacturer": "Various",
+        "role": "actuator"
+      },
+      {
+        "name": "Push button",
+        "model": "switch",
+        "manufacturer": "Various",
+        "role": "sensor"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "gpiochip",
+        "name": "gpiochip",
+        "value": "raspberrypi-bcm2835",
+        "unit": "unit"
+      },
+      {
+        "subject": "gpio lines",
+        "name": "gpio lines",
+        "value": "17,23",
+        "unit": "pin"
+      }
+    ],
+    "interfaces_protocols": [
+      "https://arduino.cloud/api",
+      "https://api.github.com"
+    ],
+    "software_tools": [
+      "Arduino Cloud",
+      "Python",
+      "Raspberry Pi OS"
+    ]
+  },
+  "error": null
+}

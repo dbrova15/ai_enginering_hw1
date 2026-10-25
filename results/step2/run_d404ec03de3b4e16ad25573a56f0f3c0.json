@@ -1,0 +1,202 @@
+{
+  "document_id": "HR-0773",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0773.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:09:19.258072+00:00",
+  "latency_seconds": 4.998214499908499,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-452",
+            "object": "chat.completion",
+            "created": 1792955364,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"communications_iot\",\n  \"main_subject\": \"Ham radio\",\n  \"purpose\": \"send text messages through ham radios\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Mega\",\n      \"model\": \"Arduino Mega\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"handles most of the functionality\"\n    },\n    {\n      \"name\": \"Pro Mini\",\n      \"model\": \"Pro Mini\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"MicroAPRS modem\"\n    },\n    {\n      \"name\": \"NEO-6M GPS radio module\",\n      \"model\": \"NEO-6M GPS radio module\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"send position information\"\n    },\n    {\n      \"name\": \"0.96″ OLED screen\",\n      \"model\": \"0.96″ OLED screen\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"display messages\"\n    },\n    {\n      \"name\": \"M5Stack CardKB keyboard\",\n      \"model\": \"M5Stack CardKB keyboard\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"input text\"\n    },\n    {\n      \"name\": \"18650 lithium-ion battery cells\",\n      \"model\": \"18650 lithium-ion battery cells\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"power source\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"audio signal\",\n      \"name\": \"output\",\n      \"value\": \" feeds into any ham radio — even a handheld model\",\n      \"unit\": \"-\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"ham radio\",\n    \"MicroAPRS\"\n  ],\n  \"software_tools\": [\n    \"Fusion 360\",\n    \"Arduino\",\n    \"IEEE Spectrum\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 493,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 394,
+              "total_tokens": 887
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.868269700091332
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 493,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 394,
+        "total_tokens": 887
+      },
+      "generation_id": "chatcmpl-452",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"communications_iot\",\n  \"main_subject\": \"Ham radio\",\n  \"purpose\": \"send text messages through ham radios\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Mega\",\n      \"model\": \"Arduino Mega\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"handles most of the functionality\"\n    },\n    {\n      \"name\": \"Pro Mini\",\n      \"model\": \"Pro Mini\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"MicroAPRS modem\"\n    },\n    {\n      \"name\": \"NEO-6M GPS radio module\",\n      \"model\": \"NEO-6M GPS radio module\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"send position information\"\n    },\n    {\n      \"name\": \"0.96″ OLED screen\",\n      \"model\": \"0.96″ OLED screen\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"display messages\"\n    },\n    {\n      \"name\": \"M5Stack CardKB keyboard\",\n      \"model\": \"M5Stack CardKB keyboard\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"input text\"\n    },\n    {\n      \"name\": \"18650 lithium-ion battery cells\",\n      \"model\": \"18650 lithium-ion battery cells\",\n      \"manufacturer\": \"Unknown\",\n      \"role\": \"power source\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"audio signal\",\n      \"name\": \"output\",\n      \"value\": \" feeds into any ham radio — even a handheld model\",\n      \"unit\": \"-\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"ham radio\",\n    \"MicroAPRS\"\n  ],\n  \"software_tools\": [\n    \"Fusion 360\",\n    \"Arduino\",\n    \"IEEE Spectrum\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "communications_iot",
+        "main_subject": "Ham radio",
+        "purpose": "send text messages through ham radios",
+        "components": [
+          {
+            "name": "Arduino Mega",
+            "model": "Arduino Mega",
+            "manufacturer": "Arduino",
+            "role": "handles most of the functionality"
+          },
+          {
+            "name": "Pro Mini",
+            "model": "Pro Mini",
+            "manufacturer": "Arduino",
+            "role": "MicroAPRS modem"
+          },
+          {
+            "name": "NEO-6M GPS radio module",
+            "model": "NEO-6M GPS radio module",
+            "manufacturer": "Unknown",
+            "role": "send position information"
+          },
+          {
+            "name": "0.96″ OLED screen",
+            "model": "0.96″ OLED screen",
+            "manufacturer": "Unknown",
+            "role": "display messages"
+          },
+          {
+            "name": "M5Stack CardKB keyboard",
+            "model": "M5Stack CardKB keyboard",
+            "manufacturer": "Unknown",
+            "role": "input text"
+          },
+          {
+            "name": "18650 lithium-ion battery cells",
+            "model": "18650 lithium-ion battery cells",
+            "manufacturer": "Unknown",
+            "role": "power source"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "audio signal",
+            "name": "output",
+            "value": " feeds into any ham radio — even a handheld model",
+            "unit": "-"
+          }
+        ],
+        "interfaces_protocols": [
+          "ham radio",
+          "MicroAPRS"
+        ],
+        "software_tools": [
+          "Fusion 360",
+          "Arduino",
+          "IEEE Spectrum"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "communications_iot",
+    "main_subject": "Ham radio",
+    "purpose": "send text messages through ham radios",
+    "components": [
+      {
+        "name": "Arduino Mega",
+        "model": "Arduino Mega",
+        "manufacturer": "Arduino",
+        "role": "handles most of the functionality"
+      },
+      {
+        "name": "Pro Mini",
+        "model": "Pro Mini",
+        "manufacturer": "Arduino",
+        "role": "MicroAPRS modem"
+      },
+      {
+        "name": "NEO-6M GPS radio module",
+        "model": "NEO-6M GPS radio module",
+        "manufacturer": "Unknown",
+        "role": "send position information"
+      },
+      {
+        "name": "0.96″ OLED screen",
+        "model": "0.96″ OLED screen",
+        "manufacturer": "Unknown",
+        "role": "display messages"
+      },
+      {
+        "name": "M5Stack CardKB keyboard",
+        "model": "M5Stack CardKB keyboard",
+        "manufacturer": "Unknown",
+        "role": "input text"
+      },
+      {
+        "name": "18650 lithium-ion battery cells",
+        "model": "18650 lithium-ion battery cells",
+        "manufacturer": "Unknown",
+        "role": "power source"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "audio signal",
+        "name": "output",
+        "value": " feeds into any ham radio — even a handheld model",
+        "unit": "-"
+      }
+    ],
+    "interfaces_protocols": [
+      "ham radio",
+      "MicroAPRS"
+    ],
+    "software_tools": [
+      "Fusion 360",
+      "Arduino",
+      "IEEE Spectrum"
+    ]
+  },
+  "error": null
+}

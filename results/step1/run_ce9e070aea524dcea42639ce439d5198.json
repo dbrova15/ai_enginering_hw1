@@ -1,0 +1,300 @@
+{
+  "document_id": "HR-0109",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0109.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:03:34.115912+00:00",
+  "latency_seconds": 7.567726100096479,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxnC5lUdH5qlmNvIXTKNDL5Jxvcy",
+            "object": "chat.completion",
+            "created": 1792955014,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"кофеварка с PID контроллером\",\n  \"purpose\": \"Создание устройства для управления кофеваркой с PID контроллером и интеграцией с MQTT сервером.\",\n  \"components\": [\n    {\n      \"name\": \"Wemos D1 Mini\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"микроконтроллер\"\n    },\n    {\n      \"name\": \"Термопара K-типа\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"датчик температуры\"\n    },\n    {\n      \"name\": \"I2C 128x64 OLED SSD1306 дисплей\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"дисплей\"\n    },\n    {\n      \"name\": \"MAX6675 SMD 8-SOIC\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"микросхема для считывания температуры\"\n    },\n    {\n      \"name\": \"резисторы 10k ohm\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"конденсаторы 0.1mF\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"печатная плата\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"основа устройства\"\n    },\n    {\n      \"name\": \"блок питания на 5 вольт HLK-PM01\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"питание устройства\"\n    },\n    {\n      \"name\": \"терминалы для крепления проводов\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"DC-AC SSR реле\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"управление нагрузкой\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"PID контроль температуры\",\n      \"name\": \"Температурный контроль\",\n      \"value\": \"активен\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Обновление прошивки\",\n      \"name\": \"Прошивка по воздуху\",\n      \"value\": \"доступно\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Интеграция\",\n      \"name\": \"MQTT сервер\",\n      \"value\": \"доступно\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Температурные режимы\",\n      \"name\": \"Режимы работы\",\n      \"value\": \"кофе/пар\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"MQTT\"\n  ],\n  \"software_tools\": [\n    \"RabbitMQ\",\n    \"клиент MQTT\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5321,
+              "completion_tokens": 692,
+              "total_tokens": 6013,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 7.437069599982351
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5321,
+        "completion_tokens": 692,
+        "total_tokens": 6013,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxnC5lUdH5qlmNvIXTKNDL5Jxvcy",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"кофеварка с PID контроллером\",\n  \"purpose\": \"Создание устройства для управления кофеваркой с PID контроллером и интеграцией с MQTT сервером.\",\n  \"components\": [\n    {\n      \"name\": \"Wemos D1 Mini\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"микроконтроллер\"\n    },\n    {\n      \"name\": \"Термопара K-типа\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"датчик температуры\"\n    },\n    {\n      \"name\": \"I2C 128x64 OLED SSD1306 дисплей\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"дисплей\"\n    },\n    {\n      \"name\": \"MAX6675 SMD 8-SOIC\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"микросхема для считывания температуры\"\n    },\n    {\n      \"name\": \"резисторы 10k ohm\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"конденсаторы 0.1mF\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"печатная плата\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"основа устройства\"\n    },\n    {\n      \"name\": \"блок питания на 5 вольт HLK-PM01\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"питание устройства\"\n    },\n    {\n      \"name\": \"терминалы для крепления проводов\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"компоненты схемы\"\n    },\n    {\n      \"name\": \"DC-AC SSR реле\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"управление нагрузкой\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"PID контроль температуры\",\n      \"name\": \"Температурный контроль\",\n      \"value\": \"активен\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Обновление прошивки\",\n      \"name\": \"Прошивка по воздуху\",\n      \"value\": \"доступно\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Интеграция\",\n      \"name\": \"MQTT сервер\",\n      \"value\": \"доступно\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Температурные режимы\",\n      \"name\": \"Режимы работы\",\n      \"value\": \"кофе/пар\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"MQTT\"\n  ],\n  \"software_tools\": [\n    \"RabbitMQ\",\n    \"клиент MQTT\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "devices_automation",
+        "main_subject": "кофеварка с PID контроллером",
+        "purpose": "Создание устройства для управления кофеваркой с PID контроллером и интеграцией с MQTT сервером.",
+        "components": [
+          {
+            "name": "Wemos D1 Mini",
+            "model": null,
+            "manufacturer": null,
+            "role": "микроконтроллер"
+          },
+          {
+            "name": "Термопара K-типа",
+            "model": null,
+            "manufacturer": null,
+            "role": "датчик температуры"
+          },
+          {
+            "name": "I2C 128x64 OLED SSD1306 дисплей",
+            "model": null,
+            "manufacturer": null,
+            "role": "дисплей"
+          },
+          {
+            "name": "MAX6675 SMD 8-SOIC",
+            "model": null,
+            "manufacturer": null,
+            "role": "микросхема для считывания температуры"
+          },
+          {
+            "name": "резисторы 10k ohm",
+            "model": null,
+            "manufacturer": null,
+            "role": "компоненты схемы"
+          },
+          {
+            "name": "конденсаторы 0.1mF",
+            "model": null,
+            "manufacturer": null,
+            "role": "компоненты схемы"
+          },
+          {
+            "name": "печатная плата",
+            "model": null,
+            "manufacturer": null,
+            "role": "основа устройства"
+          },
+          {
+            "name": "блок питания на 5 вольт HLK-PM01",
+            "model": null,
+            "manufacturer": null,
+            "role": "питание устройства"
+          },
+          {
+            "name": "терминалы для крепления проводов",
+            "model": null,
+            "manufacturer": null,
+            "role": "компоненты схемы"
+          },
+          {
+            "name": "DC-AC SSR реле",
+            "model": null,
+            "manufacturer": null,
+            "role": "управление нагрузкой"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "PID контроль температуры",
+            "name": "Температурный контроль",
+            "value": "активен",
+            "unit": null
+          },
+          {
+            "subject": "Обновление прошивки",
+            "name": "Прошивка по воздуху",
+            "value": "доступно",
+            "unit": null
+          },
+          {
+            "subject": "Интеграция",
+            "name": "MQTT сервер",
+            "value": "доступно",
+            "unit": null
+          },
+          {
+            "subject": "Температурные режимы",
+            "name": "Режимы работы",
+            "value": "кофе/пар",
+            "unit": null
+          }
+        ],
+        "interfaces_protocols": [
+          "MQTT"
+        ],
+        "software_tools": [
+          "RabbitMQ",
+          "клиент MQTT"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "devices_automation",
+    "main_subject": "кофеварка с PID контроллером",
+    "purpose": "Создание устройства для управления кофеваркой с PID контроллером и интеграцией с MQTT сервером.",
+    "components": [
+      {
+        "name": "Wemos D1 Mini",
+        "model": null,
+        "manufacturer": null,
+        "role": "микроконтроллер"
+      },
+      {
+        "name": "Термопара K-типа",
+        "model": null,
+        "manufacturer": null,
+        "role": "датчик температуры"
+      },
+      {
+        "name": "I2C 128x64 OLED SSD1306 дисплей",
+        "model": null,
+        "manufacturer": null,
+        "role": "дисплей"
+      },
+      {
+        "name": "MAX6675 SMD 8-SOIC",
+        "model": null,
+        "manufacturer": null,
+        "role": "микросхема для считывания температуры"
+      },
+      {
+        "name": "резисторы 10k ohm",
+        "model": null,
+        "manufacturer": null,
+        "role": "компоненты схемы"
+      },
+      {
+        "name": "конденсаторы 0.1mF",
+        "model": null,
+        "manufacturer": null,
+        "role": "компоненты схемы"
+      },
+      {
+        "name": "печатная плата",
+        "model": null,
+        "manufacturer": null,
+        "role": "основа устройства"
+      },
+      {
+        "name": "блок питания на 5 вольт HLK-PM01",
+        "model": null,
+        "manufacturer": null,
+        "role": "питание устройства"
+      },
+      {
+        "name": "терминалы для крепления проводов",
+        "model": null,
+        "manufacturer": null,
+        "role": "компоненты схемы"
+      },
+      {
+        "name": "DC-AC SSR реле",
+        "model": null,
+        "manufacturer": null,
+        "role": "управление нагрузкой"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "PID контроль температуры",
+        "name": "Температурный контроль",
+        "value": "активен",
+        "unit": null
+      },
+      {
+        "subject": "Обновление прошивки",
+        "name": "Прошивка по воздуху",
+        "value": "доступно",
+        "unit": null
+      },
+      {
+        "subject": "Интеграция",
+        "name": "MQTT сервер",
+        "value": "доступно",
+        "unit": null
+      },
+      {
+        "subject": "Температурные режимы",
+        "name": "Режимы работы",
+        "value": "кофе/пар",
+        "unit": null
+      }
+    ],
+    "interfaces_protocols": [
+      "MQTT"
+    ],
+    "software_tools": [
+      "RabbitMQ",
+      "клиент MQTT"
+    ]
+  },
+  "error": null
+}

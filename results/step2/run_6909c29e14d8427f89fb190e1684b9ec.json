@@ -1,0 +1,272 @@
+{
+  "document_id": "HR-0213",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0213.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:10:37.272636+00:00",
+  "latency_seconds": 5.723428299999796,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-395",
+            "object": "chat.completion",
+            "created": 1792955442,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"devices_automation\", \"main_subject\": \"Li-ion battery capacity tester\", \"purpose\": \"to determine the capacity of Li-ion batteries\", \"components\": [\n  {\"name\": \"Arduino Nano V3.0 AVR ATmega328P\", \"model\": \"ATmega328P\", \"manufacturer\": \"Arduino\", \"role\": \"controller\"},\n  {\"name\": \"TP4056 Micro-USB\", \"model\": \"TP4056\", \"manufacturer\": \"Texas Instruments\", \"role\": \"charger\"},\n  {\"name\": \"INA219\", \"model\": \"INA219\", \"manufacturer\": \"Analog Devices\", \"role\": \"current sensor\"},\n  {\"name\": \"LCD 2004 I2C\", \"model\": \"LCD 2004\", \"manufacturer\": \"Epson\", \"role\": \"display\"},\n  {\"name\": \"5V 10A relay\", \"model\": \"5V 10A relay\", \"manufacturer\": \"Relay\", \"role\": \"relay\"},\n  {\"name\": \"8 Ohm resistor\", \"model\": \"8 Ohm resistor\", \"manufacturer\": \"Resistor\", \"role\": \"resistor\"},\n  {\"name\": \"18650 battery holder\", \"model\": \"18650 battery holder\", \"manufacturer\": \"Battery holder\", \"role\": \"battery holder\"}\n], \"technical_parameters\": [\n  {\"subject\": \"charging voltage\", \"name\": \"V\", \"value\": \"5V\", \"unit\": \"V\"},\n  {\"subject\": \"discharge current\", \"name\": \"I\", \"value\": \"450mA\", \"unit\": \"mA\"},\n  {\"subject\": \"charge current\", \"name\": \"I\", \"value\": \"500mA\", \"unit\": \"mA\"},\n  {\"subject\": \"discharge voltage\", \"name\": \"V\", \"value\": \"2.5V\", \"unit\": \"V\"},\n  {\"subject\": \"charge voltage\", \"name\": \"V\", \"value\": \"5V\", \"unit\": \"V\"},\n  {\"subject\": \"capacity\", \"name\": \"Q\", \"value\": \"891.93mAh\", \"unit\": \"mAh\"}\n], \"interfaces_protocols\": [\n  \"I2C\",\n  \"USB\"\n], \"software_tools\": [\n  \"Arduino IDE\",\n  \"Sketch\"\n]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1005,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 490,
+              "total_tokens": 1495
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.59687250002753
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1005,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 490,
+        "total_tokens": 1495
+      },
+      "generation_id": "chatcmpl-395",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"devices_automation\", \"main_subject\": \"Li-ion battery capacity tester\", \"purpose\": \"to determine the capacity of Li-ion batteries\", \"components\": [\n  {\"name\": \"Arduino Nano V3.0 AVR ATmega328P\", \"model\": \"ATmega328P\", \"manufacturer\": \"Arduino\", \"role\": \"controller\"},\n  {\"name\": \"TP4056 Micro-USB\", \"model\": \"TP4056\", \"manufacturer\": \"Texas Instruments\", \"role\": \"charger\"},\n  {\"name\": \"INA219\", \"model\": \"INA219\", \"manufacturer\": \"Analog Devices\", \"role\": \"current sensor\"},\n  {\"name\": \"LCD 2004 I2C\", \"model\": \"LCD 2004\", \"manufacturer\": \"Epson\", \"role\": \"display\"},\n  {\"name\": \"5V 10A relay\", \"model\": \"5V 10A relay\", \"manufacturer\": \"Relay\", \"role\": \"relay\"},\n  {\"name\": \"8 Ohm resistor\", \"model\": \"8 Ohm resistor\", \"manufacturer\": \"Resistor\", \"role\": \"resistor\"},\n  {\"name\": \"18650 battery holder\", \"model\": \"18650 battery holder\", \"manufacturer\": \"Battery holder\", \"role\": \"battery holder\"}\n], \"technical_parameters\": [\n  {\"subject\": \"charging voltage\", \"name\": \"V\", \"value\": \"5V\", \"unit\": \"V\"},\n  {\"subject\": \"discharge current\", \"name\": \"I\", \"value\": \"450mA\", \"unit\": \"mA\"},\n  {\"subject\": \"charge current\", \"name\": \"I\", \"value\": \"500mA\", \"unit\": \"mA\"},\n  {\"subject\": \"discharge voltage\", \"name\": \"V\", \"value\": \"2.5V\", \"unit\": \"V\"},\n  {\"subject\": \"charge voltage\", \"name\": \"V\", \"value\": \"5V\", \"unit\": \"V\"},\n  {\"subject\": \"capacity\", \"name\": \"Q\", \"value\": \"891.93mAh\", \"unit\": \"mAh\"}\n], \"interfaces_protocols\": [\n  \"I2C\",\n  \"USB\"\n], \"software_tools\": [\n  \"Arduino IDE\",\n  \"Sketch\"\n]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "devices_automation",
+        "main_subject": "Li-ion battery capacity tester",
+        "purpose": "to determine the capacity of Li-ion batteries",
+        "components": [
+          {
+            "name": "Arduino Nano V3.0 AVR ATmega328P",
+            "model": "ATmega328P",
+            "manufacturer": "Arduino",
+            "role": "controller"
+          },
+          {
+            "name": "TP4056 Micro-USB",
+            "model": "TP4056",
+            "manufacturer": "Texas Instruments",
+            "role": "charger"
+          },
+          {
+            "name": "INA219",
+            "model": "INA219",
+            "manufacturer": "Analog Devices",
+            "role": "current sensor"
+          },
+          {
+            "name": "LCD 2004 I2C",
+            "model": "LCD 2004",
+            "manufacturer": "Epson",
+            "role": "display"
+          },
+          {
+            "name": "5V 10A relay",
+            "model": "5V 10A relay",
+            "manufacturer": "Relay",
+            "role": "relay"
+          },
+          {
+            "name": "8 Ohm resistor",
+            "model": "8 Ohm resistor",
+            "manufacturer": "Resistor",
+            "role": "resistor"
+          },
+          {
+            "name": "18650 battery holder",
+            "model": "18650 battery holder",
+            "manufacturer": "Battery holder",
+            "role": "battery holder"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "charging voltage",
+            "name": "V",
+            "value": "5V",
+            "unit": "V"
+          },
+          {
+            "subject": "discharge current",
+            "name": "I",
+            "value": "450mA",
+            "unit": "mA"
+          },
+          {
+            "subject": "charge current",
+            "name": "I",
+            "value": "500mA",
+            "unit": "mA"
+          },
+          {
+            "subject": "discharge voltage",
+            "name": "V",
+            "value": "2.5V",
+            "unit": "V"
+          },
+          {
+            "subject": "charge voltage",
+            "name": "V",
+            "value": "5V",
+            "unit": "V"
+          },
+          {
+            "subject": "capacity",
+            "name": "Q",
+            "value": "891.93mAh",
+            "unit": "mAh"
+          }
+        ],
+        "interfaces_protocols": [
+          "I2C",
+          "USB"
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "Sketch"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "devices_automation",
+    "main_subject": "Li-ion battery capacity tester",
+    "purpose": "to determine the capacity of Li-ion batteries",
+    "components": [
+      {
+        "name": "Arduino Nano V3.0 AVR ATmega328P",
+        "model": "ATmega328P",
+        "manufacturer": "Arduino",
+        "role": "controller"
+      },
+      {
+        "name": "TP4056 Micro-USB",
+        "model": "TP4056",
+        "manufacturer": "Texas Instruments",
+        "role": "charger"
+      },
+      {
+        "name": "INA219",
+        "model": "INA219",
+        "manufacturer": "Analog Devices",
+        "role": "current sensor"
+      },
+      {
+        "name": "LCD 2004 I2C",
+        "model": "LCD 2004",
+        "manufacturer": "Epson",
+        "role": "display"
+      },
+      {
+        "name": "5V 10A relay",
+        "model": "5V 10A relay",
+        "manufacturer": "Relay",
+        "role": "relay"
+      },
+      {
+        "name": "8 Ohm resistor",
+        "model": "8 Ohm resistor",
+        "manufacturer": "Resistor",
+        "role": "resistor"
+      },
+      {
+        "name": "18650 battery holder",
+        "model": "18650 battery holder",
+        "manufacturer": "Battery holder",
+        "role": "battery holder"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "charging voltage",
+        "name": "V",
+        "value": "5V",
+        "unit": "V"
+      },
+      {
+        "subject": "discharge current",
+        "name": "I",
+        "value": "450mA",
+        "unit": "mA"
+      },
+      {
+        "subject": "charge current",
+        "name": "I",
+        "value": "500mA",
+        "unit": "mA"
+      },
+      {
+        "subject": "discharge voltage",
+        "name": "V",
+        "value": "2.5V",
+        "unit": "V"
+      },
+      {
+        "subject": "charge voltage",
+        "name": "V",
+        "value": "5V",
+        "unit": "V"
+      },
+      {
+        "subject": "capacity",
+        "name": "Q",
+        "value": "891.93mAh",
+        "unit": "mAh"
+      }
+    ],
+    "interfaces_protocols": [
+      "I2C",
+      "USB"
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "Sketch"
+    ]
+  },
+  "error": null
+}

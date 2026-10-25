@@ -1,0 +1,106 @@
+{
+  "document_id": "HR-0217",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0217.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:10:42.996882+00:00",
+  "latency_seconds": 3.1833717999979854,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-120",
+            "object": "chat.completion",
+            "created": 1792955446,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"power_batteries\", \"main_subject\": \"ESP32\", \"purpose\": \"programmation\", \"components\": [ \n  ],\n \"technical_parameters\": [\n  ],\n \"interfaces_protocols\": [\n  ],\n \"software_tools\": [\n  \"Zerynth Studio\",\n  \"MicroPython\"\n ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1063,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 79,
+              "total_tokens": 1142
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.0493348999880254
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 79,
+        "total_tokens": 1142
+      },
+      "generation_id": "chatcmpl-120",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"power_batteries\", \"main_subject\": \"ESP32\", \"purpose\": \"programmation\", \"components\": [ \n  ],\n \"technical_parameters\": [\n  ],\n \"interfaces_protocols\": [\n  ],\n \"software_tools\": [\n  \"Zerynth Studio\",\n  \"MicroPython\"\n ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "power_batteries",
+        "main_subject": "ESP32",
+        "purpose": "programmation",
+        "components": [],
+        "technical_parameters": [],
+        "interfaces_protocols": [],
+        "software_tools": [
+          "Zerynth Studio",
+          "MicroPython"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "power_batteries",
+    "main_subject": "ESP32",
+    "purpose": "programmation",
+    "components": [],
+    "technical_parameters": [],
+    "interfaces_protocols": [],
+    "software_tools": [
+      "Zerynth Studio",
+      "MicroPython"
+    ]
+  },
+  "error": null
+}

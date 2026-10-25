@@ -1,0 +1,170 @@
+{
+  "document_id": "HR-0217",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0217.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:04:37.712396+00:00",
+  "latency_seconds": 2.2490484999725595,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxoD2hF2SPZlBOfAdzcgoUieY66Q",
+            "object": "chat.completion",
+            "created": 1792955077,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"controllers_programming\",\"main_subject\":\"ESP32 microcontroller\",\"purpose\":\"Guide for programming ESP32 using Python\",\"components\":[{\"name\":\"ESP32\",\"model\":null,\"manufacturer\":null,\"role\":\"microcontroller\"},{\"name\":\"Zerynth Studio\",\"model\":null,\"manufacturer\":null,\"role\":\"development tool\"},{\"name\":\"MicroPython\",\"model\":null,\"manufacturer\":null,\"role\":\"programming language\"}],\"technical_parameters\":[],\"interfaces_protocols\":[\"Wi-Fi\",\"Bluetooth\"],\"software_tools\":[\"MicroPython\",\"Zerynth Studio\",\"Python\"]}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5675,
+              "completion_tokens": 120,
+              "total_tokens": 5795,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.1232345000607893
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5675,
+        "completion_tokens": 120,
+        "total_tokens": 5795,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxoD2hF2SPZlBOfAdzcgoUieY66Q",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"controllers_programming\",\"main_subject\":\"ESP32 microcontroller\",\"purpose\":\"Guide for programming ESP32 using Python\",\"components\":[{\"name\":\"ESP32\",\"model\":null,\"manufacturer\":null,\"role\":\"microcontroller\"},{\"name\":\"Zerynth Studio\",\"model\":null,\"manufacturer\":null,\"role\":\"development tool\"},{\"name\":\"MicroPython\",\"model\":null,\"manufacturer\":null,\"role\":\"programming language\"}],\"technical_parameters\":[],\"interfaces_protocols\":[\"Wi-Fi\",\"Bluetooth\"],\"software_tools\":[\"MicroPython\",\"Zerynth Studio\",\"Python\"]}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "controllers_programming",
+        "main_subject": "ESP32 microcontroller",
+        "purpose": "Guide for programming ESP32 using Python",
+        "components": [
+          {
+            "name": "ESP32",
+            "model": null,
+            "manufacturer": null,
+            "role": "microcontroller"
+          },
+          {
+            "name": "Zerynth Studio",
+            "model": null,
+            "manufacturer": null,
+            "role": "development tool"
+          },
+          {
+            "name": "MicroPython",
+            "model": null,
+            "manufacturer": null,
+            "role": "programming language"
+          }
+        ],
+        "technical_parameters": [],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "Bluetooth"
+        ],
+        "software_tools": [
+          "MicroPython",
+          "Zerynth Studio",
+          "Python"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "controllers_programming",
+    "main_subject": "ESP32 microcontroller",
+    "purpose": "Guide for programming ESP32 using Python",
+    "components": [
+      {
+        "name": "ESP32",
+        "model": null,
+        "manufacturer": null,
+        "role": "microcontroller"
+      },
+      {
+        "name": "Zerynth Studio",
+        "model": null,
+        "manufacturer": null,
+        "role": "development tool"
+      },
+      {
+        "name": "MicroPython",
+        "model": null,
+        "manufacturer": null,
+        "role": "programming language"
+      }
+    ],
+    "technical_parameters": [],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "Bluetooth"
+    ],
+    "software_tools": [
+      "MicroPython",
+      "Zerynth Studio",
+      "Python"
+    ]
+  },
+  "error": null
+}

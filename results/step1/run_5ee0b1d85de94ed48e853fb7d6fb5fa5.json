@@ -1,0 +1,252 @@
+{
+  "document_id": "HR-0385",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0385.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:02:34.368886+00:00",
+  "latency_seconds": 6.12850079999771,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxmEbftrYujLoQcsBBrel2GILDNc",
+            "object": "chat.completion",
+            "created": 1792954954,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"IoT systems for gardening\",\n  \"purpose\": \"To improve backyard gardening with intelligent IoT systems that monitor weather and soil conditions and automate watering.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino IoT Explorer Kit\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"Main controller for IoT system\"\n    },\n    {\n      \"name\": \"MKR WiFi 1010\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"WiFi connectivity\"\n    },\n    {\n      \"name\": \"Soil moisture sensor\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Measures soil moisture content\"\n    },\n    {\n      \"name\": \"Solenoid valve\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Controls water flow\"\n    },\n    {\n      \"name\": \"12V battery pack\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Power supply\"\n    },\n    {\n      \"name\": \"Solar charge controller\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Manages solar power\"\n    },\n    {\n      \"name\": \"1800W solar panel array\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Power source\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Soil moisture content\",\n      \"name\": \"Moisture level\",\n      \"value\": \"Variable\",\n      \"unit\": \"%\"\n    },\n    {\n      \"subject\": \"Power supply\",\n      \"name\": \"Voltage\",\n      \"value\": \"12V\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"Solar panel output\",\n      \"name\": \"Power\",\n      \"value\": \"1800W\",\n      \"unit\": \"W\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"WiFi\",\n    \"Arduino Cloud\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5045,
+              "completion_tokens": 489,
+              "total_tokens": 5534,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 6.000451900064945
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5045,
+        "completion_tokens": 489,
+        "total_tokens": 5534,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxmEbftrYujLoQcsBBrel2GILDNc",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"IoT systems for gardening\",\n  \"purpose\": \"To improve backyard gardening with intelligent IoT systems that monitor weather and soil conditions and automate watering.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino IoT Explorer Kit\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"Main controller for IoT system\"\n    },\n    {\n      \"name\": \"MKR WiFi 1010\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"WiFi connectivity\"\n    },\n    {\n      \"name\": \"Soil moisture sensor\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Measures soil moisture content\"\n    },\n    {\n      \"name\": \"Solenoid valve\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Controls water flow\"\n    },\n    {\n      \"name\": \"12V battery pack\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Power supply\"\n    },\n    {\n      \"name\": \"Solar charge controller\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Manages solar power\"\n    },\n    {\n      \"name\": \"1800W solar panel array\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"Power source\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Soil moisture content\",\n      \"name\": \"Moisture level\",\n      \"value\": \"Variable\",\n      \"unit\": \"%\"\n    },\n    {\n      \"subject\": \"Power supply\",\n      \"name\": \"Voltage\",\n      \"value\": \"12V\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"Solar panel output\",\n      \"name\": \"Power\",\n      \"value\": \"1800W\",\n      \"unit\": \"W\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"WiFi\",\n    \"Arduino Cloud\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "devices_automation",
+        "main_subject": "IoT systems for gardening",
+        "purpose": "To improve backyard gardening with intelligent IoT systems that monitor weather and soil conditions and automate watering.",
+        "components": [
+          {
+            "name": "Arduino IoT Explorer Kit",
+            "model": "N/A",
+            "manufacturer": "Arduino Team",
+            "role": "Main controller for IoT system"
+          },
+          {
+            "name": "MKR WiFi 1010",
+            "model": "N/A",
+            "manufacturer": "Arduino Team",
+            "role": "WiFi connectivity"
+          },
+          {
+            "name": "Soil moisture sensor",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "Measures soil moisture content"
+          },
+          {
+            "name": "Solenoid valve",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "Controls water flow"
+          },
+          {
+            "name": "12V battery pack",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "Power supply"
+          },
+          {
+            "name": "Solar charge controller",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "Manages solar power"
+          },
+          {
+            "name": "1800W solar panel array",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "Power source"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Soil moisture content",
+            "name": "Moisture level",
+            "value": "Variable",
+            "unit": "%"
+          },
+          {
+            "subject": "Power supply",
+            "name": "Voltage",
+            "value": "12V",
+            "unit": "V"
+          },
+          {
+            "subject": "Solar panel output",
+            "name": "Power",
+            "value": "1800W",
+            "unit": "W"
+          }
+        ],
+        "interfaces_protocols": [
+          "WiFi",
+          "Arduino Cloud"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "devices_automation",
+    "main_subject": "IoT systems for gardening",
+    "purpose": "To improve backyard gardening with intelligent IoT systems that monitor weather and soil conditions and automate watering.",
+    "components": [
+      {
+        "name": "Arduino IoT Explorer Kit",
+        "model": "N/A",
+        "manufacturer": "Arduino Team",
+        "role": "Main controller for IoT system"
+      },
+      {
+        "name": "MKR WiFi 1010",
+        "model": "N/A",
+        "manufacturer": "Arduino Team",
+        "role": "WiFi connectivity"
+      },
+      {
+        "name": "Soil moisture sensor",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "Measures soil moisture content"
+      },
+      {
+        "name": "Solenoid valve",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "Controls water flow"
+      },
+      {
+        "name": "12V battery pack",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "Power supply"
+      },
+      {
+        "name": "Solar charge controller",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "Manages solar power"
+      },
+      {
+        "name": "1800W solar panel array",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "Power source"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Soil moisture content",
+        "name": "Moisture level",
+        "value": "Variable",
+        "unit": "%"
+      },
+      {
+        "subject": "Power supply",
+        "name": "Voltage",
+        "value": "12V",
+        "unit": "V"
+      },
+      {
+        "subject": "Solar panel output",
+        "name": "Power",
+        "value": "1800W",
+        "unit": "W"
+      }
+    ],
+    "interfaces_protocols": [
+      "WiFi",
+      "Arduino Cloud"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

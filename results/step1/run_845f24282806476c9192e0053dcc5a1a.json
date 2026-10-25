@@ -1,0 +1,204 @@
+{
+  "document_id": "HR-0463",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0463.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:02:45.299435+00:00",
+  "latency_seconds": 4.374028699938208,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxmPl9NJsBZriDj6PEt6rvMEJUWU",
+            "object": "chat.completion",
+            "created": 1792954965,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"Raspberry Pi GPIO configuration\",\n  \"purpose\": \"To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Main device for GPIO control\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Output device to visualize GPIO control\"\n    },\n    {\n      \"name\": \"Push Button\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Input device to trigger actions\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Device ID\",\n      \"name\": \"Device ID\",\n      \"value\": \"Unique identifier for the Raspberry Pi in Arduino Cloud\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Secret\",\n      \"name\": \"Secret\",\n      \"value\": \"Authentication secret for the device\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"GPIO lines\",\n      \"name\": \"GPIO lines\",\n      \"value\": \"Specific GPIO lines used for the LED and button\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino Cloud API\"\n  ],\n  \"software_tools\": [\n    \"Python\",\n    \"Arduino Cloud\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5786,
+              "completion_tokens": 328,
+              "total_tokens": 6114,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.206522400025278
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5786,
+        "completion_tokens": 328,
+        "total_tokens": 6114,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxmPl9NJsBZriDj6PEt6rvMEJUWU",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"Raspberry Pi GPIO configuration\",\n  \"purpose\": \"To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Main device for GPIO control\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Output device to visualize GPIO control\"\n    },\n    {\n      \"name\": \"Push Button\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Input device to trigger actions\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Device ID\",\n      \"name\": \"Device ID\",\n      \"value\": \"Unique identifier for the Raspberry Pi in Arduino Cloud\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Secret\",\n      \"name\": \"Secret\",\n      \"value\": \"Authentication secret for the device\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"GPIO lines\",\n      \"name\": \"GPIO lines\",\n      \"value\": \"Specific GPIO lines used for the LED and button\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino Cloud API\"\n  ],\n  \"software_tools\": [\n    \"Python\",\n    \"Arduino Cloud\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "controllers_programming",
+        "main_subject": "Raspberry Pi GPIO configuration",
+        "purpose": "To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.",
+        "components": [
+          {
+            "name": "Raspberry Pi",
+            "model": null,
+            "manufacturer": null,
+            "role": "Main device for GPIO control"
+          },
+          {
+            "name": "LED",
+            "model": null,
+            "manufacturer": null,
+            "role": "Output device to visualize GPIO control"
+          },
+          {
+            "name": "Push Button",
+            "model": null,
+            "manufacturer": null,
+            "role": "Input device to trigger actions"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Device ID",
+            "name": "Device ID",
+            "value": "Unique identifier for the Raspberry Pi in Arduino Cloud",
+            "unit": null
+          },
+          {
+            "subject": "Secret",
+            "name": "Secret",
+            "value": "Authentication secret for the device",
+            "unit": null
+          },
+          {
+            "subject": "GPIO lines",
+            "name": "GPIO lines",
+            "value": "Specific GPIO lines used for the LED and button",
+            "unit": null
+          }
+        ],
+        "interfaces_protocols": [
+          "Arduino Cloud API"
+        ],
+        "software_tools": [
+          "Python",
+          "Arduino Cloud"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "controllers_programming",
+    "main_subject": "Raspberry Pi GPIO configuration",
+    "purpose": "To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.",
+    "components": [
+      {
+        "name": "Raspberry Pi",
+        "model": null,
+        "manufacturer": null,
+        "role": "Main device for GPIO control"
+      },
+      {
+        "name": "LED",
+        "model": null,
+        "manufacturer": null,
+        "role": "Output device to visualize GPIO control"
+      },
+      {
+        "name": "Push Button",
+        "model": null,
+        "manufacturer": null,
+        "role": "Input device to trigger actions"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Device ID",
+        "name": "Device ID",
+        "value": "Unique identifier for the Raspberry Pi in Arduino Cloud",
+        "unit": null
+      },
+      {
+        "subject": "Secret",
+        "name": "Secret",
+        "value": "Authentication secret for the device",
+        "unit": null
+      },
+      {
+        "subject": "GPIO lines",
+        "name": "GPIO lines",
+        "value": "Specific GPIO lines used for the LED and button",
+        "unit": null
+      }
+    ],
+    "interfaces_protocols": [
+      "Arduino Cloud API"
+    ],
+    "software_tools": [
+      "Python",
+      "Arduino Cloud"
+    ]
+  },
+  "error": null
+}

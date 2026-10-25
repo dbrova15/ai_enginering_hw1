@@ -1,0 +1,228 @@
+{
+  "document_id": "HR-0148",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0148.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:03:50.753419+00:00",
+  "latency_seconds": 6.542382700019516,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxnSTudCDcS88EuN3BqUL14YsM8v",
+            "object": "chat.completion",
+            "created": 1792955030,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"motor driver module\",\n  \"purpose\": \"Описати використання модуля драйвера двигунів L293D для керування двигунами постійного струму.\",\n  \"components\": [\n    {\n      \"name\": \"Модуль драйвера двигунів\",\n      \"model\": \"L293D\",\n      \"manufacturer\": \"Deek Robot\",\n      \"role\": \"драйвер двигунів\"\n    },\n    {\n      \"name\": \"Контролер Arduino\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"Стабілізатор напруги\",\n      \"model\": \"L78M05\",\n      \"manufacturer\": null,\n      \"role\": \"стабілізатор\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Напруга живлення логіки\",\n      \"name\": \"VCC1\",\n      \"value\": \"5 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга живлення двигунів\",\n      \"name\": \"VCC2\",\n      \"value\": \"9-36 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Максимальний струм стабілізатора\",\n      \"name\": \"Imax\",\n      \"value\": \"500 мА\",\n      \"unit\": \"мА\"\n    },\n    {\n      \"subject\": \"Типова напруга низького рівня\",\n      \"name\": \"Vlow\",\n      \"value\": \"1.2 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Типова напруга високого рівня\",\n      \"name\": \"Vhigh\",\n      \"value\": \"1.4 В\",\n      \"unit\": \"В\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"TTL\",\n    \"PWM\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 9214,
+              "completion_tokens": 453,
+              "total_tokens": 9667,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 6.414363700081594
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 9214,
+        "completion_tokens": 453,
+        "total_tokens": 9667,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxnSTudCDcS88EuN3BqUL14YsM8v",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"motor driver module\",\n  \"purpose\": \"Описати використання модуля драйвера двигунів L293D для керування двигунами постійного струму.\",\n  \"components\": [\n    {\n      \"name\": \"Модуль драйвера двигунів\",\n      \"model\": \"L293D\",\n      \"manufacturer\": \"Deek Robot\",\n      \"role\": \"драйвер двигунів\"\n    },\n    {\n      \"name\": \"Контролер Arduino\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"Стабілізатор напруги\",\n      \"model\": \"L78M05\",\n      \"manufacturer\": null,\n      \"role\": \"стабілізатор\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Напруга живлення логіки\",\n      \"name\": \"VCC1\",\n      \"value\": \"5 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга живлення двигунів\",\n      \"name\": \"VCC2\",\n      \"value\": \"9-36 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Максимальний струм стабілізатора\",\n      \"name\": \"Imax\",\n      \"value\": \"500 мА\",\n      \"unit\": \"мА\"\n    },\n    {\n      \"subject\": \"Типова напруга низького рівня\",\n      \"name\": \"Vlow\",\n      \"value\": \"1.2 В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Типова напруга високого рівня\",\n      \"name\": \"Vhigh\",\n      \"value\": \"1.4 В\",\n      \"unit\": \"В\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"TTL\",\n    \"PWM\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "controllers_programming",
+        "main_subject": "motor driver module",
+        "purpose": "Описати використання модуля драйвера двигунів L293D для керування двигунами постійного струму.",
+        "components": [
+          {
+            "name": "Модуль драйвера двигунів",
+            "model": "L293D",
+            "manufacturer": "Deek Robot",
+            "role": "драйвер двигунів"
+          },
+          {
+            "name": "Контролер Arduino",
+            "model": null,
+            "manufacturer": null,
+            "role": "контролер"
+          },
+          {
+            "name": "Стабілізатор напруги",
+            "model": "L78M05",
+            "manufacturer": null,
+            "role": "стабілізатор"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Напруга живлення логіки",
+            "name": "VCC1",
+            "value": "5 В",
+            "unit": "В"
+          },
+          {
+            "subject": "Напруга живлення двигунів",
+            "name": "VCC2",
+            "value": "9-36 В",
+            "unit": "В"
+          },
+          {
+            "subject": "Максимальний струм стабілізатора",
+            "name": "Imax",
+            "value": "500 мА",
+            "unit": "мА"
+          },
+          {
+            "subject": "Типова напруга низького рівня",
+            "name": "Vlow",
+            "value": "1.2 В",
+            "unit": "В"
+          },
+          {
+            "subject": "Типова напруга високого рівня",
+            "name": "Vhigh",
+            "value": "1.4 В",
+            "unit": "В"
+          }
+        ],
+        "interfaces_protocols": [
+          "TTL",
+          "PWM"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "controllers_programming",
+    "main_subject": "motor driver module",
+    "purpose": "Описати використання модуля драйвера двигунів L293D для керування двигунами постійного струму.",
+    "components": [
+      {
+        "name": "Модуль драйвера двигунів",
+        "model": "L293D",
+        "manufacturer": "Deek Robot",
+        "role": "драйвер двигунів"
+      },
+      {
+        "name": "Контролер Arduino",
+        "model": null,
+        "manufacturer": null,
+        "role": "контролер"
+      },
+      {
+        "name": "Стабілізатор напруги",
+        "model": "L78M05",
+        "manufacturer": null,
+        "role": "стабілізатор"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Напруга живлення логіки",
+        "name": "VCC1",
+        "value": "5 В",
+        "unit": "В"
+      },
+      {
+        "subject": "Напруга живлення двигунів",
+        "name": "VCC2",
+        "value": "9-36 В",
+        "unit": "В"
+      },
+      {
+        "subject": "Максимальний струм стабілізатора",
+        "name": "Imax",
+        "value": "500 мА",
+        "unit": "мА"
+      },
+      {
+        "subject": "Типова напруга низького рівня",
+        "name": "Vlow",
+        "value": "1.2 В",
+        "unit": "В"
+      },
+      {
+        "subject": "Типова напруга високого рівня",
+        "name": "Vhigh",
+        "value": "1.4 В",
+        "unit": "В"
+      }
+    ],
+    "interfaces_protocols": [
+      "TTL",
+      "PWM"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

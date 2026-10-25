@@ -1,0 +1,266 @@
+{
+  "document_id": "HR-0212",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0212.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:04:25.490454+00:00",
+  "latency_seconds": 5.163217299967073,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ecxo1zQdj9s4VZVwj8v5cDRbB6rFN",
+            "object": "chat.completion",
+            "created": 1792955065,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"power_batteries\",\"main_subject\":\"автоматичний вимикач резервного живлення (АВР)\",\"purpose\":\"створення автоматичної системи живлення котла опалення під час відключення електроенергії\",\"components\":[{\"name\":\"Свинцево-кислотна автомобільна АКБ\",\"model\":\"60Аг\",\"manufacturer\":\"WESTA\",\"role\":\"джерело живлення\"},{\"name\":\"Інвертор\",\"model\":\"600Вт\",\"manufacturer\":\"TATALІKEN\",\"role\":\"перетворювач напруги\"},{\"name\":\"Мікросхема\",\"model\":\"LM393\",\"manufacturer\":null,\"role\":\"аналоговий компаратор\"},{\"name\":\"Реле\",\"model\":null,\"manufacturer\":null,\"role\":\"перемикач живлення\"},{\"name\":\"Оптрон\",\"model\":\"РС817\",\"manufacturer\":null,\"role\":\"електронний перемикач\"},{\"name\":\"Стабілітрон\",\"model\":null,\"manufacturer\":null,\"role\":\"стабілізація напруги\"},{\"name\":\"Плата БЖ\",\"model\":null,\"manufacturer\":null,\"role\":\"блок живлення\"}],\"technical_parameters\":[{\"subject\":\"ємність АКБ\",\"name\":\"Ємність\",\"value\":\"60Аг\",\"unit\":\"Аг\"},{\"subject\":\"пусковий струм АКБ\",\"name\":\"Пусковий струм\",\"value\":\"580А\",\"unit\":\"А\"},{\"subject\":\"номінальна потужність інвертора\",\"name\":\"Номінальна потужність\",\"value\":\"600Вт\",\"unit\":\"Вт\"},{\"subject\":\"пікова потужність інвертора\",\"name\":\"Пікова потужність\",\"value\":\"1600Вт\",\"unit\":\"Вт\"},{\"subject\":\"час безперебійної роботи котла\",\"name\":\"Час роботи\",\"value\":\"4 години\",\"unit\":\"години\"}],\"interfaces_protocols\":[],\"software_tools\":[] }",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 6818,
+              "completion_tokens": 413,
+              "total_tokens": 7231,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.027108500013128
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 6818,
+        "completion_tokens": 413,
+        "total_tokens": 7231,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ecxo1zQdj9s4VZVwj8v5cDRbB6rFN",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"power_batteries\",\"main_subject\":\"автоматичний вимикач резервного живлення (АВР)\",\"purpose\":\"створення автоматичної системи живлення котла опалення під час відключення електроенергії\",\"components\":[{\"name\":\"Свинцево-кислотна автомобільна АКБ\",\"model\":\"60Аг\",\"manufacturer\":\"WESTA\",\"role\":\"джерело живлення\"},{\"name\":\"Інвертор\",\"model\":\"600Вт\",\"manufacturer\":\"TATALІKEN\",\"role\":\"перетворювач напруги\"},{\"name\":\"Мікросхема\",\"model\":\"LM393\",\"manufacturer\":null,\"role\":\"аналоговий компаратор\"},{\"name\":\"Реле\",\"model\":null,\"manufacturer\":null,\"role\":\"перемикач живлення\"},{\"name\":\"Оптрон\",\"model\":\"РС817\",\"manufacturer\":null,\"role\":\"електронний перемикач\"},{\"name\":\"Стабілітрон\",\"model\":null,\"manufacturer\":null,\"role\":\"стабілізація напруги\"},{\"name\":\"Плата БЖ\",\"model\":null,\"manufacturer\":null,\"role\":\"блок живлення\"}],\"technical_parameters\":[{\"subject\":\"ємність АКБ\",\"name\":\"Ємність\",\"value\":\"60Аг\",\"unit\":\"Аг\"},{\"subject\":\"пусковий струм АКБ\",\"name\":\"Пусковий струм\",\"value\":\"580А\",\"unit\":\"А\"},{\"subject\":\"номінальна потужність інвертора\",\"name\":\"Номінальна потужність\",\"value\":\"600Вт\",\"unit\":\"Вт\"},{\"subject\":\"пікова потужність інвертора\",\"name\":\"Пікова потужність\",\"value\":\"1600Вт\",\"unit\":\"Вт\"},{\"subject\":\"час безперебійної роботи котла\",\"name\":\"Час роботи\",\"value\":\"4 години\",\"unit\":\"години\"}],\"interfaces_protocols\":[],\"software_tools\":[] }",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "power_batteries",
+        "main_subject": "автоматичний вимикач резервного живлення (АВР)",
+        "purpose": "створення автоматичної системи живлення котла опалення під час відключення електроенергії",
+        "components": [
+          {
+            "name": "Свинцево-кислотна автомобільна АКБ",
+            "model": "60Аг",
+            "manufacturer": "WESTA",
+            "role": "джерело живлення"
+          },
+          {
+            "name": "Інвертор",
+            "model": "600Вт",
+            "manufacturer": "TATALІKEN",
+            "role": "перетворювач напруги"
+          },
+          {
+            "name": "Мікросхема",
+            "model": "LM393",
+            "manufacturer": null,
+            "role": "аналоговий компаратор"
+          },
+          {
+            "name": "Реле",
+            "model": null,
+            "manufacturer": null,
+            "role": "перемикач живлення"
+          },
+          {
+            "name": "Оптрон",
+            "model": "РС817",
+            "manufacturer": null,
+            "role": "електронний перемикач"
+          },
+          {
+            "name": "Стабілітрон",
+            "model": null,
+            "manufacturer": null,
+            "role": "стабілізація напруги"
+          },
+          {
+            "name": "Плата БЖ",
+            "model": null,
+            "manufacturer": null,
+            "role": "блок живлення"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "ємність АКБ",
+            "name": "Ємність",
+            "value": "60Аг",
+            "unit": "Аг"
+          },
+          {
+            "subject": "пусковий струм АКБ",
+            "name": "Пусковий струм",
+            "value": "580А",
+            "unit": "А"
+          },
+          {
+            "subject": "номінальна потужність інвертора",
+            "name": "Номінальна потужність",
+            "value": "600Вт",
+            "unit": "Вт"
+          },
+          {
+            "subject": "пікова потужність інвертора",
+            "name": "Пікова потужність",
+            "value": "1600Вт",
+            "unit": "Вт"
+          },
+          {
+            "subject": "час безперебійної роботи котла",
+            "name": "Час роботи",
+            "value": "4 години",
+            "unit": "години"
+          }
+        ],
+        "interfaces_protocols": [],
+        "software_tools": []
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "power_batteries",
+    "main_subject": "автоматичний вимикач резервного живлення (АВР)",
+    "purpose": "створення автоматичної системи живлення котла опалення під час відключення електроенергії",
+    "components": [
+      {
+        "name": "Свинцево-кислотна автомобільна АКБ",
+        "model": "60Аг",
+        "manufacturer": "WESTA",
+        "role": "джерело живлення"
+      },
+      {
+        "name": "Інвертор",
+        "model": "600Вт",
+        "manufacturer": "TATALІKEN",
+        "role": "перетворювач напруги"
+      },
+      {
+        "name": "Мікросхема",
+        "model": "LM393",
+        "manufacturer": null,
+        "role": "аналоговий компаратор"
+      },
+      {
+        "name": "Реле",
+        "model": null,
+        "manufacturer": null,
+        "role": "перемикач живлення"
+      },
+      {
+        "name": "Оптрон",
+        "model": "РС817",
+        "manufacturer": null,
+        "role": "електронний перемикач"
+      },
+      {
+        "name": "Стабілітрон",
+        "model": null,
+        "manufacturer": null,
+        "role": "стабілізація напруги"
+      },
+      {
+        "name": "Плата БЖ",
+        "model": null,
+        "manufacturer": null,
+        "role": "блок живлення"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "ємність АКБ",
+        "name": "Ємність",
+        "value": "60Аг",
+        "unit": "Аг"
+      },
+      {
+        "subject": "пусковий струм АКБ",
+        "name": "Пусковий струм",
+        "value": "580А",
+        "unit": "А"
+      },
+      {
+        "subject": "номінальна потужність інвертора",
+        "name": "Номінальна потужність",
+        "value": "600Вт",
+        "unit": "Вт"
+      },
+      {
+        "subject": "пікова потужність інвертора",
+        "name": "Пікова потужність",
+        "value": "1600Вт",
+        "unit": "Вт"
+      },
+      {
+        "subject": "час безперебійної роботи котла",
+        "name": "Час роботи",
+        "value": "4 години",
+        "unit": "години"
+      }
+    ],
+    "interfaces_protocols": [],
+    "software_tools": []
+  },
+  "error": null
+}

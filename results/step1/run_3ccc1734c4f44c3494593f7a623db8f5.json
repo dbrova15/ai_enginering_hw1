@@ -1,0 +1,226 @@
+{
+  "document_id": "HR-0415",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:02:40.497903+00:00",
+  "latency_seconds": 4.800168100045994,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxmKqKG9n1qFMvkEI21ZP9pHKLPS",
+            "object": "chat.completion",
+            "created": 1792954960,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"six-wheeled off-road vehicle\",\n  \"purpose\": \"To create an ultimate off-road RC rig capable of overcoming various obstacles and carrying loads.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Mega\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"microcontroller\"\n    },\n    {\n      \"name\": \"H-bridge boards\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"motor driver\"\n    },\n    {\n      \"name\": \"6 motors\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"drive motors\"\n    },\n    {\n      \"name\": \"2.4GHz transmitter\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"communication\"\n    },\n    {\n      \"name\": \"2.4GHz receiver\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"communication\"\n    },\n    {\n      \"name\": \"aluminum and duralumin chassis\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"structure\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"range\",\n      \"name\": \"Control distance\",\n      \"value\": \"200\",\n      \"unit\": \"meters\"\n    },\n    {\n      \"subject\": \"load capacity\",\n      \"name\": \"Maximum load\",\n      \"value\": \"12\",\n      \"unit\": \"kilos\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"PWM signals\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5006,
+              "completion_tokens": 370,
+              "total_tokens": 5376,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.612236100016162
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5006,
+        "completion_tokens": 370,
+        "total_tokens": 5376,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxmKqKG9n1qFMvkEI21ZP9pHKLPS",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"six-wheeled off-road vehicle\",\n  \"purpose\": \"To create an ultimate off-road RC rig capable of overcoming various obstacles and carrying loads.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Mega\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"microcontroller\"\n    },\n    {\n      \"name\": \"H-bridge boards\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"motor driver\"\n    },\n    {\n      \"name\": \"6 motors\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"drive motors\"\n    },\n    {\n      \"name\": \"2.4GHz transmitter\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"communication\"\n    },\n    {\n      \"name\": \"2.4GHz receiver\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"communication\"\n    },\n    {\n      \"name\": \"aluminum and duralumin chassis\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"structure\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"range\",\n      \"name\": \"Control distance\",\n      \"value\": \"200\",\n      \"unit\": \"meters\"\n    },\n    {\n      \"subject\": \"load capacity\",\n      \"name\": \"Maximum load\",\n      \"value\": \"12\",\n      \"unit\": \"kilos\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"PWM signals\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "six-wheeled off-road vehicle",
+        "purpose": "To create an ultimate off-road RC rig capable of overcoming various obstacles and carrying loads.",
+        "components": [
+          {
+            "name": "Arduino Mega",
+            "model": null,
+            "manufacturer": null,
+            "role": "microcontroller"
+          },
+          {
+            "name": "H-bridge boards",
+            "model": null,
+            "manufacturer": null,
+            "role": "motor driver"
+          },
+          {
+            "name": "6 motors",
+            "model": null,
+            "manufacturer": null,
+            "role": "drive motors"
+          },
+          {
+            "name": "2.4GHz transmitter",
+            "model": null,
+            "manufacturer": null,
+            "role": "communication"
+          },
+          {
+            "name": "2.4GHz receiver",
+            "model": null,
+            "manufacturer": null,
+            "role": "communication"
+          },
+          {
+            "name": "aluminum and duralumin chassis",
+            "model": null,
+            "manufacturer": null,
+            "role": "structure"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "range",
+            "name": "Control distance",
+            "value": "200",
+            "unit": "meters"
+          },
+          {
+            "subject": "load capacity",
+            "name": "Maximum load",
+            "value": "12",
+            "unit": "kilos"
+          }
+        ],
+        "interfaces_protocols": [
+          "PWM signals"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "six-wheeled off-road vehicle",
+    "purpose": "To create an ultimate off-road RC rig capable of overcoming various obstacles and carrying loads.",
+    "components": [
+      {
+        "name": "Arduino Mega",
+        "model": null,
+        "manufacturer": null,
+        "role": "microcontroller"
+      },
+      {
+        "name": "H-bridge boards",
+        "model": null,
+        "manufacturer": null,
+        "role": "motor driver"
+      },
+      {
+        "name": "6 motors",
+        "model": null,
+        "manufacturer": null,
+        "role": "drive motors"
+      },
+      {
+        "name": "2.4GHz transmitter",
+        "model": null,
+        "manufacturer": null,
+        "role": "communication"
+      },
+      {
+        "name": "2.4GHz receiver",
+        "model": null,
+        "manufacturer": null,
+        "role": "communication"
+      },
+      {
+        "name": "aluminum and duralumin chassis",
+        "model": null,
+        "manufacturer": null,
+        "role": "structure"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "range",
+        "name": "Control distance",
+        "value": "200",
+        "unit": "meters"
+      },
+      {
+        "subject": "load capacity",
+        "name": "Maximum load",
+        "value": "12",
+        "unit": "kilos"
+      }
+    ],
+    "interfaces_protocols": [
+      "PWM signals"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

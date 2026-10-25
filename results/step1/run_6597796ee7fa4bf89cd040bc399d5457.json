@@ -1,0 +1,218 @@
+{
+  "document_id": "HR-0253",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0253.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:05:12.723169+00:00",
+  "latency_seconds": 4.825513100018725,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxommZFeTPF8QnCz0CEuiEdQqwbN",
+            "object": "chat.completion",
+            "created": 1792955112,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"DC-UPS\",\n  \"purpose\": \"Створення простого та надійного джерела безперервного живлення для низьковольтних пристроїв.\",\n  \"components\": [\n    {\n      \"name\": \"LiFePO₄ battery\",\n      \"model\": \"4S 20Ah\",\n      \"manufacturer\": null,\n      \"role\": \"джерело живлення\"\n    },\n    {\n      \"name\": \"LTC3780\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"стабілізатор напруги\"\n    },\n    {\n      \"name\": \"Schottky diodes\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"перемикання живлення\"\n    },\n    {\n      \"name\": \"Electrolytic capacitor\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"гладіння просадок\"\n    },\n    {\n      \"name\": \"Film capacitor\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"зняття пульсацій\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Capacity\",\n      \"name\": \"Energy capacity\",\n      \"value\": \"247\",\n      \"unit\": \"Вт·год\"\n    },\n    {\n      \"subject\": \"Voltage range\",\n      \"name\": \"Operating voltage\",\n      \"value\": \"9-14\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Capacitance\",\n      \"name\": \"Electrolytic capacitor value\",\n      \"value\": \"2200\",\n      \"unit\": \"мкФ\"\n    }\n  ],\n  \"interfaces_protocols\": [],\n  \"software_tools\": []\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5902,
+              "completion_tokens": 406,
+              "total_tokens": 6308,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.647470199968666
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5902,
+        "completion_tokens": 406,
+        "total_tokens": 6308,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxommZFeTPF8QnCz0CEuiEdQqwbN",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"DC-UPS\",\n  \"purpose\": \"Створення простого та надійного джерела безперервного живлення для низьковольтних пристроїв.\",\n  \"components\": [\n    {\n      \"name\": \"LiFePO₄ battery\",\n      \"model\": \"4S 20Ah\",\n      \"manufacturer\": null,\n      \"role\": \"джерело живлення\"\n    },\n    {\n      \"name\": \"LTC3780\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"стабілізатор напруги\"\n    },\n    {\n      \"name\": \"Schottky diodes\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"перемикання живлення\"\n    },\n    {\n      \"name\": \"Electrolytic capacitor\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"гладіння просадок\"\n    },\n    {\n      \"name\": \"Film capacitor\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"зняття пульсацій\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Capacity\",\n      \"name\": \"Energy capacity\",\n      \"value\": \"247\",\n      \"unit\": \"Вт·год\"\n    },\n    {\n      \"subject\": \"Voltage range\",\n      \"name\": \"Operating voltage\",\n      \"value\": \"9-14\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Capacitance\",\n      \"name\": \"Electrolytic capacitor value\",\n      \"value\": \"2200\",\n      \"unit\": \"мкФ\"\n    }\n  ],\n  \"interfaces_protocols\": [],\n  \"software_tools\": []\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "power_batteries",
+        "main_subject": "DC-UPS",
+        "purpose": "Створення простого та надійного джерела безперервного живлення для низьковольтних пристроїв.",
+        "components": [
+          {
+            "name": "LiFePO₄ battery",
+            "model": "4S 20Ah",
+            "manufacturer": null,
+            "role": "джерело живлення"
+          },
+          {
+            "name": "LTC3780",
+            "model": null,
+            "manufacturer": null,
+            "role": "стабілізатор напруги"
+          },
+          {
+            "name": "Schottky diodes",
+            "model": null,
+            "manufacturer": null,
+            "role": "перемикання живлення"
+          },
+          {
+            "name": "Electrolytic capacitor",
+            "model": null,
+            "manufacturer": null,
+            "role": "гладіння просадок"
+          },
+          {
+            "name": "Film capacitor",
+            "model": null,
+            "manufacturer": null,
+            "role": "зняття пульсацій"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Capacity",
+            "name": "Energy capacity",
+            "value": "247",
+            "unit": "Вт·год"
+          },
+          {
+            "subject": "Voltage range",
+            "name": "Operating voltage",
+            "value": "9-14",
+            "unit": "В"
+          },
+          {
+            "subject": "Capacitance",
+            "name": "Electrolytic capacitor value",
+            "value": "2200",
+            "unit": "мкФ"
+          }
+        ],
+        "interfaces_protocols": [],
+        "software_tools": []
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "power_batteries",
+    "main_subject": "DC-UPS",
+    "purpose": "Створення простого та надійного джерела безперервного живлення для низьковольтних пристроїв.",
+    "components": [
+      {
+        "name": "LiFePO₄ battery",
+        "model": "4S 20Ah",
+        "manufacturer": null,
+        "role": "джерело живлення"
+      },
+      {
+        "name": "LTC3780",
+        "model": null,
+        "manufacturer": null,
+        "role": "стабілізатор напруги"
+      },
+      {
+        "name": "Schottky diodes",
+        "model": null,
+        "manufacturer": null,
+        "role": "перемикання живлення"
+      },
+      {
+        "name": "Electrolytic capacitor",
+        "model": null,
+        "manufacturer": null,
+        "role": "гладіння просадок"
+      },
+      {
+        "name": "Film capacitor",
+        "model": null,
+        "manufacturer": null,
+        "role": "зняття пульсацій"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Capacity",
+        "name": "Energy capacity",
+        "value": "247",
+        "unit": "Вт·год"
+      },
+      {
+        "subject": "Voltage range",
+        "name": "Operating voltage",
+        "value": "9-14",
+        "unit": "В"
+      },
+      {
+        "subject": "Capacitance",
+        "name": "Electrolytic capacitor value",
+        "value": "2200",
+        "unit": "мкФ"
+      }
+    ],
+    "interfaces_protocols": [],
+    "software_tools": []
+  },
+  "error": null
+}

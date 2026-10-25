@@ -1,0 +1,238 @@
+{
+  "document_id": "HR-0068",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0068.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:03:26.143506+00:00",
+  "latency_seconds": 7.971134199993685,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ecxn45y6fuJoFe5il7u7OcloRHHHu",
+            "object": "chat.completion",
+            "created": 1792955006,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"tilt sensor module\",\n  \"purpose\": \"To learn how to use the tilt sensor module with Arduino to determine the angle of tilt or movement.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino UNO rev.3\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"microcontroller\"\n    },\n    {\n      \"name\": \"Tilt Sensor Module\",\n      \"model\": \"SW-520D\",\n      \"manufacturer\": null,\n      \"role\": \"sensor\"\n    },\n    {\n      \"name\": \"Jumper Wires\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"connection\"\n    },\n    {\n      \"name\": \"USB Cable\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"power supply\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Output Signal\",\n      \"name\": \"Output Type\",\n      \"value\": \"Digital Output (0 and 1)\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Operating Voltage\",\n      \"name\": \"Voltage\",\n      \"value\": \"5 V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Current Driving Capability\",\n      \"name\": \"Current\",\n      \"value\": \"15 mA\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Threshold Angle\",\n      \"name\": \"Angle Range\",\n      \"value\": \"45 to 130 degrees\",\n      \"unit\": \"degrees\"\n    },\n    {\n      \"subject\": \"Board Size\",\n      \"name\": \"Dimensions\",\n      \"value\": \"3.2 cm x 1.4 cm\",\n      \"unit\": \"cm\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Digital Output\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE (version 1.6.4+)\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5843,
+              "completion_tokens": 431,
+              "total_tokens": 6274,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 7.79975290002767
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5843,
+        "completion_tokens": 431,
+        "total_tokens": 6274,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ecxn45y6fuJoFe5il7u7OcloRHHHu",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"tilt sensor module\",\n  \"purpose\": \"To learn how to use the tilt sensor module with Arduino to determine the angle of tilt or movement.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino UNO rev.3\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"microcontroller\"\n    },\n    {\n      \"name\": \"Tilt Sensor Module\",\n      \"model\": \"SW-520D\",\n      \"manufacturer\": null,\n      \"role\": \"sensor\"\n    },\n    {\n      \"name\": \"Jumper Wires\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"connection\"\n    },\n    {\n      \"name\": \"USB Cable\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"power supply\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Output Signal\",\n      \"name\": \"Output Type\",\n      \"value\": \"Digital Output (0 and 1)\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Operating Voltage\",\n      \"name\": \"Voltage\",\n      \"value\": \"5 V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Current Driving Capability\",\n      \"name\": \"Current\",\n      \"value\": \"15 mA\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Threshold Angle\",\n      \"name\": \"Angle Range\",\n      \"value\": \"45 to 130 degrees\",\n      \"unit\": \"degrees\"\n    },\n    {\n      \"subject\": \"Board Size\",\n      \"name\": \"Dimensions\",\n      \"value\": \"3.2 cm x 1.4 cm\",\n      \"unit\": \"cm\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Digital Output\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE (version 1.6.4+)\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "sensors_measurements",
+        "main_subject": "tilt sensor module",
+        "purpose": "To learn how to use the tilt sensor module with Arduino to determine the angle of tilt or movement.",
+        "components": [
+          {
+            "name": "Arduino UNO rev.3",
+            "model": null,
+            "manufacturer": null,
+            "role": "microcontroller"
+          },
+          {
+            "name": "Tilt Sensor Module",
+            "model": "SW-520D",
+            "manufacturer": null,
+            "role": "sensor"
+          },
+          {
+            "name": "Jumper Wires",
+            "model": null,
+            "manufacturer": null,
+            "role": "connection"
+          },
+          {
+            "name": "USB Cable",
+            "model": null,
+            "manufacturer": null,
+            "role": "power supply"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Output Signal",
+            "name": "Output Type",
+            "value": "Digital Output (0 and 1)",
+            "unit": null
+          },
+          {
+            "subject": "Operating Voltage",
+            "name": "Voltage",
+            "value": "5 V",
+            "unit": null
+          },
+          {
+            "subject": "Current Driving Capability",
+            "name": "Current",
+            "value": "15 mA",
+            "unit": null
+          },
+          {
+            "subject": "Threshold Angle",
+            "name": "Angle Range",
+            "value": "45 to 130 degrees",
+            "unit": "degrees"
+          },
+          {
+            "subject": "Board Size",
+            "name": "Dimensions",
+            "value": "3.2 cm x 1.4 cm",
+            "unit": "cm"
+          }
+        ],
+        "interfaces_protocols": [
+          "Digital Output"
+        ],
+        "software_tools": [
+          "Arduino IDE (version 1.6.4+)"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "sensors_measurements",
+    "main_subject": "tilt sensor module",
+    "purpose": "To learn how to use the tilt sensor module with Arduino to determine the angle of tilt or movement.",
+    "components": [
+      {
+        "name": "Arduino UNO rev.3",
+        "model": null,
+        "manufacturer": null,
+        "role": "microcontroller"
+      },
+      {
+        "name": "Tilt Sensor Module",
+        "model": "SW-520D",
+        "manufacturer": null,
+        "role": "sensor"
+      },
+      {
+        "name": "Jumper Wires",
+        "model": null,
+        "manufacturer": null,
+        "role": "connection"
+      },
+      {
+        "name": "USB Cable",
+        "model": null,
+        "manufacturer": null,
+        "role": "power supply"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Output Signal",
+        "name": "Output Type",
+        "value": "Digital Output (0 and 1)",
+        "unit": null
+      },
+      {
+        "subject": "Operating Voltage",
+        "name": "Voltage",
+        "value": "5 V",
+        "unit": null
+      },
+      {
+        "subject": "Current Driving Capability",
+        "name": "Current",
+        "value": "15 mA",
+        "unit": null
+      },
+      {
+        "subject": "Threshold Angle",
+        "name": "Angle Range",
+        "value": "45 to 130 degrees",
+        "unit": "degrees"
+      },
+      {
+        "subject": "Board Size",
+        "name": "Dimensions",
+        "value": "3.2 cm x 1.4 cm",
+        "unit": "cm"
+      }
+    ],
+    "interfaces_protocols": [
+      "Digital Output"
+    ],
+    "software_tools": [
+      "Arduino IDE (version 1.6.4+)"
+    ]
+  },
+  "error": null
+}

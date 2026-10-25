@@ -1,0 +1,404 @@
+{
+  "document_id": "HR-0001",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0001.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:09:29.585082+00:00",
+  "latency_seconds": 9.591320400009863,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-72",
+            "object": "chat.completion",
+            "created": 1792955379,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"robotics_actuators\", \"main_subject\": \"Sumobot\", \"purpose\": \"mini Sumo robotic competition\", \"components\": [{\"name\": \"Arduino Nano\", \"model\": \"ATmega168\", \"manufacturer\": \"Arduino\", \"role\": \"Microcontroller\"}, {\"name\": \"NE555N\", \"model\": \"IC1\", \"manufacturer\": \"Texas Instruments\", \"role\": \"Generator\"}, {\"name\": \"LM2576T-ADJ\", \"model\": \"IC2\", \"manufacturer\": \"National Semiconductor\", \"role\": \"Stabilizer\"}, {\"name\": \"LB1642\", \"model\": \"IC3, IC4\", \"manufacturer\": \"Sanyo\", \"role\": \"Motor driver\"}, {\"name\": \"RCH110NP-101K\", \"model\": \"L1\", \"manufacturer\": \"Sumida\", \"role\": \"Drossel\"}, {\"name\": \"ST4NF\", \"model\": \"Q1, Q2\", \"manufacturer\": \"STmicro-electronics\", \"role\": \"Transistors\"}, {\"name\": \"Q3\", \"model\": \"CT315\", \"manufacturer\": \"Texas Instruments\", \"role\": \"Amplifier\"}, {\"name\": \"D1\", \"model\": \"Diode 1N5822\", \"manufacturer\": \"Fairchild Semiconductor\", \"role\": \"Diode\"}, {\"name\": \"LD1, LD2\", \"model\": \"Swedish LED\", \"manufacturer\": \"Osram\", \"role\": \"LED\"}, {\"name\": \"PHS1-PHS4\", \"model\": \"Optical sensor\", \"manufacturer\": \"Honeywell\", \"role\": \"Sensor\"}, {\"name\": \"RN1, RN2\", \"model\": \"TSOP4836\", \"manufacturer\": \"Vishay\", \"role\": \"Sensor\"}, {\"name\": \"S1\", \"model\": \"Switch\", \"manufacturer\": \"SPST\", \"role\": \"Switch\"}, {\"name\": \"S2, S3\", \"model\": \"Mikroswitch\", \"manufacturer\": \"Sensirion\", \"role\": \"Switch\"}, {\"name\": \"SV1-SV4\", \"model\": \"ML-MT\", \"manufacturer\": \"Molex\", \"role\": \"Connector\"}, {\"name\": \"S5\", \"model\": \"Battery\", \"manufacturer\": \"Accumulator\", \"role\": \"Power source\"}, {\"name\": \"A\", \"model\": \"Battery\", \"manufacturer\": \"Accumulator\", \"role\": \"Power source\"}, {\"name\": \"M\", \"model\": \"Motor\", \"manufacturer\": \"NMB\", \"role\": \"Motor\"}, {\"name\": \"P\", \"model\": \"Power inductor\", \"manufacturer\": \"Sumida\", \"role\": \"Inductor\"}, {\"name\": \"C1, C2, C3, C4, C5\", \"model\": \"Capacitor\", \"manufacturer\": \"Capacitor\", \"role\": \"Capacitor\"}], \"technical_parameters\": [{\"subject\": \"Motor speed\", \"name\": \"Motor speed\", \"value\": \"180 m/s\", \"unit\": \"m/s\"}, {\"subject\": \"Motor torque\", \"name\": \"Motor torque\", \"value\": \"100 Nm\", \"unit\": \"Nm\"}, {\"subject\": \"Generator frequency\", \"name\": \"Generator frequency\", \"value\": \"36 kHz\", \"unit\": \"Hz\"}, {\"subject\": \"Stabilizer output voltage\", \"name\": \"Stabilizer output voltage\", \"value\": \"3.0 V\", \"unit\": \"V\"}, {\"subject\": \"Motor driver output current\", \"name\": \"Motor driver output current\", \"value\": \"0.7 A\", \"unit\": \"A\"}], \"interfaces_protocols\": [\"\"], \"software_tools\": [\"Arduino IDE\", \"C++ compiler\", \"Simulation software\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 6868,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 822,
+              "total_tokens": 7690
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 9.46044489997439
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 6868,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 822,
+        "total_tokens": 7690
+      },
+      "generation_id": "chatcmpl-72",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"robotics_actuators\", \"main_subject\": \"Sumobot\", \"purpose\": \"mini Sumo robotic competition\", \"components\": [{\"name\": \"Arduino Nano\", \"model\": \"ATmega168\", \"manufacturer\": \"Arduino\", \"role\": \"Microcontroller\"}, {\"name\": \"NE555N\", \"model\": \"IC1\", \"manufacturer\": \"Texas Instruments\", \"role\": \"Generator\"}, {\"name\": \"LM2576T-ADJ\", \"model\": \"IC2\", \"manufacturer\": \"National Semiconductor\", \"role\": \"Stabilizer\"}, {\"name\": \"LB1642\", \"model\": \"IC3, IC4\", \"manufacturer\": \"Sanyo\", \"role\": \"Motor driver\"}, {\"name\": \"RCH110NP-101K\", \"model\": \"L1\", \"manufacturer\": \"Sumida\", \"role\": \"Drossel\"}, {\"name\": \"ST4NF\", \"model\": \"Q1, Q2\", \"manufacturer\": \"STmicro-electronics\", \"role\": \"Transistors\"}, {\"name\": \"Q3\", \"model\": \"CT315\", \"manufacturer\": \"Texas Instruments\", \"role\": \"Amplifier\"}, {\"name\": \"D1\", \"model\": \"Diode 1N5822\", \"manufacturer\": \"Fairchild Semiconductor\", \"role\": \"Diode\"}, {\"name\": \"LD1, LD2\", \"model\": \"Swedish LED\", \"manufacturer\": \"Osram\", \"role\": \"LED\"}, {\"name\": \"PHS1-PHS4\", \"model\": \"Optical sensor\", \"manufacturer\": \"Honeywell\", \"role\": \"Sensor\"}, {\"name\": \"RN1, RN2\", \"model\": \"TSOP4836\", \"manufacturer\": \"Vishay\", \"role\": \"Sensor\"}, {\"name\": \"S1\", \"model\": \"Switch\", \"manufacturer\": \"SPST\", \"role\": \"Switch\"}, {\"name\": \"S2, S3\", \"model\": \"Mikroswitch\", \"manufacturer\": \"Sensirion\", \"role\": \"Switch\"}, {\"name\": \"SV1-SV4\", \"model\": \"ML-MT\", \"manufacturer\": \"Molex\", \"role\": \"Connector\"}, {\"name\": \"S5\", \"model\": \"Battery\", \"manufacturer\": \"Accumulator\", \"role\": \"Power source\"}, {\"name\": \"A\", \"model\": \"Battery\", \"manufacturer\": \"Accumulator\", \"role\": \"Power source\"}, {\"name\": \"M\", \"model\": \"Motor\", \"manufacturer\": \"NMB\", \"role\": \"Motor\"}, {\"name\": \"P\", \"model\": \"Power inductor\", \"manufacturer\": \"Sumida\", \"role\": \"Inductor\"}, {\"name\": \"C1, C2, C3, C4, C5\", \"model\": \"Capacitor\", \"manufacturer\": \"Capacitor\", \"role\": \"Capacitor\"}], \"technical_parameters\": [{\"subject\": \"Motor speed\", \"name\": \"Motor speed\", \"value\": \"180 m/s\", \"unit\": \"m/s\"}, {\"subject\": \"Motor torque\", \"name\": \"Motor torque\", \"value\": \"100 Nm\", \"unit\": \"Nm\"}, {\"subject\": \"Generator frequency\", \"name\": \"Generator frequency\", \"value\": \"36 kHz\", \"unit\": \"Hz\"}, {\"subject\": \"Stabilizer output voltage\", \"name\": \"Stabilizer output voltage\", \"value\": \"3.0 V\", \"unit\": \"V\"}, {\"subject\": \"Motor driver output current\", \"name\": \"Motor driver output current\", \"value\": \"0.7 A\", \"unit\": \"A\"}], \"interfaces_protocols\": [\"\"], \"software_tools\": [\"Arduino IDE\", \"C++ compiler\", \"Simulation software\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "Sumobot",
+        "purpose": "mini Sumo robotic competition",
+        "components": [
+          {
+            "name": "Arduino Nano",
+            "model": "ATmega168",
+            "manufacturer": "Arduino",
+            "role": "Microcontroller"
+          },
+          {
+            "name": "NE555N",
+            "model": "IC1",
+            "manufacturer": "Texas Instruments",
+            "role": "Generator"
+          },
+          {
+            "name": "LM2576T-ADJ",
+            "model": "IC2",
+            "manufacturer": "National Semiconductor",
+            "role": "Stabilizer"
+          },
+          {
+            "name": "LB1642",
+            "model": "IC3, IC4",
+            "manufacturer": "Sanyo",
+            "role": "Motor driver"
+          },
+          {
+            "name": "RCH110NP-101K",
+            "model": "L1",
+            "manufacturer": "Sumida",
+            "role": "Drossel"
+          },
+          {
+            "name": "ST4NF",
+            "model": "Q1, Q2",
+            "manufacturer": "STmicro-electronics",
+            "role": "Transistors"
+          },
+          {
+            "name": "Q3",
+            "model": "CT315",
+            "manufacturer": "Texas Instruments",
+            "role": "Amplifier"
+          },
+          {
+            "name": "D1",
+            "model": "Diode 1N5822",
+            "manufacturer": "Fairchild Semiconductor",
+            "role": "Diode"
+          },
+          {
+            "name": "LD1, LD2",
+            "model": "Swedish LED",
+            "manufacturer": "Osram",
+            "role": "LED"
+          },
+          {
+            "name": "PHS1-PHS4",
+            "model": "Optical sensor",
+            "manufacturer": "Honeywell",
+            "role": "Sensor"
+          },
+          {
+            "name": "RN1, RN2",
+            "model": "TSOP4836",
+            "manufacturer": "Vishay",
+            "role": "Sensor"
+          },
+          {
+            "name": "S1",
+            "model": "Switch",
+            "manufacturer": "SPST",
+            "role": "Switch"
+          },
+          {
+            "name": "S2, S3",
+            "model": "Mikroswitch",
+            "manufacturer": "Sensirion",
+            "role": "Switch"
+          },
+          {
+            "name": "SV1-SV4",
+            "model": "ML-MT",
+            "manufacturer": "Molex",
+            "role": "Connector"
+          },
+          {
+            "name": "S5",
+            "model": "Battery",
+            "manufacturer": "Accumulator",
+            "role": "Power source"
+          },
+          {
+            "name": "A",
+            "model": "Battery",
+            "manufacturer": "Accumulator",
+            "role": "Power source"
+          },
+          {
+            "name": "M",
+            "model": "Motor",
+            "manufacturer": "NMB",
+            "role": "Motor"
+          },
+          {
+            "name": "P",
+            "model": "Power inductor",
+            "manufacturer": "Sumida",
+            "role": "Inductor"
+          },
+          {
+            "name": "C1, C2, C3, C4, C5",
+            "model": "Capacitor",
+            "manufacturer": "Capacitor",
+            "role": "Capacitor"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Motor speed",
+            "name": "Motor speed",
+            "value": "180 m/s",
+            "unit": "m/s"
+          },
+          {
+            "subject": "Motor torque",
+            "name": "Motor torque",
+            "value": "100 Nm",
+            "unit": "Nm"
+          },
+          {
+            "subject": "Generator frequency",
+            "name": "Generator frequency",
+            "value": "36 kHz",
+            "unit": "Hz"
+          },
+          {
+            "subject": "Stabilizer output voltage",
+            "name": "Stabilizer output voltage",
+            "value": "3.0 V",
+            "unit": "V"
+          },
+          {
+            "subject": "Motor driver output current",
+            "name": "Motor driver output current",
+            "value": "0.7 A",
+            "unit": "A"
+          }
+        ],
+        "interfaces_protocols": [
+          ""
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "C++ compiler",
+          "Simulation software"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "Sumobot",
+    "purpose": "mini Sumo robotic competition",
+    "components": [
+      {
+        "name": "Arduino Nano",
+        "model": "ATmega168",
+        "manufacturer": "Arduino",
+        "role": "Microcontroller"
+      },
+      {
+        "name": "NE555N",
+        "model": "IC1",
+        "manufacturer": "Texas Instruments",
+        "role": "Generator"
+      },
+      {
+        "name": "LM2576T-ADJ",
+        "model": "IC2",
+        "manufacturer": "National Semiconductor",
+        "role": "Stabilizer"
+      },
+      {
+        "name": "LB1642",
+        "model": "IC3, IC4",
+        "manufacturer": "Sanyo",
+        "role": "Motor driver"
+      },
+      {
+        "name": "RCH110NP-101K",
+        "model": "L1",
+        "manufacturer": "Sumida",
+        "role": "Drossel"
+      },
+      {
+        "name": "ST4NF",
+        "model": "Q1, Q2",
+        "manufacturer": "STmicro-electronics",
+        "role": "Transistors"
+      },
+      {
+        "name": "Q3",
+        "model": "CT315",
+        "manufacturer": "Texas Instruments",
+        "role": "Amplifier"
+      },
+      {
+        "name": "D1",
+        "model": "Diode 1N5822",
+        "manufacturer": "Fairchild Semiconductor",
+        "role": "Diode"
+      },
+      {
+        "name": "LD1, LD2",
+        "model": "Swedish LED",
+        "manufacturer": "Osram",
+        "role": "LED"
+      },
+      {
+        "name": "PHS1-PHS4",
+        "model": "Optical sensor",
+        "manufacturer": "Honeywell",
+        "role": "Sensor"
+      },
+      {
+        "name": "RN1, RN2",
+        "model": "TSOP4836",
+        "manufacturer": "Vishay",
+        "role": "Sensor"
+      },
+      {
+        "name": "S1",
+        "model": "Switch",
+        "manufacturer": "SPST",
+        "role": "Switch"
+      },
+      {
+        "name": "S2, S3",
+        "model": "Mikroswitch",
+        "manufacturer": "Sensirion",
+        "role": "Switch"
+      },
+      {
+        "name": "SV1-SV4",
+        "model": "ML-MT",
+        "manufacturer": "Molex",
+        "role": "Connector"
+      },
+      {
+        "name": "S5",
+        "model": "Battery",
+        "manufacturer": "Accumulator",
+        "role": "Power source"
+      },
+      {
+        "name": "A",
+        "model": "Battery",
+        "manufacturer": "Accumulator",
+        "role": "Power source"
+      },
+      {
+        "name": "M",
+        "model": "Motor",
+        "manufacturer": "NMB",
+        "role": "Motor"
+      },
+      {
+        "name": "P",
+        "model": "Power inductor",
+        "manufacturer": "Sumida",
+        "role": "Inductor"
+      },
+      {
+        "name": "C1, C2, C3, C4, C5",
+        "model": "Capacitor",
+        "manufacturer": "Capacitor",
+        "role": "Capacitor"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Motor speed",
+        "name": "Motor speed",
+        "value": "180 m/s",
+        "unit": "m/s"
+      },
+      {
+        "subject": "Motor torque",
+        "name": "Motor torque",
+        "value": "100 Nm",
+        "unit": "Nm"
+      },
+      {
+        "subject": "Generator frequency",
+        "name": "Generator frequency",
+        "value": "36 kHz",
+        "unit": "Hz"
+      },
+      {
+        "subject": "Stabilizer output voltage",
+        "name": "Stabilizer output voltage",
+        "value": "3.0 V",
+        "unit": "V"
+      },
+      {
+        "subject": "Motor driver output current",
+        "name": "Motor driver output current",
+        "value": "0.7 A",
+        "unit": "A"
+      }
+    ],
+    "interfaces_protocols": [
+      ""
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "C++ compiler",
+      "Simulation software"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,226 @@
+{
+  "document_id": "HR-0245",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0245.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:11:08.148476+00:00",
+  "latency_seconds": 4.918317799922079,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-179",
+            "object": "chat.completion",
+            "created": 1792955473,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"controllers_programming\", \"main_subject\": \"ESP32-based humidity monitoring system\", \"purpose\": \"Automated monitoring system for controlling humidity levels\", \"components\": [{\"name\": \"ESP32-WROOM-32D\", \"model\": \"ESP32 microcontroller\", \"manufacturer\": \"Espressif Systems\", \"role\": \"Main microcontroller\"}, {\"name\": \"HW-390 humidity sensor\", \"model\": \"Humidity sensor\", \"manufacturer\": \"Unknown\", \"role\": \"Humidity sensor\"}, {\"name\": \"18650 battery\", \"model\": \"Li-ion battery\", \"manufacturer\": \"Unknown\", \"role\": \"Power source\"}, {\"name\": \"Case for 18650 battery\", \"model\": \"Battery case\", \"manufacturer\": \"Unknown\", \"role\": \"Battery protection and housing\"}, {\"name\": \"Keypad\", \"model\": \"Keypad\", \"manufacturer\": \"Unknown\", \"role\": \"Input device\"}, {\"name\": \"Magnet\", \"model\": \"Magnet\", \"manufacturer\": \"Unknown\", \"role\": \"Switch\"}], \"technical_parameters\": [{\"subject\": \"Power consumption\", \"name\": \"Low power consumption\", \"value\": \"10mA\", \"unit\": \"mA\"}, {\"subject\": \"Communication protocol\", \"name\": \"Wi-Fi\", \"value\": \"Wi-Fi\", \"unit\": \"protocol\"}, {\"subject\": \"Data transmission\", \"name\": \"Telegram\", \"value\": \"Telegram\", \"unit\": \"protocol\"}], \"interfaces_protocols\": [\"Wi-Fi\", \"Telegram\"], \"software_tools\": [\"ESP32 IDE\", \"Arduino IDE\", \"Telegram bot API\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 955,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 351,
+              "total_tokens": 1306
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.7937747000250965
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 955,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 351,
+        "total_tokens": 1306
+      },
+      "generation_id": "chatcmpl-179",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"controllers_programming\", \"main_subject\": \"ESP32-based humidity monitoring system\", \"purpose\": \"Automated monitoring system for controlling humidity levels\", \"components\": [{\"name\": \"ESP32-WROOM-32D\", \"model\": \"ESP32 microcontroller\", \"manufacturer\": \"Espressif Systems\", \"role\": \"Main microcontroller\"}, {\"name\": \"HW-390 humidity sensor\", \"model\": \"Humidity sensor\", \"manufacturer\": \"Unknown\", \"role\": \"Humidity sensor\"}, {\"name\": \"18650 battery\", \"model\": \"Li-ion battery\", \"manufacturer\": \"Unknown\", \"role\": \"Power source\"}, {\"name\": \"Case for 18650 battery\", \"model\": \"Battery case\", \"manufacturer\": \"Unknown\", \"role\": \"Battery protection and housing\"}, {\"name\": \"Keypad\", \"model\": \"Keypad\", \"manufacturer\": \"Unknown\", \"role\": \"Input device\"}, {\"name\": \"Magnet\", \"model\": \"Magnet\", \"manufacturer\": \"Unknown\", \"role\": \"Switch\"}], \"technical_parameters\": [{\"subject\": \"Power consumption\", \"name\": \"Low power consumption\", \"value\": \"10mA\", \"unit\": \"mA\"}, {\"subject\": \"Communication protocol\", \"name\": \"Wi-Fi\", \"value\": \"Wi-Fi\", \"unit\": \"protocol\"}, {\"subject\": \"Data transmission\", \"name\": \"Telegram\", \"value\": \"Telegram\", \"unit\": \"protocol\"}], \"interfaces_protocols\": [\"Wi-Fi\", \"Telegram\"], \"software_tools\": [\"ESP32 IDE\", \"Arduino IDE\", \"Telegram bot API\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "controllers_programming",
+        "main_subject": "ESP32-based humidity monitoring system",
+        "purpose": "Automated monitoring system for controlling humidity levels",
+        "components": [
+          {
+            "name": "ESP32-WROOM-32D",
+            "model": "ESP32 microcontroller",
+            "manufacturer": "Espressif Systems",
+            "role": "Main microcontroller"
+          },
+          {
+            "name": "HW-390 humidity sensor",
+            "model": "Humidity sensor",
+            "manufacturer": "Unknown",
+            "role": "Humidity sensor"
+          },
+          {
+            "name": "18650 battery",
+            "model": "Li-ion battery",
+            "manufacturer": "Unknown",
+            "role": "Power source"
+          },
+          {
+            "name": "Case for 18650 battery",
+            "model": "Battery case",
+            "manufacturer": "Unknown",
+            "role": "Battery protection and housing"
+          },
+          {
+            "name": "Keypad",
+            "model": "Keypad",
+            "manufacturer": "Unknown",
+            "role": "Input device"
+          },
+          {
+            "name": "Magnet",
+            "model": "Magnet",
+            "manufacturer": "Unknown",
+            "role": "Switch"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Power consumption",
+            "name": "Low power consumption",
+            "value": "10mA",
+            "unit": "mA"
+          },
+          {
+            "subject": "Communication protocol",
+            "name": "Wi-Fi",
+            "value": "Wi-Fi",
+            "unit": "protocol"
+          },
+          {
+            "subject": "Data transmission",
+            "name": "Telegram",
+            "value": "Telegram",
+            "unit": "protocol"
+          }
+        ],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "Telegram"
+        ],
+        "software_tools": [
+          "ESP32 IDE",
+          "Arduino IDE",
+          "Telegram bot API"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "controllers_programming",
+    "main_subject": "ESP32-based humidity monitoring system",
+    "purpose": "Automated monitoring system for controlling humidity levels",
+    "components": [
+      {
+        "name": "ESP32-WROOM-32D",
+        "model": "ESP32 microcontroller",
+        "manufacturer": "Espressif Systems",
+        "role": "Main microcontroller"
+      },
+      {
+        "name": "HW-390 humidity sensor",
+        "model": "Humidity sensor",
+        "manufacturer": "Unknown",
+        "role": "Humidity sensor"
+      },
+      {
+        "name": "18650 battery",
+        "model": "Li-ion battery",
+        "manufacturer": "Unknown",
+        "role": "Power source"
+      },
+      {
+        "name": "Case for 18650 battery",
+        "model": "Battery case",
+        "manufacturer": "Unknown",
+        "role": "Battery protection and housing"
+      },
+      {
+        "name": "Keypad",
+        "model": "Keypad",
+        "manufacturer": "Unknown",
+        "role": "Input device"
+      },
+      {
+        "name": "Magnet",
+        "model": "Magnet",
+        "manufacturer": "Unknown",
+        "role": "Switch"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Power consumption",
+        "name": "Low power consumption",
+        "value": "10mA",
+        "unit": "mA"
+      },
+      {
+        "subject": "Communication protocol",
+        "name": "Wi-Fi",
+        "value": "Wi-Fi",
+        "unit": "protocol"
+      },
+      {
+        "subject": "Data transmission",
+        "name": "Telegram",
+        "value": "Telegram",
+        "unit": "protocol"
+      }
+    ],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "Telegram"
+    ],
+    "software_tools": [
+      "ESP32 IDE",
+      "Arduino IDE",
+      "Telegram bot API"
+    ]
+  },
+  "error": null
+}

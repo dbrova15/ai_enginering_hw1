@@ -1,0 +1,290 @@
+{
+  "document_id": "HR-0221",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0221.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T19:04:39.963024+00:00",
+  "latency_seconds": 7.149835600052029,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcxoFJaSRQ1ocO4rbRVZSnjRr2Qks",
+            "object": "chat.completion",
+            "created": 1792955079,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"термореле\",\n  \"purpose\": \"створення саморобного термореле для дистанційного керування потужним навантаженням\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi модуль\",\n      \"model\": \"ESP8266 ESP-01\",\n      \"manufacturer\": null,\n      \"role\": \"мозок пристрою\"\n    },\n    {\n      \"name\": \"Реле з опторозв'язкою\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"керування високою напругою\"\n    },\n    {\n      \"name\": \"Операційний підсилювач\",\n      \"model\": \"LM324N\",\n      \"manufacturer\": null,\n      \"role\": \"компаратор\"\n    },\n    {\n      \"name\": \"Логічні елементи\",\n      \"model\": \"CD4001BE\",\n      \"manufacturer\": null,\n      \"role\": \"мультивібратор SR-Latch\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC MF52A1 10кОм\",\n      \"manufacturer\": null,\n      \"role\": \"датчик температури\"\n    },\n    {\n      \"name\": \"Змінний резистор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"потенціометри для гістерезису\"\n    },\n    {\n      \"name\": \"DC-DC понижуючий конвертер\",\n      \"model\": \"LM2596\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 3.3В\"\n    },\n    {\n      \"name\": \"Імпульсне джерело живлення\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"джерело 12В\"\n    },\n    {\n      \"name\": \"Термостат\",\n      \"model\": \"KSD9700-5A80-B\",\n      \"manufacturer\": null,\n      \"role\": \"запобіжний засіб\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Температура спрацьовування\",\n      \"name\": \"Гістерезис\",\n      \"value\": \"налаштовується\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Вхідна напруга реле\",\n      \"value\": \"220В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Керуюча напруга\",\n      \"value\": \"3.3В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Напруга живлення\",\n      \"value\": \"12В\",\n      \"unit\": \"В\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"UART\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\",\n    \"HTTPS Shortcuts\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 7346,
+              "completion_tokens": 690,
+              "total_tokens": 8036,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 7.013929900014773
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 7346,
+        "completion_tokens": 690,
+        "total_tokens": 8036,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcxoFJaSRQ1ocO4rbRVZSnjRr2Qks",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"термореле\",\n  \"purpose\": \"створення саморобного термореле для дистанційного керування потужним навантаженням\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi модуль\",\n      \"model\": \"ESP8266 ESP-01\",\n      \"manufacturer\": null,\n      \"role\": \"мозок пристрою\"\n    },\n    {\n      \"name\": \"Реле з опторозв'язкою\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"керування високою напругою\"\n    },\n    {\n      \"name\": \"Операційний підсилювач\",\n      \"model\": \"LM324N\",\n      \"manufacturer\": null,\n      \"role\": \"компаратор\"\n    },\n    {\n      \"name\": \"Логічні елементи\",\n      \"model\": \"CD4001BE\",\n      \"manufacturer\": null,\n      \"role\": \"мультивібратор SR-Latch\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC MF52A1 10кОм\",\n      \"manufacturer\": null,\n      \"role\": \"датчик температури\"\n    },\n    {\n      \"name\": \"Змінний резистор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"потенціометри для гістерезису\"\n    },\n    {\n      \"name\": \"DC-DC понижуючий конвертер\",\n      \"model\": \"LM2596\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 3.3В\"\n    },\n    {\n      \"name\": \"Імпульсне джерело живлення\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"джерело 12В\"\n    },\n    {\n      \"name\": \"Термостат\",\n      \"model\": \"KSD9700-5A80-B\",\n      \"manufacturer\": null,\n      \"role\": \"запобіжний засіб\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Температура спрацьовування\",\n      \"name\": \"Гістерезис\",\n      \"value\": \"налаштовується\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Вхідна напруга реле\",\n      \"value\": \"220В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Керуюча напруга\",\n      \"value\": \"3.3В\",\n      \"unit\": \"В\"\n    },\n    {\n      \"subject\": \"Напруга\",\n      \"name\": \"Напруга живлення\",\n      \"value\": \"12В\",\n      \"unit\": \"В\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"UART\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\",\n    \"HTTPS Shortcuts\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "devices_automation",
+        "main_subject": "термореле",
+        "purpose": "створення саморобного термореле для дистанційного керування потужним навантаженням",
+        "components": [
+          {
+            "name": "Wi-Fi модуль",
+            "model": "ESP8266 ESP-01",
+            "manufacturer": null,
+            "role": "мозок пристрою"
+          },
+          {
+            "name": "Реле з опторозв'язкою",
+            "model": null,
+            "manufacturer": null,
+            "role": "керування високою напругою"
+          },
+          {
+            "name": "Операційний підсилювач",
+            "model": "LM324N",
+            "manufacturer": null,
+            "role": "компаратор"
+          },
+          {
+            "name": "Логічні елементи",
+            "model": "CD4001BE",
+            "manufacturer": null,
+            "role": "мультивібратор SR-Latch"
+          },
+          {
+            "name": "Термістор",
+            "model": "NTC MF52A1 10кОм",
+            "manufacturer": null,
+            "role": "датчик температури"
+          },
+          {
+            "name": "Змінний резистор",
+            "model": null,
+            "manufacturer": null,
+            "role": "потенціометри для гістерезису"
+          },
+          {
+            "name": "DC-DC понижуючий конвертер",
+            "model": "LM2596",
+            "manufacturer": null,
+            "role": "джерело 3.3В"
+          },
+          {
+            "name": "Імпульсне джерело живлення",
+            "model": null,
+            "manufacturer": null,
+            "role": "джерело 12В"
+          },
+          {
+            "name": "Термостат",
+            "model": "KSD9700-5A80-B",
+            "manufacturer": null,
+            "role": "запобіжний засіб"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Температура спрацьовування",
+            "name": "Гістерезис",
+            "value": "налаштовується",
+            "unit": null
+          },
+          {
+            "subject": "Напруга",
+            "name": "Вхідна напруга реле",
+            "value": "220В",
+            "unit": "В"
+          },
+          {
+            "subject": "Напруга",
+            "name": "Керуюча напруга",
+            "value": "3.3В",
+            "unit": "В"
+          },
+          {
+            "subject": "Напруга",
+            "name": "Напруга живлення",
+            "value": "12В",
+            "unit": "В"
+          }
+        ],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "UART"
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "HTTPS Shortcuts"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "devices_automation",
+    "main_subject": "термореле",
+    "purpose": "створення саморобного термореле для дистанційного керування потужним навантаженням",
+    "components": [
+      {
+        "name": "Wi-Fi модуль",
+        "model": "ESP8266 ESP-01",
+        "manufacturer": null,
+        "role": "мозок пристрою"
+      },
+      {
+        "name": "Реле з опторозв'язкою",
+        "model": null,
+        "manufacturer": null,
+        "role": "керування високою напругою"
+      },
+      {
+        "name": "Операційний підсилювач",
+        "model": "LM324N",
+        "manufacturer": null,
+        "role": "компаратор"
+      },
+      {
+        "name": "Логічні елементи",
+        "model": "CD4001BE",
+        "manufacturer": null,
+        "role": "мультивібратор SR-Latch"
+      },
+      {
+        "name": "Термістор",
+        "model": "NTC MF52A1 10кОм",
+        "manufacturer": null,
+        "role": "датчик температури"
+      },
+      {
+        "name": "Змінний резистор",
+        "model": null,
+        "manufacturer": null,
+        "role": "потенціометри для гістерезису"
+      },
+      {
+        "name": "DC-DC понижуючий конвертер",
+        "model": "LM2596",
+        "manufacturer": null,
+        "role": "джерело 3.3В"
+      },
+      {
+        "name": "Імпульсне джерело живлення",
+        "model": null,
+        "manufacturer": null,
+        "role": "джерело 12В"
+      },
+      {
+        "name": "Термостат",
+        "model": "KSD9700-5A80-B",
+        "manufacturer": null,
+        "role": "запобіжний засіб"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Температура спрацьовування",
+        "name": "Гістерезис",
+        "value": "налаштовується",
+        "unit": null
+      },
+      {
+        "subject": "Напруга",
+        "name": "Вхідна напруга реле",
+        "value": "220В",
+        "unit": "В"
+      },
+      {
+        "subject": "Напруга",
+        "name": "Керуюча напруга",
+        "value": "3.3В",
+        "unit": "В"
+      },
+      {
+        "subject": "Напруга",
+        "name": "Напруга живлення",
+        "value": "12В",
+        "unit": "В"
+      }
+    ],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "UART"
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "HTTPS Shortcuts"
+    ]
+  },
+  "error": null
+}
