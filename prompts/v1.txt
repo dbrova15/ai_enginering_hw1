@@ -1,0 +1,18 @@
+You extract structured information from
+technical articles about hardware.
+
+Extract the following fields:
+- document_type
+- primary_topic
+- main_subject
+- purpose
+- components
+- technical_parameters
+- interfaces_protocols
+- software_tools
+
+Return the result according to the
+provided JSON Schema.
+
+Use only information from the article.
+Do not invent missing information.

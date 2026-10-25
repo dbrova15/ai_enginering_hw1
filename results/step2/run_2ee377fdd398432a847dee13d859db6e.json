@@ -1,0 +1,148 @@
+{
+  "document_id": "HR-0640",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0640.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:43:29.261896+00:00",
+  "latency_seconds": 4.178954800008796,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-618",
+            "object": "chat.completion",
+            "created": 1792943013,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"LoRa\",\n  \"purpose\": \"to provide an easy way to collect data from LoRa devices and send data to a centralized application\",\n  \"components\": [\n    {\n      \"name\": \"Arduino MKR WAN 1310\",\n      \"model\": \"MKR WAN 1310\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"board\"\n    },\n    {\n      \"name\": \"Arduino Pro Gateway\",\n      \"model\": \"Pro Gateway\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"gateway\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"power consumption\",\n      \"name\": \"104uA\",\n      \"value\": \"104uA\",\n      \"unit\": \"uA\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"LoRaWAN\"\n  ],\n  \"software_tools\": [\n    \"Arduino IoT Cloud\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 669,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 217,
+              "total_tokens": 886
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.053084700019099
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 669,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 217,
+        "total_tokens": 886
+      },
+      "generation_id": "chatcmpl-618",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"LoRa\",\n  \"purpose\": \"to provide an easy way to collect data from LoRa devices and send data to a centralized application\",\n  \"components\": [\n    {\n      \"name\": \"Arduino MKR WAN 1310\",\n      \"model\": \"MKR WAN 1310\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"board\"\n    },\n    {\n      \"name\": \"Arduino Pro Gateway\",\n      \"model\": \"Pro Gateway\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"gateway\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"power consumption\",\n      \"name\": \"104uA\",\n      \"value\": \"104uA\",\n      \"unit\": \"uA\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"LoRaWAN\"\n  ],\n  \"software_tools\": [\n    \"Arduino IoT Cloud\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "devices_automation",
+        "main_subject": "LoRa",
+        "purpose": "to provide an easy way to collect data from LoRa devices and send data to a centralized application",
+        "components": [
+          {
+            "name": "Arduino MKR WAN 1310",
+            "model": "MKR WAN 1310",
+            "manufacturer": "Arduino",
+            "role": "board"
+          },
+          {
+            "name": "Arduino Pro Gateway",
+            "model": "Pro Gateway",
+            "manufacturer": "Arduino",
+            "role": "gateway"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "power consumption",
+            "name": "104uA",
+            "value": "104uA",
+            "unit": "uA"
+          }
+        ],
+        "interfaces_protocols": [
+          "LoRaWAN"
+        ],
+        "software_tools": [
+          "Arduino IoT Cloud"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "devices_automation",
+    "main_subject": "LoRa",
+    "purpose": "to provide an easy way to collect data from LoRa devices and send data to a centralized application",
+    "components": [
+      {
+        "name": "Arduino MKR WAN 1310",
+        "model": "MKR WAN 1310",
+        "manufacturer": "Arduino",
+        "role": "board"
+      },
+      {
+        "name": "Arduino Pro Gateway",
+        "model": "Pro Gateway",
+        "manufacturer": "Arduino",
+        "role": "gateway"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "power consumption",
+        "name": "104uA",
+        "value": "104uA",
+        "unit": "uA"
+      }
+    ],
+    "interfaces_protocols": [
+      "LoRaWAN"
+    ],
+    "software_tools": [
+      "Arduino IoT Cloud"
+    ]
+  },
+  "error": null
+}

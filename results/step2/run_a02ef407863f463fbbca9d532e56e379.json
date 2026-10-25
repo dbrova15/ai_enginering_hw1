@@ -1,0 +1,268 @@
+{
+  "document_id": "HR-0768",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0768.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:43:38.531645+00:00",
+  "latency_seconds": 6.271079499972984,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-921",
+            "object": "chat.completion",
+            "created": 1792943024,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"LED spectrometer\",\n  \"purpose\": \"to measure the spectral color data of a substance\",\n  \"components\": [\n    {\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"model\": \"Adafruit\",\n      \"manufacturer\": \"Adafruit\",\n      \"role\": \"sensore\"\n    },\n    {\n      \"name\": \"Stepper motor\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"rotates ring of LEDs\"\n    },\n    {\n      \"name\": \"N-channel MOSFETs\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"drives LEDs\"\n    },\n    {\n      \"name\": \"Decade counter\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"counts LEDs\"\n    },\n    {\n      \"name\": \"Custom-designed control board\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"controls system\"\n    },\n    {\n      \"name\": \"Arduino Mega 2560\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"mainboard\"\n    },\n    {\n      \"name\": \"LEDs\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"emits light\"\n    },\n    {\n      \"name\": \"Prisms\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"splitts white light into spectrum\"\n    },\n    {\n      \"name\": \"Mirrors\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"reflacts light\"\n    },\n    {\n      \"name\": \"Lenses\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"focuses light\"\n    },\n    {\n      \"name\": \"Sample chamber\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"holds substance to be tested\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"accuracy\",\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"value\": \"adequate accuracy\",\n      \"unit\": \"N/A\"\n    },\n    {\n      \"subject\": \"compact footprint\",\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"value\": \"compact\",\n      \"unit\": \"N/A\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"N/A\"\n  ],\n  \"software_tools\": [\n    \"Arduino\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 421,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 614,
+              "total_tokens": 1035
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 6.134656300069764
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 421,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 614,
+        "total_tokens": 1035
+      },
+      "generation_id": "chatcmpl-921",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"LED spectrometer\",\n  \"purpose\": \"to measure the spectral color data of a substance\",\n  \"components\": [\n    {\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"model\": \"Adafruit\",\n      \"manufacturer\": \"Adafruit\",\n      \"role\": \"sensore\"\n    },\n    {\n      \"name\": \"Stepper motor\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"rotates ring of LEDs\"\n    },\n    {\n      \"name\": \"N-channel MOSFETs\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"drives LEDs\"\n    },\n    {\n      \"name\": \"Decade counter\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"counts LEDs\"\n    },\n    {\n      \"name\": \"Custom-designed control board\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"controls system\"\n    },\n    {\n      \"name\": \"Arduino Mega 2560\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"mainboard\"\n    },\n    {\n      \"name\": \"LEDs\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"emits light\"\n    },\n    {\n      \"name\": \"Prisms\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"splitts white light into spectrum\"\n    },\n    {\n      \"name\": \"Mirrors\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"reflacts light\"\n    },\n    {\n      \"name\": \"Lenses\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"focuses light\"\n    },\n    {\n      \"name\": \"Sample chamber\",\n      \"model\": \"N/A\",\n      \"manufacturer\": \"N/A\",\n      \"role\": \"holds substance to be tested\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"accuracy\",\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"value\": \"adequate accuracy\",\n      \"unit\": \"N/A\"\n    },\n    {\n      \"subject\": \"compact footprint\",\n      \"name\": \"AS7431 10-channel spectrometer sensor breakout board\",\n      \"value\": \"compact\",\n      \"unit\": \"N/A\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"N/A\"\n  ],\n  \"software_tools\": [\n    \"Arduino\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "sensors_measurements",
+        "main_subject": "LED spectrometer",
+        "purpose": "to measure the spectral color data of a substance",
+        "components": [
+          {
+            "name": "AS7431 10-channel spectrometer sensor breakout board",
+            "model": "Adafruit",
+            "manufacturer": "Adafruit",
+            "role": "sensore"
+          },
+          {
+            "name": "Stepper motor",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "rotates ring of LEDs"
+          },
+          {
+            "name": "N-channel MOSFETs",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "drives LEDs"
+          },
+          {
+            "name": "Decade counter",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "counts LEDs"
+          },
+          {
+            "name": "Custom-designed control board",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "controls system"
+          },
+          {
+            "name": "Arduino Mega 2560",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "mainboard"
+          },
+          {
+            "name": "LEDs",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "emits light"
+          },
+          {
+            "name": "Prisms",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "splitts white light into spectrum"
+          },
+          {
+            "name": "Mirrors",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "reflacts light"
+          },
+          {
+            "name": "Lenses",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "focuses light"
+          },
+          {
+            "name": "Sample chamber",
+            "model": "N/A",
+            "manufacturer": "N/A",
+            "role": "holds substance to be tested"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "accuracy",
+            "name": "AS7431 10-channel spectrometer sensor breakout board",
+            "value": "adequate accuracy",
+            "unit": "N/A"
+          },
+          {
+            "subject": "compact footprint",
+            "name": "AS7431 10-channel spectrometer sensor breakout board",
+            "value": "compact",
+            "unit": "N/A"
+          }
+        ],
+        "interfaces_protocols": [
+          "N/A"
+        ],
+        "software_tools": [
+          "Arduino"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "sensors_measurements",
+    "main_subject": "LED spectrometer",
+    "purpose": "to measure the spectral color data of a substance",
+    "components": [
+      {
+        "name": "AS7431 10-channel spectrometer sensor breakout board",
+        "model": "Adafruit",
+        "manufacturer": "Adafruit",
+        "role": "sensore"
+      },
+      {
+        "name": "Stepper motor",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "rotates ring of LEDs"
+      },
+      {
+        "name": "N-channel MOSFETs",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "drives LEDs"
+      },
+      {
+        "name": "Decade counter",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "counts LEDs"
+      },
+      {
+        "name": "Custom-designed control board",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "controls system"
+      },
+      {
+        "name": "Arduino Mega 2560",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "mainboard"
+      },
+      {
+        "name": "LEDs",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "emits light"
+      },
+      {
+        "name": "Prisms",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "splitts white light into spectrum"
+      },
+      {
+        "name": "Mirrors",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "reflacts light"
+      },
+      {
+        "name": "Lenses",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "focuses light"
+      },
+      {
+        "name": "Sample chamber",
+        "model": "N/A",
+        "manufacturer": "N/A",
+        "role": "holds substance to be tested"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "accuracy",
+        "name": "AS7431 10-channel spectrometer sensor breakout board",
+        "value": "adequate accuracy",
+        "unit": "N/A"
+      },
+      {
+        "subject": "compact footprint",
+        "name": "AS7431 10-channel spectrometer sensor breakout board",
+        "value": "compact",
+        "unit": "N/A"
+      }
+    ],
+    "interfaces_protocols": [
+      "N/A"
+    ],
+    "software_tools": [
+      "Arduino"
+    ]
+  },
+  "error": null
+}

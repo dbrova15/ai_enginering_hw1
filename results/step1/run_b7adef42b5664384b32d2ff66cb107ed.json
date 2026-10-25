@@ -1,0 +1,190 @@
+{
+  "document_id": "HR-0187",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0187.txt",
+  "schema_version": "v1",
+  "provider": "openrouter",
+  "requested_model": "openai/gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T13:31:02.577082+00:00",
+  "latency_seconds": 4.223150899983011,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "gen-1792935063-WRCmB59g8CjemOXQnagL",
+            "object": "chat.completion",
+            "created": 1792935063,
+            "model": "openai/gpt-4o-mini",
+            "provider": "OpenAI",
+            "system_fingerprint": "fp_8421a6e076",
+            "service_tier": "default",
+            "choices": [
+              {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop",
+                "native_finish_reason": "stop",
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"autopoliv\",\n  \"purpose\": \"створити систему автополиву рослин\",\n  \"components\": [\n    {\n      \"name\": \"Arduino\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"датчик вологості грунту\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"сенсор\"\n    },\n    {\n      \"name\": \"помпа\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"виконавчий механізм\"\n    },\n    {\n      \"name\": \"перемички\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"з'єднувальні елементи\"\n    }\n  ],\n  \"technical_parameters\": [],\n  \"interfaces_protocols\": [],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "reasoning": null
+                }
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 4972,
+              "completion_tokens": 225,
+              "total_tokens": 5197,
+              "cost": 0.0008808,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.0008808,
+                "upstream_inference_prompt_cost": 0.0007458,
+                "upstream_inference_completions_cost": 0.000135
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.9520281000295654
+        }
+      ],
+      "returned_model": "openai/gpt-4o-mini",
+      "usage": {
+        "prompt_tokens": 4972,
+        "completion_tokens": 225,
+        "total_tokens": 5197,
+        "cost": 0.0008808,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008808,
+          "upstream_inference_prompt_cost": 0.0007458,
+          "upstream_inference_completions_cost": 0.000135
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "generation_id": "gen-1792935063-WRCmB59g8CjemOXQnagL",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"autopoliv\",\n  \"purpose\": \"створити систему автополиву рослин\",\n  \"components\": [\n    {\n      \"name\": \"Arduino\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"датчик вологості грунту\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"сенсор\"\n    },\n    {\n      \"name\": \"помпа\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"виконавчий механізм\"\n    },\n    {\n      \"name\": \"перемички\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"з'єднувальні елементи\"\n    }\n  ],\n  \"technical_parameters\": [],\n  \"interfaces_protocols\": [],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "devices_automation",
+        "main_subject": "autopoliv",
+        "purpose": "створити систему автополиву рослин",
+        "components": [
+          {
+            "name": "Arduino",
+            "model": null,
+            "manufacturer": null,
+            "role": "контролер"
+          },
+          {
+            "name": "датчик вологості грунту",
+            "model": null,
+            "manufacturer": null,
+            "role": "сенсор"
+          },
+          {
+            "name": "помпа",
+            "model": null,
+            "manufacturer": null,
+            "role": "виконавчий механізм"
+          },
+          {
+            "name": "перемички",
+            "model": null,
+            "manufacturer": null,
+            "role": "з'єднувальні елементи"
+          }
+        ],
+        "technical_parameters": [],
+        "interfaces_protocols": [],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "devices_automation",
+    "main_subject": "autopoliv",
+    "purpose": "створити систему автополиву рослин",
+    "components": [
+      {
+        "name": "Arduino",
+        "model": null,
+        "manufacturer": null,
+        "role": "контролер"
+      },
+      {
+        "name": "датчик вологості грунту",
+        "model": null,
+        "manufacturer": null,
+        "role": "сенсор"
+      },
+      {
+        "name": "помпа",
+        "model": null,
+        "manufacturer": null,
+        "role": "виконавчий механізм"
+      },
+      {
+        "name": "перемички",
+        "model": null,
+        "manufacturer": null,
+        "role": "з'єднувальні елементи"
+      }
+    ],
+    "technical_parameters": [],
+    "interfaces_protocols": [],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

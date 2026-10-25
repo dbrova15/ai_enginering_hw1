@@ -1,0 +1,188 @@
+{
+  "document_id": "HR-0055",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0055.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:44:14.679228+00:00",
+  "latency_seconds": 4.540903699933551,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-3",
+            "object": "chat.completion",
+            "created": 1792943059,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"sensors_measurements\", \"main_subject\": \"resistive_touch_sensor\", \"purpose\": \"to connect resistive touch sensor to stm32 controller\", \"components\": [{\"name\": \"TFT LCD Screen modul\", \"model\": \"ASC188\", \"manufacturer\": \"ASC188\", \"role\": \"display\"}, {\"name\": \"ITDB02 Shield Transitioner for TFT\", \"model\": \"ASC110\", \"manufacturer\": \"ASC110\", \"role\": \"transitioner\"}, {\"name\": \"TSC2046\", \"model\": \"TSC2046\", \"manufacturer\": \"Texas Instruments\", \"role\": \"touch sensor\"}], \"technical_parameters\": [{\"subject\": \"voltage\", \"name\": \"power supply voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}, {\"subject\": \"voltage\", \"name\": \"display voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}, {\"subject\": \"voltage\", \"name\": \"command voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}], \"interfaces_protocols\": [ \"SPI\", \"GPIO\" ], \"software_tools\": [ \"EmBits\", \"Saleae Logic Analyzer\" ]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2190,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 271,
+              "total_tokens": 2461
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.4088420999469236
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2190,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 271,
+        "total_tokens": 2461
+      },
+      "generation_id": "chatcmpl-3",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"sensors_measurements\", \"main_subject\": \"resistive_touch_sensor\", \"purpose\": \"to connect resistive touch sensor to stm32 controller\", \"components\": [{\"name\": \"TFT LCD Screen modul\", \"model\": \"ASC188\", \"manufacturer\": \"ASC188\", \"role\": \"display\"}, {\"name\": \"ITDB02 Shield Transitioner for TFT\", \"model\": \"ASC110\", \"manufacturer\": \"ASC110\", \"role\": \"transitioner\"}, {\"name\": \"TSC2046\", \"model\": \"TSC2046\", \"manufacturer\": \"Texas Instruments\", \"role\": \"touch sensor\"}], \"technical_parameters\": [{\"subject\": \"voltage\", \"name\": \"power supply voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}, {\"subject\": \"voltage\", \"name\": \"display voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}, {\"subject\": \"voltage\", \"name\": \"command voltage\", \"value\": \"3.3V\", \"unit\": \"V\"}], \"interfaces_protocols\": [ \"SPI\", \"GPIO\" ], \"software_tools\": [ \"EmBits\", \"Saleae Logic Analyzer\" ]}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "sensors_measurements",
+        "main_subject": "resistive_touch_sensor",
+        "purpose": "to connect resistive touch sensor to stm32 controller",
+        "components": [
+          {
+            "name": "TFT LCD Screen modul",
+            "model": "ASC188",
+            "manufacturer": "ASC188",
+            "role": "display"
+          },
+          {
+            "name": "ITDB02 Shield Transitioner for TFT",
+            "model": "ASC110",
+            "manufacturer": "ASC110",
+            "role": "transitioner"
+          },
+          {
+            "name": "TSC2046",
+            "model": "TSC2046",
+            "manufacturer": "Texas Instruments",
+            "role": "touch sensor"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "voltage",
+            "name": "power supply voltage",
+            "value": "3.3V",
+            "unit": "V"
+          },
+          {
+            "subject": "voltage",
+            "name": "display voltage",
+            "value": "3.3V",
+            "unit": "V"
+          },
+          {
+            "subject": "voltage",
+            "name": "command voltage",
+            "value": "3.3V",
+            "unit": "V"
+          }
+        ],
+        "interfaces_protocols": [
+          "SPI",
+          "GPIO"
+        ],
+        "software_tools": [
+          "EmBits",
+          "Saleae Logic Analyzer"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "sensors_measurements",
+    "main_subject": "resistive_touch_sensor",
+    "purpose": "to connect resistive touch sensor to stm32 controller",
+    "components": [
+      {
+        "name": "TFT LCD Screen modul",
+        "model": "ASC188",
+        "manufacturer": "ASC188",
+        "role": "display"
+      },
+      {
+        "name": "ITDB02 Shield Transitioner for TFT",
+        "model": "ASC110",
+        "manufacturer": "ASC110",
+        "role": "transitioner"
+      },
+      {
+        "name": "TSC2046",
+        "model": "TSC2046",
+        "manufacturer": "Texas Instruments",
+        "role": "touch sensor"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "voltage",
+        "name": "power supply voltage",
+        "value": "3.3V",
+        "unit": "V"
+      },
+      {
+        "subject": "voltage",
+        "name": "display voltage",
+        "value": "3.3V",
+        "unit": "V"
+      },
+      {
+        "subject": "voltage",
+        "name": "command voltage",
+        "value": "3.3V",
+        "unit": "V"
+      }
+    ],
+    "interfaces_protocols": [
+      "SPI",
+      "GPIO"
+    ],
+    "software_tools": [
+      "EmBits",
+      "Saleae Logic Analyzer"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,162 @@
+{
+  "document_id": "HR-0228",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0228.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:45:23.203863+00:00",
+  "latency_seconds": 3.831692900042981,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-84",
+            "object": "chat.completion",
+            "created": 1792943127,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"power_batteries\", \"main_subject\": \"BMS\", \"purpose\": \"connect\", \"components\": [{\"name\": \"TP-4056\", \"model\": \"TP-4056\", \"manufacturer\": \"TP4056\", \"role\": \"module\"}], \"technical_parameters\": [{\"subject\": \"charge\", \"name\": \"charge_current\", \"value\": \"15-30A\", \"unit\": \"A\"}, {\"subject\": \"charge\", \"name\": \"charge_voltage\", \"value\": \"12-16.8V\", \"unit\": \"V\"}, {\"subject\": \"charge\", \"name\": \"discharge_current\", \"value\": \"5A\", \"unit\": \"A\"}], \"interfaces_protocols\": [\"TP4056\"], \"software_tools\": [\"TP4056\", \"BMS\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 914,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 184,
+              "total_tokens": 1098
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.700256700045429
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 914,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 184,
+        "total_tokens": 1098
+      },
+      "generation_id": "chatcmpl-84",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"tutorial\", \"primary_topic\": \"power_batteries\", \"main_subject\": \"BMS\", \"purpose\": \"connect\", \"components\": [{\"name\": \"TP-4056\", \"model\": \"TP-4056\", \"manufacturer\": \"TP4056\", \"role\": \"module\"}], \"technical_parameters\": [{\"subject\": \"charge\", \"name\": \"charge_current\", \"value\": \"15-30A\", \"unit\": \"A\"}, {\"subject\": \"charge\", \"name\": \"charge_voltage\", \"value\": \"12-16.8V\", \"unit\": \"V\"}, {\"subject\": \"charge\", \"name\": \"discharge_current\", \"value\": \"5A\", \"unit\": \"A\"}], \"interfaces_protocols\": [\"TP4056\"], \"software_tools\": [\"TP4056\", \"BMS\"]}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "power_batteries",
+        "main_subject": "BMS",
+        "purpose": "connect",
+        "components": [
+          {
+            "name": "TP-4056",
+            "model": "TP-4056",
+            "manufacturer": "TP4056",
+            "role": "module"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "charge",
+            "name": "charge_current",
+            "value": "15-30A",
+            "unit": "A"
+          },
+          {
+            "subject": "charge",
+            "name": "charge_voltage",
+            "value": "12-16.8V",
+            "unit": "V"
+          },
+          {
+            "subject": "charge",
+            "name": "discharge_current",
+            "value": "5A",
+            "unit": "A"
+          }
+        ],
+        "interfaces_protocols": [
+          "TP4056"
+        ],
+        "software_tools": [
+          "TP4056",
+          "BMS"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "power_batteries",
+    "main_subject": "BMS",
+    "purpose": "connect",
+    "components": [
+      {
+        "name": "TP-4056",
+        "model": "TP-4056",
+        "manufacturer": "TP4056",
+        "role": "module"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "charge",
+        "name": "charge_current",
+        "value": "15-30A",
+        "unit": "A"
+      },
+      {
+        "subject": "charge",
+        "name": "charge_voltage",
+        "value": "12-16.8V",
+        "unit": "V"
+      },
+      {
+        "subject": "charge",
+        "name": "discharge_current",
+        "value": "5A",
+        "unit": "A"
+      }
+    ],
+    "interfaces_protocols": [
+      "TP4056"
+    ],
+    "software_tools": [
+      "TP4056",
+      "BMS"
+    ]
+  },
+  "error": null
+}

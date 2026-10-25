@@ -1,0 +1,300 @@
+{
+  "document_id": "HR-0175",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0175.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:54:06.060891+00:00",
+  "latency_seconds": 9.849028499913402,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcttmrW3fDPKJT2Zvef7ysZkQPv5n",
+            "object": "chat.completion",
+            "created": 1792940046,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"printing_mechanics\",\n  \"main_subject\": \"3D printing filament production\",\n  \"purpose\": \"Отримання пластикового прутка (філаменту) придатного для використання на 3д принтері.\",\n  \"components\": [\n    {\n      \"name\": \"Брусок\",\n      \"model\": \"30х20мм\",\n      \"manufacturer\": null,\n      \"role\": \"основа пляшкоріза\"\n    },\n    {\n      \"name\": \"Лезо канцелярського ножа\",\n      \"model\": \"ширина 18 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для нарізки пляшок\"\n    },\n    {\n      \"name\": \"Шпилька\",\n      \"model\": \"М6, довжина 400 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Гайки\",\n      \"model\": \"М6\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Гвинти\",\n      \"model\": \"М2,5 з шайбами\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Алюмінієвий брусок\",\n      \"model\": \"25х15х18 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для виготовлення сопла\"\n    },\n    {\n      \"name\": \"Ніхромова проволока\",\n      \"model\": \"діаметр 0,3 мм, довжина 30 см\",\n      \"manufacturer\": null,\n      \"role\": \"для нагріву сопла\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC 3950 100 кОм\",\n      \"manufacturer\": null,\n      \"role\": \"для вимірювання температури\"\n    },\n    {\n      \"name\": \"Контролер\",\n      \"model\": \"Arduino UNO\",\n      \"manufacturer\": null,\n      \"role\": \"для управління станком\"\n    },\n    {\n      \"name\": \"Двигун\",\n      \"model\": \"12 вольт, 60 об/хв\",\n      \"manufacturer\": null,\n      \"role\": \"для автоматичної протяжки прутка\"\n    },\n    {\n      \"name\": \"Черв’ячний редуктор\",\n      \"model\": \"1:60\",\n      \"manufacturer\": null,\n      \"role\": \"для зменшення швидкості обертання\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Діаметр прутка\",\n      \"name\": \"Діаметр\",\n      \"value\": \"1.75 мм\",\n      \"unit\": \"мм\"\n    },\n    {\n      \"subject\": \"Площа поперечного перерізу\",\n      \"name\": \"Площа\",\n      \"value\": \"2.4 мм2\",\n      \"unit\": \"мм2\"\n    },\n    {\n      \"subject\": \"Температура нагріву\",\n      \"name\": \"Температура\",\n      \"value\": \"240°C\",\n      \"unit\": \"°C\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino\",\n    \"Relay module\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 6292,
+              "completion_tokens": 753,
+              "total_tokens": 7045,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 9.706980699906126
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 6292,
+        "completion_tokens": 753,
+        "total_tokens": 7045,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcttmrW3fDPKJT2Zvef7ysZkQPv5n",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"printing_mechanics\",\n  \"main_subject\": \"3D printing filament production\",\n  \"purpose\": \"Отримання пластикового прутка (філаменту) придатного для використання на 3д принтері.\",\n  \"components\": [\n    {\n      \"name\": \"Брусок\",\n      \"model\": \"30х20мм\",\n      \"manufacturer\": null,\n      \"role\": \"основа пляшкоріза\"\n    },\n    {\n      \"name\": \"Лезо канцелярського ножа\",\n      \"model\": \"ширина 18 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для нарізки пляшок\"\n    },\n    {\n      \"name\": \"Шпилька\",\n      \"model\": \"М6, довжина 400 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Гайки\",\n      \"model\": \"М6\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Гвинти\",\n      \"model\": \"М2,5 з шайбами\",\n      \"manufacturer\": null,\n      \"role\": \"для кріплення\"\n    },\n    {\n      \"name\": \"Алюмінієвий брусок\",\n      \"model\": \"25х15х18 мм\",\n      \"manufacturer\": null,\n      \"role\": \"для виготовлення сопла\"\n    },\n    {\n      \"name\": \"Ніхромова проволока\",\n      \"model\": \"діаметр 0,3 мм, довжина 30 см\",\n      \"manufacturer\": null,\n      \"role\": \"для нагріву сопла\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC 3950 100 кОм\",\n      \"manufacturer\": null,\n      \"role\": \"для вимірювання температури\"\n    },\n    {\n      \"name\": \"Контролер\",\n      \"model\": \"Arduino UNO\",\n      \"manufacturer\": null,\n      \"role\": \"для управління станком\"\n    },\n    {\n      \"name\": \"Двигун\",\n      \"model\": \"12 вольт, 60 об/хв\",\n      \"manufacturer\": null,\n      \"role\": \"для автоматичної протяжки прутка\"\n    },\n    {\n      \"name\": \"Черв’ячний редуктор\",\n      \"model\": \"1:60\",\n      \"manufacturer\": null,\n      \"role\": \"для зменшення швидкості обертання\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Діаметр прутка\",\n      \"name\": \"Діаметр\",\n      \"value\": \"1.75 мм\",\n      \"unit\": \"мм\"\n    },\n    {\n      \"subject\": \"Площа поперечного перерізу\",\n      \"name\": \"Площа\",\n      \"value\": \"2.4 мм2\",\n      \"unit\": \"мм2\"\n    },\n    {\n      \"subject\": \"Температура нагріву\",\n      \"name\": \"Температура\",\n      \"value\": \"240°C\",\n      \"unit\": \"°C\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino\",\n    \"Relay module\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "printing_mechanics",
+        "main_subject": "3D printing filament production",
+        "purpose": "Отримання пластикового прутка (філаменту) придатного для використання на 3д принтері.",
+        "components": [
+          {
+            "name": "Брусок",
+            "model": "30х20мм",
+            "manufacturer": null,
+            "role": "основа пляшкоріза"
+          },
+          {
+            "name": "Лезо канцелярського ножа",
+            "model": "ширина 18 мм",
+            "manufacturer": null,
+            "role": "для нарізки пляшок"
+          },
+          {
+            "name": "Шпилька",
+            "model": "М6, довжина 400 мм",
+            "manufacturer": null,
+            "role": "для кріплення"
+          },
+          {
+            "name": "Гайки",
+            "model": "М6",
+            "manufacturer": null,
+            "role": "для кріплення"
+          },
+          {
+            "name": "Гвинти",
+            "model": "М2,5 з шайбами",
+            "manufacturer": null,
+            "role": "для кріплення"
+          },
+          {
+            "name": "Алюмінієвий брусок",
+            "model": "25х15х18 мм",
+            "manufacturer": null,
+            "role": "для виготовлення сопла"
+          },
+          {
+            "name": "Ніхромова проволока",
+            "model": "діаметр 0,3 мм, довжина 30 см",
+            "manufacturer": null,
+            "role": "для нагріву сопла"
+          },
+          {
+            "name": "Термістор",
+            "model": "NTC 3950 100 кОм",
+            "manufacturer": null,
+            "role": "для вимірювання температури"
+          },
+          {
+            "name": "Контролер",
+            "model": "Arduino UNO",
+            "manufacturer": null,
+            "role": "для управління станком"
+          },
+          {
+            "name": "Двигун",
+            "model": "12 вольт, 60 об/хв",
+            "manufacturer": null,
+            "role": "для автоматичної протяжки прутка"
+          },
+          {
+            "name": "Черв’ячний редуктор",
+            "model": "1:60",
+            "manufacturer": null,
+            "role": "для зменшення швидкості обертання"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Діаметр прутка",
+            "name": "Діаметр",
+            "value": "1.75 мм",
+            "unit": "мм"
+          },
+          {
+            "subject": "Площа поперечного перерізу",
+            "name": "Площа",
+            "value": "2.4 мм2",
+            "unit": "мм2"
+          },
+          {
+            "subject": "Температура нагріву",
+            "name": "Температура",
+            "value": "240°C",
+            "unit": "°C"
+          }
+        ],
+        "interfaces_protocols": [
+          "Arduino",
+          "Relay module"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "printing_mechanics",
+    "main_subject": "3D printing filament production",
+    "purpose": "Отримання пластикового прутка (філаменту) придатного для використання на 3д принтері.",
+    "components": [
+      {
+        "name": "Брусок",
+        "model": "30х20мм",
+        "manufacturer": null,
+        "role": "основа пляшкоріза"
+      },
+      {
+        "name": "Лезо канцелярського ножа",
+        "model": "ширина 18 мм",
+        "manufacturer": null,
+        "role": "для нарізки пляшок"
+      },
+      {
+        "name": "Шпилька",
+        "model": "М6, довжина 400 мм",
+        "manufacturer": null,
+        "role": "для кріплення"
+      },
+      {
+        "name": "Гайки",
+        "model": "М6",
+        "manufacturer": null,
+        "role": "для кріплення"
+      },
+      {
+        "name": "Гвинти",
+        "model": "М2,5 з шайбами",
+        "manufacturer": null,
+        "role": "для кріплення"
+      },
+      {
+        "name": "Алюмінієвий брусок",
+        "model": "25х15х18 мм",
+        "manufacturer": null,
+        "role": "для виготовлення сопла"
+      },
+      {
+        "name": "Ніхромова проволока",
+        "model": "діаметр 0,3 мм, довжина 30 см",
+        "manufacturer": null,
+        "role": "для нагріву сопла"
+      },
+      {
+        "name": "Термістор",
+        "model": "NTC 3950 100 кОм",
+        "manufacturer": null,
+        "role": "для вимірювання температури"
+      },
+      {
+        "name": "Контролер",
+        "model": "Arduino UNO",
+        "manufacturer": null,
+        "role": "для управління станком"
+      },
+      {
+        "name": "Двигун",
+        "model": "12 вольт, 60 об/хв",
+        "manufacturer": null,
+        "role": "для автоматичної протяжки прутка"
+      },
+      {
+        "name": "Черв’ячний редуктор",
+        "model": "1:60",
+        "manufacturer": null,
+        "role": "для зменшення швидкості обертання"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Діаметр прутка",
+        "name": "Діаметр",
+        "value": "1.75 мм",
+        "unit": "мм"
+      },
+      {
+        "subject": "Площа поперечного перерізу",
+        "name": "Площа",
+        "value": "2.4 мм2",
+        "unit": "мм2"
+      },
+      {
+        "subject": "Температура нагріву",
+        "name": "Температура",
+        "value": "240°C",
+        "unit": "°C"
+      }
+    ],
+    "interfaces_protocols": [
+      "Arduino",
+      "Relay module"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,180 @@
+{
+  "document_id": "HR-0743",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0743.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:43:33.441656+00:00",
+  "latency_seconds": 5.089079299941659,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-962",
+            "object": "chat.completion",
+            "created": 1792943018,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"energy-efficient_iot_wearable_devices\",\n  \"purpose\": \"to help developers optimize power consumption and extend battery life in IoT and wearable devices\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Pro modules\",\n      \"model\": \"Portenta H7, Portenta C33, Nicla Vision\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"power_management_library\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"battery_monitoring\",\n      \"name\": \"voltage\",\n      \"value\": \"real-time monitoring\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"battery_health_tracking\",\n      \"name\": \"temperature\",\n      \"value\": \"real-time monitoring\",\n      \"unit\": \"°C\"\n    },\n    {\n      \"subject\": \"charging_control\",\n      \"name\": \"charge_voltage\",\n      \"value\": \"customizable\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"sleep_and_standby_modes\",\n      \"name\": \"power_consumption\",\n      \"value\": \"50 uA to 300 uA\",\n      \"unit\": \"uA\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"Bluetooth\",\n    \"ADC\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Mbed\",\n    \"Arduino\\text{ LowPowerPortentaH7 library}\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2385,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 330,
+              "total_tokens": 2715
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.926038199919276
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2385,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 330,
+        "total_tokens": 2715
+      },
+      "generation_id": "chatcmpl-962",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"energy-efficient_iot_wearable_devices\",\n  \"purpose\": \"to help developers optimize power consumption and extend battery life in IoT and wearable devices\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Pro modules\",\n      \"model\": \"Portenta H7, Portenta C33, Nicla Vision\",\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"power_management_library\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"battery_monitoring\",\n      \"name\": \"voltage\",\n      \"value\": \"real-time monitoring\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"battery_health_tracking\",\n      \"name\": \"temperature\",\n      \"value\": \"real-time monitoring\",\n      \"unit\": \"°C\"\n    },\n    {\n      \"subject\": \"charging_control\",\n      \"name\": \"charge_voltage\",\n      \"value\": \"customizable\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"sleep_and_standby_modes\",\n      \"name\": \"power_consumption\",\n      \"value\": \"50 uA to 300 uA\",\n      \"unit\": \"uA\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"Bluetooth\",\n    \"ADC\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Mbed\",\n    \"Arduino\\text{ LowPowerPortentaH7 library}\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "power_batteries",
+        "main_subject": "energy-efficient_iot_wearable_devices",
+        "purpose": "to help developers optimize power consumption and extend battery life in IoT and wearable devices",
+        "components": [
+          {
+            "name": "Arduino Pro modules",
+            "model": "Portenta H7, Portenta C33, Nicla Vision",
+            "manufacturer": "Arduino",
+            "role": "power_management_library"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "battery_monitoring",
+            "name": "voltage",
+            "value": "real-time monitoring",
+            "unit": "V"
+          },
+          {
+            "subject": "battery_health_tracking",
+            "name": "temperature",
+            "value": "real-time monitoring",
+            "unit": "°C"
+          },
+          {
+            "subject": "charging_control",
+            "name": "charge_voltage",
+            "value": "customizable",
+            "unit": "V"
+          },
+          {
+            "subject": "sleep_and_standby_modes",
+            "name": "power_consumption",
+            "value": "50 uA to 300 uA",
+            "unit": "uA"
+          }
+        ],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "Bluetooth",
+          "ADC"
+        ],
+        "software_tools": [
+          "Arduino Cloud",
+          "Mbed",
+          "Arduino\text{ LowPowerPortentaH7 library}"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "power_batteries",
+    "main_subject": "energy-efficient_iot_wearable_devices",
+    "purpose": "to help developers optimize power consumption and extend battery life in IoT and wearable devices",
+    "components": [
+      {
+        "name": "Arduino Pro modules",
+        "model": "Portenta H7, Portenta C33, Nicla Vision",
+        "manufacturer": "Arduino",
+        "role": "power_management_library"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "battery_monitoring",
+        "name": "voltage",
+        "value": "real-time monitoring",
+        "unit": "V"
+      },
+      {
+        "subject": "battery_health_tracking",
+        "name": "temperature",
+        "value": "real-time monitoring",
+        "unit": "°C"
+      },
+      {
+        "subject": "charging_control",
+        "name": "charge_voltage",
+        "value": "customizable",
+        "unit": "V"
+      },
+      {
+        "subject": "sleep_and_standby_modes",
+        "name": "power_consumption",
+        "value": "50 uA to 300 uA",
+        "unit": "uA"
+      }
+    ],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "Bluetooth",
+      "ADC"
+    ],
+    "software_tools": [
+      "Arduino Cloud",
+      "Mbed",
+      "Arduino\text{ LowPowerPortentaH7 library}"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,262 @@
+{
+  "document_id": "HR-0164",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0164.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:54:58.570819+00:00",
+  "latency_seconds": 6.023747400031425,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EctudyIKjM5kGruSsDJ4D9RPRs7Ud",
+            "object": "chat.completion",
+            "created": 1792940099,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"robot construction\",\n  \"purpose\": \"Guide for building a robot with sensors and motors.\",\n  \"components\": [\n    {\n      \"name\": \"Мікро-двигун\",\n      \"model\": \"6V 1000 RPM\",\n      \"manufacturer\": null,\n      \"role\": \"actuator\"\n    },\n    {\n      \"name\": \"Колеса\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"wheel\"\n    },\n    {\n      \"name\": \"Кулькове колесо\",\n      \"model\": \"3pi n20\",\n      \"manufacturer\": null,\n      \"role\": \"support wheel\"\n    },\n    {\n      \"name\": \"Датчик лінії\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"sensor\"\n    },\n    {\n      \"name\": \"Драйвер для двигунів\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"motor driver\"\n    },\n    {\n      \"name\": \"Мікроконтролер\",\n      \"model\": \"arduino nano\",\n      \"manufacturer\": null,\n      \"role\": \"controller\"\n    },\n    {\n      \"name\": \"Відсік для акумуляторів\",\n      \"model\": \"18650\",\n      \"manufacturer\": null,\n      \"role\": \"battery holder\"\n    },\n    {\n      \"name\": \"Акумулятор\",\n      \"model\": \"18650\",\n      \"manufacturer\": null,\n      \"role\": \"battery\"\n    },\n    {\n      \"name\": \"Перемикач\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"switch\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"motor speed\",\n      \"name\": \"RPM\",\n      \"value\": \"1000\",\n      \"unit\": \"RPM\"\n    },\n    {\n      \"subject\": \"motor voltage\",\n      \"name\": \"Voltage\",\n      \"value\": \"6\",\n      \"unit\": \"V\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino IDE\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5442,
+              "completion_tokens": 488,
+              "total_tokens": 5930,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.846057299990207
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5442,
+        "completion_tokens": 488,
+        "total_tokens": 5930,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EctudyIKjM5kGruSsDJ4D9RPRs7Ud",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"robot construction\",\n  \"purpose\": \"Guide for building a robot with sensors and motors.\",\n  \"components\": [\n    {\n      \"name\": \"Мікро-двигун\",\n      \"model\": \"6V 1000 RPM\",\n      \"manufacturer\": null,\n      \"role\": \"actuator\"\n    },\n    {\n      \"name\": \"Колеса\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"wheel\"\n    },\n    {\n      \"name\": \"Кулькове колесо\",\n      \"model\": \"3pi n20\",\n      \"manufacturer\": null,\n      \"role\": \"support wheel\"\n    },\n    {\n      \"name\": \"Датчик лінії\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"sensor\"\n    },\n    {\n      \"name\": \"Драйвер для двигунів\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"motor driver\"\n    },\n    {\n      \"name\": \"Мікроконтролер\",\n      \"model\": \"arduino nano\",\n      \"manufacturer\": null,\n      \"role\": \"controller\"\n    },\n    {\n      \"name\": \"Відсік для акумуляторів\",\n      \"model\": \"18650\",\n      \"manufacturer\": null,\n      \"role\": \"battery holder\"\n    },\n    {\n      \"name\": \"Акумулятор\",\n      \"model\": \"18650\",\n      \"manufacturer\": null,\n      \"role\": \"battery\"\n    },\n    {\n      \"name\": \"Перемикач\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"switch\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"motor speed\",\n      \"name\": \"RPM\",\n      \"value\": \"1000\",\n      \"unit\": \"RPM\"\n    },\n    {\n      \"subject\": \"motor voltage\",\n      \"name\": \"Voltage\",\n      \"value\": \"6\",\n      \"unit\": \"V\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino IDE\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "robot construction",
+        "purpose": "Guide for building a robot with sensors and motors.",
+        "components": [
+          {
+            "name": "Мікро-двигун",
+            "model": "6V 1000 RPM",
+            "manufacturer": null,
+            "role": "actuator"
+          },
+          {
+            "name": "Колеса",
+            "model": null,
+            "manufacturer": null,
+            "role": "wheel"
+          },
+          {
+            "name": "Кулькове колесо",
+            "model": "3pi n20",
+            "manufacturer": null,
+            "role": "support wheel"
+          },
+          {
+            "name": "Датчик лінії",
+            "model": null,
+            "manufacturer": null,
+            "role": "sensor"
+          },
+          {
+            "name": "Драйвер для двигунів",
+            "model": null,
+            "manufacturer": null,
+            "role": "motor driver"
+          },
+          {
+            "name": "Мікроконтролер",
+            "model": "arduino nano",
+            "manufacturer": null,
+            "role": "controller"
+          },
+          {
+            "name": "Відсік для акумуляторів",
+            "model": "18650",
+            "manufacturer": null,
+            "role": "battery holder"
+          },
+          {
+            "name": "Акумулятор",
+            "model": "18650",
+            "manufacturer": null,
+            "role": "battery"
+          },
+          {
+            "name": "Перемикач",
+            "model": null,
+            "manufacturer": null,
+            "role": "switch"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "motor speed",
+            "name": "RPM",
+            "value": "1000",
+            "unit": "RPM"
+          },
+          {
+            "subject": "motor voltage",
+            "name": "Voltage",
+            "value": "6",
+            "unit": "V"
+          }
+        ],
+        "interfaces_protocols": [
+          "Arduino IDE"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "robot construction",
+    "purpose": "Guide for building a robot with sensors and motors.",
+    "components": [
+      {
+        "name": "Мікро-двигун",
+        "model": "6V 1000 RPM",
+        "manufacturer": null,
+        "role": "actuator"
+      },
+      {
+        "name": "Колеса",
+        "model": null,
+        "manufacturer": null,
+        "role": "wheel"
+      },
+      {
+        "name": "Кулькове колесо",
+        "model": "3pi n20",
+        "manufacturer": null,
+        "role": "support wheel"
+      },
+      {
+        "name": "Датчик лінії",
+        "model": null,
+        "manufacturer": null,
+        "role": "sensor"
+      },
+      {
+        "name": "Драйвер для двигунів",
+        "model": null,
+        "manufacturer": null,
+        "role": "motor driver"
+      },
+      {
+        "name": "Мікроконтролер",
+        "model": "arduino nano",
+        "manufacturer": null,
+        "role": "controller"
+      },
+      {
+        "name": "Відсік для акумуляторів",
+        "model": "18650",
+        "manufacturer": null,
+        "role": "battery holder"
+      },
+      {
+        "name": "Акумулятор",
+        "model": "18650",
+        "manufacturer": null,
+        "role": "battery"
+      },
+      {
+        "name": "Перемикач",
+        "model": null,
+        "manufacturer": null,
+        "role": "switch"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "motor speed",
+        "name": "RPM",
+        "value": "1000",
+        "unit": "RPM"
+      },
+      {
+        "subject": "motor voltage",
+        "name": "Voltage",
+        "value": "6",
+        "unit": "V"
+      }
+    ],
+    "interfaces_protocols": [
+      "Arduino IDE"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

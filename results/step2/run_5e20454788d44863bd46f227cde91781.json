@@ -1,0 +1,224 @@
+{
+  "document_id": "HR-0221",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0221.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:45:10.636425+00:00",
+  "latency_seconds": 5.695087400032207,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-264",
+            "object": "chat.completion",
+            "created": 1792943116,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"sensors_measurements\", \"main_subject\": \"thermometer\", \"purpose\": \"thermometer\", \"components\": [{\"name\": \"Wi-Fi module ESP8266 ESP-01\", \"model\": \"ESP8266 ESP-01\", \"manufacturer\": \"Espressif Systems\", \"role\": \"controller\"}, {\"name\": \"thermistor NTC MF52A1 10k\\u00b0C\", \"model\": \"MF52A1\", \"manufacturer\": \"MKS Instruments\", \"role\": \"temperature sensor\"}, {\"name\": \"LM324N\", \"model\": \"LM324N\", \"manufacturer\": \"National Semiconductor\", \"role\": \"op-amp\"}, {\"name\": \"CD4001BE\", \"model\": \"CD4001BE\", \"manufacturer\": \"Texas Instruments\", \"role\": \"logic circuit\"}, {\"name\": \"LM2596\", \"model\": \"LM2596\", \"manufacturer\": \"National Semiconductor\", \"role\": \"DC-DC converter\"}, {\"name\": \"12V 1.5A power source\", \"model\": \"12V 1.5A\", \"manufacturer\": \"Unknown\", \"role\": \"power source\"}, {\"name\": \"thermostat KSD9700-5A80-B\", \"model\": \"KSD9700-5A80-B\", \"manufacturer\": \"Unknown\", \"role\": \"temperature control\"}], \"technical_parameters\": [{\"subject\": \"temperature range\", \"name\": \"temperature range\", \"value\": \"0-100\\u00b0C\", \"unit\": \"\\u00b0C\"}, {\"subject\": \"voltage range\", \"name\": \"voltage range\", \"value\": \"3.3-12V\", \"unit\": \"V\"}], \"interfaces_protocols\": [\"/dev/ttyUSB0\", \"Wi-Fi\"], \"software_tools\": [\"Arduino IDE\", \"HTTPS Shortcuts\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2735,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 415,
+              "total_tokens": 3150
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.563078599981964
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2735,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 415,
+        "total_tokens": 3150
+      },
+      "generation_id": "chatcmpl-264",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"sensors_measurements\", \"main_subject\": \"thermometer\", \"purpose\": \"thermometer\", \"components\": [{\"name\": \"Wi-Fi module ESP8266 ESP-01\", \"model\": \"ESP8266 ESP-01\", \"manufacturer\": \"Espressif Systems\", \"role\": \"controller\"}, {\"name\": \"thermistor NTC MF52A1 10k\\u00b0C\", \"model\": \"MF52A1\", \"manufacturer\": \"MKS Instruments\", \"role\": \"temperature sensor\"}, {\"name\": \"LM324N\", \"model\": \"LM324N\", \"manufacturer\": \"National Semiconductor\", \"role\": \"op-amp\"}, {\"name\": \"CD4001BE\", \"model\": \"CD4001BE\", \"manufacturer\": \"Texas Instruments\", \"role\": \"logic circuit\"}, {\"name\": \"LM2596\", \"model\": \"LM2596\", \"manufacturer\": \"National Semiconductor\", \"role\": \"DC-DC converter\"}, {\"name\": \"12V 1.5A power source\", \"model\": \"12V 1.5A\", \"manufacturer\": \"Unknown\", \"role\": \"power source\"}, {\"name\": \"thermostat KSD9700-5A80-B\", \"model\": \"KSD9700-5A80-B\", \"manufacturer\": \"Unknown\", \"role\": \"temperature control\"}], \"technical_parameters\": [{\"subject\": \"temperature range\", \"name\": \"temperature range\", \"value\": \"0-100\\u00b0C\", \"unit\": \"\\u00b0C\"}, {\"subject\": \"voltage range\", \"name\": \"voltage range\", \"value\": \"3.3-12V\", \"unit\": \"V\"}], \"interfaces_protocols\": [\"/dev/ttyUSB0\", \"Wi-Fi\"], \"software_tools\": [\"Arduino IDE\", \"HTTPS Shortcuts\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "sensors_measurements",
+        "main_subject": "thermometer",
+        "purpose": "thermometer",
+        "components": [
+          {
+            "name": "Wi-Fi module ESP8266 ESP-01",
+            "model": "ESP8266 ESP-01",
+            "manufacturer": "Espressif Systems",
+            "role": "controller"
+          },
+          {
+            "name": "thermistor NTC MF52A1 10k°C",
+            "model": "MF52A1",
+            "manufacturer": "MKS Instruments",
+            "role": "temperature sensor"
+          },
+          {
+            "name": "LM324N",
+            "model": "LM324N",
+            "manufacturer": "National Semiconductor",
+            "role": "op-amp"
+          },
+          {
+            "name": "CD4001BE",
+            "model": "CD4001BE",
+            "manufacturer": "Texas Instruments",
+            "role": "logic circuit"
+          },
+          {
+            "name": "LM2596",
+            "model": "LM2596",
+            "manufacturer": "National Semiconductor",
+            "role": "DC-DC converter"
+          },
+          {
+            "name": "12V 1.5A power source",
+            "model": "12V 1.5A",
+            "manufacturer": "Unknown",
+            "role": "power source"
+          },
+          {
+            "name": "thermostat KSD9700-5A80-B",
+            "model": "KSD9700-5A80-B",
+            "manufacturer": "Unknown",
+            "role": "temperature control"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "temperature range",
+            "name": "temperature range",
+            "value": "0-100°C",
+            "unit": "°C"
+          },
+          {
+            "subject": "voltage range",
+            "name": "voltage range",
+            "value": "3.3-12V",
+            "unit": "V"
+          }
+        ],
+        "interfaces_protocols": [
+          "/dev/ttyUSB0",
+          "Wi-Fi"
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "HTTPS Shortcuts"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "sensors_measurements",
+    "main_subject": "thermometer",
+    "purpose": "thermometer",
+    "components": [
+      {
+        "name": "Wi-Fi module ESP8266 ESP-01",
+        "model": "ESP8266 ESP-01",
+        "manufacturer": "Espressif Systems",
+        "role": "controller"
+      },
+      {
+        "name": "thermistor NTC MF52A1 10k°C",
+        "model": "MF52A1",
+        "manufacturer": "MKS Instruments",
+        "role": "temperature sensor"
+      },
+      {
+        "name": "LM324N",
+        "model": "LM324N",
+        "manufacturer": "National Semiconductor",
+        "role": "op-amp"
+      },
+      {
+        "name": "CD4001BE",
+        "model": "CD4001BE",
+        "manufacturer": "Texas Instruments",
+        "role": "logic circuit"
+      },
+      {
+        "name": "LM2596",
+        "model": "LM2596",
+        "manufacturer": "National Semiconductor",
+        "role": "DC-DC converter"
+      },
+      {
+        "name": "12V 1.5A power source",
+        "model": "12V 1.5A",
+        "manufacturer": "Unknown",
+        "role": "power source"
+      },
+      {
+        "name": "thermostat KSD9700-5A80-B",
+        "model": "KSD9700-5A80-B",
+        "manufacturer": "Unknown",
+        "role": "temperature control"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "temperature range",
+        "name": "temperature range",
+        "value": "0-100°C",
+        "unit": "°C"
+      },
+      {
+        "subject": "voltage range",
+        "name": "voltage range",
+        "value": "3.3-12V",
+        "unit": "V"
+      }
+    ],
+    "interfaces_protocols": [
+      "/dev/ttyUSB0",
+      "Wi-Fi"
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "HTTPS Shortcuts"
+    ]
+  },
+  "error": null
+}

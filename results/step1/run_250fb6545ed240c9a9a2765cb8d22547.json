@@ -1,0 +1,208 @@
+{
+  "document_id": "HR-0982",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0982.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:54:43.461909+00:00",
+  "latency_seconds": 5.104026300017722,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EctuNiWmeldQ5wMrFs9JnSVXlBbHd",
+            "object": "chat.completion",
+            "created": 1792940083,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"communications_iot\",\n  \"main_subject\": \"OTA updates for IoT devices\",\n  \"purpose\": \"To explain the importance and implementation of OTA updates in IoT devices.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Cloud\",\n      \"model\": null,\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"OTA update management platform\"\n    },\n    {\n      \"name\": \"Arduino UNO R4 WiFi\",\n      \"model\": null,\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"IoT device for OTA updates\"\n    },\n    {\n      \"name\": \"ESP32\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"IoT device for OTA updates\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Firmware update process\",\n      \"name\": \"Update method\",\n      \"value\": \"Over-the-air (OTA)\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Security\",\n      \"name\": \"Encryption\",\n      \"value\": \"End-to-end encryption\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Device management\",\n      \"name\": \"Management system\",\n      \"value\": \"Centralized management system\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"cellular\",\n    \"Bluetooth\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Cloud Editor\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 7028,
+              "completion_tokens": 328,
+              "total_tokens": 7356,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.94673939992208
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 7028,
+        "completion_tokens": 328,
+        "total_tokens": 7356,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EctuNiWmeldQ5wMrFs9JnSVXlBbHd",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"communications_iot\",\n  \"main_subject\": \"OTA updates for IoT devices\",\n  \"purpose\": \"To explain the importance and implementation of OTA updates in IoT devices.\",\n  \"components\": [\n    {\n      \"name\": \"Arduino Cloud\",\n      \"model\": null,\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"OTA update management platform\"\n    },\n    {\n      \"name\": \"Arduino UNO R4 WiFi\",\n      \"model\": null,\n      \"manufacturer\": \"Arduino\",\n      \"role\": \"IoT device for OTA updates\"\n    },\n    {\n      \"name\": \"ESP32\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"IoT device for OTA updates\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"Firmware update process\",\n      \"name\": \"Update method\",\n      \"value\": \"Over-the-air (OTA)\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Security\",\n      \"name\": \"Encryption\",\n      \"value\": \"End-to-end encryption\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Device management\",\n      \"name\": \"Management system\",\n      \"value\": \"Centralized management system\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"cellular\",\n    \"Bluetooth\"\n  ],\n  \"software_tools\": [\n    \"Arduino Cloud\",\n    \"Cloud Editor\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "communications_iot",
+        "main_subject": "OTA updates for IoT devices",
+        "purpose": "To explain the importance and implementation of OTA updates in IoT devices.",
+        "components": [
+          {
+            "name": "Arduino Cloud",
+            "model": null,
+            "manufacturer": "Arduino",
+            "role": "OTA update management platform"
+          },
+          {
+            "name": "Arduino UNO R4 WiFi",
+            "model": null,
+            "manufacturer": "Arduino",
+            "role": "IoT device for OTA updates"
+          },
+          {
+            "name": "ESP32",
+            "model": null,
+            "manufacturer": null,
+            "role": "IoT device for OTA updates"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "Firmware update process",
+            "name": "Update method",
+            "value": "Over-the-air (OTA)",
+            "unit": null
+          },
+          {
+            "subject": "Security",
+            "name": "Encryption",
+            "value": "End-to-end encryption",
+            "unit": null
+          },
+          {
+            "subject": "Device management",
+            "name": "Management system",
+            "value": "Centralized management system",
+            "unit": null
+          }
+        ],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "cellular",
+          "Bluetooth"
+        ],
+        "software_tools": [
+          "Arduino Cloud",
+          "Cloud Editor"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "communications_iot",
+    "main_subject": "OTA updates for IoT devices",
+    "purpose": "To explain the importance and implementation of OTA updates in IoT devices.",
+    "components": [
+      {
+        "name": "Arduino Cloud",
+        "model": null,
+        "manufacturer": "Arduino",
+        "role": "OTA update management platform"
+      },
+      {
+        "name": "Arduino UNO R4 WiFi",
+        "model": null,
+        "manufacturer": "Arduino",
+        "role": "IoT device for OTA updates"
+      },
+      {
+        "name": "ESP32",
+        "model": null,
+        "manufacturer": null,
+        "role": "IoT device for OTA updates"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "Firmware update process",
+        "name": "Update method",
+        "value": "Over-the-air (OTA)",
+        "unit": null
+      },
+      {
+        "subject": "Security",
+        "name": "Encryption",
+        "value": "End-to-end encryption",
+        "unit": null
+      },
+      {
+        "subject": "Device management",
+        "name": "Management system",
+        "value": "Centralized management system",
+        "unit": null
+      }
+    ],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "cellular",
+      "Bluetooth"
+    ],
+    "software_tools": [
+      "Arduino Cloud",
+      "Cloud Editor"
+    ]
+  },
+  "error": null
+}

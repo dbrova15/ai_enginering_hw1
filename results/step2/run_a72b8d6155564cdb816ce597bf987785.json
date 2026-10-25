@@ -1,0 +1,138 @@
+{
+  "document_id": "HR-0056",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0056.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:44:19.221175+00:00",
+  "latency_seconds": 4.247979299980216,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-214",
+            "object": "chat.completion",
+            "created": 1792943063,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"displays_indicators\", \"main_subject\": \"temperature_control\", \"purpose\": \"to create a display based on a 320x240 display with temperature control for a laboratory power supply\", \"components\": [ \n    \t],\n \"technical_parameters\": [\n \t{\n   \"subject\": \"temperature_control\",\n   \"name\": \"thermistor\",\n   \"value\": \"10kOhm\",\n   \"unit\": \"Ohm\"\n  },\n \t{\n   \"subject\": \"temperature_control\",\n   \"name\": \"temperature_control\",\n   \"value\": \"3.3V\",\n   \"unit\": \"V\"\n  }\n ],\n \"interfaces_protocols\": [\n \t\"SWD\",\n \t\"FSMC\"\n ],\n \"software_tools\": [\n \t\"EmBits\",\n \t\"IDE\"\n ]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2393,
+              "prompt_tokens_details": {
+                "cached_tokens": 97
+              },
+              "completion_tokens": 186,
+              "total_tokens": 2579
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.115625600097701
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2393,
+        "prompt_tokens_details": {
+          "cached_tokens": 97
+        },
+        "completion_tokens": 186,
+        "total_tokens": 2579
+      },
+      "generation_id": "chatcmpl-214",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"displays_indicators\", \"main_subject\": \"temperature_control\", \"purpose\": \"to create a display based on a 320x240 display with temperature control for a laboratory power supply\", \"components\": [ \n    \t],\n \"technical_parameters\": [\n \t{\n   \"subject\": \"temperature_control\",\n   \"name\": \"thermistor\",\n   \"value\": \"10kOhm\",\n   \"unit\": \"Ohm\"\n  },\n \t{\n   \"subject\": \"temperature_control\",\n   \"name\": \"temperature_control\",\n   \"value\": \"3.3V\",\n   \"unit\": \"V\"\n  }\n ],\n \"interfaces_protocols\": [\n \t\"SWD\",\n \t\"FSMC\"\n ],\n \"software_tools\": [\n \t\"EmBits\",\n \t\"IDE\"\n ]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "displays_indicators",
+        "main_subject": "temperature_control",
+        "purpose": "to create a display based on a 320x240 display with temperature control for a laboratory power supply",
+        "components": [],
+        "technical_parameters": [
+          {
+            "subject": "temperature_control",
+            "name": "thermistor",
+            "value": "10kOhm",
+            "unit": "Ohm"
+          },
+          {
+            "subject": "temperature_control",
+            "name": "temperature_control",
+            "value": "3.3V",
+            "unit": "V"
+          }
+        ],
+        "interfaces_protocols": [
+          "SWD",
+          "FSMC"
+        ],
+        "software_tools": [
+          "EmBits",
+          "IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "displays_indicators",
+    "main_subject": "temperature_control",
+    "purpose": "to create a display based on a 320x240 display with temperature control for a laboratory power supply",
+    "components": [],
+    "technical_parameters": [
+      {
+        "subject": "temperature_control",
+        "name": "thermistor",
+        "value": "10kOhm",
+        "unit": "Ohm"
+      },
+      {
+        "subject": "temperature_control",
+        "name": "temperature_control",
+        "value": "3.3V",
+        "unit": "V"
+      }
+    ],
+    "interfaces_protocols": [
+      "SWD",
+      "FSMC"
+    ],
+    "software_tools": [
+      "EmBits",
+      "IDE"
+    ]
+  },
+  "error": null
+}

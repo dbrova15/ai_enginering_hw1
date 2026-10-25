@@ -1,0 +1,216 @@
+{
+  "document_id": "HR-0463",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0463.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:54:01.325904+00:00",
+  "latency_seconds": 4.724964199936949,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EctthkrTO4PtXGhvpOQfZykcEdlH7",
+            "object": "chat.completion",
+            "created": 1792940041,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"Raspberry Pi GPIO configuration\",\n  \"purpose\": \"To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Main device for GPIO control\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Output device to visualize GPIO control\"\n    },\n    {\n      \"name\": \"Push Button\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Input device to trigger actions\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"GPIO lines\",\n      \"name\": \"gpiochip\",\n      \"value\": \"specific GPIO chip to be used\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Integer variable\",\n      \"name\": \"test value\",\n      \"value\": \"periodically generated integer\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Boolean variable\",\n      \"name\": \"button\",\n      \"value\": \"status of the push button\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Boolean variable\",\n      \"name\": \"led\",\n      \"value\": \"status of the LED\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino Cloud\"\n  ],\n  \"software_tools\": [\n    \"Python\",\n    \"Arduino Cloud\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5786,
+              "completion_tokens": 355,
+              "total_tokens": 6141,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 4.549936499912292
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5786,
+        "completion_tokens": 355,
+        "total_tokens": 6141,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EctthkrTO4PtXGhvpOQfZykcEdlH7",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"controllers_programming\",\n  \"main_subject\": \"Raspberry Pi GPIO configuration\",\n  \"purpose\": \"To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.\",\n  \"components\": [\n    {\n      \"name\": \"Raspberry Pi\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Main device for GPIO control\"\n    },\n    {\n      \"name\": \"LED\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Output device to visualize GPIO control\"\n    },\n    {\n      \"name\": \"Push Button\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"Input device to trigger actions\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"GPIO lines\",\n      \"name\": \"gpiochip\",\n      \"value\": \"specific GPIO chip to be used\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Integer variable\",\n      \"name\": \"test value\",\n      \"value\": \"periodically generated integer\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Boolean variable\",\n      \"name\": \"button\",\n      \"value\": \"status of the push button\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"Boolean variable\",\n      \"name\": \"led\",\n      \"value\": \"status of the LED\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"Arduino Cloud\"\n  ],\n  \"software_tools\": [\n    \"Python\",\n    \"Arduino Cloud\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "controllers_programming",
+        "main_subject": "Raspberry Pi GPIO configuration",
+        "purpose": "To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.",
+        "components": [
+          {
+            "name": "Raspberry Pi",
+            "model": null,
+            "manufacturer": null,
+            "role": "Main device for GPIO control"
+          },
+          {
+            "name": "LED",
+            "model": null,
+            "manufacturer": null,
+            "role": "Output device to visualize GPIO control"
+          },
+          {
+            "name": "Push Button",
+            "model": null,
+            "manufacturer": null,
+            "role": "Input device to trigger actions"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "GPIO lines",
+            "name": "gpiochip",
+            "value": "specific GPIO chip to be used",
+            "unit": null
+          },
+          {
+            "subject": "Integer variable",
+            "name": "test value",
+            "value": "periodically generated integer",
+            "unit": null
+          },
+          {
+            "subject": "Boolean variable",
+            "name": "button",
+            "value": "status of the push button",
+            "unit": null
+          },
+          {
+            "subject": "Boolean variable",
+            "name": "led",
+            "value": "status of the LED",
+            "unit": null
+          }
+        ],
+        "interfaces_protocols": [
+          "Arduino Cloud"
+        ],
+        "software_tools": [
+          "Python",
+          "Arduino Cloud"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "controllers_programming",
+    "main_subject": "Raspberry Pi GPIO configuration",
+    "purpose": "To guide users on how to configure Raspberry Pi GPIOs using Python in Arduino Cloud for IoT projects.",
+    "components": [
+      {
+        "name": "Raspberry Pi",
+        "model": null,
+        "manufacturer": null,
+        "role": "Main device for GPIO control"
+      },
+      {
+        "name": "LED",
+        "model": null,
+        "manufacturer": null,
+        "role": "Output device to visualize GPIO control"
+      },
+      {
+        "name": "Push Button",
+        "model": null,
+        "manufacturer": null,
+        "role": "Input device to trigger actions"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "GPIO lines",
+        "name": "gpiochip",
+        "value": "specific GPIO chip to be used",
+        "unit": null
+      },
+      {
+        "subject": "Integer variable",
+        "name": "test value",
+        "value": "periodically generated integer",
+        "unit": null
+      },
+      {
+        "subject": "Boolean variable",
+        "name": "button",
+        "value": "status of the push button",
+        "unit": null
+      },
+      {
+        "subject": "Boolean variable",
+        "name": "led",
+        "value": "status of the LED",
+        "unit": null
+      }
+    ],
+    "interfaces_protocols": [
+      "Arduino Cloud"
+    ],
+    "software_tools": [
+      "Python",
+      "Arduino Cloud"
+    ]
+  },
+  "error": null
+}

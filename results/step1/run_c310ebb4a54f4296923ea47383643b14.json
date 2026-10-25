@@ -1,0 +1,348 @@
+{
+  "document_id": "HR-0221",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0221.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:53:42.212498+00:00",
+  "latency_seconds": 9.90055979997851,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EcttOJip4XmtYA7yB3JWDZeJUypsv",
+            "object": "chat.completion",
+            "created": 1792940022,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"термореле\",\n  \"purpose\": \"створення саморобного термореле для дистанційного керування потужним навантаженням\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi модуль\",\n      \"model\": \"ESP8266 ESP-01\",\n      \"manufacturer\": null,\n      \"role\": \"мозок пристрою\"\n    },\n    {\n      \"name\": \"Реле з опторозв'язкою\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"керування високою напругою\"\n    },\n    {\n      \"name\": \"Операційний підсилювач\",\n      \"model\": \"LM324N\",\n      \"manufacturer\": null,\n      \"role\": \"компаратор\"\n    },\n    {\n      \"name\": \"Логічні елементи\",\n      \"model\": \"CD4001BE\",\n      \"manufacturer\": null,\n      \"role\": \"мультивібратор типу SR-Latch\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC MF52A1 10кОм\",\n      \"manufacturer\": null,\n      \"role\": \"датчик температури\"\n    },\n    {\n      \"name\": \"Змінний резистор\",\n      \"model\": \"20 кОм х2\",\n      \"manufacturer\": null,\n      \"role\": \"потенціометри для гістерезису\"\n    },\n    {\n      \"name\": \"DC-DC понижуючий конвертер\",\n      \"model\": \"LM2596\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 3.3В\"\n    },\n    {\n      \"name\": \"Імпульсне джерело живлення\",\n      \"model\": \"12В 1.5A\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 12В\"\n    },\n    {\n      \"name\": \"Термостат\",\n      \"model\": \"KSD9700-5A80-B (NC)\",\n      \"manufacturer\": null,\n      \"role\": \"запобіжний засіб\"\n    },\n    {\n      \"name\": \"Резистор\",\n      \"model\": \"4,7 КОм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Резистор\",\n      \"model\": \"10 КОм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Конденсатор\",\n      \"model\": \"JCCON 470мкФ 16В\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Кнопка\",\n      \"model\": \"DIP 4-pin 6x6x4мм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Клемник\",\n      \"model\": \"подвійний 5мм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Тумблер\",\n      \"model\": \"3-контактний MTS-102\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Макетна плата\",\n      \"model\": \"двостороння 90х150мм\",\n      \"manufacturer\": null,\n      \"role\": \"плата для збирання\"\n    },\n    {\n      \"name\": \"Панель\",\n      \"model\": \"SCS-14 для мікросхем DIP-14\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Конектор\",\n      \"model\": \"4pin 2 ряди\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    }\n  ],\n  \"technical_parameters\": [],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"UART\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\",\n    \"HTTPS Shortcuts\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 7346,
+              "completion_tokens": 952,
+              "total_tokens": 8298,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 9.702896100003272
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 7346,
+        "completion_tokens": 952,
+        "total_tokens": 8298,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EcttOJip4XmtYA7yB3JWDZeJUypsv",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"devices_automation\",\n  \"main_subject\": \"термореле\",\n  \"purpose\": \"створення саморобного термореле для дистанційного керування потужним навантаженням\",\n  \"components\": [\n    {\n      \"name\": \"Wi-Fi модуль\",\n      \"model\": \"ESP8266 ESP-01\",\n      \"manufacturer\": null,\n      \"role\": \"мозок пристрою\"\n    },\n    {\n      \"name\": \"Реле з опторозв'язкою\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"керування високою напругою\"\n    },\n    {\n      \"name\": \"Операційний підсилювач\",\n      \"model\": \"LM324N\",\n      \"manufacturer\": null,\n      \"role\": \"компаратор\"\n    },\n    {\n      \"name\": \"Логічні елементи\",\n      \"model\": \"CD4001BE\",\n      \"manufacturer\": null,\n      \"role\": \"мультивібратор типу SR-Latch\"\n    },\n    {\n      \"name\": \"Термістор\",\n      \"model\": \"NTC MF52A1 10кОм\",\n      \"manufacturer\": null,\n      \"role\": \"датчик температури\"\n    },\n    {\n      \"name\": \"Змінний резистор\",\n      \"model\": \"20 кОм х2\",\n      \"manufacturer\": null,\n      \"role\": \"потенціометри для гістерезису\"\n    },\n    {\n      \"name\": \"DC-DC понижуючий конвертер\",\n      \"model\": \"LM2596\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 3.3В\"\n    },\n    {\n      \"name\": \"Імпульсне джерело живлення\",\n      \"model\": \"12В 1.5A\",\n      \"manufacturer\": null,\n      \"role\": \"джерело 12В\"\n    },\n    {\n      \"name\": \"Термостат\",\n      \"model\": \"KSD9700-5A80-B (NC)\",\n      \"manufacturer\": null,\n      \"role\": \"запобіжний засіб\"\n    },\n    {\n      \"name\": \"Резистор\",\n      \"model\": \"4,7 КОм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Резистор\",\n      \"model\": \"10 КОм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Конденсатор\",\n      \"model\": \"JCCON 470мкФ 16В\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Кнопка\",\n      \"model\": \"DIP 4-pin 6x6x4мм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Клемник\",\n      \"model\": \"подвійний 5мм\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Тумблер\",\n      \"model\": \"3-контактний MTS-102\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Макетна плата\",\n      \"model\": \"двостороння 90х150мм\",\n      \"manufacturer\": null,\n      \"role\": \"плата для збирання\"\n    },\n    {\n      \"name\": \"Панель\",\n      \"model\": \"SCS-14 для мікросхем DIP-14\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    },\n    {\n      \"name\": \"Конектор\",\n      \"model\": \"4pin 2 ряди\",\n      \"manufacturer\": null,\n      \"role\": \"елемент схеми\"\n    }\n  ],\n  \"technical_parameters\": [],\n  \"interfaces_protocols\": [\n    \"Wi-Fi\",\n    \"UART\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\",\n    \"HTTPS Shortcuts\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "devices_automation",
+        "main_subject": "термореле",
+        "purpose": "створення саморобного термореле для дистанційного керування потужним навантаженням",
+        "components": [
+          {
+            "name": "Wi-Fi модуль",
+            "model": "ESP8266 ESP-01",
+            "manufacturer": null,
+            "role": "мозок пристрою"
+          },
+          {
+            "name": "Реле з опторозв'язкою",
+            "model": null,
+            "manufacturer": null,
+            "role": "керування високою напругою"
+          },
+          {
+            "name": "Операційний підсилювач",
+            "model": "LM324N",
+            "manufacturer": null,
+            "role": "компаратор"
+          },
+          {
+            "name": "Логічні елементи",
+            "model": "CD4001BE",
+            "manufacturer": null,
+            "role": "мультивібратор типу SR-Latch"
+          },
+          {
+            "name": "Термістор",
+            "model": "NTC MF52A1 10кОм",
+            "manufacturer": null,
+            "role": "датчик температури"
+          },
+          {
+            "name": "Змінний резистор",
+            "model": "20 кОм х2",
+            "manufacturer": null,
+            "role": "потенціометри для гістерезису"
+          },
+          {
+            "name": "DC-DC понижуючий конвертер",
+            "model": "LM2596",
+            "manufacturer": null,
+            "role": "джерело 3.3В"
+          },
+          {
+            "name": "Імпульсне джерело живлення",
+            "model": "12В 1.5A",
+            "manufacturer": null,
+            "role": "джерело 12В"
+          },
+          {
+            "name": "Термостат",
+            "model": "KSD9700-5A80-B (NC)",
+            "manufacturer": null,
+            "role": "запобіжний засіб"
+          },
+          {
+            "name": "Резистор",
+            "model": "4,7 КОм",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Резистор",
+            "model": "10 КОм",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Конденсатор",
+            "model": "JCCON 470мкФ 16В",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Кнопка",
+            "model": "DIP 4-pin 6x6x4мм",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Клемник",
+            "model": "подвійний 5мм",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Тумблер",
+            "model": "3-контактний MTS-102",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Макетна плата",
+            "model": "двостороння 90х150мм",
+            "manufacturer": null,
+            "role": "плата для збирання"
+          },
+          {
+            "name": "Панель",
+            "model": "SCS-14 для мікросхем DIP-14",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          },
+          {
+            "name": "Конектор",
+            "model": "4pin 2 ряди",
+            "manufacturer": null,
+            "role": "елемент схеми"
+          }
+        ],
+        "technical_parameters": [],
+        "interfaces_protocols": [
+          "Wi-Fi",
+          "UART"
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "HTTPS Shortcuts"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "devices_automation",
+    "main_subject": "термореле",
+    "purpose": "створення саморобного термореле для дистанційного керування потужним навантаженням",
+    "components": [
+      {
+        "name": "Wi-Fi модуль",
+        "model": "ESP8266 ESP-01",
+        "manufacturer": null,
+        "role": "мозок пристрою"
+      },
+      {
+        "name": "Реле з опторозв'язкою",
+        "model": null,
+        "manufacturer": null,
+        "role": "керування високою напругою"
+      },
+      {
+        "name": "Операційний підсилювач",
+        "model": "LM324N",
+        "manufacturer": null,
+        "role": "компаратор"
+      },
+      {
+        "name": "Логічні елементи",
+        "model": "CD4001BE",
+        "manufacturer": null,
+        "role": "мультивібратор типу SR-Latch"
+      },
+      {
+        "name": "Термістор",
+        "model": "NTC MF52A1 10кОм",
+        "manufacturer": null,
+        "role": "датчик температури"
+      },
+      {
+        "name": "Змінний резистор",
+        "model": "20 кОм х2",
+        "manufacturer": null,
+        "role": "потенціометри для гістерезису"
+      },
+      {
+        "name": "DC-DC понижуючий конвертер",
+        "model": "LM2596",
+        "manufacturer": null,
+        "role": "джерело 3.3В"
+      },
+      {
+        "name": "Імпульсне джерело живлення",
+        "model": "12В 1.5A",
+        "manufacturer": null,
+        "role": "джерело 12В"
+      },
+      {
+        "name": "Термостат",
+        "model": "KSD9700-5A80-B (NC)",
+        "manufacturer": null,
+        "role": "запобіжний засіб"
+      },
+      {
+        "name": "Резистор",
+        "model": "4,7 КОм",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Резистор",
+        "model": "10 КОм",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Конденсатор",
+        "model": "JCCON 470мкФ 16В",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Кнопка",
+        "model": "DIP 4-pin 6x6x4мм",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Клемник",
+        "model": "подвійний 5мм",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Тумблер",
+        "model": "3-контактний MTS-102",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Макетна плата",
+        "model": "двостороння 90х150мм",
+        "manufacturer": null,
+        "role": "плата для збирання"
+      },
+      {
+        "name": "Панель",
+        "model": "SCS-14 для мікросхем DIP-14",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      },
+      {
+        "name": "Конектор",
+        "model": "4pin 2 ряди",
+        "manufacturer": null,
+        "role": "елемент схеми"
+      }
+    ],
+    "technical_parameters": [],
+    "interfaces_protocols": [
+      "Wi-Fi",
+      "UART"
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "HTTPS Shortcuts"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,248 @@
+{
+  "document_id": "HR-0109",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0109.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:44:09.126990+00:00",
+  "latency_seconds": 5.551360400044359,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-928",
+            "object": "chat.completion",
+            "created": 1792943054,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"communications_iot\", \"main_subject\": \"coffee machine\", \"purpose\": \"coffee machine with PID control\", \"components\": [{\"name\": \"Wemos D1 Mini\", \"model\": \"Wemos D1 Mini\", \"manufacturer\": \"Wemos\", \"role\": \"main board\"}, {\"name\": \"thermopara K-type\", \"model\": \"thermopara K-type\", \"manufacturer\": \"Unknown\", \"role\": \"temperature sensor\"}, {\"name\": \"I2C 128x64 OLED SSD1306 display\", \"model\": \"I2C 128x64 OLED SSD1306 display\", \"manufacturer\": \"Unknown\", \"role\": \"display\"}, {\"name\": \"MAX6675 SMD 8-SOIC\", \"model\": \"MAX6675 SMD 8-SOIC\", \"manufacturer\": \"Analog Devices\", \"role\": \"temperature sensor\"}, {\"name\": \"resistors 10k ohm\", \"model\": \"resistors 10k ohm\", \"manufacturer\": \"Unknown\", \"role\": \"resistance\"}, {\"name\": \"capacitors 0.1uF\", \"model\": \"capacitors 0.1uF\", \"manufacturer\": \"Unknown\", \"role\": \"filtering\"}, {\"name\": \"printed circuit board\", \"model\": \"printed circuit board\", \"manufacturer\": \"Unknown\", \"role\": \"main board\"}, {\"name\": \"DC-AC SSR relay\", \"model\": \"DC-AC SSR relay\", \"manufacturer\": \"Unknown\", \"role\": \"power control\"}], \"technical_parameters\": [{\"subject\": \"temperature range\", \"name\": \"temperature range\", \"value\": \"50-100C\", \"unit\": \"C\"}, {\"subject\": \"display resolution\", \"name\": \"display resolution\", \"value\": \"128x64\", \"unit\": \"px\"}, {\"subject\": \"power consumption\", \"name\": \"power consumption\", \"value\": \"5V, 1A\", \"unit\": \"mA\"}], \"interfaces_protocols\": [\"/dev/ttyUSB0\", \"MQTT\"], \"software_tools\": [\"Arduino\", \"RabbitMQ\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 840,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 468,
+              "total_tokens": 1308
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.4160796999931335
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 840,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 468,
+        "total_tokens": 1308
+      },
+      "generation_id": "chatcmpl-928",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"communications_iot\", \"main_subject\": \"coffee machine\", \"purpose\": \"coffee machine with PID control\", \"components\": [{\"name\": \"Wemos D1 Mini\", \"model\": \"Wemos D1 Mini\", \"manufacturer\": \"Wemos\", \"role\": \"main board\"}, {\"name\": \"thermopara K-type\", \"model\": \"thermopara K-type\", \"manufacturer\": \"Unknown\", \"role\": \"temperature sensor\"}, {\"name\": \"I2C 128x64 OLED SSD1306 display\", \"model\": \"I2C 128x64 OLED SSD1306 display\", \"manufacturer\": \"Unknown\", \"role\": \"display\"}, {\"name\": \"MAX6675 SMD 8-SOIC\", \"model\": \"MAX6675 SMD 8-SOIC\", \"manufacturer\": \"Analog Devices\", \"role\": \"temperature sensor\"}, {\"name\": \"resistors 10k ohm\", \"model\": \"resistors 10k ohm\", \"manufacturer\": \"Unknown\", \"role\": \"resistance\"}, {\"name\": \"capacitors 0.1uF\", \"model\": \"capacitors 0.1uF\", \"manufacturer\": \"Unknown\", \"role\": \"filtering\"}, {\"name\": \"printed circuit board\", \"model\": \"printed circuit board\", \"manufacturer\": \"Unknown\", \"role\": \"main board\"}, {\"name\": \"DC-AC SSR relay\", \"model\": \"DC-AC SSR relay\", \"manufacturer\": \"Unknown\", \"role\": \"power control\"}], \"technical_parameters\": [{\"subject\": \"temperature range\", \"name\": \"temperature range\", \"value\": \"50-100C\", \"unit\": \"C\"}, {\"subject\": \"display resolution\", \"name\": \"display resolution\", \"value\": \"128x64\", \"unit\": \"px\"}, {\"subject\": \"power consumption\", \"name\": \"power consumption\", \"value\": \"5V, 1A\", \"unit\": \"mA\"}], \"interfaces_protocols\": [\"/dev/ttyUSB0\", \"MQTT\"], \"software_tools\": [\"Arduino\", \"RabbitMQ\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "communications_iot",
+        "main_subject": "coffee machine",
+        "purpose": "coffee machine with PID control",
+        "components": [
+          {
+            "name": "Wemos D1 Mini",
+            "model": "Wemos D1 Mini",
+            "manufacturer": "Wemos",
+            "role": "main board"
+          },
+          {
+            "name": "thermopara K-type",
+            "model": "thermopara K-type",
+            "manufacturer": "Unknown",
+            "role": "temperature sensor"
+          },
+          {
+            "name": "I2C 128x64 OLED SSD1306 display",
+            "model": "I2C 128x64 OLED SSD1306 display",
+            "manufacturer": "Unknown",
+            "role": "display"
+          },
+          {
+            "name": "MAX6675 SMD 8-SOIC",
+            "model": "MAX6675 SMD 8-SOIC",
+            "manufacturer": "Analog Devices",
+            "role": "temperature sensor"
+          },
+          {
+            "name": "resistors 10k ohm",
+            "model": "resistors 10k ohm",
+            "manufacturer": "Unknown",
+            "role": "resistance"
+          },
+          {
+            "name": "capacitors 0.1uF",
+            "model": "capacitors 0.1uF",
+            "manufacturer": "Unknown",
+            "role": "filtering"
+          },
+          {
+            "name": "printed circuit board",
+            "model": "printed circuit board",
+            "manufacturer": "Unknown",
+            "role": "main board"
+          },
+          {
+            "name": "DC-AC SSR relay",
+            "model": "DC-AC SSR relay",
+            "manufacturer": "Unknown",
+            "role": "power control"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "temperature range",
+            "name": "temperature range",
+            "value": "50-100C",
+            "unit": "C"
+          },
+          {
+            "subject": "display resolution",
+            "name": "display resolution",
+            "value": "128x64",
+            "unit": "px"
+          },
+          {
+            "subject": "power consumption",
+            "name": "power consumption",
+            "value": "5V, 1A",
+            "unit": "mA"
+          }
+        ],
+        "interfaces_protocols": [
+          "/dev/ttyUSB0",
+          "MQTT"
+        ],
+        "software_tools": [
+          "Arduino",
+          "RabbitMQ"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "communications_iot",
+    "main_subject": "coffee machine",
+    "purpose": "coffee machine with PID control",
+    "components": [
+      {
+        "name": "Wemos D1 Mini",
+        "model": "Wemos D1 Mini",
+        "manufacturer": "Wemos",
+        "role": "main board"
+      },
+      {
+        "name": "thermopara K-type",
+        "model": "thermopara K-type",
+        "manufacturer": "Unknown",
+        "role": "temperature sensor"
+      },
+      {
+        "name": "I2C 128x64 OLED SSD1306 display",
+        "model": "I2C 128x64 OLED SSD1306 display",
+        "manufacturer": "Unknown",
+        "role": "display"
+      },
+      {
+        "name": "MAX6675 SMD 8-SOIC",
+        "model": "MAX6675 SMD 8-SOIC",
+        "manufacturer": "Analog Devices",
+        "role": "temperature sensor"
+      },
+      {
+        "name": "resistors 10k ohm",
+        "model": "resistors 10k ohm",
+        "manufacturer": "Unknown",
+        "role": "resistance"
+      },
+      {
+        "name": "capacitors 0.1uF",
+        "model": "capacitors 0.1uF",
+        "manufacturer": "Unknown",
+        "role": "filtering"
+      },
+      {
+        "name": "printed circuit board",
+        "model": "printed circuit board",
+        "manufacturer": "Unknown",
+        "role": "main board"
+      },
+      {
+        "name": "DC-AC SSR relay",
+        "model": "DC-AC SSR relay",
+        "manufacturer": "Unknown",
+        "role": "power control"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "temperature range",
+        "name": "temperature range",
+        "value": "50-100C",
+        "unit": "C"
+      },
+      {
+        "subject": "display resolution",
+        "name": "display resolution",
+        "value": "128x64",
+        "unit": "px"
+      },
+      {
+        "subject": "power consumption",
+        "name": "power consumption",
+        "value": "5V, 1A",
+        "unit": "mA"
+      }
+    ],
+    "interfaces_protocols": [
+      "/dev/ttyUSB0",
+      "MQTT"
+    ],
+    "software_tools": [
+      "Arduino",
+      "RabbitMQ"
+    ]
+  },
+  "error": null
+}

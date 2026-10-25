@@ -1,0 +1,290 @@
+{
+  "document_id": "HR-0228",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0228.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:55:10.686024+00:00",
+  "latency_seconds": 9.368235199945047,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ectupb0MnMdhBQFJHAZk17KN8LiEk",
+            "object": "chat.completion",
+            "created": 1792940111,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"battery assembly and BMS connection\",\n  \"purpose\": \"to guide on connecting a battery pack to a BMS\",\n  \"components\": [\n    {\n      \"name\": \"TP-4056\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"charging module for batteries\"\n    },\n    {\n      \"name\": \"nickel strip\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for spot welding\"\n    },\n    {\n      \"name\": \"welding machine\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for connecting battery cells\"\n    },\n    {\n      \"name\": \"soldering iron\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for soldering connections\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"battery capacity\",\n      \"name\": \"maximum capacity\",\n      \"value\": \"1000 mAh\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"1S configuration voltage\",\n      \"value\": \"3-4.2V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"2S configuration voltage\",\n      \"value\": \"6-8.4V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"3S configuration voltage\",\n      \"value\": \"9-12.6V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"4S configuration voltage\",\n      \"value\": \"12-16.8V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"high current battery\",\n      \"name\": \"peak current output\",\n      \"value\": \"15-30A\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"standard battery\",\n      \"name\": \"peak current output\",\n      \"value\": \"5A\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"storage temperature\",\n      \"name\": \"recommended storage temperature\",\n      \"value\": \"-10 to +50 °C\",\n      \"unit\": \"°C\"\n    },\n    {\n      \"subject\": \"charging voltage\",\n      \"name\": \"charging voltage for 12V 3Ah assembly\",\n      \"value\": \"12.6V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"charging current\",\n      \"name\": \"charging current for 12V 3Ah assembly\",\n      \"value\": \"1A\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [],\n  \"software_tools\": []\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5484,
+              "completion_tokens": 619,
+              "total_tokens": 6103,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 9.194616300053895
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5484,
+        "completion_tokens": 619,
+        "total_tokens": 6103,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ectupb0MnMdhBQFJHAZk17KN8LiEk",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"power_batteries\",\n  \"main_subject\": \"battery assembly and BMS connection\",\n  \"purpose\": \"to guide on connecting a battery pack to a BMS\",\n  \"components\": [\n    {\n      \"name\": \"TP-4056\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"charging module for batteries\"\n    },\n    {\n      \"name\": \"nickel strip\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for spot welding\"\n    },\n    {\n      \"name\": \"welding machine\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for connecting battery cells\"\n    },\n    {\n      \"name\": \"soldering iron\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"used for soldering connections\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"battery capacity\",\n      \"name\": \"maximum capacity\",\n      \"value\": \"1000 mAh\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"1S configuration voltage\",\n      \"value\": \"3-4.2V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"2S configuration voltage\",\n      \"value\": \"6-8.4V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"3S configuration voltage\",\n      \"value\": \"9-12.6V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"battery configuration\",\n      \"name\": \"4S configuration voltage\",\n      \"value\": \"12-16.8V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"high current battery\",\n      \"name\": \"peak current output\",\n      \"value\": \"15-30A\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"standard battery\",\n      \"name\": \"peak current output\",\n      \"value\": \"5A\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"storage temperature\",\n      \"name\": \"recommended storage temperature\",\n      \"value\": \"-10 to +50 °C\",\n      \"unit\": \"°C\"\n    },\n    {\n      \"subject\": \"charging voltage\",\n      \"name\": \"charging voltage for 12V 3Ah assembly\",\n      \"value\": \"12.6V\",\n      \"unit\": null\n    },\n    {\n      \"subject\": \"charging current\",\n      \"name\": \"charging current for 12V 3Ah assembly\",\n      \"value\": \"1A\",\n      \"unit\": null\n    }\n  ],\n  \"interfaces_protocols\": [],\n  \"software_tools\": []\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "power_batteries",
+        "main_subject": "battery assembly and BMS connection",
+        "purpose": "to guide on connecting a battery pack to a BMS",
+        "components": [
+          {
+            "name": "TP-4056",
+            "model": null,
+            "manufacturer": null,
+            "role": "charging module for batteries"
+          },
+          {
+            "name": "nickel strip",
+            "model": null,
+            "manufacturer": null,
+            "role": "used for spot welding"
+          },
+          {
+            "name": "welding machine",
+            "model": null,
+            "manufacturer": null,
+            "role": "used for connecting battery cells"
+          },
+          {
+            "name": "soldering iron",
+            "model": null,
+            "manufacturer": null,
+            "role": "used for soldering connections"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "battery capacity",
+            "name": "maximum capacity",
+            "value": "1000 mAh",
+            "unit": null
+          },
+          {
+            "subject": "battery configuration",
+            "name": "1S configuration voltage",
+            "value": "3-4.2V",
+            "unit": null
+          },
+          {
+            "subject": "battery configuration",
+            "name": "2S configuration voltage",
+            "value": "6-8.4V",
+            "unit": null
+          },
+          {
+            "subject": "battery configuration",
+            "name": "3S configuration voltage",
+            "value": "9-12.6V",
+            "unit": null
+          },
+          {
+            "subject": "battery configuration",
+            "name": "4S configuration voltage",
+            "value": "12-16.8V",
+            "unit": null
+          },
+          {
+            "subject": "high current battery",
+            "name": "peak current output",
+            "value": "15-30A",
+            "unit": null
+          },
+          {
+            "subject": "standard battery",
+            "name": "peak current output",
+            "value": "5A",
+            "unit": null
+          },
+          {
+            "subject": "storage temperature",
+            "name": "recommended storage temperature",
+            "value": "-10 to +50 °C",
+            "unit": "°C"
+          },
+          {
+            "subject": "charging voltage",
+            "name": "charging voltage for 12V 3Ah assembly",
+            "value": "12.6V",
+            "unit": null
+          },
+          {
+            "subject": "charging current",
+            "name": "charging current for 12V 3Ah assembly",
+            "value": "1A",
+            "unit": null
+          }
+        ],
+        "interfaces_protocols": [],
+        "software_tools": []
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "power_batteries",
+    "main_subject": "battery assembly and BMS connection",
+    "purpose": "to guide on connecting a battery pack to a BMS",
+    "components": [
+      {
+        "name": "TP-4056",
+        "model": null,
+        "manufacturer": null,
+        "role": "charging module for batteries"
+      },
+      {
+        "name": "nickel strip",
+        "model": null,
+        "manufacturer": null,
+        "role": "used for spot welding"
+      },
+      {
+        "name": "welding machine",
+        "model": null,
+        "manufacturer": null,
+        "role": "used for connecting battery cells"
+      },
+      {
+        "name": "soldering iron",
+        "model": null,
+        "manufacturer": null,
+        "role": "used for soldering connections"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "battery capacity",
+        "name": "maximum capacity",
+        "value": "1000 mAh",
+        "unit": null
+      },
+      {
+        "subject": "battery configuration",
+        "name": "1S configuration voltage",
+        "value": "3-4.2V",
+        "unit": null
+      },
+      {
+        "subject": "battery configuration",
+        "name": "2S configuration voltage",
+        "value": "6-8.4V",
+        "unit": null
+      },
+      {
+        "subject": "battery configuration",
+        "name": "3S configuration voltage",
+        "value": "9-12.6V",
+        "unit": null
+      },
+      {
+        "subject": "battery configuration",
+        "name": "4S configuration voltage",
+        "value": "12-16.8V",
+        "unit": null
+      },
+      {
+        "subject": "high current battery",
+        "name": "peak current output",
+        "value": "15-30A",
+        "unit": null
+      },
+      {
+        "subject": "standard battery",
+        "name": "peak current output",
+        "value": "5A",
+        "unit": null
+      },
+      {
+        "subject": "storage temperature",
+        "name": "recommended storage temperature",
+        "value": "-10 to +50 °C",
+        "unit": "°C"
+      },
+      {
+        "subject": "charging voltage",
+        "name": "charging voltage for 12V 3Ah assembly",
+        "value": "12.6V",
+        "unit": null
+      },
+      {
+        "subject": "charging current",
+        "name": "charging current for 12V 3Ah assembly",
+        "value": "1A",
+        "unit": null
+      }
+    ],
+    "interfaces_protocols": [],
+    "software_tools": []
+  },
+  "error": null
+}

@@ -1,0 +1,274 @@
+{
+  "document_id": "HR-0175",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0175.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:44:33.496256+00:00",
+  "latency_seconds": 5.953760099946521,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-736",
+            "object": "chat.completion",
+            "created": 1792943079,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\": \"project\", \"primary_topic\": \"printing_mechanics\", \"main_subject\": \"3D printing\", \"purpose\": \"to create a plastic filament from a plastic bottle\", \"components\": [{\"name\": \"bрусок 30х20мм\", \"model\": \"30x20mm rod\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"лезо канцелярського ножа\", \"model\": \"scissors\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"шпилька М6\", \"model\": \"M6 screw\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"2 гайки М6\", \"model\": \"M6 nuts\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"2 гвинти М2,5\", \"model\": \"M2.5 screws\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"шайбки\", \"model\": \"shims\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"алюмінієвий брусок\", \"model\": \"aluminum rod\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"kapтоновою стрічкою\", \"model\": \" Kapton tape\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"ніхромовою проволокою\", \"model\": \" Nichrome wire\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"термістор NTC 3950\", \"model\": \"NTC 3950 thermistor\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"контролер Arduino UNO\", \"model\": \"Arduino UNO\", \"manufacturer\": \"Arduino\", \"role\": \"main component\"}], \"technical_parameters\": [{\"subject\": \"temperature\", \"name\": \"extruder temperature\", \"value\": \"240C\", \"unit\": \"C\"}, {\"subject\": \"speed\", \"name\": \"extruder speed\", \"value\": \"110%\", \"unit\": \"%\"}], \"interfaces_protocols\": [\"Arduino\"], \"software_tools\": [\"Arduino IDE\", \"scissors\", \"screwdriver\", \"soldering iron\"]}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1684,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 520,
+              "total_tokens": 2204
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.821378399967216
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1684,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 520,
+        "total_tokens": 2204
+      },
+      "generation_id": "chatcmpl-736",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\": \"project\", \"primary_topic\": \"printing_mechanics\", \"main_subject\": \"3D printing\", \"purpose\": \"to create a plastic filament from a plastic bottle\", \"components\": [{\"name\": \"bрусок 30х20мм\", \"model\": \"30x20mm rod\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"лезо канцелярського ножа\", \"model\": \"scissors\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"шпилька М6\", \"model\": \"M6 screw\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"2 гайки М6\", \"model\": \"M6 nuts\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"2 гвинти М2,5\", \"model\": \"M2.5 screws\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"шайбки\", \"model\": \"shims\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"алюмінієвий брусок\", \"model\": \"aluminum rod\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"kapтоновою стрічкою\", \"model\": \" Kapton tape\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"ніхромовою проволокою\", \"model\": \" Nichrome wire\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"термістор NTC 3950\", \"model\": \"NTC 3950 thermistor\", \"manufacturer\": \"unknown\", \"role\": \"supporting component\"}, {\"name\": \"контролер Arduino UNO\", \"model\": \"Arduino UNO\", \"manufacturer\": \"Arduino\", \"role\": \"main component\"}], \"technical_parameters\": [{\"subject\": \"temperature\", \"name\": \"extruder temperature\", \"value\": \"240C\", \"unit\": \"C\"}, {\"subject\": \"speed\", \"name\": \"extruder speed\", \"value\": \"110%\", \"unit\": \"%\"}], \"interfaces_protocols\": [\"Arduino\"], \"software_tools\": [\"Arduino IDE\", \"scissors\", \"screwdriver\", \"soldering iron\"]}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "printing_mechanics",
+        "main_subject": "3D printing",
+        "purpose": "to create a plastic filament from a plastic bottle",
+        "components": [
+          {
+            "name": "bрусок 30х20мм",
+            "model": "30x20mm rod",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "лезо канцелярського ножа",
+            "model": "scissors",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "шпилька М6",
+            "model": "M6 screw",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "2 гайки М6",
+            "model": "M6 nuts",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "2 гвинти М2,5",
+            "model": "M2.5 screws",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "шайбки",
+            "model": "shims",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "алюмінієвий брусок",
+            "model": "aluminum rod",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "kapтоновою стрічкою",
+            "model": " Kapton tape",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "ніхромовою проволокою",
+            "model": " Nichrome wire",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "термістор NTC 3950",
+            "model": "NTC 3950 thermistor",
+            "manufacturer": "unknown",
+            "role": "supporting component"
+          },
+          {
+            "name": "контролер Arduino UNO",
+            "model": "Arduino UNO",
+            "manufacturer": "Arduino",
+            "role": "main component"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "temperature",
+            "name": "extruder temperature",
+            "value": "240C",
+            "unit": "C"
+          },
+          {
+            "subject": "speed",
+            "name": "extruder speed",
+            "value": "110%",
+            "unit": "%"
+          }
+        ],
+        "interfaces_protocols": [
+          "Arduino"
+        ],
+        "software_tools": [
+          "Arduino IDE",
+          "scissors",
+          "screwdriver",
+          "soldering iron"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "printing_mechanics",
+    "main_subject": "3D printing",
+    "purpose": "to create a plastic filament from a plastic bottle",
+    "components": [
+      {
+        "name": "bрусок 30х20мм",
+        "model": "30x20mm rod",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "лезо канцелярського ножа",
+        "model": "scissors",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "шпилька М6",
+        "model": "M6 screw",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "2 гайки М6",
+        "model": "M6 nuts",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "2 гвинти М2,5",
+        "model": "M2.5 screws",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "шайбки",
+        "model": "shims",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "алюмінієвий брусок",
+        "model": "aluminum rod",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "kapтоновою стрічкою",
+        "model": " Kapton tape",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "ніхромовою проволокою",
+        "model": " Nichrome wire",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "термістор NTC 3950",
+        "model": "NTC 3950 thermistor",
+        "manufacturer": "unknown",
+        "role": "supporting component"
+      },
+      {
+        "name": "контролер Arduino UNO",
+        "model": "Arduino UNO",
+        "manufacturer": "Arduino",
+        "role": "main component"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "temperature",
+        "name": "extruder temperature",
+        "value": "240C",
+        "unit": "C"
+      },
+      {
+        "subject": "speed",
+        "name": "extruder speed",
+        "value": "110%",
+        "unit": "%"
+      }
+    ],
+    "interfaces_protocols": [
+      "Arduino"
+    ],
+    "software_tools": [
+      "Arduino IDE",
+      "scissors",
+      "screwdriver",
+      "soldering iron"
+    ]
+  },
+  "error": null
+}

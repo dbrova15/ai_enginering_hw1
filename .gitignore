@@ -38,6 +38,19 @@ __pycache__/
 !.env.sample
 !.env.template
 
+# Приватні ключі та локальні credentials; приклади .env залишаються вище
+.envrc
+.secrets/
+secrets/
+credentials.json
+credentials.*.json
+service-account*.json
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+
 # Налаштування IDE та кеш Jupyter
 .idea/
 .vscode/
@@ -49,10 +62,17 @@ __pycache__/
 *.swp
 *.swo
 *~
+.~lock.*#
+~$*
+/.tmp/
+/tmp/
+/temp/
 
 # Службові файли Codex і NeuroTrace
 /.specs/
 /.neurotrace/
+/.codex/
+/.ollama/
 
 # Системні файли Windows і macOS
 Thumbs.db

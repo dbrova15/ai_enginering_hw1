@@ -1,0 +1,168 @@
+{
+  "document_id": "HR-0254",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0254.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:54:40.576017+00:00",
+  "latency_seconds": 2.876023599994369,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-EctuLO6djJ8uBIGwBrQJdgIGzfqsj",
+            "object": "chat.completion",
+            "created": 1792940081,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"displays_indicators\",\"main_subject\":\"LCD 1602\",\"purpose\":\"Створення настільного годинника з великими цифрами на дисплеї\",\"components\":[{\"name\":\"Arduino Uno\",\"model\":null,\"manufacturer\":null,\"role\":\"мозок проекту\"},{\"name\":\"LCD 1602A\",\"model\":null,\"manufacturer\":null,\"role\":\"дисплей\"},{\"name\":\"RTC DS1302\",\"model\":\"5-пінова версія\",\"manufacturer\":null,\"role\":\"модуль реального часу\"}],\"technical_parameters\":[],\"interfaces_protocols\":[\"I2C\",\"GPIO\"],\"software_tools\":[\"LiquidCrystal I2C\",\"Ds1302\"]}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 5406,
+              "completion_tokens": 149,
+              "total_tokens": 5555,
+              "prompt_tokens_details": {
+                "cached_tokens": 4224,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.701424099970609
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 5406,
+        "completion_tokens": 149,
+        "total_tokens": 5555,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-EctuLO6djJ8uBIGwBrQJdgIGzfqsj",
+      "finish_reason": "stop",
+      "raw_content": "{\"document_type\":\"tutorial\",\"primary_topic\":\"displays_indicators\",\"main_subject\":\"LCD 1602\",\"purpose\":\"Створення настільного годинника з великими цифрами на дисплеї\",\"components\":[{\"name\":\"Arduino Uno\",\"model\":null,\"manufacturer\":null,\"role\":\"мозок проекту\"},{\"name\":\"LCD 1602A\",\"model\":null,\"manufacturer\":null,\"role\":\"дисплей\"},{\"name\":\"RTC DS1302\",\"model\":\"5-пінова версія\",\"manufacturer\":null,\"role\":\"модуль реального часу\"}],\"technical_parameters\":[],\"interfaces_protocols\":[\"I2C\",\"GPIO\"],\"software_tools\":[\"LiquidCrystal I2C\",\"Ds1302\"]}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "displays_indicators",
+        "main_subject": "LCD 1602",
+        "purpose": "Створення настільного годинника з великими цифрами на дисплеї",
+        "components": [
+          {
+            "name": "Arduino Uno",
+            "model": null,
+            "manufacturer": null,
+            "role": "мозок проекту"
+          },
+          {
+            "name": "LCD 1602A",
+            "model": null,
+            "manufacturer": null,
+            "role": "дисплей"
+          },
+          {
+            "name": "RTC DS1302",
+            "model": "5-пінова версія",
+            "manufacturer": null,
+            "role": "модуль реального часу"
+          }
+        ],
+        "technical_parameters": [],
+        "interfaces_protocols": [
+          "I2C",
+          "GPIO"
+        ],
+        "software_tools": [
+          "LiquidCrystal I2C",
+          "Ds1302"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "displays_indicators",
+    "main_subject": "LCD 1602",
+    "purpose": "Створення настільного годинника з великими цифрами на дисплеї",
+    "components": [
+      {
+        "name": "Arduino Uno",
+        "model": null,
+        "manufacturer": null,
+        "role": "мозок проекту"
+      },
+      {
+        "name": "LCD 1602A",
+        "model": null,
+        "manufacturer": null,
+        "role": "дисплей"
+      },
+      {
+        "name": "RTC DS1302",
+        "model": "5-пінова версія",
+        "manufacturer": null,
+        "role": "модуль реального часу"
+      }
+    ],
+    "technical_parameters": [],
+    "interfaces_protocols": [
+      "I2C",
+      "GPIO"
+    ],
+    "software_tools": [
+      "LiquidCrystal I2C",
+      "Ds1302"
+    ]
+  },
+  "error": null
+}

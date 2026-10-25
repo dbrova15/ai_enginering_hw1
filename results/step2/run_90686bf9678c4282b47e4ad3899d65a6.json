@@ -1,0 +1,306 @@
+{
+  "document_id": "HR-0415",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt",
+  "schema_version": "v1",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T15:43:17.842863+00:00",
+  "latency_seconds": 6.731537200044841,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-671",
+            "object": "chat.completion",
+            "created": 1792943004,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"Arduino-based six-wheeled robot\",\n  \"purpose\": \"to create an off-road RC rig with decent range and reliability\",\n  \"components\": [\n    {\n      \"name\": \"Arduino\",\n      \"model\": \"used\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"main controller\"\n    },\n    {\n      \"name\": \"Mega\",\n      \"model\": \"used\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"PWM signal processing\"\n    },\n    {\n      \"name\": \"H-bridge boards\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"motor control\"\n    },\n    {\n      \"name\": \"transmitter\",\n      \"model\": \"stock\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"receiver\",\n      \"model\": \"stock\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"6 motors\",\n      \"model\": \"high power\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"wheel movement\"\n    },\n    {\n      \"name\": \"motor driver\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"motor control\"\n    },\n    {\n      \"name\": \"power supply\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"power supply\"\n    },\n    {\n      \"name\": \"2.4GHz transmitter\",\n      \"model\": \"good quality\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"2.4GHz receiver\",\n      \"model\": \"good quality\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"aluminum and duralumin chassis\",\n      \"model\": \"custom\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"structure\"\n    },\n    {\n      \"name\": \"gripper\",\n      \"model\": \"optional\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"accessory\"\n    },\n    {\n      \"name\": \"gimbal with camera\",\n      \"model\": \"optional\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"accessory\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"range\",\n      \"name\": \"range\",\n      \"value\": \"at least 200 meters\",\n      \"unit\": \"meters\"\n    },\n    {\n      \"subject\": \"load capacity\",\n      \"name\": \"load capacity\",\n      \"value\": \"at least a dozen kilos\",\n      \"unit\": \"kilograms\"\n    },\n    {\n      \"subject\": \"terrain\",\n      \"name\": \"terrain\",\n      \"value\": \"sand, snow, rubble\",\n      \"unit\": \"\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"2.4GHz\",\n    \"PWM\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 422,
+              "prompt_tokens_details": {
+                "cached_tokens": 91
+              },
+              "completion_tokens": 675,
+              "total_tokens": 1097
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 6.592580800061114
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 422,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "completion_tokens": 675,
+        "total_tokens": 1097
+      },
+      "generation_id": "chatcmpl-671",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"project\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"main_subject\": \"Arduino-based six-wheeled robot\",\n  \"purpose\": \"to create an off-road RC rig with decent range and reliability\",\n  \"components\": [\n    {\n      \"name\": \"Arduino\",\n      \"model\": \"used\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"main controller\"\n    },\n    {\n      \"name\": \"Mega\",\n      \"model\": \"used\",\n      \"manufacturer\": \"Arduino Team\",\n      \"role\": \"PWM signal processing\"\n    },\n    {\n      \"name\": \"H-bridge boards\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"motor control\"\n    },\n    {\n      \"name\": \"transmitter\",\n      \"model\": \"stock\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"receiver\",\n      \"model\": \"stock\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"6 motors\",\n      \"model\": \"high power\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"wheel movement\"\n    },\n    {\n      \"name\": \"motor driver\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"motor control\"\n    },\n    {\n      \"name\": \"power supply\",\n      \"model\": \"used\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"power supply\"\n    },\n    {\n      \"name\": \"2.4GHz transmitter\",\n      \"model\": \"good quality\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"2.4GHz receiver\",\n      \"model\": \"good quality\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"remote control\"\n    },\n    {\n      \"name\": \"aluminum and duralumin chassis\",\n      \"model\": \"custom\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"structure\"\n    },\n    {\n      \"name\": \"gripper\",\n      \"model\": \"optional\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"accessory\"\n    },\n    {\n      \"name\": \"gimbal with camera\",\n      \"model\": \"optional\",\n      \"manufacturer\": \"unknown\",\n      \"role\": \"accessory\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"range\",\n      \"name\": \"range\",\n      \"value\": \"at least 200 meters\",\n      \"unit\": \"meters\"\n    },\n    {\n      \"subject\": \"load capacity\",\n      \"name\": \"load capacity\",\n      \"value\": \"at least a dozen kilos\",\n      \"unit\": \"kilograms\"\n    },\n    {\n      \"subject\": \"terrain\",\n      \"name\": \"terrain\",\n      \"value\": \"sand, snow, rubble\",\n      \"unit\": \"\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"2.4GHz\",\n    \"PWM\"\n  ],\n  \"software_tools\": [\n    \"Arduino IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "project",
+        "primary_topic": "robotics_actuators",
+        "main_subject": "Arduino-based six-wheeled robot",
+        "purpose": "to create an off-road RC rig with decent range and reliability",
+        "components": [
+          {
+            "name": "Arduino",
+            "model": "used",
+            "manufacturer": "Arduino Team",
+            "role": "main controller"
+          },
+          {
+            "name": "Mega",
+            "model": "used",
+            "manufacturer": "Arduino Team",
+            "role": "PWM signal processing"
+          },
+          {
+            "name": "H-bridge boards",
+            "model": "used",
+            "manufacturer": "unknown",
+            "role": "motor control"
+          },
+          {
+            "name": "transmitter",
+            "model": "stock",
+            "manufacturer": "unknown",
+            "role": "remote control"
+          },
+          {
+            "name": "receiver",
+            "model": "stock",
+            "manufacturer": "unknown",
+            "role": "remote control"
+          },
+          {
+            "name": "6 motors",
+            "model": "high power",
+            "manufacturer": "unknown",
+            "role": "wheel movement"
+          },
+          {
+            "name": "motor driver",
+            "model": "used",
+            "manufacturer": "unknown",
+            "role": "motor control"
+          },
+          {
+            "name": "power supply",
+            "model": "used",
+            "manufacturer": "unknown",
+            "role": "power supply"
+          },
+          {
+            "name": "2.4GHz transmitter",
+            "model": "good quality",
+            "manufacturer": "unknown",
+            "role": "remote control"
+          },
+          {
+            "name": "2.4GHz receiver",
+            "model": "good quality",
+            "manufacturer": "unknown",
+            "role": "remote control"
+          },
+          {
+            "name": "aluminum and duralumin chassis",
+            "model": "custom",
+            "manufacturer": "unknown",
+            "role": "structure"
+          },
+          {
+            "name": "gripper",
+            "model": "optional",
+            "manufacturer": "unknown",
+            "role": "accessory"
+          },
+          {
+            "name": "gimbal with camera",
+            "model": "optional",
+            "manufacturer": "unknown",
+            "role": "accessory"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "range",
+            "name": "range",
+            "value": "at least 200 meters",
+            "unit": "meters"
+          },
+          {
+            "subject": "load capacity",
+            "name": "load capacity",
+            "value": "at least a dozen kilos",
+            "unit": "kilograms"
+          },
+          {
+            "subject": "terrain",
+            "name": "terrain",
+            "value": "sand, snow, rubble",
+            "unit": ""
+          }
+        ],
+        "interfaces_protocols": [
+          "2.4GHz",
+          "PWM"
+        ],
+        "software_tools": [
+          "Arduino IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "project",
+    "primary_topic": "robotics_actuators",
+    "main_subject": "Arduino-based six-wheeled robot",
+    "purpose": "to create an off-road RC rig with decent range and reliability",
+    "components": [
+      {
+        "name": "Arduino",
+        "model": "used",
+        "manufacturer": "Arduino Team",
+        "role": "main controller"
+      },
+      {
+        "name": "Mega",
+        "model": "used",
+        "manufacturer": "Arduino Team",
+        "role": "PWM signal processing"
+      },
+      {
+        "name": "H-bridge boards",
+        "model": "used",
+        "manufacturer": "unknown",
+        "role": "motor control"
+      },
+      {
+        "name": "transmitter",
+        "model": "stock",
+        "manufacturer": "unknown",
+        "role": "remote control"
+      },
+      {
+        "name": "receiver",
+        "model": "stock",
+        "manufacturer": "unknown",
+        "role": "remote control"
+      },
+      {
+        "name": "6 motors",
+        "model": "high power",
+        "manufacturer": "unknown",
+        "role": "wheel movement"
+      },
+      {
+        "name": "motor driver",
+        "model": "used",
+        "manufacturer": "unknown",
+        "role": "motor control"
+      },
+      {
+        "name": "power supply",
+        "model": "used",
+        "manufacturer": "unknown",
+        "role": "power supply"
+      },
+      {
+        "name": "2.4GHz transmitter",
+        "model": "good quality",
+        "manufacturer": "unknown",
+        "role": "remote control"
+      },
+      {
+        "name": "2.4GHz receiver",
+        "model": "good quality",
+        "manufacturer": "unknown",
+        "role": "remote control"
+      },
+      {
+        "name": "aluminum and duralumin chassis",
+        "model": "custom",
+        "manufacturer": "unknown",
+        "role": "structure"
+      },
+      {
+        "name": "gripper",
+        "model": "optional",
+        "manufacturer": "unknown",
+        "role": "accessory"
+      },
+      {
+        "name": "gimbal with camera",
+        "model": "optional",
+        "manufacturer": "unknown",
+        "role": "accessory"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "range",
+        "name": "range",
+        "value": "at least 200 meters",
+        "unit": "meters"
+      },
+      {
+        "subject": "load capacity",
+        "name": "load capacity",
+        "value": "at least a dozen kilos",
+        "unit": "kilograms"
+      },
+      {
+        "subject": "terrain",
+        "name": "terrain",
+        "value": "sand, snow, rubble",
+        "unit": ""
+      }
+    ],
+    "interfaces_protocols": [
+      "2.4GHz",
+      "PWM"
+    ],
+    "software_tools": [
+      "Arduino IDE"
+    ]
+  },
+  "error": null
+}

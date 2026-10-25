@@ -1,0 +1,218 @@
+{
+  "document_id": "HR-0056",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0056.txt",
+  "schema_version": "v1",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v1",
+    "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-25T14:53:17.015769+00:00",
+  "latency_seconds": 6.982815700001083,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ectt0BCX7iQ0Vy3NOgq9j7lKfCUAh",
+            "object": "chat.completion",
+            "created": 1792939998,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"temperature_control\",\n  \"purpose\": \"Створення табло на основі дисплею 320х240px з контролем температури для лабораторного блока живлення.\",\n  \"components\": [\n    {\n      \"name\": \"Термістор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"температурний датчик\"\n    },\n    {\n      \"name\": \"Плата з контролером STM32\",\n      \"model\": \"stm32f103vet6\",\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"Реле\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"включення/вимкнення\"\n    },\n    {\n      \"name\": \"SWD програматор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"програмування контролера\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"опір термістора\",\n      \"name\": \"Резистор\",\n      \"value\": \"10кОм\",\n      \"unit\": \"Ом\"\n    },\n    {\n      \"subject\": \"напруга живлення\",\n      \"name\": \"Живлення\",\n      \"value\": \"3.3V\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"напруга живлення\",\n      \"name\": \"Стабілізоване живлення\",\n      \"value\": \"5V\",\n      \"unit\": \"V\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"FSMC\",\n    \"ADC\"\n  ],\n  \"software_tools\": [\n    \"EmBits\",\n    \"IDE\"\n  ]\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 7041,
+              "completion_tokens": 399,
+              "total_tokens": 7440,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_a7771298d9"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 6.8111122999107465
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 7041,
+        "completion_tokens": 399,
+        "total_tokens": 7440,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ectt0BCX7iQ0Vy3NOgq9j7lKfCUAh",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"document_type\": \"tutorial\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"main_subject\": \"temperature_control\",\n  \"purpose\": \"Створення табло на основі дисплею 320х240px з контролем температури для лабораторного блока живлення.\",\n  \"components\": [\n    {\n      \"name\": \"Термістор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"температурний датчик\"\n    },\n    {\n      \"name\": \"Плата з контролером STM32\",\n      \"model\": \"stm32f103vet6\",\n      \"manufacturer\": null,\n      \"role\": \"контролер\"\n    },\n    {\n      \"name\": \"Реле\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"включення/вимкнення\"\n    },\n    {\n      \"name\": \"SWD програматор\",\n      \"model\": null,\n      \"manufacturer\": null,\n      \"role\": \"програмування контролера\"\n    }\n  ],\n  \"technical_parameters\": [\n    {\n      \"subject\": \"опір термістора\",\n      \"name\": \"Резистор\",\n      \"value\": \"10кОм\",\n      \"unit\": \"Ом\"\n    },\n    {\n      \"subject\": \"напруга живлення\",\n      \"name\": \"Живлення\",\n      \"value\": \"3.3V\",\n      \"unit\": \"V\"\n    },\n    {\n      \"subject\": \"напруга живлення\",\n      \"name\": \"Стабілізоване живлення\",\n      \"value\": \"5V\",\n      \"unit\": \"V\"\n    }\n  ],\n  \"interfaces_protocols\": [\n    \"FSMC\",\n    \"ADC\"\n  ],\n  \"software_tools\": [\n    \"EmBits\",\n    \"IDE\"\n  ]\n}",
+      "result": {
+        "document_type": "tutorial",
+        "primary_topic": "sensors_measurements",
+        "main_subject": "temperature_control",
+        "purpose": "Створення табло на основі дисплею 320х240px з контролем температури для лабораторного блока живлення.",
+        "components": [
+          {
+            "name": "Термістор",
+            "model": null,
+            "manufacturer": null,
+            "role": "температурний датчик"
+          },
+          {
+            "name": "Плата з контролером STM32",
+            "model": "stm32f103vet6",
+            "manufacturer": null,
+            "role": "контролер"
+          },
+          {
+            "name": "Реле",
+            "model": null,
+            "manufacturer": null,
+            "role": "включення/вимкнення"
+          },
+          {
+            "name": "SWD програматор",
+            "model": null,
+            "manufacturer": null,
+            "role": "програмування контролера"
+          }
+        ],
+        "technical_parameters": [
+          {
+            "subject": "опір термістора",
+            "name": "Резистор",
+            "value": "10кОм",
+            "unit": "Ом"
+          },
+          {
+            "subject": "напруга живлення",
+            "name": "Живлення",
+            "value": "3.3V",
+            "unit": "V"
+          },
+          {
+            "subject": "напруга живлення",
+            "name": "Стабілізоване живлення",
+            "value": "5V",
+            "unit": "V"
+          }
+        ],
+        "interfaces_protocols": [
+          "FSMC",
+          "ADC"
+        ],
+        "software_tools": [
+          "EmBits",
+          "IDE"
+        ]
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "document_type": "tutorial",
+    "primary_topic": "sensors_measurements",
+    "main_subject": "temperature_control",
+    "purpose": "Створення табло на основі дисплею 320х240px з контролем температури для лабораторного блока живлення.",
+    "components": [
+      {
+        "name": "Термістор",
+        "model": null,
+        "manufacturer": null,
+        "role": "температурний датчик"
+      },
+      {
+        "name": "Плата з контролером STM32",
+        "model": "stm32f103vet6",
+        "manufacturer": null,
+        "role": "контролер"
+      },
+      {
+        "name": "Реле",
+        "model": null,
+        "manufacturer": null,
+        "role": "включення/вимкнення"
+      },
+      {
+        "name": "SWD програматор",
+        "model": null,
+        "manufacturer": null,
+        "role": "програмування контролера"
+      }
+    ],
+    "technical_parameters": [
+      {
+        "subject": "опір термістора",
+        "name": "Резистор",
+        "value": "10кОм",
+        "unit": "Ом"
+      },
+      {
+        "subject": "напруга живлення",
+        "name": "Живлення",
+        "value": "3.3V",
+        "unit": "V"
+      },
+      {
+        "subject": "напруга живлення",
+        "name": "Стабілізоване живлення",
+        "value": "5V",
+        "unit": "V"
+      }
+    ],
+    "interfaces_protocols": [
+      "FSMC",
+      "ADC"
+    ],
+    "software_tools": [
+      "EmBits",
+      "IDE"
+    ]
+  },
+  "error": null
+}
