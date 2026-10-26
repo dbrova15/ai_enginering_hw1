@@ -41,6 +41,8 @@ def load_golden(path: Path, strict: bool) -> tuple[dict, bool]:
         raise EvaluationError('Golden set повинен бути непорожнім JSON-масивом.')
     golden = {}
     for row in rows:
+        if isinstance(row, dict) and row.get('schema_version') == 'v2':
+            raise EvaluationError('Golden Schema v2 потребує evaluate_v2.py; evaluate.py є історичним v1.')
         if not isinstance(row, dict) or not isinstance(row.get('document_id'), str):
             raise EvaluationError('Некоректний document_id у golden set.')
         doc = row['document_id']
@@ -62,6 +64,8 @@ def load_run(path: Path) -> RunRecord:
     keys = ('document_id', 'provider', 'requested_model', 'schema_version')
     if not isinstance(row, dict) or any(not isinstance(row.get(k), str) or not row[k] for k in keys):
         raise EvaluationError(f'Не можна визначити конфігурацію/ID: {path}')
+    if row['schema_version'] != 'v1':
+        raise EvaluationError('Історичний evaluate.py підтримує лише Schema v1; для v2 використайте evaluate_v2.py.')
     prompt, sampling = row.get('prompt'), row.get('sampling')
     if not isinstance(prompt, dict) or any(not isinstance(prompt.get(k), str) or not prompt[k]
                                            for k in ('version', 'sha256')):
@@ -86,9 +90,9 @@ def load_run(path: Path) -> RunRecord:
     return RunRecord(path, row, config, result, first, problems)
 
 
-def _inspect_result(row: dict, attempts: list) -> tuple:
+def _inspect_result(row: dict, attempts: list, validator=valid_result) -> tuple:
     """Звіряє статуси й структуровані результати спроб; unknown не стає false."""
-    result = valid_result(row.get('result'))
+    result = validator(row.get('result'))
     status = row.get('status')
     problems = []
     if status not in ('success', 'repaired', 'failed'):
@@ -102,7 +106,7 @@ def _inspect_result(row: dict, attempts: list) -> tuple:
         problems.append('invalid_result')
     first = None
     if attempts and 'result' in attempts[0]:
-        first = valid_result(attempts[0]['result']) is not None
+        first = validator(attempts[0]['result']) is not None
     claimed = row.get('first_pass_valid')
     if first is not None and (not isinstance(claimed, bool) or claimed != first):
         problems.append('first_pass_conflict')
@@ -111,7 +115,7 @@ def _inspect_result(row: dict, attempts: list) -> tuple:
     if status == 'success' and (len(attempts) > 1 or first is False):
         problems.append('success_status_conflict')
     if result is not None and attempts and 'result' in attempts[-1]:
-        if valid_result(attempts[-1]['result']) != result:
+        if validator(attempts[-1]['result']) != result:
             problems.append('final_attempt_conflict')
             result = None
     return result, problems, first

@@ -1,0 +1,75 @@
+{
+  "routes": [
+    {
+      "path": "results\\schema_v2\\probes\\GPT-T0\\run_2a0fc862926f480e80833908849644b6.json",
+      "provider": "openai",
+      "requested_model": "gpt-4o-mini",
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "sampling": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+      "input_text_sha256": "4e5ef4c2b7c6e5b910007434e63f420a600f464cfad10ed4832524267bb82b3f",
+      "text_preparation_version": "schema-v2-text-v1",
+      "output_mode": "chat_completions.json_schema.strict",
+      "first_pass_valid": true,
+      "status": "success",
+      "latency_seconds": 2.566137699992396
+    },
+    {
+      "path": "results\\schema_v2\\probes\\GPT-T07\\run_1da0288d94f448e1b52f3ef7b8b5237e.json",
+      "provider": "openai",
+      "requested_model": "gpt-4o-mini",
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "sampling": {
+        "temperature": 0.7,
+        "top_p": 1.0
+      },
+      "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+      "input_text_sha256": "4e5ef4c2b7c6e5b910007434e63f420a600f464cfad10ed4832524267bb82b3f",
+      "text_preparation_version": "schema-v2-text-v1",
+      "output_mode": "chat_completions.json_schema.strict",
+      "first_pass_valid": true,
+      "status": "success",
+      "latency_seconds": 1.876717000035569
+    },
+    {
+      "path": "results\\schema_v2\\probes\\OSS-T0\\run_b211ff6f32454c7294df4d4ba901e45d.json",
+      "provider": "ollama",
+      "requested_model": "llama3.2:3b",
+      "returned_model": "llama3.2:3b",
+      "sampling": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+      "input_text_sha256": "4e5ef4c2b7c6e5b910007434e63f420a600f464cfad10ed4832524267bb82b3f",
+      "text_preparation_version": "schema-v2-text-v1",
+      "output_mode": "chat_completions.json_schema.strict",
+      "first_pass_valid": true,
+      "status": "success",
+      "latency_seconds": 9.447309200069867
+    },
+    {
+      "path": "results\\schema_v2\\probes\\OSS-T07\\run_4aa16c2a88c94564a08b73e031ff9aef.json",
+      "provider": "ollama",
+      "requested_model": "llama3.2:3b",
+      "returned_model": "llama3.2:3b",
+      "sampling": {
+        "temperature": 0.7,
+        "top_p": 1.0
+      },
+      "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+      "input_text_sha256": "4e5ef4c2b7c6e5b910007434e63f420a600f464cfad10ed4832524267bb82b3f",
+      "text_preparation_version": "schema-v2-text-v1",
+      "output_mode": "chat_completions.json_schema.strict",
+      "first_pass_valid": true,
+      "status": "success",
+      "latency_seconds": 2.644847400020808
+    }
+  ],
+  "input_hash_equal": true,
+  "local_validation": "4/4 pass",
+  "server_effective_sampling": "unknown; API accepted exact sent T0/T07 payload values"
+}

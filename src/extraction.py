@@ -6,10 +6,10 @@ from typing import Any
 from pydantic import ValidationError
 
 from src.chat_client import ApiCall, ChatCompletionsClient
-from src.schema import ExtractionResult
+from src.schemas import SCHEMA_V1, SchemaSpec
 
 
-def inspect_reply(call: ApiCall) -> dict[str, Any]:
+def inspect_reply(call: ApiCall, schema_spec: SchemaSpec = SCHEMA_V1) -> dict[str, Any]:
     """Перетворює відповідь API на результат перевірки однієї генерації.
 
     Отримує ApiCall із HTTP-журналом і повертає дані моделі, usage, сирий
@@ -50,10 +50,10 @@ def inspect_reply(call: ApiCall) -> dict[str, Any]:
         checked['error'] = 'Модель не повернула текст із JSON.'
         return checked
     try:
-        parsed = ExtractionResult.model_validate_json(checked['raw_content'])
+        parsed = schema_spec.model.model_validate_json(checked['raw_content'])
         checked['result'] = parsed.model_dump(mode='json')
     except ValidationError as exc:
-        checked['error'] = json.dumps(exc.errors(include_input=False, include_url=False),
+        checked['error'] = json.dumps(exc.errors(include_input=False, include_url=False, include_context=False),
                                       ensure_ascii=False)
         checked['repairable'] = True
     return checked
@@ -71,7 +71,7 @@ def extract_document(client: ChatCompletionsClient, prompt: str, article: str) -
     messages = [{'role': 'system', 'content': prompt}, {'role': 'user', 'content': article}]
     attempts = []
     for index in range(2):
-        checked = inspect_reply(client.complete(messages))
+        checked = inspect_reply(client.complete(messages), client.schema_spec)
         checked['kind'] = 'initial' if index == 0 else 'repair'
         attempts.append(checked)
         if checked['result'] is not None or not checked['repairable'] or index == 1:

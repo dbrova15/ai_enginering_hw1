@@ -22,6 +22,8 @@ UNITS = {
     'Hz': ('frequency', '1'), 'kHz': ('frequency', '1000'),
     'MHz': ('frequency', '1000000'), 'W': ('power', '1'),
     '°C': ('temperature', '1'), '%': ('percent', '1'), 'px': ('pixels', '1'),
+    '°': ('angle', '1'), 'см': ('length', '.01'),
+    'мм': ('length', '.001'),
 }
 UNIT_WORDS = {
     'v': 'V', 'в': 'В', 'volt': 'V', 'volts': 'V',
@@ -29,6 +31,10 @@ UNIT_WORDS = {
     'meter': 'm', 'meters': 'm', 'metre': 'm', 'metres': 'm',
     'kilogram': 'kg', 'kilograms': 'kg', 'kilo': 'kg', 'kilos': 'kg',
     'second': 's', 'seconds': 's', 'pixels': 'px',
+    'degree': '°', 'degrees': '°', 'градус': '°', 'градуси': '°',
+    'градусів': '°', 'градусов': '°', 'градусы': '°',
+    'centimeter': 'cm', 'centimeters': 'cm', 'centimetres': 'cm',
+    'millimeter': 'mm', 'millimeters': 'mm',
 }
 
 
@@ -64,6 +70,27 @@ def quantity(value: str, declared_unit: str | None) -> dict:
     Не вгадує одиниці за пристроєм. Конфлікт між одиницею в value та unit
     позначає явно. Кілька чисел без відомої структури не стають одним числом.
     """
+    parts = re.split(r'\s*[xх×*]\s*', value, flags=re.IGNORECASE)
+    if len(parts) > 1:
+        return _dimensions(value, parts, declared_unit)
+    return _scalar_quantity(value, declared_unit)
+
+
+def _dimensions(original: str, parts: list[str], declared_unit: str | None) -> dict:
+    """Порівнює впорядковані розміри, не перетворюючи їх на площу чи сортований набір."""
+    # Загальна одиниця в кінці поширюється на всі осі лише коли вона явна.
+    suffix = re.fullmatch(r'.*\d\s*([A-Za-zµμА-Яа-я°%]+)', parts[-1])
+    shared = declared_unit or (suffix[1] if suffix else None)
+    axes = [_scalar_quantity(p, shared) for p in parts]
+    if any(axis['kind'] == 'conflict' for axis in axes):
+        return {'kind': 'conflict', 'original': original, 'unit': declared_unit}
+    if len(parts) in (2, 3) and all(a['kind'] == '=' and a['dimension'] == 'length' for a in axes):
+        return {'kind': 'dimensions', 'numbers': [a['numbers'][0] for a in axes], 'dimension': 'length'}
+    return {'kind': 'opaque', 'value': text(original), 'unit': text(declared_unit)}
+
+
+def _scalar_quantity(value: str, declared_unit: str | None) -> dict:
+    """Розбирає одну вісь/число/діапазон, зберігаючи первинну перевірку одиниць."""
     expression = _expression(value)
     dimension, scale, known = unit(declared_unit)
     suffix = re.fullmatch(r'(.*\d)\s*([A-Za-zµμА-Яа-я°%]+)', expression)

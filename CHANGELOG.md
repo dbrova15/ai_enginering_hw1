@@ -2,7 +2,26 @@
 
 ## [Unreleased]
 
+#### Міграція Schema v2 та завершена матриця120
+
+- Додано окремий суворий контракт восьми enum/bool/list полів, SchemaSpec, вибір `--schema-version v2`, автоматичний baseline prompt та однакову ін’єкцію схеми в OpenAI/OpenRouter/Ollama. CLI sampling overrides зберігають explicit zero; v1 default і JSON Schema незмінні.
+- Підготовка v2 видаляє тільки відомий початковий site header, зберігає title/body/code; run містить source/input/schema/prompt hashes, preparation version, actual sent sampling та kind. Додано вибір 10 manifest ID і захист історичних outputs.
+- `evaluate_v2.py` рахує exact enum/bool/set метрики з fixed G знаменниками та окремими language/content/aggregate, golden runtime і baseline_all_30. Runtime helpers виділено без зміни v1 метрик; v1 evaluator явно відхиляє v2. Є офлайновий matrix checker і план120, не автоматичний scheduler.
+- Підготовлено незалежний golden_v2 за TXT і отримано людські10/10 approvals, включно з уточненням Type-C→usb. Golden/rules/input frozen. Виконано4 реальні probes і120/120 primary у8 конфігураціях; вісім strict evaluations та REPORT з5 реальними помилками відтворюються без API. Prompt-v2 створено за3 non-golden D текстами й заморожено до порівняння G.
+- Фактичний content на G: GPT62/70 для всіх4 конфігурацій; Llama24–35/70. Prompt-v2 не покращив GPT aggregate. Автор погодив умовну production-конфігурацію OpenAI gpt-4o-mini / schema_v2/v1 / T0, top_p1 для precision-first індексації; низький interfaces recall3/7 явно залишено обмеженням. На10 еталонах не заявляється статистична перевага.
+- Перевірка: 158 offline unittest пройшли, включно з mock demo/30/10, repair/retry/refusal/truncation, strict/provisional, fixed denominators і replay. compileall/pip check успішні; повторний v1 replay має тотожні quality/runtime/coverage; 108 захищених hashes незмінні. Нових залежностей і Git-коміту немає. Реальні v2 експерименти авторизовані окремо, API usage/tariff cost=$0.019617 із залишкового ліміту$4.95; hardware/electricity cost невідомі.
+
+
 ### 2026-10-25
+
+#### Доказове міжмовне зіставлення evaluator v2
+
+- Додано обмежені спільні UA/EN/RU словники сутностей, властивостей, ролей і призначень, незалежні від провайдера. `semantics.py` та `parameter_matching.py` розділяють предмет, характеристику, значення/одиниці та контекст. `quantities.py` підтримує градуси, впорядковані 2D/3D розміри та явну одиницю в value при unit=null. Немає fuzzy matching, LLM-судді або нових залежностей.
+- Identity не плутає Uno/Mega, модуль/чутливий елемент або ABC1/ABC10. Повна явна модель у назві допомагає впізнати сутність, але не виправляє model/manufacturer/role у прогнозі. Невідомий subject або property створює лише review-кандидата другим проходом; числа не підтверджують пристрій. Консервативні PR/F1 збережено; `fact_assessment` відокремлює непідтверджені пари й умовні розбіжності від суперечностей еталону за підтвердженої identity.
+- Додано `compare_evaluators.py` і `comparison.py`: перевірка однакових hashes/configs/ID/контролів та звіти до/після без перезапису. Старий evaluator виміряно до правок у `results/evaluation-semantic-v1-baseline`; нові звіти — `results/evaluation-semantic-v2`. Моделі не запускалися повторно, 97 захищених файлів (включно з попереднім evaluation) незмінні за SHA-256.
+- На 19 іменованих позитивних контролях FN зменшено з 16 до 0; на тих самих 24 негативних/review контролях full-fact FP = 0 до і після. Старі контрольні рішення відтворено зі snapshot старого коду. Це вимір на контрольному наборі, не гарантія відсутності FP на корпусі. Додано 24 unittest; разом 136 пройшли, включно з тестами перестановок, моделей, одиниць, conditional review, provenance та неможливості підмінити базу порівняння. compileall, pip check і diff check успішні; оцінки/details детерміновані.
+- На незмінних golden і baseline Components Identity F1: GPT-4o mini 38,30% → 41,13%; Llama 3.2 18,63% → 18,63%. Components/Technical Parameters Full Fact F1 та повний match main_subject/purpose залишилися нульовими: неповні атрибути, властивості замість subjects і непідтверджені перефразування не зараховано як правильні. Needs_review checks: 59 → 68 і 44 → 46; це не порівнювана accuracy, бо склад атомарних перевірок змінився. Об’єктні списки містять 18 review-пар і 2 неоднозначні групи; потрібна ручна перевірка.
+- Оновлено README та `docs/EVALUATION.md`. Вплив MAJOR: зміна достовірності оцінювання та нове порівняння політик зафіксовані однією завершеною зміною. Еталони залишаються provisional; кращу модель не визначено. Git commit/push не виконувалися.
 
 #### Офлайновий Golden Set Evaluator
 

@@ -1,0 +1,1420 @@
+{
+  "before_policy": "golden-evaluator-v1.0",
+  "after_policy": "golden-evaluator-v2.0",
+  "inputs_equal": true,
+  "evaluation_status": "provisional",
+  "groups": [
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "model": "gpt-4o-mini",
+      "metrics": [
+        {
+          "metric": "Components Identity F1",
+          "before": 0.3829787234042553,
+          "after": 0.41134751773049644,
+          "unit": "ratio"
+        },
+        {
+          "metric": "Components Full Fact F1",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "Technical Parameters F1",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "main_subject confirmed field accuracy",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "purpose confirmed field accuracy",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "needs_review (atomic checks)",
+          "before": 59,
+          "after": 68,
+          "unit": "count"
+        }
+      ],
+      "fact_assessment": {
+        "components": {
+          "confirmed_matches": 0,
+          "confirmed_contradictions": 2,
+          "needs_review_pairs": 10,
+          "unsupported_attribute_pairs": 17,
+          "missing": 66,
+          "extra_predicted": 17,
+          "ambiguous_groups": 0,
+          "method": "pair decisions; not disjoint categories; conservative PR/F1 retained"
+        },
+        "technical_parameters": {
+          "confirmed_matches": 0,
+          "confirmed_contradictions": 0,
+          "needs_review_pairs": 6,
+          "unsupported_attribute_pairs": 0,
+          "missing": 76,
+          "extra_predicted": 29,
+          "ambiguous_groups": 1,
+          "method": "pair decisions; not disjoint categories; conservative PR/F1 retained"
+        }
+      },
+      "review_checks_total": 444
+    },
+    {
+      "group_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba",
+      "model": "llama3.2:3b",
+      "metrics": [
+        {
+          "metric": "Components Identity F1",
+          "before": 0.18633540372670807,
+          "after": 0.18633540372670807,
+          "unit": "ratio"
+        },
+        {
+          "metric": "Components Full Fact F1",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "Technical Parameters F1",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "main_subject confirmed field accuracy",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "purpose confirmed field accuracy",
+          "before": 0.0,
+          "after": 0.0,
+          "unit": "ratio"
+        },
+        {
+          "metric": "needs_review (atomic checks)",
+          "before": 44,
+          "after": 46,
+          "unit": "count"
+        }
+      ],
+      "fact_assessment": {
+        "components": {
+          "confirmed_matches": 0,
+          "confirmed_contradictions": 7,
+          "needs_review_pairs": 1,
+          "unsupported_attribute_pairs": 11,
+          "missing": 80,
+          "extra_predicted": 51,
+          "ambiguous_groups": 0,
+          "method": "pair decisions; not disjoint categories; conservative PR/F1 retained"
+        },
+        "technical_parameters": {
+          "confirmed_matches": 0,
+          "confirmed_contradictions": 0,
+          "needs_review_pairs": 1,
+          "unsupported_attribute_pairs": 0,
+          "missing": 81,
+          "extra_predicted": 28,
+          "ambiguous_groups": 1,
+          "method": "pair decisions; not disjoint categories; conservative PR/F1 retained"
+        }
+      },
+      "review_checks_total": 416
+    }
+  ],
+  "controls": {
+    "positive_count": 19,
+    "negative_count": 24,
+    "before_fn": 16,
+    "after_fn": 0,
+    "before_fp": 0,
+    "after_fp": 0,
+    "fixed_fn_ids": [
+      "angle_range",
+      "board_dimensions",
+      "dimensions_scale",
+      "jumper_translation",
+      "microampere_alias",
+      "operating_voltage_en",
+      "operating_voltage_ru",
+      "operating_voltage_uk",
+      "potentiometer_translation",
+      "purpose_measure_temperature",
+      "purpose_watering_translation",
+      "role_translation",
+      "subject_tilt_translation",
+      "subject_watering_translation",
+      "tilt_module_translation",
+      "voltage_inline_unit"
+    ],
+    "new_fp_ids": [],
+    "cases": [
+      {
+        "id": "angle_range",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "approx_not_exact",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "area_not_dimensions",
+        "before": "needs_review",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "board_dimensions",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "bound_equivalence",
+        "before": "match",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "chip_not_board",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "desired_vs_measured",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "different_devices",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "different_properties",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "dimensions_scale",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "extra_function",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "generic_subject",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "hr0207_conflict",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "hr0207_other_spelling",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "jumper_translation",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "lost_arduino",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "microampere_alias",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "module_not_ball_sensor",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "negated_purpose",
+        "before": "needs_review",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "nulls_remain_equal",
+        "before": "match",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "numeric_comma",
+        "before": "match",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "operating_voltage_en",
+        "before": "mismatch",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "operating_voltage_ru",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "operating_voltage_uk",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "potentiometer_translation",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "property_as_subject",
+        "before": "missing",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "purpose_measure_temperature",
+        "before": "needs_review",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "purpose_watering_translation",
+        "before": "needs_review",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "range_vs_point",
+        "before": "needs_review",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "reversed_axes",
+        "before": "needs_review",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "role_translation",
+        "before": "needs_review",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "same_value_different_property",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "strict_bound",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "subject_tilt_translation",
+        "before": "needs_review",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "subject_watering_translation",
+        "before": "needs_review",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "tilt_module_translation",
+        "before": "missing",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "unknown_property",
+        "before": "missing",
+        "after": "needs_review",
+        "expected": "needs_review"
+      },
+      {
+        "id": "uno_not_mega",
+        "before": "missing",
+        "after": "missing",
+        "expected": "not_match"
+      },
+      {
+        "id": "voltage_inline_unit",
+        "before": "mismatch",
+        "after": "match",
+        "expected": "match"
+      },
+      {
+        "id": "wrong_manufacturer",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "wrong_model",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "wrong_role",
+        "before": "needs_review",
+        "after": "mismatch",
+        "expected": "not_match"
+      },
+      {
+        "id": "wrong_unit",
+        "before": "mismatch",
+        "after": "mismatch",
+        "expected": "not_match"
+      }
+    ]
+  },
+  "changed_examples": [
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "components",
+      "kind": "new_identity_match",
+      "pair": {
+        "expected_index": 11,
+        "predicted_index": 3,
+        "checks": [
+          {
+            "check_id": "components[11:3].name",
+            "expected": "USB-кабель",
+            "predicted": "USB Cable",
+            "verdict": "match",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "usb-кабель",
+            "canonical_predicted": "usb cable",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[11:3].name"
+          },
+          {
+            "check_id": "components[11:3].model",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_model",
+            "rule_ids": [
+              "scalar_model"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[11:3].model"
+          },
+          {
+            "check_id": "components[11:3].manufacturer",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_manufacturer",
+            "rule_ids": [
+              "scalar_manufacturer"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[11:3].manufacturer"
+          },
+          {
+            "check_id": "components[11:3].role",
+            "expected": "Соединяет Arduino с компьютером",
+            "predicted": "power supply",
+            "verdict": "needs_review",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "соединяет arduino с компьютером",
+            "canonical_predicted": "power supply",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[11:3].role"
+          }
+        ],
+        "full_match": false,
+        "identity_confirmed": true,
+        "verdict": "needs_review"
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "components",
+      "kind": "new_identity_match",
+      "pair": {
+        "expected_index": 0,
+        "predicted_index": 1,
+        "checks": [
+          {
+            "check_id": "components[0:1].name",
+            "expected": "Модуль датчика наклона",
+            "predicted": "Tilt Sensor Module",
+            "verdict": "match",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "модуль датчика наклона",
+            "canonical_predicted": "tilt sensor module",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[0:1].name"
+          },
+          {
+            "check_id": "components[0:1].model",
+            "expected": null,
+            "predicted": "SW-520D",
+            "verdict": "mismatch",
+            "reason_code": "scalar_model",
+            "rule_ids": [
+              "scalar_model"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": "sw-520d",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[0:1].model"
+          },
+          {
+            "check_id": "components[0:1].manufacturer",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_manufacturer",
+            "rule_ids": [
+              "scalar_manufacturer"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[0:1].manufacturer"
+          },
+          {
+            "check_id": "components[0:1].role",
+            "expected": "Выдаёт цифровой сигнал при изменении наклона",
+            "predicted": "sensor",
+            "verdict": "needs_review",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "выдаёт цифровой сигнал при изменении наклона",
+            "canonical_predicted": "sensor",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[0:1].role"
+          }
+        ],
+        "full_match": false,
+        "identity_confirmed": true,
+        "verdict": "mismatch"
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "components",
+      "kind": "new_identity_match",
+      "pair": {
+        "expected_index": 10,
+        "predicted_index": 2,
+        "checks": [
+          {
+            "check_id": "components[10:2].name",
+            "expected": "Перемычки",
+            "predicted": "Jumper Wires",
+            "verdict": "match",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "перемычки",
+            "canonical_predicted": "jumper wires",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[10:2].name"
+          },
+          {
+            "check_id": "components[10:2].model",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_model",
+            "rule_ids": [
+              "scalar_model"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[10:2].model"
+          },
+          {
+            "check_id": "components[10:2].manufacturer",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_manufacturer",
+            "rule_ids": [
+              "scalar_manufacturer"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[10:2].manufacturer"
+          },
+          {
+            "check_id": "components[10:2].role",
+            "expected": "Соединяют модуль с платой Arduino",
+            "predicted": "connection",
+            "verdict": "needs_review",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "соединяют модуль с платой arduino",
+            "canonical_predicted": "connection",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[10:2].role"
+          }
+        ],
+        "full_match": false,
+        "identity_confirmed": true,
+        "verdict": "needs_review"
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "components",
+      "kind": "removed_identity_match",
+      "pair": {
+        "expected_index": 1,
+        "predicted_index": 1,
+        "checks": [
+          {
+            "check_id": "components[1:1].name",
+            "expected": "Шариковый датчик наклона",
+            "predicted": "Tilt Sensor Module",
+            "verdict": "needs_review",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "шариковый датчик наклона",
+            "canonical_predicted": "tilt sensor module",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[1:1].name"
+          },
+          {
+            "check_id": "components[1:1].model",
+            "expected": "SW-520D",
+            "predicted": "SW-520D",
+            "verdict": "match",
+            "reason_code": "scalar_model",
+            "rule_ids": [
+              "scalar_model"
+            ],
+            "canonical_expected": "sw-520d",
+            "canonical_predicted": "sw-520d",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[1:1].model"
+          },
+          {
+            "check_id": "components[1:1].manufacturer",
+            "expected": null,
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "scalar_manufacturer",
+            "rule_ids": [
+              "scalar_manufacturer"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[1:1].manufacturer"
+          },
+          {
+            "check_id": "components[1:1].role",
+            "expected": "Чувствительный элемент модуля",
+            "predicted": "sensor",
+            "verdict": "needs_review",
+            "reason_code": "scalar_text",
+            "rule_ids": [
+              "scalar_text"
+            ],
+            "canonical_expected": "чувствительный элемент модуля",
+            "canonical_predicted": "sensor",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/components[1:1].role"
+          }
+        ],
+        "full_match": false
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 4,
+        "predicted_index": 3,
+        "checks": [
+          {
+            "check_id": "technical_parameters[4:3].subject",
+            "expected": "Модуль датчика наклона",
+            "predicted": "Threshold Angle",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[4:3].subject"
+          },
+          {
+            "check_id": "technical_parameters[4:3].name",
+            "expected": "Диапазон порогового угла",
+            "predicted": "Angle Range",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "threshold_angle",
+              "text": "диапазон порогового угла",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "threshold_angle",
+              "text": "angle range",
+              "subject_property": "threshold_angle"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[4:3].name"
+          },
+          {
+            "check_id": "technical_parameters[4:3].value",
+            "expected": "45–130",
+            "predicted": "45 to 130 degrees",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "range",
+              "numbers": [
+                "45",
+                "130"
+              ],
+              "dimension": "angle"
+            },
+            "canonical_predicted": {
+              "kind": "range",
+              "numbers": [
+                "45",
+                "130"
+              ],
+              "dimension": "angle"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[4:3].value"
+          },
+          {
+            "check_id": "technical_parameters[4:3].unit",
+            "expected": "градусов",
+            "predicted": "degrees",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "angle",
+            "canonical_predicted": "angle",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[4:3].unit"
+          },
+          {
+            "check_id": "technical_parameters[4:3].context",
+            "expected": "Модуль датчика наклона Диапазон порогового угла 45–130",
+            "predicted": "Threshold Angle Angle Range 45 to 130 degrees",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[4:3].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 0,
+        "predicted_index": 1,
+        "checks": [
+          {
+            "check_id": "technical_parameters[0:1].subject",
+            "expected": "Модуль датчика наклона",
+            "predicted": "Operating Voltage",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[0:1].subject"
+          },
+          {
+            "check_id": "technical_parameters[0:1].name",
+            "expected": "Рабочее напряжение",
+            "predicted": "Voltage",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "operating_voltage",
+              "text": "рабочее напряжение",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "operating_voltage",
+              "text": "voltage",
+              "subject_property": "operating_voltage"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[0:1].name"
+          },
+          {
+            "check_id": "technical_parameters[0:1].value",
+            "expected": "5",
+            "predicted": "5 V",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "=",
+              "numbers": [
+                "5"
+              ],
+              "dimension": "voltage"
+            },
+            "canonical_predicted": {
+              "kind": "=",
+              "numbers": [
+                "5"
+              ],
+              "dimension": "voltage"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[0:1].value"
+          },
+          {
+            "check_id": "technical_parameters[0:1].unit",
+            "expected": "В",
+            "predicted": null,
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "voltage",
+            "canonical_predicted": "voltage",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[0:1].unit"
+          },
+          {
+            "check_id": "technical_parameters[0:1].context",
+            "expected": "Модуль датчика наклона Рабочее напряжение 5",
+            "predicted": "Operating Voltage Voltage 5 V",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[0:1].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0068",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 2,
+        "predicted_index": 4,
+        "checks": [
+          {
+            "check_id": "technical_parameters[2:4].subject",
+            "expected": "Печатная плата модуля",
+            "predicted": "Board Size",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[2:4].subject"
+          },
+          {
+            "check_id": "technical_parameters[2:4].name",
+            "expected": "Размеры платы",
+            "predicted": "Dimensions",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "board_dimensions",
+              "text": "размеры платы",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "board_dimensions",
+              "text": "dimensions",
+              "subject_property": "board_dimensions"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[2:4].name"
+          },
+          {
+            "check_id": "technical_parameters[2:4].value",
+            "expected": "3,2 × 1,4",
+            "predicted": "3.2 cm x 1.4 cm",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "dimensions",
+              "numbers": [
+                "0.032",
+                "0.014"
+              ],
+              "dimension": "length"
+            },
+            "canonical_predicted": {
+              "kind": "dimensions",
+              "numbers": [
+                "0.032",
+                "0.014"
+              ],
+              "dimension": "length"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[2:4].value"
+          },
+          {
+            "check_id": "technical_parameters[2:4].unit",
+            "expected": "см",
+            "predicted": "cm",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "length",
+            "canonical_predicted": "length",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[2:4].unit"
+          },
+          {
+            "check_id": "technical_parameters[2:4].context",
+            "expected": "Печатная плата модуля Размеры платы 3,2 × 1,4",
+            "predicted": "Board Size Dimensions 3.2 cm x 1.4 cm",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0068/technical_parameters[2:4].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0207",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 6,
+        "predicted_index": 2,
+        "checks": [
+          {
+            "check_id": "technical_parameters[6:2].subject",
+            "expected": "Конденсатор",
+            "predicted": "Ємність конденсатора",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0207/technical_parameters[6:2].subject"
+          },
+          {
+            "check_id": "technical_parameters[6:2].name",
+            "expected": "Ємність",
+            "predicted": "Ємність",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "capacitance",
+              "text": "ємність",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "capacitance",
+              "text": "ємність",
+              "subject_property": null
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0207/technical_parameters[6:2].name"
+          },
+          {
+            "check_id": "technical_parameters[6:2].value",
+            "expected": "15000",
+            "predicted": "15000uF",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "=",
+              "numbers": [
+                "0.015000"
+              ],
+              "dimension": "capacitance"
+            },
+            "canonical_predicted": {
+              "kind": "=",
+              "numbers": [
+                "0.015000"
+              ],
+              "dimension": "capacitance"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0207/technical_parameters[6:2].value"
+          },
+          {
+            "check_id": "technical_parameters[6:2].unit",
+            "expected": "uF",
+            "predicted": "uF",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "capacitance",
+            "canonical_predicted": "capacitance",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0207/technical_parameters[6:2].unit"
+          },
+          {
+            "check_id": "technical_parameters[6:2].context",
+            "expected": "Конденсатор Ємність 15000",
+            "predicted": "Ємність конденсатора Ємність 15000uF",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0207/technical_parameters[6:2].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_6110dc939ee442dd8d6547aa13363500.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0212",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 2,
+        "predicted_index": 2,
+        "checks": [
+          {
+            "check_id": "technical_parameters[2:2].subject",
+            "expected": "Інвертор TATALІKEN",
+            "predicted": "номінальна потужність інвертора",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0212/technical_parameters[2:2].subject"
+          },
+          {
+            "check_id": "technical_parameters[2:2].name",
+            "expected": "Заявлена номінальна потужність",
+            "predicted": "Номінальна потужність",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "power",
+              "text": "потужність",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "power",
+              "text": "потужність",
+              "subject_property": null
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0212/technical_parameters[2:2].name"
+          },
+          {
+            "check_id": "technical_parameters[2:2].value",
+            "expected": "600",
+            "predicted": "600Вт",
+            "verdict": "needs_review",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "opaque",
+              "value": "600",
+              "unit": "вт"
+            },
+            "canonical_predicted": {
+              "kind": "opaque",
+              "value": "600вт",
+              "unit": "вт"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0212/technical_parameters[2:2].value"
+          },
+          {
+            "check_id": "technical_parameters[2:2].unit",
+            "expected": "Вт",
+            "predicted": "Вт",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "вт",
+            "canonical_predicted": "вт",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0212/technical_parameters[2:2].unit"
+          },
+          {
+            "check_id": "technical_parameters[2:2].context",
+            "expected": "Інвертор TATALІKEN Заявлена номінальна потужність 600",
+            "predicted": "номінальна потужність інвертора Номінальна потужність 600Вт",
+            "verdict": "needs_review",
+            "reason_code": "conditional_quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "conditional_verdict": "mismatch",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0212/technical_parameters[2:2].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": [
+          "technical_parameters[2:2].context"
+        ]
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_c34ce8fe16444699b208ea35bf2798ea.json"
+    },
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "document_id": "HR-0385",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 1,
+        "predicted_index": 1,
+        "checks": [
+          {
+            "check_id": "technical_parameters[1:1].subject",
+            "expected": "Battery pack",
+            "predicted": "Power supply",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0385/technical_parameters[1:1].subject"
+          },
+          {
+            "check_id": "technical_parameters[1:1].name",
+            "expected": "Voltage",
+            "predicted": "Voltage",
+            "verdict": "match",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "voltage",
+              "text": "voltage",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "voltage",
+              "text": "voltage",
+              "subject_property": null
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0385/technical_parameters[1:1].name"
+          },
+          {
+            "check_id": "technical_parameters[1:1].value",
+            "expected": "12",
+            "predicted": "12V",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "=",
+              "numbers": [
+                "12"
+              ],
+              "dimension": "voltage"
+            },
+            "canonical_predicted": {
+              "kind": "=",
+              "numbers": [
+                "12"
+              ],
+              "dimension": "voltage"
+            },
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0385/technical_parameters[1:1].value"
+          },
+          {
+            "check_id": "technical_parameters[1:1].unit",
+            "expected": "V",
+            "predicted": "V",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "voltage",
+            "canonical_predicted": "voltage",
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0385/technical_parameters[1:1].unit"
+          },
+          {
+            "check_id": "technical_parameters[1:1].context",
+            "expected": "Battery pack Voltage 12",
+            "predicted": "Power supply Voltage 12V",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2/HR-0385/technical_parameters[1:1].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_5ee0b1d85de94ed48e853fb7d6fb5fa5.json"
+    },
+    {
+      "group_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba",
+      "document_id": "HR-0068",
+      "field": "technical_parameters",
+      "kind": "new_review_candidate",
+      "pair": {
+        "expected_index": 0,
+        "predicted_index": 1,
+        "checks": [
+          {
+            "check_id": "technical_parameters[0:1].subject",
+            "expected": "Модуль датчика наклона",
+            "predicted": "power supply",
+            "verdict": "needs_review",
+            "reason_code": "semantic_subject",
+            "rule_ids": [
+              "semantic_subject"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba/HR-0068/technical_parameters[0:1].subject"
+          },
+          {
+            "check_id": "technical_parameters[0:1].name",
+            "expected": "Рабочее напряжение",
+            "predicted": "voltage",
+            "verdict": "needs_review",
+            "reason_code": "semantic_property",
+            "rule_ids": [
+              "semantic_property"
+            ],
+            "canonical_expected": {
+              "concept": "operating_voltage",
+              "text": "рабочее напряжение",
+              "subject_property": null
+            },
+            "canonical_predicted": {
+              "concept": "voltage",
+              "text": "voltage",
+              "subject_property": null
+            },
+            "scoped_check_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba/HR-0068/technical_parameters[0:1].name"
+          },
+          {
+            "check_id": "technical_parameters[0:1].value",
+            "expected": "5",
+            "predicted": "5 V",
+            "verdict": "match",
+            "reason_code": "quantity_bounds_units",
+            "rule_ids": [
+              "quantity_bounds_units"
+            ],
+            "canonical_expected": {
+              "kind": "=",
+              "numbers": [
+                "5"
+              ],
+              "dimension": "voltage"
+            },
+            "canonical_predicted": {
+              "kind": "=",
+              "numbers": [
+                "5"
+              ],
+              "dimension": "voltage"
+            },
+            "scoped_check_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba/HR-0068/technical_parameters[0:1].value"
+          },
+          {
+            "check_id": "technical_parameters[0:1].unit",
+            "expected": "В",
+            "predicted": "V",
+            "verdict": "match",
+            "reason_code": "effective_unit_dimension",
+            "rule_ids": [
+              "effective_unit_dimension"
+            ],
+            "canonical_expected": "voltage",
+            "canonical_predicted": "voltage",
+            "scoped_check_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba/HR-0068/technical_parameters[0:1].unit"
+          },
+          {
+            "check_id": "technical_parameters[0:1].context",
+            "expected": "Модуль датчика наклона Рабочее напряжение 5",
+            "predicted": "power supply voltage 5 V",
+            "verdict": "match",
+            "reason_code": "quantity_context",
+            "rule_ids": [
+              "quantity_context"
+            ],
+            "canonical_expected": null,
+            "canonical_predicted": null,
+            "scoped_check_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba/HR-0068/technical_parameters[0:1].context"
+          }
+        ],
+        "identity_confirmed": false,
+        "full_match": false,
+        "verdict": "needs_review",
+        "conditional_disagreements": []
+      },
+      "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_c4891b833568497490614b4911216ea6.json"
+    }
+  ],
+  "report_hashes": {
+    "D:\\PycharmProjects\\AiEngenering\\results\\evaluation-semantic-v1-baseline\\summary.json": "e9790137bc2aad83eb36f86c5783bb6262aad357014e3ad633f462cc6ffde3f1",
+    "D:\\PycharmProjects\\AiEngenering\\results\\evaluation-semantic-v2\\summary.json": "ee3b18542917af7e6074f25d042b20ce707e803a1c2299cabfa9d74e734cf9d1",
+    "D:\\PycharmProjects\\AiEngenering\\results\\evaluation-semantic-v1-baseline\\controls.json": "e55d88294db9e158b1aaa95f899e0495880e0c11e299a5a650f6d1cf8fc7bf23",
+    "D:\\PycharmProjects\\AiEngenering\\results\\evaluation-semantic-v2\\controls.json": "78e98ba5a9232402f5bc17092bad6eff136b11581090829340b8caca1008c665"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "document_id": "HR-0068",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0068.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:43:30.695109+00:00",
+  "latency_seconds": 3.1094424000475556,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-984",
+            "object": "chat.completion",
+            "created": 1792975413,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"ru\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"arduino\"], \"mentioned_interfaces\": [\"usb\", \"i2c\"], \"mentions_sensor\": true, \"mentions_display\": false, \"mentions_battery\": true, \"mentions_motor\": false}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1449,
+              "prompt_tokens_details": {
+                "cached_tokens": 1448
+              },
+              "completion_tokens": 63,
+              "total_tokens": 1512
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.9748777000932023
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1449,
+        "prompt_tokens_details": {
+          "cached_tokens": 1448
+        },
+        "completion_tokens": 63,
+        "total_tokens": 1512
+      },
+      "generation_id": "chatcmpl-984",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"ru\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"arduino\"], \"mentioned_interfaces\": [\"usb\", \"i2c\"], \"mentions_sensor\": true, \"mentions_display\": false, \"mentions_battery\": true, \"mentions_motor\": false}",
+      "result": {
+        "language": "ru",
+        "primary_topic": "sensors_measurements",
+        "mentioned_platforms": [
+          "arduino"
+        ],
+        "mentioned_interfaces": [
+          "i2c",
+          "usb"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": false,
+        "mentions_battery": true,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "ru",
+    "primary_topic": "sensors_measurements",
+    "mentioned_platforms": [
+      "arduino"
+    ],
+    "mentioned_interfaces": [
+      "i2c",
+      "usb"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": false,
+    "mentions_battery": true,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v1-T07",
+  "source_sha256": "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+  "input_text_sha256": "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

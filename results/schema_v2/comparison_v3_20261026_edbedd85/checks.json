@@ -1,0 +1,16 @@
+{
+  "primary_received": 60,
+  "models": 2,
+  "planned_each": 30,
+  "missing": 0,
+  "approved_golden": 10,
+  "schema_version": "v2",
+  "prompt_sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+  "all_source_and_prepared_hashes_equal": true,
+  "schema_validation_passed": true,
+  "golden_sha256": "9a3b831cee329deaf1a8175c0a1e581a0fc9e253d2807a27d08b4fab74c71a5a",
+  "failed_records_preserved": 11,
+  "new_api_cost_from_usage_usd": 0.01143105,
+  "code_modified": false,
+  "git_commit_created": false
+}

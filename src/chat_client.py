@@ -11,7 +11,7 @@ from typing import Any
 import httpx
 
 from src.config import Settings
-from src.schema import ExtractionResult
+from src.schemas import SCHEMA_V1, SchemaSpec
 
 
 @dataclass
@@ -67,6 +67,7 @@ class ChatCompletionsClient:
     def __init__(
         self, settings: Settings, http_client: httpx.Client,
         sleep: Callable[[float], None] = time.sleep,
+        *, schema_spec: SchemaSpec = SCHEMA_V1,
     ) -> None:
         """Зберігає конфігурацію, HTTP-клієнт і спосіб очікування між спробами.
 
@@ -77,6 +78,7 @@ class ChatCompletionsClient:
         self.settings = settings
         self.http_client = http_client
         self.sleep = sleep
+        self.schema_spec = schema_spec
 
     def _payload(self, messages: list[dict[str, str]]) -> dict[str, Any]:
         """Створює тіло запиту з повідомлень і погодженої Pydantic-схеми.
@@ -91,8 +93,8 @@ class ChatCompletionsClient:
             'response_format': {
                 'type': 'json_schema',
                 'json_schema': {
-                    'name': 'hardware_extraction', 'strict': True,
-                    'schema': ExtractionResult.model_json_schema(),
+                    'name': self.schema_spec.api_name, 'strict': True,
+                    'schema': self.schema_spec.api_schema,
                 },
             },
         }

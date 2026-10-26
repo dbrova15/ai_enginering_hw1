@@ -44,17 +44,18 @@ def context_verdict(expected: str, predicted: str) -> str:
 
 
 def stripped_context(value: str | None) -> str | None:
-    """Прибирає лише цілі відомі англійські маркери для ідентифікації параметра.
+    """Відокремлює відомі статуси; для UA/RU приймає лише задокументовані основи.
 
-    Українські словоформи навмисно не стемляться: непідтверджене перефразування
-    має перейти на ручний перегляд, а не випадково стати точним збігом.
+    Видалений маркер не губиться: context_verdict незалежно перевіряє його
+    в початкових subject/name/value. Загального стемінгу назв тут немає.
     """
     result = text(value)
     if result is None:
         return None
     for variants in CONTEXT_MARKERS.values():
         for word in variants:
-            result = re.sub(r'\b' + re.escape(word) + r'\b', '', result)
+            ending = r'\w*' if not word.isascii() else ''
+            result = re.sub(r'\b' + re.escape(word) + ending + r'\b', '', result)
     return alias(re.sub(r'\s+', ' ', result).strip())
 
 

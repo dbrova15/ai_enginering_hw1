@@ -8,6 +8,7 @@ import httpx
 
 from src.chat_client import ChatCompletionsClient
 from src.config import Settings
+from src.schemas import SCHEMA_V1, SchemaSpec
 
 
 class OllamaClient(ChatCompletionsClient):
@@ -24,6 +25,7 @@ class OllamaClient(ChatCompletionsClient):
     def __init__(
         self, settings: Settings, http_client: httpx.Client,
         sleep: Callable[[float], None] = time.sleep,
+        *, schema_spec: SchemaSpec = SCHEMA_V1,
     ) -> None:
         """Зберігає залежності й формує endpoint із кореневої адреси Ollama.
 
@@ -31,7 +33,7 @@ class OllamaClient(ChatCompletionsClient):
         між повторними спробами. Додає /v1/chat/completions до OLLAMA_BASE_URL.
         Сам не виконує запитів; HTTP-клієнт закриває той, хто його створив.
         """
-        super().__init__(settings, http_client, sleep)
+        super().__init__(settings, http_client, sleep, schema_spec=schema_spec)
         self.endpoint = str(settings.ollama_base_url).rstrip('/') + '/v1/chat/completions'
 
     def _headers(self) -> dict[str, str]:

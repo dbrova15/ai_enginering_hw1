@@ -1,0 +1,3 @@
+Synthetic hardware article
+
+An Arduino Uno reads a soil moisture sensor over I2C. An LCD displays the measurements. A battery supplies power and a motor drives a fan.

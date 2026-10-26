@@ -1,0 +1,141 @@
+{
+  "document_id": "HR-0055",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0055.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:05:23.670023+00:00",
+  "latency_seconds": 3.689978600014001,
+  "status": "failed",
+  "first_pass_valid": false,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-374",
+            "object": "chat.completion",
+            "created": 1792980326,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"ru\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"stm32\", \"stm32\", \"stm32\"], \"mentioned_interfaces\": [\"spi\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2345,
+              "prompt_tokens_details": {
+                "cached_tokens": 246
+              },
+              "completion_tokens": 69,
+              "total_tokens": 2414
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.0672565000131726
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2345,
+        "prompt_tokens_details": {
+          "cached_tokens": 246
+        },
+        "completion_tokens": 69,
+        "total_tokens": 2414
+      },
+      "generation_id": "chatcmpl-374",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"ru\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"stm32\", \"stm32\", \"stm32\"], \"mentioned_interfaces\": [\"spi\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "initial"
+    },
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-551",
+            "object": "chat.completion",
+            "created": 1792980327,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"ru\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"stm32\", \"stm32\", \"stm32\"], \"mentioned_interfaces\": [\"spi\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2556,
+              "prompt_tokens_details": {
+                "cached_tokens": 2356
+              },
+              "completion_tokens": 67,
+              "total_tokens": 2623
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 0.47749439999461174
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2556,
+        "prompt_tokens_details": {
+          "cached_tokens": 2356
+        },
+        "completion_tokens": 67,
+        "total_tokens": 2623
+      },
+      "generation_id": "chatcmpl-551",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"ru\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"stm32\", \"stm32\", \"stm32\"], \"mentioned_interfaces\": [\"spi\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "repair"
+    }
+  ],
+  "result": null,
+  "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v3-T0",
+  "source_sha256": "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94",
+  "input_text_sha256": "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

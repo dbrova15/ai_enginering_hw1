@@ -1,0 +1,126 @@
+{
+  "document_id": "HR-0207",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0207.txt",
+  "schema_version": "v2",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v2",
+    "sha256": "ba3e83f178b927849caa401cd7b22ebe06381c4eb4fb0977b2c7e5ca2a36394d",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:44:06.367197+00:00",
+  "latency_seconds": 1.234915699926205,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ed36ku1QbU9XrU5digvSJSGGDrXEc",
+            "object": "chat.completion",
+            "created": 1792975446,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\":\"uk\",\"primary_topic\":\"power_batteries\",\"mentioned_platforms\":[],\"mentioned_interfaces\":[],\"mentions_sensor\":false,\"mentions_display\":false,\"mentions_battery\":true,\"mentions_motor\":false}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1965,
+              "completion_tokens": 43,
+              "total_tokens": 2008,
+              "prompt_tokens_details": {
+                "cached_tokens": 1024,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_dca2fd68b3"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 1.0749522000551224
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 1965,
+        "completion_tokens": 43,
+        "total_tokens": 2008,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ed36ku1QbU9XrU5digvSJSGGDrXEc",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\":\"uk\",\"primary_topic\":\"power_batteries\",\"mentioned_platforms\":[],\"mentioned_interfaces\":[],\"mentions_sensor\":false,\"mentions_display\":false,\"mentions_battery\":true,\"mentions_motor\":false}",
+      "result": {
+        "language": "uk",
+        "primary_topic": "power_batteries",
+        "mentioned_platforms": [],
+        "mentioned_interfaces": [],
+        "mentions_sensor": false,
+        "mentions_display": false,
+        "mentions_battery": true,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "uk",
+    "primary_topic": "power_batteries",
+    "mentioned_platforms": [],
+    "mentioned_interfaces": [],
+    "mentions_sensor": false,
+    "mentions_display": false,
+    "mentions_battery": true,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "GPT-v2-T0",
+  "source_sha256": "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+  "input_text_sha256": "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

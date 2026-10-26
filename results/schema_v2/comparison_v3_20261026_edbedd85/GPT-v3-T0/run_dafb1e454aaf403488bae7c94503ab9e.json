@@ -1,0 +1,138 @@
+{
+  "document_id": "HR-0982",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0982.txt",
+  "schema_version": "v2",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:03:36.960826+00:00",
+  "latency_seconds": 1.8641495000338182,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ed4LhTgDM2xKa4GcsaiMQ5dB9tHRs",
+            "object": "chat.completion",
+            "created": 1792980217,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"communications_iot\",\n  \"mentioned_platforms\": [\n    \"arduino\",\n    \"esp32\"\n  ],\n  \"mentioned_interfaces\": [\n    \"wifi\",\n    \"bluetooth\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 3496,
+              "completion_tokens": 84,
+              "total_tokens": 3580,
+              "prompt_tokens_details": {
+                "cached_tokens": 1024,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_e9e83bb9dc"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 1.7031366999726743
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 3496,
+        "completion_tokens": 84,
+        "total_tokens": 3580,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ed4LhTgDM2xKa4GcsaiMQ5dB9tHRs",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"communications_iot\",\n  \"mentioned_platforms\": [\n    \"arduino\",\n    \"esp32\"\n  ],\n  \"mentioned_interfaces\": [\n    \"wifi\",\n    \"bluetooth\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}",
+      "result": {
+        "language": "en",
+        "primary_topic": "communications_iot",
+        "mentioned_platforms": [
+          "arduino",
+          "esp32"
+        ],
+        "mentioned_interfaces": [
+          "wifi",
+          "bluetooth"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": false,
+        "mentions_battery": true,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "en",
+    "primary_topic": "communications_iot",
+    "mentioned_platforms": [
+      "arduino",
+      "esp32"
+    ],
+    "mentioned_interfaces": [
+      "wifi",
+      "bluetooth"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": false,
+    "mentions_battery": true,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "GPT-v3-T0",
+  "source_sha256": "b5ae8e5875a12690504bd4a8b2dadcf5eefa44ec00f03d15d0947feee8b6432a",
+  "input_text_sha256": "14f2f283d4e146e28c795e4befd33b38bed48e9d4a7fee6c2d176cbe50721340",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

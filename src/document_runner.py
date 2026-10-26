@@ -1,6 +1,7 @@
 """Підготовка TXT-документів і послідовне витягування зі збереженням звітів."""
 
 import hashlib
+import json
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -13,6 +14,70 @@ from src.client_factory import create_client
 from src.config import Settings
 from src.extraction import extract_document
 from src.result_writer import save_result
+from src.schemas import SCHEMA_V1, SchemaSpec
+
+TEXT_PREPARATION_VERSION = 'schema-v2-text-v1'
+
+
+def prepare_article_text(original: str) -> str:
+    """Готує v2 input без зміни TXT чи видалення змістових згадок.
+
+    Після заголовка розпізнає тільки повний початковий блок Автори/Категорії/
+    Плати у визначеному порядку. Поза цим блоком, у цитатах і коді однакові
+    слова зберігаються. Порожні рядки збережені, переноси уніфіковані до LF.
+    """
+    normalized = original.replace('\r\n', '\n').replace('\r', '\n')
+    lines = normalized.splitlines(keepends=True)
+    content = [i for i, line in enumerate(lines) if line.strip()]
+    if len(content) < 4:
+        return normalized
+    header = content[1:4]
+    labels = ('Автори:', 'Категорії:', 'Плати:')
+    if all(lines[index].startswith(label) and lines[index][len(label):].strip()
+           for index, label in zip(header, labels)):
+        return ''.join(line for i, line in enumerate(lines) if i not in header)
+    return normalized
+
+
+def select_document_ids(path: Path, texts_root: Path) -> list['PreparedDocument']:
+    """Читає лише ID, не expected labels, і перевіряє всі вибрані файли до API.
+
+    Порожні/повторні/невідомі ID та однаковий ID у різних файлах відхиляються.
+    Функція повертає тільки потрібні документи у відтворюваному порядку.
+    """
+    ids = read_nonempty(path).splitlines()
+    if any(not item.strip() for item in ids) or len(ids) != len(set(ids)):
+        raise InputFileError('ID-файл містить порожні або повторні ID.')
+    manifest_path = texts_root.parent / 'manifest.json'
+    if manifest_path.is_file():
+        known = {row['id'] for row in json.loads(manifest_path.read_text(encoding='utf-8'))}
+        if set(ids) - known:
+            raise InputFileError('ID відсутній у manifest.')
+    documents = []
+    for doc in sorted(ids):
+        matches = [p for p in texts_root.rglob('*') if p.is_file() and
+                   p.suffix.lower() == '.txt' and p.stem == doc]
+        if len(matches) != 1:
+            raise InputFileError('Кожен ID повинен однозначно визначати існуючий TXT.')
+        documents.append(PreparedDocument(matches[0], read_nonempty(matches[0])))
+    return documents
+
+
+def guard_v2_output(output: Path, project_root: Path) -> None:
+    """Дозволяє тільки новий/порожній v2 output, захищає історичні results.
+
+    Не змінює каталогів і викликається до HTTP. Стандартна v2-гілка результатів
+    schema_v2 не перетинається з історичними step/evaluation-каталогами.
+    """
+    target, results = output.resolve(), (project_root / 'results').resolve()
+    protected = [results / 'step1', results / 'step2', *results.glob('evaluation*'),
+                 project_root / 'data', project_root / 'src', project_root / 'prompts']
+    if target == results or target == project_root.resolve() or any(
+        target == p.resolve() or target in p.resolve().parents or p.resolve() in target.parents
+        for p in protected):
+        raise InputFileError('V2 output не може перетинатися з вихідними/історичними даними.')
+    if target.exists() and (not target.is_dir() or any(target.iterdir())):
+        raise InputFileError('V2 output має бути новим або порожнім каталогом.')
 
 
 class InputFileError(ValueError):
@@ -102,6 +167,7 @@ def prepare_documents(document: Path, all_documents: bool, texts_root: Path) -> 
 def run_document(
     settings: Settings, document: PreparedDocument, prompt: str,
     prompt_path: Path, output_dir: Path,
+    *, schema_spec: SchemaSpec = SCHEMA_V1, run_kind: str = 'primary',
 ) -> tuple[dict[str, Any], Path]:
     """Обробляє одну підготовлену статтю й записує звіт попереднього формату.
 
@@ -110,14 +176,18 @@ def run_document(
     Latency, як раніше, включає створення клієнта та витягування, але не запис
     файла. Помилка запису передається main; попередні результати не перезаписуються.
     """
+    if run_kind not in ('primary', 'probe', 'warmup'):
+        raise InputFileError('Невідомий kind запуску.')
     started_at = datetime.now(timezone.utc).isoformat()
     started = time.perf_counter()
     with httpx.Client() as http_client:
-        client = create_client(settings, http_client)
-        extracted = extract_document(client, prompt, document.text)
+        client = (create_client(settings, http_client) if schema_spec.version == 'v1' else
+                  create_client(settings, http_client, schema_spec=schema_spec))
+        article = document.text if schema_spec.version == 'v1' else prepare_article_text(document.text)
+        extracted = extract_document(client, prompt, article)
     result = {
         'document_id': document.path.stem,
-        'source_path': str(document.path.resolve()), 'schema_version': 'v1',
+        'source_path': str(document.path.resolve()), 'schema_version': schema_spec.version,
         'provider': settings.provider, 'requested_model': settings.model,
         'prompt': {'version': prompt_path.stem,
                    'sha256': hashlib.sha256(prompt.encode('utf-8')).hexdigest()},
@@ -130,6 +200,13 @@ def run_document(
         'latency_seconds': time.perf_counter() - started,
         **extracted,
     }
+    if schema_spec.version == 'v2':
+        result.update(schema_sha256=schema_spec.sha256, experiment_id=output_dir.resolve().name,
+                      source_sha256=hashlib.sha256(document.text.encode('utf-8')).hexdigest(),
+                      input_text_sha256=hashlib.sha256(article.encode('utf-8')).hexdigest(),
+                      text_preparation_version=TEXT_PREPARATION_VERSION, kind=run_kind,
+                      output_mode='chat_completions.json_schema.strict')
+        result['prompt']['namespace'] = 'schema_v2'
     path = save_result(result, output_dir, settings.api_key.get_secret_value())
     return result, path
 
@@ -151,6 +228,7 @@ def service_unavailable(result: dict[str, Any]) -> bool:
 def run_documents(
     settings: Settings, documents: list[PreparedDocument], prompt: str,
     prompt_path: Path, output_dir: Path, show_progress: bool = False,
+    *, schema_spec: SchemaSpec = SCHEMA_V1,
 ) -> RunSummary:
     """Послідовно обробляє підготовлені документи та повертає лічильники запуску.
 
@@ -164,7 +242,9 @@ def run_documents(
     for index, document in enumerate(documents, 1):
         if show_progress:
             print(f'[{index}/{summary.total}] {document.path.name}', flush=True)
-        result, path = run_document(settings, document, prompt, prompt_path, output_dir)
+        result, path = (run_document(settings, document, prompt, prompt_path, output_dir)
+                        if schema_spec.version == 'v1' else run_document(
+                            settings, document, prompt, prompt_path, output_dir, schema_spec=schema_spec))
         if result['status'] == 'success':
             summary.success += 1
         elif result['status'] == 'repaired':
@@ -180,4 +260,16 @@ def run_documents(
         print(f'Підсумок: всього={summary.total}, success={summary.success}, '
               f'repaired={summary.repaired}, failed={summary.failed}, '
               f'не оброблено={summary.not_processed}.')
+    if schema_spec.version == 'v2':
+        manifest = {'schema_version': 'v2', 'experiment_id': output_dir.resolve().name,
+                    'planned_ids': [d.path.stem for d in documents], 'planned_count': summary.total,
+                    'processed_count': summary.total - summary.not_processed,
+                    'status': 'partial' if summary.not_processed else 'completed',
+                    'provider': settings.provider, 'model': settings.model,
+                    'sampling': {'temperature': settings.temperature, 'top_p': settings.top_p},
+                    'prompt_namespace': 'schema_v2', 'prompt_version': prompt_path.stem,
+                    'prompt_sha256': hashlib.sha256(prompt.encode('utf-8')).hexdigest(),
+                    'schema_sha256': schema_spec.sha256}
+        with (output_dir / 'experiment_manifest.json').open('x', encoding='utf-8') as stream:
+            json.dump(manifest, stream, ensure_ascii=False, indent=2)
     return summary

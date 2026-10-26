@@ -1,0 +1,169 @@
+{
+  "document_id": "HR-0385",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0385.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:03:26.665397+00:00",
+  "latency_seconds": 3.540895500103943,
+  "status": "repaired",
+  "first_pass_valid": false,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-937",
+            "object": "chat.completion",
+            "created": 1792980209,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"mentioned_platforms\": [\n    \"arduino\",\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"spi\",\n    \"i2c\",\n    \"spi\",\n    \"i2c\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 577,
+              "prompt_tokens_details": {
+                "cached_tokens": 246
+              },
+              "completion_tokens": 97,
+              "total_tokens": 674
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.8577709000092
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 577,
+        "prompt_tokens_details": {
+          "cached_tokens": 246
+        },
+        "completion_tokens": 97,
+        "total_tokens": 674
+      },
+      "generation_id": "chatcmpl-937",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"mentioned_platforms\": [\n    \"arduino\",\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"spi\",\n    \"i2c\",\n    \"spi\",\n    \"i2c\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "initial"
+    },
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-547",
+            "object": "chat.completion",
+            "created": 1792980210,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"mentioned_platforms\": [\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"spi\",\n    \"i2c\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 815,
+              "prompt_tokens_details": {
+                "cached_tokens": 593
+              },
+              "completion_tokens": 80,
+              "total_tokens": 895
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 0.5477850999450311
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 815,
+        "prompt_tokens_details": {
+          "cached_tokens": 593
+        },
+        "completion_tokens": 80,
+        "total_tokens": 895
+      },
+      "generation_id": "chatcmpl-547",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"sensors_measurements\",\n  \"mentioned_platforms\": [\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"spi\",\n    \"i2c\"\n  ],\n  \"mentions_sensor\": true,\n  \"mentions_display\": false,\n  \"mentions_battery\": true,\n  \"mentions_motor\": false\n}",
+      "result": {
+        "language": "en",
+        "primary_topic": "sensors_measurements",
+        "mentioned_platforms": [
+          "arduino"
+        ],
+        "mentioned_interfaces": [
+          "i2c",
+          "spi"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": false,
+        "mentions_battery": true,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "repair"
+    }
+  ],
+  "result": {
+    "language": "en",
+    "primary_topic": "sensors_measurements",
+    "mentioned_platforms": [
+      "arduino"
+    ],
+    "mentioned_interfaces": [
+      "i2c",
+      "spi"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": false,
+    "mentions_battery": true,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v3-T0",
+  "source_sha256": "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+  "input_text_sha256": "bb82d96d336e641da60623df492bc7cc8ba6e1749248d86a1973e3048dccd48a",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

@@ -1,0 +1,666 @@
+{
+  "schema_version": "v2",
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "evaluator_policy_version": "schema-v2-evaluator-v1.0",
+  "evaluation_status": "completed",
+  "annotation_status": "approved",
+  "golden_documents": 10,
+  "golden_sha256": "9a3b831cee329deaf1a8175c0a1e581a0fc9e253d2807a27d08b4fab74c71a5a",
+  "implementation_sha256": {
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\loading.py": "8529e4f3db50712f6f3968a4ec9af5dc7439df34057cdc2bc8310d6e9282e455",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\runtime.py": "8facb7e66186c1123e230323453c89500788f777e019c64b4d9b6e16f0ca2b1a",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\usage.py": "f91b467970acfd801e5ef24756a54374a5915d5332a8c0b6f5f5817b2b1a5412",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\__init__.py": "9e86da33edcc2386784568582626b2fcd5d9aea21ff2b1fb77696bf0c6a3423b",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\loading.py": "5e09f332d1f20802c23bf71126f2d8efb54483b04df3f834944e883b71134254",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\matrix.py": "d350f297fea1ef6b73541af73aabdb77cba04b3e140d695145677e39a6a29a42",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\reporting.py": "5ee8329cbecec546378af7a5f5f5e896ee61373c7bb5e82b254922d2cfa335c2",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\runner.py": "998cc2665ec6b49a5877fb0db825bdf432bb605810e9db14c1afe3b3eac28de6",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\scoring.py": "e3b535f34a03bda6df4408a14e48c161acd8e0f72529e52417401ae3527327d3",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\__init__.py": "c5099f6e0e8e3cf2f4988555a0e48a21f85ee946c8918e3663965a864d96df88",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\v1.py": "6fb238b912a59f3128298d191d35e82844f6e2a0a6b64c02a15c8656b01f5a30",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\v2.py": "5a9e979911f5b8a9ee11356ad9b157d3a7edbb1362450ffca6d92ed1b585d89c"
+  },
+  "input_hashes": {
+    "HR-0640": [
+      "fe7fcaad5c66350bb0ac55c6ec5ba7bfc770ac3e1b34178b76bb0ed6edaf7f6f",
+      "11c06851551faa50173316562c2cd543a730a15a8b1477d3ef39babdd5bc8ece"
+    ],
+    "HR-0200": [
+      "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e",
+      "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e"
+    ],
+    "HR-0228": [
+      "0d8eaf45a085228f1958946066d0b9e32b93445eeec5b5ac50503f2606c3f9fa",
+      "0d8eaf45a085228f1958946066d0b9e32b93445eeec5b5ac50503f2606c3f9fa"
+    ],
+    "HR-0385": [
+      "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+      "bb82d96d336e641da60623df492bc7cc8ba6e1749248d86a1973e3048dccd48a"
+    ],
+    "HR-0297": [
+      "8cae5f66043c9307580a3c12bbb51e4982c1893cc881b735a776df3447195fa3",
+      "2c0383d05334f9ffdf2bacbf9c527e397708be7e072fc80613729a1aef75a47c"
+    ],
+    "HR-0068": [
+      "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+      "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68"
+    ],
+    "HR-0207": [
+      "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+      "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e"
+    ],
+    "HR-0773": [
+      "56b7bf183da1bdd4a61964fff401cdbdc6d045e4d2432263e0662f057980886a",
+      "697c2f3a8154d0098544ae6270d8cb286a366b9485d6ee829d95d0d2671ddcc0"
+    ],
+    "HR-0415": [
+      "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+      "fde69fca168205e2db2fcfde30bd8c62619ed9982ef1ae9b56a0e779267aed83"
+    ],
+    "HR-0187": [
+      "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+      "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd"
+    ],
+    "HR-0227": [
+      "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+      "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a"
+    ],
+    "HR-0109": [
+      "d06b491655f99a62fa83818a77181d58ba3b7d113f765fbe03eae73a4276d9ae",
+      "d06b491655f99a62fa83818a77181d58ba3b7d113f765fbe03eae73a4276d9ae"
+    ],
+    "HR-0245": [
+      "f5a91800e1928122249a9e9cbe1a21b28e20709e5a400c1d2825fdc3e3458334",
+      "f5a91800e1928122249a9e9cbe1a21b28e20709e5a400c1d2825fdc3e3458334"
+    ],
+    "HR-0001": [
+      "9e456a63e18abe535e2c4b492b76fac21d39b2dec82cea2c52d019b53baa28a2",
+      "9e456a63e18abe535e2c4b492b76fac21d39b2dec82cea2c52d019b53baa28a2"
+    ],
+    "HR-0213": [
+      "5c34f752b7c71e4ef5c6bd81fac8784c4db6ce3bb4638f8a1cf6e95aa59fcb38",
+      "5c34f752b7c71e4ef5c6bd81fac8784c4db6ce3bb4638f8a1cf6e95aa59fcb38"
+    ],
+    "HR-0982": [
+      "b5ae8e5875a12690504bd4a8b2dadcf5eefa44ec00f03d15d0947feee8b6432a",
+      "14f2f283d4e146e28c795e4befd33b38bed48e9d4a7fee6c2d176cbe50721340"
+    ],
+    "HR-0217": [
+      "949b043576a78a308ad9dd03734271efde8e59cf8b49759dbdb51f0aed9a6198",
+      "949b043576a78a308ad9dd03734271efde8e59cf8b49759dbdb51f0aed9a6198"
+    ],
+    "HR-0221": [
+      "149b33d0f3a9be6b564b576d718685b9f4f5aac5a14e8de47bf0519bf46c7388",
+      "149b33d0f3a9be6b564b576d718685b9f4f5aac5a14e8de47bf0519bf46c7388"
+    ],
+    "HR-0768": [
+      "305985e647c36837d43e95b26829b9d4c5e65424d07c94d297676439090b86a3",
+      "0984287c48d950e89e764d9e641415e2a63044d1b269128233900a79b938bfe4"
+    ],
+    "HR-0148": [
+      "1aa6fd4ceec300ffb7a303d98f54b3b86be41eff833038fac6c67a7a8443b022",
+      "1aa6fd4ceec300ffb7a303d98f54b3b86be41eff833038fac6c67a7a8443b022"
+    ],
+    "HR-0055": [
+      "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94",
+      "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94"
+    ],
+    "HR-0254": [
+      "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714",
+      "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714"
+    ],
+    "HR-0463": [
+      "380f1c3f3f86ec30c9238efc6de2914834a8af1cd55ca88db731f754e957550e",
+      "db659e8324147eda957204e2c57eeb18fc385c3bc25214bdcef1815bcfb49d6b"
+    ],
+    "HR-0175": [
+      "f90bb827c6988b3860d52941b688d64e201c56aeb4f97e72f2de8014e2ddb573",
+      "f90bb827c6988b3860d52941b688d64e201c56aeb4f97e72f2de8014e2ddb573"
+    ],
+    "HR-0212": [
+      "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03",
+      "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03"
+    ],
+    "HR-0056": [
+      "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f",
+      "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f"
+    ],
+    "HR-0164": [
+      "7a75572049b6abc7013cf43103ec64061b0f72a1989ad6e25d3ffcf86f4a25f8",
+      "7a75572049b6abc7013cf43103ec64061b0f72a1989ad6e25d3ffcf86f4a25f8"
+    ],
+    "HR-0244": [
+      "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd",
+      "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd"
+    ],
+    "HR-0253": [
+      "4e30b52993dafb082b931a21cc530aaf3ccbb9c57c50123bcbf6a41afbd649e4",
+      "4e30b52993dafb082b931a21cc530aaf3ccbb9c57c50123bcbf6a41afbd649e4"
+    ],
+    "HR-0743": [
+      "1c6cba5c855f08597ce46c99c725cb1cf36b732176bb8d739050c6a7de0b796a",
+      "83323ab8f391499180361f7aecc8951896dbd1366ff01bdca78689d470c58743"
+    ]
+  },
+  "file_sha256": {
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\experiment_manifest.json": "86911ac67a843b904e1455d37b65941904eafbbb9d10767ca188e01e35aa94c2",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_042e06fee9be4bfaaed0524133ab04a6.json": "7fb5c0514055484b07d0320cb9310a99447786dd4935325051dc841f63d52aaf",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0640.txt": "fe7fcaad5c66350bb0ac55c6ec5ba7bfc770ac3e1b34178b76bb0ed6edaf7f6f",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_06036dc192bc486f91cc43de8cedeb1f.json": "5135a6eef125eaaf1ead8874dd067050de4f1c6ef0ed65f82a29e6448741db81",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0200.txt": "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_1ea81b49bdcb4c1cb5072f1e89382a01.json": "6f31b11c67a3af5daa7f68a2cfe514c23b7eaedcd8778f0a54e64c09c3b103d8",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0228.txt": "0d8eaf45a085228f1958946066d0b9e32b93445eeec5b5ac50503f2606c3f9fa",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_400665ee95614f62bdff7df321b12f00.json": "189d7dba9c8bc154cb691ba6e61909c63dcb9dfbd81bde2f3ea94a0483b23ccb",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0385.txt": "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_43608e91f68d46f7ab48d5407c8ead1a.json": "537242f4afc365ad0c8d0bb906744fa19f29f2ba730719ca0898623bad21f233",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0297.txt": "8cae5f66043c9307580a3c12bbb51e4982c1893cc881b735a776df3447195fa3",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_56a3b652e9f94909a135db2f86acb48f.json": "9c1f8407366f45aa15a7abe76f3242c1d56a089664d907c91161b1c82b6729c0",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0068.txt": "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_57a349e7f4b94be38807f3cab0b8dd0b.json": "1db2006814aa2564281e97ddae51f3f2a4d9a772a9f0a6e59cfa9f31ac75ddfe",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0207.txt": "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_5c8259a2e6724495a65b196411e52a20.json": "d9792fe0f8a3d97279d5498545bfec9ba42a3f7bf0aa927a93810553aeff56e1",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0773.txt": "56b7bf183da1bdd4a61964fff401cdbdc6d045e4d2432263e0662f057980886a",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_5e0840e308324afdb2c3edf01fc62afe.json": "6c99e5fe7212696a97a0ed88933cc22950791ad639c40cf86b56a743eab8a43e",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt": "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_67127d93ba254784be65d14d6e28712e.json": "92b483b77bf16e63e305fd05e7b1105c643166702e93cb547f269b50f8b06d3b",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0187.txt": "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_6c0580fdda4c41c2a8fdc8164e286049.json": "1ff8c5b94db09d558043d97f0b083e579707bdfdfedee1fec38b7b7b43acc929",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0227.txt": "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_6e4a7361fa874334b6338456678803f4.json": "3725cb2d0c6f03536a8906bef9787f524d294999183ac2de9eaa3246d28cfa5b",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0109.txt": "d06b491655f99a62fa83818a77181d58ba3b7d113f765fbe03eae73a4276d9ae",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_7d9534b69ee44b9592d88977e8823fe9.json": "2b2a52d2a2ff7eb4f104ada89c9d11d84da84f0931ef862f17f5d6d5bbc9dc29",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0245.txt": "f5a91800e1928122249a9e9cbe1a21b28e20709e5a400c1d2825fdc3e3458334",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_8af9982fe70846e39b4ee1fe75d7bbf5.json": "1ecc25c8991557439c7825cae9ddd996d52a276ea46ac5ed0465730692724651",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0001.txt": "9e456a63e18abe535e2c4b492b76fac21d39b2dec82cea2c52d019b53baa28a2",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_9d2388c707f64931bd1f18a12ca7238f.json": "20636960c8062fd9897b80da0d47b2a492b6e50e40806e96eb7e2f72f41ace95",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0213.txt": "5c34f752b7c71e4ef5c6bd81fac8784c4db6ce3bb4638f8a1cf6e95aa59fcb38",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_a249fb3ae628493fae00c73a8582eba9.json": "aae0f1c875dc8a87b76e0a46c11b466b34e02bfaee4408929cab4706737c1b93",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0982.txt": "b5ae8e5875a12690504bd4a8b2dadcf5eefa44ec00f03d15d0947feee8b6432a",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_a8379e0bc1b24b20ad7c12a5534be824.json": "c1eb03d14719f668b0fb7ce0013f38e7b528e7844bd290445450d6318ad32ffc",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0217.txt": "949b043576a78a308ad9dd03734271efde8e59cf8b49759dbdb51f0aed9a6198",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_a94e1b186c7b4a8daed61364665143ad.json": "4331b44e5002b3f670d7ad8084cfcfab174e37d95dec4c59dba363a2d2b16f83",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0221.txt": "149b33d0f3a9be6b564b576d718685b9f4f5aac5a14e8de47bf0519bf46c7388",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_ab308f9a65f2498e88d58a3309697aa4.json": "9c058b39e291c2636a4adc51ac21b8d2ba7452e82e8c3b09738abf013cd32e7a",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0768.txt": "305985e647c36837d43e95b26829b9d4c5e65424d07c94d297676439090b86a3",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_b0be6f9a041d454dbbaf6029105f6ebe.json": "ef101419db5fcb5fa6ceff58035009eecd868c1d867f5350f93131537d8a2fbd",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0148.txt": "1aa6fd4ceec300ffb7a303d98f54b3b86be41eff833038fac6c67a7a8443b022",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_b883450564c742d1930af55c164913ed.json": "afc633c64643f57015c61481d17cca272a0fd09be4b66387862753ec54b7dafb",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0055.txt": "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_c3b63a750e804f678161c18b148cfc20.json": "50160659fef2e16bcf1de91f74f8c2e088e06d967d6cd3ead0e42b655d12c335",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0254.txt": "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_c6021c1bd20449f487eb8d863458d06f.json": "6377e3686fccd988edaed59fb2f6f02cab616be37b616629084cf42640e558f8",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0463.txt": "380f1c3f3f86ec30c9238efc6de2914834a8af1cd55ca88db731f754e957550e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_cd9baf5e95d34f50bb0152dd352b1994.json": "12dff99da5f4fc57772271263490161ad9a2fb8f3b4216bd8b60108de21ba1a4",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0175.txt": "f90bb827c6988b3860d52941b688d64e201c56aeb4f97e72f2de8014e2ddb573",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_dbb26dae49504d46b0270f31cb68aa0a.json": "8105327905e5f08f5e9eebe9a7e09a3d54cedf8f1488076bcf2d615461adbbca",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0212.txt": "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_e1365e7c56ea46a18b05afa716fe28d1.json": "a8d9dffe016ed036f35da866b3315b0c6815de051d5ccc67ba40122c483ce0af",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0056.txt": "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_e1996b19dfab4d2eb00bad6c73c7d95e.json": "927b4fdd8405b6664de9d9c491674bee2bc4cc6c7b3f3232cea9569d4460d0c9",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0164.txt": "7a75572049b6abc7013cf43103ec64061b0f72a1989ad6e25d3ffcf86f4a25f8",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_ebd87853ca3a4029a7e9f9c065612f91.json": "93ba01acd86382781bd9e57215dc328473e0489a0c7e729f5518007b233ccc74",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0244.txt": "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_f379637fda71432b9f4fde91ad712433.json": "03f961777c9ea883ef1263d52d467633c38a22201c3097c5da5429aef89de5bc",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0253.txt": "4e30b52993dafb082b931a21cc530aaf3ccbb9c57c50123bcbf6a41afbd649e4",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_f97da0705d104481a2b9fb4e5815782b.json": "6252fc92298e03200c13dbd149eec52d6573940d4df19f1b03c1764253b75a48",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0743.txt": "1c6cba5c855f08597ce46c99c725cb1cf36b732176bb8d739050c6a7de0b796a",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\golden_v2.json": "9a3b831cee329deaf1a8175c0a1e581a0fc9e253d2807a27d08b4fab74c71a5a",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\manifest.json": "6eeaf924ac0ff1e6408999486b2c5119f4065d59b82461481d7f62f4786e5d6e",
+    "D:\\PycharmProjects\\AiEngenering\\data\\golden_annotation_rules_v2.md": "921ee328bcb92a6d37c3ef6aea7330fa01fae65504fdecad9af61ccaec62ac92"
+  },
+  "warnings": [],
+  "groups": [
+    {
+      "group_id": "0eb605a5edd434324ef0af4ac53d8ce5e7b4ce51c4546c014d8cc38e43d8a062",
+      "configuration": {
+        "schema_version": "v2",
+        "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+        "provider": "openai",
+        "requested_model": "gpt-4o-mini",
+        "experiment_id": "GPT-v1-T0",
+        "prompt": {
+          "version": "v1",
+          "sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+          "namespace": "schema_v2"
+        },
+        "sampling": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "timeout_seconds": 60.0,
+          "max_retries": 2,
+          "max_tokens": 4096,
+          "retry_base_seconds": 1.0,
+          "max_retry_wait_seconds": 30.0
+        },
+        "text_preparation_version": "schema-v2-text-v1",
+        "returned_model": "gpt-4o-mini-2024-07-18"
+      },
+      "experiment_status": "completed",
+      "coverage": {
+        "planned_primary": 30,
+        "received_primary": 30,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.9,
+          "numerator": 72,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.8857142857142857,
+          "numerator": 62,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": {
+              "value": 1.0,
+              "numerator": 9,
+              "denominator": 9,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.9,
+              "numerator": 9,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.9473684210526315,
+              "numerator": 18,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 4,
+            "precision": {
+              "value": 1.0,
+              "numerator": 3,
+              "denominator": 3,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.6,
+              "numerator": 6,
+              "denominator": 10,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 10
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.3237148499465548,
+          "p95": 1.5058248099463525,
+          "mean": 1.334212899999693,
+          "known_sum": 13.34212899999693,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 23810,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2381.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 467,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 46.7,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 24277,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 10240,
+            "known_requests": 10,
+            "all_requests": 10
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.0030837,
+            "priced_requests": 10,
+            "all_requests": 10,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "cost_per_1000_documents": 0.30837,
+            "methods": {
+              "tariff_with_cache": 10
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      },
+      "baseline_all_30": {
+        "basis": "all_30",
+        "documents": 30,
+        "status_counts": {
+          "success": 30
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.3664835000527091,
+          "p95": 1.6479529699601698,
+          "mean": 1.3840249933263598,
+          "known_sum": 41.52074979979079,
+          "sample_count": 30,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 77857,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2595.233333333333,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 1425,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 47.5,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 79282,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 28672,
+            "known_requests": 30,
+            "all_requests": 30
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.01038315,
+            "priced_requests": 30,
+            "all_requests": 30,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "cost_per_1000_documents": 0.346105,
+            "methods": {
+              "tariff_with_cache": 30
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": []
+      }
+    }
+  ]
+}

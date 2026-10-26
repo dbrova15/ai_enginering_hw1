@@ -1,0 +1,120 @@
+{
+  "document_id": "HR-0227",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0227.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:38:25.959075+00:00",
+  "latency_seconds": 3.3866569999372587,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-893",
+            "object": "chat.completion",
+            "created": 1792975109,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"uk\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"raspberry_pi\", \"arduino\"], \"mentioned_interfaces\": [\"bluetooth\", \"wifi\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": false}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2930,
+              "prompt_tokens_details": {
+                "cached_tokens": 153
+              },
+              "completion_tokens": 67,
+              "total_tokens": 2997
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.2519432000117376
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2930,
+        "prompt_tokens_details": {
+          "cached_tokens": 153
+        },
+        "completion_tokens": 67,
+        "total_tokens": 2997
+      },
+      "generation_id": "chatcmpl-893",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"uk\", \"primary_topic\": \"controllers_programming\", \"mentioned_platforms\": [\"raspberry_pi\", \"arduino\"], \"mentioned_interfaces\": [\"bluetooth\", \"wifi\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": false}",
+      "result": {
+        "language": "uk",
+        "primary_topic": "controllers_programming",
+        "mentioned_platforms": [
+          "arduino",
+          "raspberry_pi"
+        ],
+        "mentioned_interfaces": [
+          "wifi",
+          "bluetooth"
+        ],
+        "mentions_sensor": false,
+        "mentions_display": false,
+        "mentions_battery": false,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "uk",
+    "primary_topic": "controllers_programming",
+    "mentioned_platforms": [
+      "arduino",
+      "raspberry_pi"
+    ],
+    "mentioned_interfaces": [
+      "wifi",
+      "bluetooth"
+    ],
+    "mentions_sensor": false,
+    "mentions_display": false,
+    "mentions_battery": false,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v1-T0",
+  "source_sha256": "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+  "input_text_sha256": "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

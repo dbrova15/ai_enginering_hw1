@@ -1,0 +1,1171 @@
+{
+  "format_version": "1.0",
+  "evaluation_status": "provisional",
+  "provenance": {
+    "evaluator_version": "1.0.0",
+    "policy_version": "golden-evaluator-v1.0",
+    "policy_sha256": "4da4917e2ac9fc02d076b282de6d2df18afeeefc86d84fa563871bd0084802f2",
+    "python": "3.11.9",
+    "pydantic": "2.14.1",
+    "inputs": {
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\golden.json": "2c849793c23ba99730bb96863358f1b6c0b993b8902af9addb82761d55eaa3e3",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\manifest.json": "6eeaf924ac0ff1e6408999486b2c5119f4065d59b82461481d7f62f4786e5d6e",
+      "D:\\PycharmProjects\\AiEngenering\\data\\golden_annotation_rules_v1.md": "0436051a83b50af9fa10f5937cd7d818f04c8ca53066c246d85f819a329bb181",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_0497782f71234154946e40f97c725f27.json": "7702cf3025a22c0d5d3109b2a62e2bebb200045b832ced15e9b57022809eb749",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_0c45024f2e134fe9b730a389f51bd2cd.json": "fc62a3127ede8f99e8b7535f147292223a733edf607c568fb59f0d91c29f88d7",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_0d6f26c283e74eecae44e96178c36894.json": "833098f369e361f2c55d1ad948acb30b79706f493d6b608aba04cca570a53e51",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_1e8e8867b6854863ad8d9202d571df29.json": "4859a6df48fdea134f7d0e9cc0a648985cdc7c58b3568011ad516f29ec2264c8",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_236ea327dd8a432ea757f98ea99a6627.json": "d8b785369897e51a7c998680d614babccb74c3975bb4aaee28aaac7ce8aae0a1",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_2960e9464f344341b19493f150b97016.json": "1d51d13b5b4fcd85d211e8de6766a18849d2065d7d949471be63610902f22230",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_3566e691d4c6410ba847d59346ef53bb.json": "3c01a5c957003b6633d55848e1dad69df38b092fa1fd1a59af204807d70c749b",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_3ccc1734c4f44c3494593f7a623db8f5.json": "2d946a58102ec33e451dbf7915b3b57f0726c41eca189e676a05b0555034dd11",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_42fb69d691964553b5c9974643d4eba5.json": "e42e79443d6c6f151400573bc6b18fe91c917626c1f6798d7f1e0a2baab98712",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_4807bb8591b548a0b9bb7433367179f4.json": "5012bb90bfa669b2c067301a34fc549ce93a5f022c4483064aed6d60cd070f5f",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_5353e6ea41b34ff3a6b5bf1faaf6d10e.json": "37884c4f7587ef96974aaf8d5d904c5074d9d1ac291ba550531ab1c8af1030c4",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_5ee0b1d85de94ed48e853fb7d6fb5fa5.json": "a31d88c4b3764e7ed1e786d653a818edd2a1ec716d6be0ecfbb4c2c211ea5fc5",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_6110dc939ee442dd8d6547aa13363500.json": "a6e3bf70033582cf8292408d263b48d17bf79cd5b86434f42d2414acd76e3136",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_6597796ee7fa4bf89cd040bc399d5457.json": "6a3506104fb858484f96b82ecb797ee2e6fac81ac73387151906006953eb065b",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_736750533653430899f72a99029152ae.json": "270aba25b31e2cd5dea151826bf541e618eb8b99b9da03298c0ac7d79346b779",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_784ffb57491f4c3dafb310b771c1fee1.json": "94214c3c7492fcc9385d72363401b9de0492a7e0c76386bdf39b82aacbfc2eb0",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_81a1197dd593404e9a06c59af00285f1.json": "33ed23776aa5beea77caa99cbfdffd1612aa388d29843dc799dc946f31a79373",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_827293a7be4a4028a752e18c30aa2e2a.json": "6907f3fe8507cba531cb3fd4bc5ec82c52250f1b457699bb10a8c913f03b42ab",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_845f24282806476c9192e0053dcc5a1a.json": "e6b9ad141f1d464762771719bfb6369caa65f40f150f651e6eaedc8d9d48922e",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_96d8c856c9f24b3cb6deb89766aa18b4.json": "9e52b3fc894f205f7325c4634e0a5e967c4bd98b75d88e133b90fe109c5f5a76",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_9afe920243c94a31a140906daa2a45bc.json": "60c31338a489c6b78586e9a9668543fc4764f0ecf647c398ad76832cc68fe5b4",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_afcf0e1fe4734eebadadde6211cf0143.json": "32392cc0fe92936711165deba6c52198c6a635d8f507ca5795ff4b3e9988664b",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_c2bcd62fde8f40b28931a937d3f45590.json": "cad99cd95d9d249892e5b21b7553864d79b3d0bad42f8c0666e51b122f4eb7d1",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_c34ce8fe16444699b208ea35bf2798ea.json": "456364893604369d008f7ba8f0d0ad14536327b9385195b9774d8a86686ecd52",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_ce9e070aea524dcea42639ce439d5198.json": "80d65c48ae13bf990fb078c739543d4890664ca2ecdcf96644b1a0d922698588",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_cff5979be5f1403e83e65aa48aae1a38.json": "511e068f5b6292ebbeb5f0d1058a7d5f414063ec600b2a2b3f14f6d86eedb124",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_dfe2a2b1085644c484c075a6e6303476.json": "75805a70526fee47dc212dce0a01c79ce16e86a3c37749d70870fe24493eb6f0",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_e1732b428c9a4d3aa670fcd0fe4ae5a9.json": "f65e62bee9493ea8475b6957ca12ac942e488af2c07b8ac16c5850a4ae0ededc",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_e6576451a4c3426f9c2055c2ff9f654f.json": "a46e95f99813e85925d9b89ce2d3762ade92a5a9499699bc0bc3f1acd709523f",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step1\\run_eb86ecfb64b24f70b09c20cc9dff5fe6.json": "22ddba069337a819d9d7fd0846700298f349fcff77e8e2824ab2c2d1ac0c18fc",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_0199bf51a28c45778388878a5a3a4c3e.json": "bb9d82ca883a543ca704b6836c232da850690737d63122524e5a12006a56314b",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_05c7c8656dc04f15a0c34dca1da82b2e.json": "41761dbc6aa838471b4b2b51fd3a5edb7e832aaa3c40c8b885ca81c9f465ac8e",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_074ed85ee3fc4861ab6af230c3f11cc6.json": "39cf52c3a5684f8de004d037abf9d0013bedcf0b8ad6b13585eca69d717b9480",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_0c5f2d7f00d043bfadd35aea3655d1c8.json": "d1bc3727283e81bcbef0128944e7ca6ef71a6108d661f9382dae40f8f17cd6a3",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_20fee021be464f5594c262dfe8f5c4bc.json": "03feaf699086a1ef65aec80c6b01237dfcc4b7e236c814c8e895e6e9c590da07",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_282272d1977246ff943abafa7b8ccbc1.json": "4271b83dd685f02d8d11e74db7d8ced979ee0a01d8b14c9fccb7ddb738dbb756",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_28f6645f9b8749c6977a58143793d8cb.json": "7f0f3d784f6c470b58352c839c0cf38658924f50c54de0a238e0c4828b157326",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_30c46b1230e54468b93426c7e7336651.json": "846ff3e60266023106d6a69821509a60aa2f9be4dc3d5f2496a1e350ff89ade6",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_3bf4437d63bf4228b9df840106287cd8.json": "05e3e6565d10452c476f7fa7f16373d8ea530bd4e67e5d561df2899d6cddacb6",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_45f4265ba95e4797ac26a8d87b9d4289.json": "e33ca64f7af5ba64892394d7edcf8ef5ca9573416dc872b222d096f4717dcfcf",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_4763b5854cbd4fe4b114daf275b6d2b6.json": "0a35476c1bfcd597ff16608d72eb583c982a08d2c5e245e884aa0881dd34a14d",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_4aa8fab2d39a4126b3d70f91ce3c80be.json": "40d1a41cfde75a8189a0228a9c759b1f8077dfda59c78e8922f16860b019d2ae",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_545dd2edb16e4e62ba63062a2c03beda.json": "21234bda973b7c9b60c6b1aeb4f462f9de1935f9301b518415fa0fd4b8eb0136",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_550513493b3f4894af2de349bde2cab9.json": "fc1f5015c98d0f3ff210cc82dad25c358c81b7a3eff2ba965c954ba20b76a990",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_56877e9340da40c7946b0b641c6c9257.json": "30833d4a70bd9e75aa564aee844724c38da86cde99f638f763e3cae1730f9345",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_6909c29e14d8427f89fb190e1684b9ec.json": "99ed701aa0d84a50f9614084cc18e33cc8ed1cc6de203bad42e33141d3ea59e0",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_83f9e35d122546a5afdfc7b72c1a095d.json": "f604a347c2aa83a6aaf5f012788327947b252f18266f8b02c86270b8658d9d22",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_87c6efad467a4aaf88bbdf16633d69db.json": "9b6ff1da609db7b0b7e8135e4212261a569020eb8c74aa97b9cb622027105385",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_8e001a04de9f48c8b74bd98434cf42a1.json": "12e90f649c702d7fa24013308e7a7059e5d198686a32845cbaa5dc028ca4c545",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_9e4c0cd71a7f4ec3826d193da46cc988.json": "79d7de65e3d1e323eb8762da6c579158d5e30508e140d8caf707a1975850af28",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_b72d78d114d34493bd26cd520ea0a685.json": "c85ebe648cb3afc59af7cd62c3cbe70d796a4e1016bef00abc974ec3f197213c",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_c07093ee39d04d5788a234619993ba3a.json": "c8743575716d5aca3ee03c7740ecb4cd76c0db5940556d50c195c6da8e448eeb",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_c24ee61dc0ca43e4b6d40540a5247f38.json": "6341e4ca4f15790a92c18203173ee386cc51e5a2d6c3c66b49babb0917410386",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_c447544a45634e468d00cede3ff02127.json": "1beebe7f01e2ae7681a143864d813b0f57855b7baea9f8daf10f985424cb96dc",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_c4891b833568497490614b4911216ea6.json": "10145ac955fdc0e66e5430b5864138773dd771236db3a4214dcde9aff13c0382",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_d404ec03de3b4e16ad25573a56f0f3c0.json": "0bceea76306781b382c20408d3256f43168e83743a65ea7e1593521c144fb9d5",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_f60c1583cfe94b64b088c145d78673f3.json": "f83bccdd03a8b42d15a4585144a9d41548eeed9e34445cc878ed32950a8990b0",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_f7c01cbead2f458b9651909f1133db26.json": "5a10ecdc41332aad41fd91a2d11679ff077e5c69788ec02070726a290ca97b5d",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_f88d716f6f7e4162bceb4350e37fe013.json": "ae7fa6a126aa9ddc679e758a860791fcd6b3e568f4e9c46f38745ca8a6a5e047",
+      "D:\\PycharmProjects\\AiEngenering\\results\\step2\\run_faddc6ad1d9e4ac08777ae76ddd91759.json": "5ee7e06b84951ba228050be78d2acf4a4c34cb06c0168c3f5fa3ceef1b0e33e7"
+    },
+    "sources": {
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0056.txt": "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0743.txt": "1c6cba5c855f08597ce46c99c725cb1cf36b732176bb8d739050c6a7de0b796a",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0055.txt": "fbe787544d8525bb6554f40eefb77cb1d24e59fafbb83979a96079fef6bf7b94",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0001.txt": "9e456a63e18abe535e2c4b492b76fac21d39b2dec82cea2c52d019b53baa28a2",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0221.txt": "149b33d0f3a9be6b564b576d718685b9f4f5aac5a14e8de47bf0519bf46c7388",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0244.txt": "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0297.txt": "8cae5f66043c9307580a3c12bbb51e4982c1893cc881b735a776df3447195fa3",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0463.txt": "380f1c3f3f86ec30c9238efc6de2914834a8af1cd55ca88db731f754e957550e",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0175.txt": "f90bb827c6988b3860d52941b688d64e201c56aeb4f97e72f2de8014e2ddb573",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0213.txt": "5c34f752b7c71e4ef5c6bd81fac8784c4db6ce3bb4638f8a1cf6e95aa59fcb38",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0385.txt": "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0200.txt": "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0068.txt": "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0254.txt": "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0982.txt": "b5ae8e5875a12690504bd4a8b2dadcf5eefa44ec00f03d15d0947feee8b6432a",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0212.txt": "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0253.txt": "4e30b52993dafb082b931a21cc530aaf3ccbb9c57c50123bcbf6a41afbd649e4",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0164.txt": "7a75572049b6abc7013cf43103ec64061b0f72a1989ad6e25d3ffcf86f4a25f8",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0148.txt": "1aa6fd4ceec300ffb7a303d98f54b3b86be41eff833038fac6c67a7a8443b022",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0228.txt": "0d8eaf45a085228f1958946066d0b9e32b93445eeec5b5ac50503f2606c3f9fa",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0217.txt": "949b043576a78a308ad9dd03734271efde8e59cf8b49759dbdb51f0aed9a6198",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt": "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0640.txt": "fe7fcaad5c66350bb0ac55c6ec5ba7bfc770ac3e1b34178b76bb0ed6edaf7f6f",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0245.txt": "f5a91800e1928122249a9e9cbe1a21b28e20709e5a400c1d2825fdc3e3458334",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0109.txt": "d06b491655f99a62fa83818a77181d58ba3b7d113f765fbe03eae73a4276d9ae",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0207.txt": "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0773.txt": "56b7bf183da1bdd4a61964fff401cdbdc6d045e4d2432263e0662f057980886a",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0227.txt": "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0187.txt": "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+      "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0768.txt": "305985e647c36837d43e95b26829b9d4c5e65424d07c94d297676439090b86a3"
+    },
+    "implementation": {
+      "__init__.py": "b7133ab2a7ea7c752dfd95782535b60b114c80565e5caacc31e9ff57ac021f6e",
+      "loading.py": "26dfe528e171a9936cc391ce8a5c7c765963f37a1d4074807a6a53e3ceb651f1",
+      "matching.py": "a7cc62943b9fc446e82840cf137a3dc28ad0e73f2984c7b481477d92a0636a84",
+      "metrics.py": "26133e7b351a40964c237cfa7d20b0d27b428502a77be162ad91f6784eea4b19",
+      "models.py": "ee49cc5322347fc2714fb0862bac656a6129bdc4cbcec83d0fa48325e4ca7235",
+      "normalization.py": "b04bb6881aa21812ba40fb2d903c733c7f0e1aeb1af6a3e2e2214939115be74f",
+      "policy.py": "4da4917e2ac9fc02d076b282de6d2df18afeeefc86d84fa563871bd0084802f2",
+      "quantities.py": "cd4a6d1b41df32981c52f17845972d41c2abc7b3e93cc8acd12efb6a80435dbf",
+      "reporting.py": "6bceb6e7792528e9c6835305435379946e784f338e25deb45bb78ab15b01b2e2",
+      "runner.py": "a09cf859079b2ad68d3de9af3af0ddf640abbabcf7a3794d96265b44874d0e0f",
+      "scoring.py": "12d62d8b57724b660617c8855256be47dc6b9d948a9204ef4870cf27d96cd6a0",
+      "usage.py": "f91b467970acfd801e5ef24756a54374a5915d5332a8c0b6f5f5817b2b1a5412"
+    }
+  },
+  "generated_at": "2026-10-25T21:01:44.016588+00:00",
+  "golden_documents": 10,
+  "groups": [
+    {
+      "group_id": "3f12d8335bf9d838c00c3c3ec9870e48ed93edc7027797bf5f8f4b9856db97e2",
+      "config": {
+        "provider": "openai",
+        "requested_model": "gpt-4o-mini",
+        "schema_version": "v1",
+        "returned_model": "gpt-4o-mini-2024-07-18",
+        "prompt": {
+          "version": "v1",
+          "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+        },
+        "sampling": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "timeout_seconds": 60.0,
+          "max_retries": 2,
+          "max_tokens": 4096,
+          "retry_base_seconds": 1.0,
+          "max_retry_wait_seconds": 30.0
+        }
+      },
+      "document_ids": [
+        "HR-0001",
+        "HR-0055",
+        "HR-0056",
+        "HR-0068",
+        "HR-0109",
+        "HR-0148",
+        "HR-0164",
+        "HR-0175",
+        "HR-0187",
+        "HR-0200",
+        "HR-0207",
+        "HR-0212",
+        "HR-0213",
+        "HR-0217",
+        "HR-0221",
+        "HR-0227",
+        "HR-0228",
+        "HR-0244",
+        "HR-0245",
+        "HR-0253",
+        "HR-0254",
+        "HR-0297",
+        "HR-0385",
+        "HR-0415",
+        "HR-0463",
+        "HR-0640",
+        "HR-0743",
+        "HR-0768",
+        "HR-0773",
+        "HR-0982"
+      ],
+      "golden_document_ids": [
+        "HR-0068",
+        "HR-0187",
+        "HR-0207",
+        "HR-0212",
+        "HR-0227",
+        "HR-0244",
+        "HR-0254",
+        "HR-0385",
+        "HR-0415",
+        "HR-0743"
+      ],
+      "missing_document_ids": [],
+      "non_golden_document_ids": [
+        "HR-0001",
+        "HR-0055",
+        "HR-0056",
+        "HR-0109",
+        "HR-0148",
+        "HR-0164",
+        "HR-0175",
+        "HR-0200",
+        "HR-0213",
+        "HR-0217",
+        "HR-0221",
+        "HR-0228",
+        "HR-0245",
+        "HR-0253",
+        "HR-0297",
+        "HR-0463",
+        "HR-0640",
+        "HR-0768",
+        "HR-0773",
+        "HR-0982"
+      ],
+      "coverage": {
+        "value": 1.0,
+        "numerator": 10,
+        "denominator": 10,
+        "method": "present golden runs/G",
+        "basis": "all golden IDs",
+        "undefined_reason": null
+      },
+      "runtime": {
+        "documents": 30,
+        "status_counts": {
+          "success": 30
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 5.424415300018154,
+          "p95": 8.757336264994224,
+          "mean": 5.723454633339618,
+          "known_sum": 171.70363900018856,
+          "sample_count": 30,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 186122,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 6204.066666666667,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 13209,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 440.3,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 199331,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 122496,
+            "known_requests": 30,
+            "all_requests": 30
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 30,
+            "complete_documents": 0,
+            "all_documents": 30,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 30
+            },
+            "pricing": [],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": []
+      },
+      "quality": {
+        "golden_documents": 10,
+        "field_exact_accuracy": {
+          "document_type": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "main_subject": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "purpose": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "components": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "technical_parameters": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "interfaces_protocols": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "software_tools": {
+            "value": 0.2,
+            "numerator": 2,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          }
+        },
+        "aggregate_exact_accuracy": {
+          "value": 0.2375,
+          "numerator": 19,
+          "denominator": 80,
+          "method": "sum field exact/(8*G)",
+          "basis": "all golden IDs and eight fields",
+          "undefined_reason": null
+        },
+        "lists": {
+          "components": {
+            "identity": {
+              "tp": 27,
+              "fp": 19,
+              "fn": 68,
+              "expected": 95,
+              "predicted": 46,
+              "precision": {
+                "value": 0.5869565217391305,
+                "numerator": 27,
+                "denominator": 46,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.28421052631578947,
+                "numerator": 27,
+                "denominator": 95,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.3829787234042553,
+                "numerator": 54,
+                "denominator": 141,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            },
+            "full_fact": {
+              "tp": 0,
+              "fp": 46,
+              "fn": 95,
+              "expected": 95,
+              "predicted": 46,
+              "precision": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 46,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 95,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 141,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "technical_parameters": {
+            "full_fact": {
+              "tp": 0,
+              "fp": 35,
+              "fn": 82,
+              "expected": 82,
+              "predicted": 35,
+              "precision": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 35,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 82,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 117,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "interfaces_protocols": {
+            "full_fact": {
+              "tp": 3,
+              "fp": 8,
+              "fn": 8,
+              "expected": 11,
+              "predicted": 11,
+              "precision": {
+                "value": 0.2727272727272727,
+                "numerator": 3,
+                "denominator": 11,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.2727272727272727,
+                "numerator": 3,
+                "denominator": 11,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.2727272727272727,
+                "numerator": 6,
+                "denominator": 22,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "software_tools": {
+            "full_fact": {
+              "tp": 2,
+              "fp": 10,
+              "fn": 15,
+              "expected": 17,
+              "predicted": 12,
+              "precision": {
+                "value": 0.16666666666666666,
+                "numerator": 2,
+                "denominator": 12,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.11764705882352941,
+                "numerator": 2,
+                "denominator": 17,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.13793103448275862,
+                "numerator": 4,
+                "denominator": 29,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          }
+        },
+        "component_attributes": {
+          "model": {
+            "correct_over_paired": {
+              "value": 0.37037037037037035,
+              "numerator": 10,
+              "denominator": 27,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "mismatch": 17,
+              "match": 10
+            }
+          },
+          "manufacturer": {
+            "correct_over_paired": {
+              "value": 0.7407407407407407,
+              "numerator": 20,
+              "denominator": 27,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "mismatch": 7,
+              "match": 20
+            }
+          },
+          "role": {
+            "correct_over_paired": {
+              "value": 0.0,
+              "numerator": 0,
+              "denominator": 27,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "needs_review": 25,
+              "mismatch": 2
+            }
+          }
+        },
+        "review": {
+          "check_counts": {
+            "match": 88,
+            "needs_review": 59,
+            "mismatch": 278
+          },
+          "total_checks": 425,
+          "auto_decided_checks": 366,
+          "unavailable_checks": 0,
+          "needs_review": {
+            "value": 0.1388235294117647,
+            "numerator": 59,
+            "denominator": 425,
+            "method": "review/total atomic checks",
+            "basis": "atomic checks",
+            "undefined_reason": null
+          },
+          "documents": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "review documents/G",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "ambiguous_pairing_groups": 0
+        }
+      }
+    },
+    {
+      "group_id": "b353e89f54ecdefa5635bc1cc13922eca81cd6f0b1f2ca9b99c2f8af1392d4ba",
+      "config": {
+        "provider": "ollama",
+        "requested_model": "llama3.2:3b",
+        "schema_version": "v1",
+        "returned_model": "llama3.2:3b",
+        "prompt": {
+          "version": "v1",
+          "sha256": "9c408f58d235bd754671b451b7ef8736073c0959c7fec01bb9737d9fedb64b4a"
+        },
+        "sampling": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "timeout_seconds": 60.0,
+          "max_retries": 2,
+          "max_tokens": 4096,
+          "retry_base_seconds": 1.0,
+          "max_retry_wait_seconds": 30.0
+        }
+      },
+      "document_ids": [
+        "HR-0001",
+        "HR-0055",
+        "HR-0056",
+        "HR-0068",
+        "HR-0109",
+        "HR-0148",
+        "HR-0164",
+        "HR-0175",
+        "HR-0187",
+        "HR-0200",
+        "HR-0207",
+        "HR-0212",
+        "HR-0213",
+        "HR-0217",
+        "HR-0221",
+        "HR-0227",
+        "HR-0228",
+        "HR-0244",
+        "HR-0245",
+        "HR-0253",
+        "HR-0254",
+        "HR-0297",
+        "HR-0385",
+        "HR-0415",
+        "HR-0463",
+        "HR-0640",
+        "HR-0743",
+        "HR-0768",
+        "HR-0773",
+        "HR-0982"
+      ],
+      "golden_document_ids": [
+        "HR-0068",
+        "HR-0187",
+        "HR-0207",
+        "HR-0212",
+        "HR-0227",
+        "HR-0244",
+        "HR-0254",
+        "HR-0385",
+        "HR-0415",
+        "HR-0743"
+      ],
+      "missing_document_ids": [],
+      "non_golden_document_ids": [
+        "HR-0001",
+        "HR-0055",
+        "HR-0056",
+        "HR-0109",
+        "HR-0148",
+        "HR-0164",
+        "HR-0175",
+        "HR-0200",
+        "HR-0213",
+        "HR-0217",
+        "HR-0221",
+        "HR-0228",
+        "HR-0245",
+        "HR-0253",
+        "HR-0297",
+        "HR-0463",
+        "HR-0640",
+        "HR-0768",
+        "HR-0773",
+        "HR-0982"
+      ],
+      "coverage": {
+        "value": 1.0,
+        "numerator": 10,
+        "denominator": 10,
+        "method": "present golden runs/G",
+        "basis": "all golden IDs",
+        "undefined_reason": null
+      },
+      "runtime": {
+        "documents": 30,
+        "status_counts": {
+          "success": 30
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 30,
+          "denominator": 30,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 5.042139550030697,
+          "p95": 9.112952624983151,
+          "mean": 5.449470603322455,
+          "known_sum": 163.48411809967365,
+          "sample_count": 30,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 48855,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 1628.5,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 11976,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 399.2,
+            "complete_documents": 30,
+            "all_documents": 30,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 60831,
+            "known_requests": 30,
+            "all_requests": 30,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 2645,
+            "known_requests": 30,
+            "all_requests": 30
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 30,
+            "complete_documents": 0,
+            "all_documents": 30,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 30
+            },
+            "pricing": [],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": []
+      },
+      "quality": {
+        "golden_documents": 10,
+        "field_exact_accuracy": {
+          "document_type": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "main_subject": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "purpose": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "components": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "technical_parameters": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "interfaces_protocols": {
+            "value": 0.1,
+            "numerator": 1,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "software_tools": {
+            "value": 0.1,
+            "numerator": 1,
+            "denominator": 10,
+            "method": "whole field exact/G; missing/invalid are not correct",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          }
+        },
+        "aggregate_exact_accuracy": {
+          "value": 0.1875,
+          "numerator": 15,
+          "denominator": 80,
+          "method": "sum field exact/(8*G)",
+          "basis": "all golden IDs and eight fields",
+          "undefined_reason": null
+        },
+        "lists": {
+          "components": {
+            "identity": {
+              "tp": 15,
+              "fp": 51,
+              "fn": 80,
+              "expected": 95,
+              "predicted": 66,
+              "precision": {
+                "value": 0.22727272727272727,
+                "numerator": 15,
+                "denominator": 66,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.15789473684210525,
+                "numerator": 15,
+                "denominator": 95,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.18633540372670807,
+                "numerator": 30,
+                "denominator": 161,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            },
+            "full_fact": {
+              "tp": 0,
+              "fp": 66,
+              "fn": 95,
+              "expected": 95,
+              "predicted": 66,
+              "precision": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 66,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 95,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 161,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "technical_parameters": {
+            "full_fact": {
+              "tp": 0,
+              "fp": 29,
+              "fn": 82,
+              "expected": 82,
+              "predicted": 29,
+              "precision": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 29,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 82,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.0,
+                "numerator": 0,
+                "denominator": 111,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "interfaces_protocols": {
+            "full_fact": {
+              "tp": 6,
+              "fp": 13,
+              "fn": 5,
+              "expected": 11,
+              "predicted": 19,
+              "precision": {
+                "value": 0.3157894736842105,
+                "numerator": 6,
+                "denominator": 19,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.5454545454545454,
+                "numerator": 6,
+                "denominator": 11,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.4,
+                "numerator": 12,
+                "denominator": 30,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          },
+          "software_tools": {
+            "full_fact": {
+              "tp": 6,
+              "fp": 17,
+              "fn": 11,
+              "expected": 17,
+              "predicted": 23,
+              "precision": {
+                "value": 0.2608695652173913,
+                "numerator": 6,
+                "denominator": 23,
+                "method": "TP/(TP+FP)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "recall": {
+                "value": 0.35294117647058826,
+                "numerator": 6,
+                "denominator": 17,
+                "method": "TP/(TP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              },
+              "f1": {
+                "value": 0.3,
+                "numerator": 12,
+                "denominator": 40,
+                "method": "2TP/(2TP+FP+FN)",
+                "basis": "all golden objects including unavailable predictions",
+                "undefined_reason": null
+              }
+            }
+          }
+        },
+        "component_attributes": {
+          "model": {
+            "correct_over_paired": {
+              "value": 0.2,
+              "numerator": 3,
+              "denominator": 15,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "match": 3,
+              "mismatch": 12
+            }
+          },
+          "manufacturer": {
+            "correct_over_paired": {
+              "value": 0.2,
+              "numerator": 3,
+              "denominator": 15,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "match": 3,
+              "mismatch": 12
+            }
+          },
+          "role": {
+            "correct_over_paired": {
+              "value": 0.0,
+              "numerator": 0,
+              "denominator": 15,
+              "method": "correct attribute/paired identity checks",
+              "basis": "paired components only",
+              "undefined_reason": null
+            },
+            "verdict_counts": {
+              "needs_review": 15
+            }
+          }
+        },
+        "review": {
+          "check_counts": {
+            "match": 52,
+            "needs_review": 44,
+            "mismatch": 319
+          },
+          "total_checks": 415,
+          "auto_decided_checks": 371,
+          "unavailable_checks": 0,
+          "needs_review": {
+            "value": 0.10602409638554217,
+            "numerator": 44,
+            "denominator": 415,
+            "method": "review/total atomic checks",
+            "basis": "atomic checks",
+            "undefined_reason": null
+          },
+          "documents": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "review documents/G",
+            "basis": "all golden IDs",
+            "undefined_reason": null
+          },
+          "ambiguous_pairing_groups": 0
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "D:\\PycharmProjects\\AiEngenering\\results\\step1: ігноровано інших файлів: 0",
+    "D:\\PycharmProjects\\AiEngenering\\results\\step2: ігноровано інших файлів: 0"
+  ],
+  "cli": {
+    "golden": "data\\sourses\\hm1\\golden.json",
+    "runs": [
+      "results\\step1",
+      "results\\step2"
+    ],
+    "output_dir": "results\\evaluation-semantic-v1-baseline",
+    "manifest": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\manifest.json",
+    "annotation_rules": "D:\\PycharmProjects\\AiEngenering\\data\\golden_annotation_rules_v1.md",
+    "strict_golden": false,
+    "pricing": null
+  }
+}

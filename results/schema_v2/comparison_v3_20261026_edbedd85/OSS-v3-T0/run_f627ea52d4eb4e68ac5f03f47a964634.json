@@ -1,0 +1,141 @@
+{
+  "document_id": "HR-0297",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0297.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:03:20.798250+00:00",
+  "latency_seconds": 5.863914999994449,
+  "status": "failed",
+  "first_pass_valid": false,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-94",
+            "object": "chat.completion",
+            "created": 1792980205,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 668,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "completion_tokens": 108,
+              "total_tokens": 776
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 5.007785200024955
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 668,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 108,
+        "total_tokens": 776
+      },
+      "generation_id": "chatcmpl-94",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "initial"
+    },
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-665",
+            "object": "chat.completion",
+            "created": 1792980206,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 919,
+              "prompt_tokens_details": {
+                "cached_tokens": 719
+              },
+              "completion_tokens": 107,
+              "total_tokens": 1026
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 0.6907514999620616
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 919,
+        "prompt_tokens_details": {
+          "cached_tokens": 719
+        },
+        "completion_tokens": 107,
+        "total_tokens": 1026
+      },
+      "generation_id": "chatcmpl-665",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\", \"spi\", \"i2c\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "repair"
+    }
+  ],
+  "result": null,
+  "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v3-T0",
+  "source_sha256": "8cae5f66043c9307580a3c12bbb51e4982c1893cc881b735a776df3447195fa3",
+  "input_text_sha256": "2c0383d05334f9ffdf2bacbf9c527e397708be7e072fc80613729a1aef75a47c",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

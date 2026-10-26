@@ -1,0 +1,421 @@
+{
+  "schema_version": "v2",
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "evaluator_policy_version": "schema-v2-evaluator-v1.0",
+  "evaluation_status": "completed",
+  "annotation_status": "approved",
+  "golden_documents": 10,
+  "golden_sha256": "9a3b831cee329deaf1a8175c0a1e581a0fc9e253d2807a27d08b4fab74c71a5a",
+  "implementation_sha256": {
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\loading.py": "8529e4f3db50712f6f3968a4ec9af5dc7439df34057cdc2bc8310d6e9282e455",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\runtime.py": "8facb7e66186c1123e230323453c89500788f777e019c64b4d9b6e16f0ca2b1a",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation\\usage.py": "f91b467970acfd801e5ef24756a54374a5915d5332a8c0b6f5f5817b2b1a5412",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\__init__.py": "9e86da33edcc2386784568582626b2fcd5d9aea21ff2b1fb77696bf0c6a3423b",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\loading.py": "5e09f332d1f20802c23bf71126f2d8efb54483b04df3f834944e883b71134254",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\matrix.py": "d350f297fea1ef6b73541af73aabdb77cba04b3e140d695145677e39a6a29a42",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\reporting.py": "5ee8329cbecec546378af7a5f5f5e896ee61373c7bb5e82b254922d2cfa335c2",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\runner.py": "998cc2665ec6b49a5877fb0db825bdf432bb605810e9db14c1afe3b3eac28de6",
+    "D:\\PycharmProjects\\AiEngenering\\src\\evaluation_v2\\scoring.py": "e3b535f34a03bda6df4408a14e48c161acd8e0f72529e52417401ae3527327d3",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\__init__.py": "c5099f6e0e8e3cf2f4988555a0e48a21f85ee946c8918e3663965a864d96df88",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\v1.py": "6fb238b912a59f3128298d191d35e82844f6e2a0a6b64c02a15c8656b01f5a30",
+    "D:\\PycharmProjects\\AiEngenering\\src\\schemas\\v2.py": "5a9e979911f5b8a9ee11356ad9b157d3a7edbb1362450ffca6d92ed1b585d89c"
+  },
+  "input_hashes": {
+    "HR-0415": [
+      "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+      "fde69fca168205e2db2fcfde30bd8c62619ed9982ef1ae9b56a0e779267aed83"
+    ],
+    "HR-0743": [
+      "1c6cba5c855f08597ce46c99c725cb1cf36b732176bb8d739050c6a7de0b796a",
+      "83323ab8f391499180361f7aecc8951896dbd1366ff01bdca78689d470c58743"
+    ],
+    "HR-0207": [
+      "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+      "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e"
+    ],
+    "HR-0385": [
+      "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+      "bb82d96d336e641da60623df492bc7cc8ba6e1749248d86a1973e3048dccd48a"
+    ],
+    "HR-0187": [
+      "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+      "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd"
+    ],
+    "HR-0244": [
+      "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd",
+      "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd"
+    ],
+    "HR-0068": [
+      "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+      "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68"
+    ],
+    "HR-0254": [
+      "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714",
+      "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714"
+    ],
+    "HR-0227": [
+      "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+      "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a"
+    ],
+    "HR-0212": [
+      "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03",
+      "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03"
+    ]
+  },
+  "file_sha256": {
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\experiment_manifest.json": "f7e0e70cf859f9b8fc3d3ac94ce083bde7723319cdc00e0ac190339f009616f2",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_2f110a15baff46c59a628d5d62773a6d.json": "63b9391f9c5a69bbdd2c4632c15737c696344d4beca6e628a4f8fd9ceca33b21",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt": "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_3cb8c537ec294c04888e11a8f1a83a18.json": "cecbbc91d62fec67427d0b5ae188fef69f2170f56d12d11f765961a0d7856087",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0743.txt": "1c6cba5c855f08597ce46c99c725cb1cf36b732176bb8d739050c6a7de0b796a",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_3d87d3e0d51c40249a7df4736f77b0ac.json": "07915e7d7322f72a2c7715b85a2a6e00a20f4fb16780e6b0783387fbdf8065bb",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0207.txt": "73346dfb6627121c20bfa5584aecd207a89bfe26e31b9cc77aa14b821debb25e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_4c2cd562cf6349739ec20b2a74ebc736.json": "783d3c6ac1d07905bbf71e6d0626b5857e7e9110e0d84a6f72235b01d91bcb53",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0385.txt": "cf7951ec7c8589b0595caf4225c4ea936953adc69c16c14d37bfade497d1e92e",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_569de4f7af874610b90755bcc3bd7e9f.json": "08aa9ccdec8658654b1558385d6d6235d9b2c80f76bd2ec65d4e81816aca0ab8",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0187.txt": "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_5b323a8511e145aaa92773b5e892bd42.json": "511a98eea27d7ed81a632ede76dbd6a41dec56b6b0756a1e50ff6a7d77e68938",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0244.txt": "838b25bea3e8b1acfdda0805afe51191db1dfadd002a428a1febf27218e0b0dd",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_7cdda60905594f2bbcfa930d29ecf94f.json": "fae7002b52a12835418446cd00937a472dcf8b37a9c88ff0aa5a96311ca95e4a",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\ru\\HR-0068.txt": "d2586bad68a060a134e5ede793c94b93df7e1d784a6ea0874272bdcbf1445d68",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_7fc82d6895f8494a8e8a5ee0455aee4c.json": "a7ac1c51d819fed8c69bbd9d695e7e2d9ec2d1271104b901dd9df9747ed33f39",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0254.txt": "acc4cf45765a3444506216fa08324b92e100278e1743a503cb3ad9f5fcb95714",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_efbf78b57dfd49ab8464223cd79ab6bf.json": "138cb13fb323d26762a6f668dc8e9d07a17c03b8bb55468ae89e72d5eb6db756",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0227.txt": "76e7c76e2d5848c99b434e0e50f4fc0d618f14ec11ccce50339eed117b5a391a",
+    "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_f1de9fbd5fc94c90a9d85d21d21d6494.json": "a9bc209034e76a9e0f19fc7c7984ba8919306cec4900f5f8d980b0a53266d517",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0212.txt": "40ce53b3c829be8c660abb1fdbc29b074f771152bce922b1df85a9da02030d03",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\golden_v2.json": "9a3b831cee329deaf1a8175c0a1e581a0fc9e253d2807a27d08b4fab74c71a5a",
+    "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\manifest.json": "6eeaf924ac0ff1e6408999486b2c5119f4065d59b82461481d7f62f4786e5d6e",
+    "D:\\PycharmProjects\\AiEngenering\\data\\golden_annotation_rules_v2.md": "921ee328bcb92a6d37c3ef6aea7330fa01fae65504fdecad9af61ccaec62ac92"
+  },
+  "warnings": [],
+  "groups": [
+    {
+      "group_id": "d60b4e63b756354a92efbedf19a2216b372274d5872462cea5d03e170b826a77",
+      "configuration": {
+        "schema_version": "v2",
+        "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+        "provider": "ollama",
+        "requested_model": "llama3.2:3b",
+        "experiment_id": "OSS-v2-T0",
+        "prompt": {
+          "version": "v2",
+          "sha256": "ba3e83f178b927849caa401cd7b22ebe06381c4eb4fb0977b2c7e5ca2a36394d",
+          "namespace": "schema_v2"
+        },
+        "sampling": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "timeout_seconds": 60.0,
+          "max_retries": 2,
+          "max_tokens": 4096,
+          "retry_base_seconds": 1.0,
+          "max_retry_wait_seconds": 30.0
+        },
+        "text_preparation_version": "schema-v2-text-v1",
+        "returned_model": "llama3.2:3b"
+      },
+      "experiment_status": "completed",
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.4625,
+          "numerator": 37,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.42857142857142855,
+          "numerator": 30,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 4,
+            "precision": {
+              "value": 0.8571428571428571,
+              "numerator": 6,
+              "denominator": 7,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.6,
+              "numerator": 6,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.7058823529411765,
+              "numerator": 12,
+              "denominator": 17,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 21,
+            "fn": 4,
+            "precision": {
+              "value": 0.125,
+              "numerator": 3,
+              "denominator": 24,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.1935483870967742,
+              "numerator": 6,
+              "denominator": 31,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "failed": 3,
+          "repaired": 3,
+          "success": 4
+        },
+        "valid_final": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 0.4,
+          "numerator": 4,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 0.4,
+          "numerator": 4,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 3.7832800000323914,
+          "p95": 29.776901659992287,
+          "mean": 11.143355640000664,
+          "known_sum": 111.43355640000664,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 26424,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2642.4,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 12995,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 1299.5,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 39419,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 12552,
+            "known_requests": 13,
+            "all_requests": 13
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 13,
+            "complete_documents": 0,
+            "all_documents": 10,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 13
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    }
+  ]
+}

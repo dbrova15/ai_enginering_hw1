@@ -1,0 +1,20 @@
+{
+  "namespace": "schema_v2",
+  "version": "v2",
+  "sha256": "ba3e83f178b927849caa401cd7b22ebe06381c4eb4fb0977b2c7e5ca2a36394d",
+  "frozen_at_utc": "2026-10-26T00:43:16.393813+00:00",
+  "baseline_primary_count": 60,
+  "development_ids": [
+    "HR-0056",
+    "HR-0055",
+    "HR-0001",
+    "HR-0221"
+  ],
+  "manually_reviewed_ids": [
+    "HR-0056",
+    "HR-0055",
+    "HR-0221"
+  ],
+  "golden_feedback_used": false,
+  "no_further_edits_after_golden_evaluation": true
+}

@@ -1,0 +1,5236 @@
+{
+  "schema_version": "v2",
+  "groups": [
+    {
+      "group_id": "0eb605a5edd434324ef0af4ac53d8ce5e7b4ce51c4546c014d8cc38e43d8a062",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_56a3b652e9f94909a135db2f86acb48f.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_67127d93ba254784be65d14d6e28712e.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_57a349e7f4b94be38807f3cab0b8dd0b.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_dbb26dae49504d46b0270f31cb68aa0a.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_6c0580fdda4c41c2a8fdc8164e286049.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_ebd87853ca3a4029a7e9f9c065612f91.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp8266"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_c3b63a750e804f678161c18b148cfc20.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "displays_indicators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_400665ee95614f62bdff7df321b12f00.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_5e0840e308324afdb2c3edf01fc62afe.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": "robotics_actuators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T0\\run_f97da0705d104481a2b9fb4e5815782b.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "bluetooth",
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "25965a145ae7463a3e468409f4cbdb6f11f602a9ed98a71829597a372c39b668",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_58c0744a434e42dcbd11b7efe5641947.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "usb"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_cf2463671d8243e481ec110ab9a95663.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_2ea1de050120440ca0e94904657dac77.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_f798655c97164fcf86bf079b0303c464.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_756f7dcce280451887dc445b556fb5d0.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_652f533d025642c9a139f2c38439f4a5.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp8266"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_6872fefbb0bb48a58ef54a13e58d9fbb.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "displays_indicators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_d8b2b061f0f643358b495e759afaa344.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_5aaee1d029e1423f97be3b9f6bec3498.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": "robotics_actuators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "wifi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T0\\run_8f243b6120ee4fd3a661b155e49dea7d.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "bluetooth",
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "572923f335991128545ffc2088a7844cabc4f964d70e0924f56f3db2b2fd2d02",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_efe9d977675d4f618c9665a35a571964.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_06e5802cec8d4df8825962b30ab4d545.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_8eb40bc555644dad9ad735f46ba036f2.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_7734141e756d40e1b52e0bc903613aeb.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_d28142f6a1b94fa6adbc69487c21557c.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "ru",
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "controllers_programming",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_a757dbfec45c4b7595ed9240ae0e4aa1.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "esp8266"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "usb",
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_c55f17bcb38a44c6b576fed9cca2d4dd.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_9550a62e486a46e4a80ecb2ed9e51223.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_6399f9335e4f4f06b1da81eeeef6c024.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T07\\run_ff06f032086c40379cf6266f7b644501.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "arduino",
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "bluetooth",
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "8f5f8d5c5ff78a3e8103961e6102f6afbb3bf542fe586786f2af8fd5c81dbd71",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_8f1c14ba4917469d94b3ad956700bf27.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "lora",
+                "usb"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "lora"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_61f84ad51b424f1390ec0c4e33cf655e.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_c8d89e64d906498b8105dd8dee846c54.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_80cb3b66aa9f416bb4566dd9171bf490.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [
+                "esp32"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "esp32"
+              ]
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_bfe29027c41e4fc6ad7661d2bbf54dc5.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "controllers_programming",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "wifi",
+                "bluetooth"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "bluetooth",
+                "wifi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_1d977bd1fdfc4e99a1f3149b7b0a41f4.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp32",
+                "esp8266"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "esp32"
+              ]
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "wifi",
+                "usb"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_88620ac6f51b422d8ff6e260545a3394.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "i2c"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_f6937e0ab6df428188decb6a5dee68a3.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_055a977b79d44625b69b7f69d6d9f1fb.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T0\\run_a6661ee7dff849fa8d1de2760dc10588.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [
+                "wifi",
+                "bluetooth"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "b8345cfa4923dd78842368650328351b76648ef04f93e13e6828b6049f0917dc",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_8dbfb605a7024943a5d51fc7a861cf75.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_90c52817e73249ecaa2bde0021e16d6d.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_809cd4bdfb9e42e897dda74c1fecb1b7.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_58f84cde0cdf4e6097a55e75ace8a8c4.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_02a722ebf85749e9a95fbfd0547a3b2b.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_14db9e0946ed4e40971a3e5e3ee3e166.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp8266"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_15fb5b774c6049a9953563ddc5b67387.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "displays_indicators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_acbe06166c234ec9ae2fc1985b139d3d.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_7781bd3c592541ed8eb740d4e6665ec9.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": "robotics_actuators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v1-T07\\run_a973ae4b0900484288f1c10e17bc143b.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "missing": [
+                "bluetooth",
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "baec09a4a73b164a8ae8320738edc13a3f979f8bb3f51f44813411c9955bb7c6",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_58253406eacf445aa109b9f284223012.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "usb"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_6863647420f74f7286ce9950fcabe90a.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_8fd73d75b7d3461fbe4e2a87eae8aa94.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_7ab46109db7041a89976a2b5c36a3808.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_09c094d63e254c8cbd7dd2fd7f286eba.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_667debfea9fc4695816024828aba3aa5.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp8266"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "wifi",
+                "usb"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_fe4a0c20106f43a592da9e6ea4921ff1.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "displays_indicators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_854a44d87dd04dba9ff2cb09342b9628.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_2e846f988f3d42c2b826b984948985c6.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": "robotics_actuators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "wifi"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "wifi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\GPT-v2-T07\\run_e2321b8174774952b0e5a8f7922cd8dc.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [
+                "usb"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 2,
+              "missing": [
+                "bluetooth",
+                "wifi"
+              ],
+              "extra_predicted": [
+                "usb"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "d60b4e63b756354a92efbedf19a2216b372274d5872462cea5d03e170b826a77",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_7cdda60905594f2bbcfa930d29ecf94f.json",
+          "status": "repaired",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 1,
+              "missing": [
+                "usb"
+              ],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_569de4f7af874610b90755bcc3bd7e9f.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "devices_automation",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [],
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart",
+                "usb"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 4,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart",
+                "usb"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_3d87d3e0d51c40249a7df4736f77b0ac.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_f1de9fbd5fc94c90a9d85d21d21d6494.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_efbf78b57dfd49ab8464223cd79ab6bf.json",
+          "status": "repaired",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_5b323a8511e145aaa92773b5e892bd42.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "devices_automation",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp32",
+                "esp8266"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "esp32"
+              ]
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 3,
+              "fn": 2,
+              "missing": [
+                "usb",
+                "wifi"
+              ],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_7fc82d6895f8494a8e8a5ee0455aee4c.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": "displays_indicators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": [
+                "i2c",
+                "uart"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "uart"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_4c2cd562cf6349739ec20b2a74ebc736.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_2f110a15baff46c59a628d5d62773a6d.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v2-T0\\run_3cb8c537ec294c04888e11a8f1a83a18.json",
+          "status": "repaired",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [
+                "wifi",
+                "bluetooth",
+                "i2c",
+                "spi",
+                "uart",
+                "usb"
+              ],
+              "correct": false,
+              "tp": 2,
+              "fp": 4,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c",
+                "spi",
+                "uart",
+                "usb"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "fb75abda5591ba4fff500ee2a619b31d6eb6fbb97b3afe2fa40784fcce32995e",
+      "documents": [
+        {
+          "document_id": "HR-0068",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_1847dd83134e4724bb26a98377f200be.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "ru",
+              "predicted": "ru",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "sensors_measurements",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "usb"
+              ],
+              "predicted": [
+                "i2c",
+                "usb"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "i2c"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0187",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_6be73f9e08ef4939b48f06f873511f00.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "ru",
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "spi"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "spi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0207",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_bb35f5d0cb1c4d51a91c9d5bfc2b50b4.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0212",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_fc160e31c5914063aad5964c9ff3bc7f.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0227",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_9b346145f2d343cbb12602131da56f92.json",
+          "status": "repaired",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "predicted": [
+                "arduino",
+                "raspberry_pi"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [],
+              "correct": true,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": true,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0244",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_19a5dd41a4b24970808532d91e9de9f3.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": "uk",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "sensors_measurements",
+              "predicted": "robotics_actuators",
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "esp8266"
+              ],
+              "predicted": [
+                "esp32",
+                "esp8266"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "esp32"
+              ]
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "usb"
+              ],
+              "predicted": [
+                "i2c",
+                "spi"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 2,
+              "fn": 2,
+              "missing": [
+                "usb",
+                "wifi"
+              ],
+              "extra_predicted": [
+                "i2c",
+                "spi"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0254",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_547b77043a534eddb3756cf5dcf96958.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "uk",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "displays_indicators",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "i2c"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "i2c"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0385",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_ecef2119fc5a48c5b9f04f0195cb0f83.json",
+          "status": "failed",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": null,
+              "correct": false
+            },
+            "primary_topic": {
+              "expected": "devices_automation",
+              "predicted": null,
+              "correct": false
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "arduino"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi"
+              ],
+              "predicted": null,
+              "correct": false,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "wifi"
+              ],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": null,
+              "correct": false
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "document_id": "HR-0415",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_c4aa1e33797b4d498ae39929c31a2924.json",
+          "status": "repaired",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "robotics_actuators",
+              "predicted": "robotics_actuators",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": true,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [],
+              "predicted": [
+                "bluetooth"
+              ],
+              "correct": false,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": [
+                "bluetooth"
+              ]
+            },
+            "mentions_sensor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            }
+          }
+        },
+        {
+          "document_id": "HR-0743",
+          "run_path": "D:\\PycharmProjects\\AiEngenering\\results\\schema_v2\\OSS-v1-T07\\run_ac24ffda4f5f4ba2a9798eada7d9ff60.json",
+          "status": "success",
+          "fields": {
+            "language": {
+              "expected": "en",
+              "predicted": "en",
+              "correct": true
+            },
+            "primary_topic": {
+              "expected": "power_batteries",
+              "predicted": "power_batteries",
+              "correct": true
+            },
+            "mentioned_platforms": {
+              "expected": [
+                "arduino",
+                "stm32"
+              ],
+              "predicted": [
+                "arduino"
+              ],
+              "correct": false,
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "missing": [
+                "stm32"
+              ],
+              "extra_predicted": []
+            },
+            "mentioned_interfaces": {
+              "expected": [
+                "wifi",
+                "bluetooth"
+              ],
+              "predicted": [
+                "wifi",
+                "bluetooth"
+              ],
+              "correct": true,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "missing": [],
+              "extra_predicted": []
+            },
+            "mentions_sensor": {
+              "expected": true,
+              "predicted": false,
+              "correct": false
+            },
+            "mentions_display": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            },
+            "mentions_battery": {
+              "expected": true,
+              "predicted": true,
+              "correct": true
+            },
+            "mentions_motor": {
+              "expected": false,
+              "predicted": false,
+              "correct": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

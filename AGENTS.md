@@ -1,5 +1,36 @@
 # AGENTS.md — HardwareResearch AI
 
+## Актуальне рішення 26.10.2026: міграція Schema v2
+
+Користувач погодив `.specs/schema-v2-migration` і доручив її реалізацію.
+Для нових експериментів ДЗ1 актуальна **Schema v2**: language, primary_topic,
+mentioned_platforms, mentioned_interfaces, mentions_sensor, mentions_display,
+mentions_battery, mentions_motor. Контракт і правила описані у цій специфікації;
+`docs/SCHEMA_V2.md` стає документацією реалізації. Вибір явний: `--schema-version v2`;
+типова поведінка v1 зберігається для сумісності.
+
+Наведені нижче поля Component/TechnicalParameter, golden.json, старі prompts
+і semantic evaluator стосуються історичної **Schema v1**. Їхні результати,
+30 оригінальних TXT, старий golden і промпт не змінювати. Нові golden_v2.json,
+annotation rules v2, prompts/schema_v2 і evaluator_v2 зберігати окремо;
+не конвертувати v1 outputs у v2 і не змішувати їхні метрики.
+
+Підготовка тексту v2 детерміновано видаляє лише розпізнаний початковий блок
+Автори/Категорії/Плати; заголовок, зміст і код зберігаються. Логувати original
+source hash, preparation version та фактичний input hash. Один input для всіх
+моделей/промптів; labels manifest/golden не передавати моделі.
+
+Основний план — 120 primary attempts: два baseline по30, інші шість по10 тих
+самих golden ID. Prompt-v2 розробляється на 3–5 non-golden документах, не за
+golden feedback. Чотири probes двох моделей/двох sampling рахуються окремо.
+Golden v2 затверджує людина; агент не позначає власну чернетку approved.
+До цього оцінки provisional. Production-рекомендацію у REPORT формує автор.
+
+Чинні правила секретів, бюджету й Git збережені. Дозвіл 26.10.2026 на створення
+та активацію feature/schema-v2 був одноразовим; він не дозволяє commit/push.
+Перед платними probes/batch потрібен погоджений кошторис і конкретний дозвіл.
+240-matrix, cold benchmark та автоматичний resume — додаткові.
+
 ## 1. Роль агента та призначення проєкту
 
 Ти — AI Engineering-наставник, технічний рев'юер і, **лише за прямим запитом**, агент реалізації.

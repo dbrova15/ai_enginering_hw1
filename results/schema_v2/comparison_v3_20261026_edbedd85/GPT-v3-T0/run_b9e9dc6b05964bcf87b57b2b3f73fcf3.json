@@ -1,0 +1,134 @@
+{
+  "document_id": "HR-0415",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt",
+  "schema_version": "v2",
+  "provider": "openai",
+  "requested_model": "gpt-4o-mini",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:03:25.458890+00:00",
+  "latency_seconds": 2.0415249000070617,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-Ed4LWU2FMd1XYuXiPB73fdGYfTwOX",
+            "object": "chat.completion",
+            "created": 1792980206,
+            "model": "gpt-4o-mini-2024-07-18",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"mentioned_platforms\": [\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"wifi\"\n  ],\n  \"mentions_sensor\": false,\n  \"mentions_display\": false,\n  \"mentions_battery\": false,\n  \"mentions_motor\": true\n}",
+                  "refusal": null,
+                  "annotations": []
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1475,
+              "completion_tokens": 76,
+              "total_tokens": 1551,
+              "prompt_tokens_details": {
+                "cached_tokens": 1024,
+                "audio_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "audio_tokens": 0,
+                "accepted_prediction_tokens": 0,
+                "rejected_prediction_tokens": 0
+              }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_e9e83bb9dc"
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 1.882286199950613
+        }
+      ],
+      "returned_model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 1475,
+        "completion_tokens": 76,
+        "total_tokens": 1551,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "generation_id": "chatcmpl-Ed4LWU2FMd1XYuXiPB73fdGYfTwOX",
+      "finish_reason": "stop",
+      "raw_content": "{\n  \"language\": \"en\",\n  \"primary_topic\": \"robotics_actuators\",\n  \"mentioned_platforms\": [\n    \"arduino\"\n  ],\n  \"mentioned_interfaces\": [\n    \"wifi\"\n  ],\n  \"mentions_sensor\": false,\n  \"mentions_display\": false,\n  \"mentions_battery\": false,\n  \"mentions_motor\": true\n}",
+      "result": {
+        "language": "en",
+        "primary_topic": "robotics_actuators",
+        "mentioned_platforms": [
+          "arduino"
+        ],
+        "mentioned_interfaces": [
+          "wifi"
+        ],
+        "mentions_sensor": false,
+        "mentions_display": false,
+        "mentions_battery": false,
+        "mentions_motor": true
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "en",
+    "primary_topic": "robotics_actuators",
+    "mentioned_platforms": [
+      "arduino"
+    ],
+    "mentioned_interfaces": [
+      "wifi"
+    ],
+    "mentions_sensor": false,
+    "mentions_display": false,
+    "mentions_battery": false,
+    "mentions_motor": true
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "GPT-v3-T0",
+  "source_sha256": "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+  "input_text_sha256": "fde69fca168205e2db2fcfde30bd8c62619ed9982ef1ae9b56a0e779267aed83",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

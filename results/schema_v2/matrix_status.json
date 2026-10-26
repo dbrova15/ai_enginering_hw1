@@ -1,0 +1,63 @@
+{
+  "schema_version": "v2",
+  "planned_primary": 120,
+  "received_primary": 120,
+  "configurations": [
+    {
+      "experiment_id": "GPT-v1-T0",
+      "planned": 30,
+      "received": 30,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "OSS-v1-T0",
+      "planned": 30,
+      "received": 30,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "GPT-v1-T07",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "OSS-v1-T07",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "GPT-v2-T0",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "OSS-v2-T0",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "GPT-v2-T07",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    },
+    {
+      "experiment_id": "OSS-v2-T07",
+      "planned": 10,
+      "received": 10,
+      "missing_ids": [],
+      "status": "completed"
+    }
+  ]
+}

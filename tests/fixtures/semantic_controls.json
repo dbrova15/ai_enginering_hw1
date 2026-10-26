@@ -1,0 +1,655 @@
+[
+  {
+    "id": "operating_voltage_uk",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Модуль датчика нахилу",
+      "name": "Робоча напруга",
+      "value": "5",
+      "unit": "В"
+    },
+    "predicted": {
+      "subject": "Tilt sensor module",
+      "name": "Operating voltage",
+      "value": "5 volts",
+      "unit": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "operating_voltage_ru",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Модуль датчика наклона",
+      "name": "Рабочее напряжение",
+      "value": "5",
+      "unit": "В"
+    },
+    "predicted": {
+      "subject": "Tilt sensor module",
+      "name": "Operating voltage",
+      "value": "5 volts",
+      "unit": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "operating_voltage_en",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Tilt sensor module",
+      "name": "Operating voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "Tilt sensor module",
+      "name": "Operating voltage",
+      "value": "5 volts",
+      "unit": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "board_dimensions",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Печатная плата модуля",
+      "name": "Размеры платы",
+      "value": "3,2 × 1,4",
+      "unit": "см"
+    },
+    "predicted": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "3.2 cm x 1.4 cm",
+      "unit": "cm"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "angle_range",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Модуль датчика наклона",
+      "name": "Диапазон порогового угла",
+      "value": "45–130",
+      "unit": "градусов"
+    },
+    "predicted": {
+      "subject": "Tilt sensor module",
+      "name": "Threshold angle",
+      "value": "45 to 130 degrees",
+      "unit": "degrees"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "dimensions_scale",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "32 x 14",
+      "unit": "mm"
+    },
+    "predicted": {
+      "subject": "Плата модуля",
+      "name": "Розміри плати",
+      "value": "3.2 x 1.4",
+      "unit": "cm"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "microampere_alias",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "current consumption",
+      "value": "<100",
+      "unit": "µA"
+    },
+    "predicted": {
+      "subject": "реле",
+      "name": "Споживаний струм",
+      "value": "under 100 microamperes",
+      "unit": "uA"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "voltage_inline_unit",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "реле",
+      "name": "напруга",
+      "value": "5В",
+      "unit": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "tilt_module_translation",
+    "field": "components",
+    "expected": {
+      "name": "Модуль датчика наклона",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "Tilt Sensor Module",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "jumper_translation",
+    "field": "components",
+    "expected": {
+      "name": "Перемички",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "Jumper wires",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "potentiometer_translation",
+    "field": "components",
+    "expected": {
+      "name": "Потенциометр",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "Potentiometer",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "role_translation",
+    "field": "components",
+    "expected": {
+      "name": "Помпа",
+      "model": null,
+      "manufacturer": null,
+      "role": "Полив рослин"
+    },
+    "predicted": {
+      "name": "Pump",
+      "model": null,
+      "manufacturer": null,
+      "role": "Plant watering"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "subject_watering_translation",
+    "field": "main_subject",
+    "expected": "Система автоматичного поливу рослин",
+    "predicted": "Automatic plant watering system",
+    "verdict": "match"
+  },
+  {
+    "id": "subject_tilt_translation",
+    "field": "main_subject",
+    "expected": "Модуль датчика нахилу",
+    "predicted": "Tilt sensor module",
+    "verdict": "match"
+  },
+  {
+    "id": "purpose_watering_translation",
+    "field": "purpose",
+    "expected": "Автоматичний полив рослин",
+    "predicted": "Automatic plant watering",
+    "verdict": "match"
+  },
+  {
+    "id": "purpose_measure_temperature",
+    "field": "purpose",
+    "expected": "Вимірювання температури",
+    "predicted": "Temperature measurement",
+    "verdict": "match"
+  },
+  {
+    "id": "bound_equivalence",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "radio",
+      "name": "desired range",
+      "value": ">=200",
+      "unit": "m"
+    },
+    "predicted": {
+      "subject": "radio",
+      "name": "desired range",
+      "value": "at least 200 meters",
+      "unit": "m"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "numeric_comma",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "battery",
+      "name": "voltage",
+      "value": "1,2",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "battery",
+      "name": "voltage",
+      "value": "1.2",
+      "unit": "V"
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "nulls_remain_equal",
+    "field": "components",
+    "expected": {
+      "name": "relay",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "relay",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "match"
+  },
+  {
+    "id": "different_devices",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "battery",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "different_properties",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "current",
+      "value": "5",
+      "unit": "A"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "strict_bound",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "current consumption",
+      "value": "<100",
+      "unit": "µA"
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "current consumption",
+      "value": "100",
+      "unit": "uA"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "desired_vs_measured",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "radio",
+      "name": "desired range",
+      "value": ">=200",
+      "unit": "m"
+    },
+    "predicted": {
+      "subject": "radio",
+      "name": "measured range",
+      "value": ">=200",
+      "unit": "m"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "same_value_different_property",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "pin number",
+      "value": "5",
+      "unit": null
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "contact count",
+      "value": "5",
+      "unit": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "wrong_unit",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "A"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "range_vs_point",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Tilt sensor module",
+      "name": "Threshold angle",
+      "value": "45-130",
+      "unit": "degrees"
+    },
+    "predicted": {
+      "subject": "Tilt sensor module",
+      "name": "Threshold angle",
+      "value": "45",
+      "unit": "degrees"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "reversed_axes",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "3.2 x 1.4",
+      "unit": "cm"
+    },
+    "predicted": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "1.4 x 3.2",
+      "unit": "cm"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "area_not_dimensions",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "3.2 x 1.4",
+      "unit": "cm"
+    },
+    "predicted": {
+      "subject": "Module circuit board",
+      "name": "Board size",
+      "value": "4.48",
+      "unit": "cm"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "approx_not_exact",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "battery",
+      "name": "voltage",
+      "value": "about 5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "battery",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "uno_not_mega",
+    "field": "components",
+    "expected": {
+      "name": "Arduino Uno",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "Arduino Mega",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "wrong_role",
+    "field": "components",
+    "expected": {
+      "name": "pump",
+      "model": null,
+      "manufacturer": null,
+      "role": "plant watering"
+    },
+    "predicted": {
+      "name": "pump",
+      "model": null,
+      "manufacturer": null,
+      "role": "temperature measurement"
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "wrong_manufacturer",
+    "field": "components",
+    "expected": {
+      "name": "relay",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "relay",
+      "model": null,
+      "manufacturer": "Acme",
+      "role": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "wrong_model",
+    "field": "components",
+    "expected": {
+      "name": "relay",
+      "model": "ABC1",
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "relay",
+      "model": "ABC2",
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "chip_not_board",
+    "field": "components",
+    "expected": {
+      "name": "Arduino Uno",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "ATmega328P",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "module_not_ball_sensor",
+    "field": "components",
+    "expected": {
+      "name": "Tilt sensor module",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "Ball tilt sensor",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "not_match"
+  },
+  {
+    "id": "generic_subject",
+    "field": "main_subject",
+    "expected": "Система автоматичного поливу рослин на Arduino",
+    "predicted": "Device",
+    "verdict": "needs_review"
+  },
+  {
+    "id": "lost_arduino",
+    "field": "main_subject",
+    "expected": "Система автоматичного поливу рослин на Arduino",
+    "predicted": "Automatic plant watering system",
+    "verdict": "needs_review"
+  },
+  {
+    "id": "extra_function",
+    "field": "purpose",
+    "expected": "Автоматичний полив рослин",
+    "predicted": "Automatic plant watering and fire detection",
+    "verdict": "needs_review"
+  },
+  {
+    "id": "negated_purpose",
+    "field": "purpose",
+    "expected": "Автоматичний полив рослин",
+    "predicted": "No automatic plant watering",
+    "verdict": "needs_review"
+  },
+  {
+    "id": "property_as_subject",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "Tilt sensor module",
+      "name": "Operating voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "Operating Voltage",
+      "name": "Voltage",
+      "value": "5 V",
+      "unit": null
+    },
+    "verdict": "needs_review"
+  },
+  {
+    "id": "unknown_property",
+    "field": "technical_parameters",
+    "expected": {
+      "subject": "relay",
+      "name": "voltage",
+      "value": "5",
+      "unit": "V"
+    },
+    "predicted": {
+      "subject": "relay",
+      "name": "device capability",
+      "value": "5",
+      "unit": "V"
+    },
+    "verdict": "needs_review"
+  },
+  {
+    "id": "hr0207_conflict",
+    "field": "components",
+    "expected": {
+      "name": "voltage regulator",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "voltage regulator",
+      "model": "lm7805",
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "needs_review",
+    "source_conflict": true
+  },
+  {
+    "id": "hr0207_other_spelling",
+    "field": "components",
+    "expected": {
+      "name": "voltage regulator",
+      "model": null,
+      "manufacturer": null,
+      "role": null
+    },
+    "predicted": {
+      "name": "voltage regulator",
+      "model": "lm7508",
+      "manufacturer": null,
+      "role": null
+    },
+    "verdict": "needs_review",
+    "source_conflict": true
+  }
+]

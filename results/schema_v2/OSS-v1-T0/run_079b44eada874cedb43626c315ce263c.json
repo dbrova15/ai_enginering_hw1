@@ -1,0 +1,169 @@
+{
+  "document_id": "HR-0200",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0200.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:37:41.710628+00:00",
+  "latency_seconds": 3.5092863000463694,
+  "status": "repaired",
+  "first_pass_valid": false,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-613",
+            "object": "chat.completion",
+            "created": 1792975064,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"uk\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"esp32\", \"esp8266\"], \"mentioned_interfaces\": [\"wifi\", \"wifi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": true, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1781,
+              "prompt_tokens_details": {
+                "cached_tokens": 153
+              },
+              "completion_tokens": 66,
+              "total_tokens": 1847
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.9401946999132633
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1781,
+        "prompt_tokens_details": {
+          "cached_tokens": 153
+        },
+        "completion_tokens": 66,
+        "total_tokens": 1847
+      },
+      "generation_id": "chatcmpl-613",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"uk\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"esp32\", \"esp8266\"], \"mentioned_interfaces\": [\"wifi\", \"wifi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": true, \"mentions_motor\": true}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "initial"
+    },
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-121",
+            "object": "chat.completion",
+            "created": 1792975065,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"uk\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"esp32\", \"esp8266\"], \"mentioned_interfaces\": [\"wifi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": true, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 1953,
+              "prompt_tokens_details": {
+                "cached_tokens": 1794
+              },
+              "completion_tokens": 62,
+              "total_tokens": 2015
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 0.41029999998863786
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 1953,
+        "prompt_tokens_details": {
+          "cached_tokens": 1794
+        },
+        "completion_tokens": 62,
+        "total_tokens": 2015
+      },
+      "generation_id": "chatcmpl-121",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"uk\", \"primary_topic\": \"sensors_measurements\", \"mentioned_platforms\": [\"esp32\", \"esp8266\"], \"mentioned_interfaces\": [\"wifi\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": true, \"mentions_motor\": true}",
+      "result": {
+        "language": "uk",
+        "primary_topic": "sensors_measurements",
+        "mentioned_platforms": [
+          "esp32",
+          "esp8266"
+        ],
+        "mentioned_interfaces": [
+          "wifi"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": true,
+        "mentions_battery": true,
+        "mentions_motor": true
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "repair"
+    }
+  ],
+  "result": {
+    "language": "uk",
+    "primary_topic": "sensors_measurements",
+    "mentioned_platforms": [
+      "esp32",
+      "esp8266"
+    ],
+    "mentioned_interfaces": [
+      "wifi"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": true,
+    "mentions_battery": true,
+    "mentions_motor": true
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v1-T0",
+  "source_sha256": "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e",
+  "input_text_sha256": "1c6f5c08f09c6fc7af3598b61ea46d4716bc7817bf97c52ed26c7c253576f61e",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

@@ -1,0 +1,118 @@
+{
+  "document_id": "HR-0187",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0187.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v2",
+    "sha256": "ba3e83f178b927849caa401cd7b22ebe06381c4eb4fb0977b2c7e5ca2a36394d",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:44:21.436224+00:00",
+  "latency_seconds": 2.931239700061269,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-543",
+            "object": "chat.completion",
+            "created": 1792975464,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"uk\", \"primary_topic\": \"devices_automation\", \"mentioned_platforms\": [], \"mentioned_interfaces\": [\"uart\", \"usb\", \"i2c\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 783,
+              "prompt_tokens_details": {
+                "cached_tokens": 499
+              },
+              "completion_tokens": 64,
+              "total_tokens": 847
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 2.803607500041835
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 783,
+        "prompt_tokens_details": {
+          "cached_tokens": 499
+        },
+        "completion_tokens": 64,
+        "total_tokens": 847
+      },
+      "generation_id": "chatcmpl-543",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"uk\", \"primary_topic\": \"devices_automation\", \"mentioned_platforms\": [], \"mentioned_interfaces\": [\"uart\", \"usb\", \"i2c\", \"spi\"], \"mentions_sensor\": true, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}",
+      "result": {
+        "language": "uk",
+        "primary_topic": "devices_automation",
+        "mentioned_platforms": [],
+        "mentioned_interfaces": [
+          "i2c",
+          "spi",
+          "uart",
+          "usb"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": false,
+        "mentions_battery": false,
+        "mentions_motor": true
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "uk",
+    "primary_topic": "devices_automation",
+    "mentioned_platforms": [],
+    "mentioned_interfaces": [
+      "i2c",
+      "spi",
+      "uart",
+      "usb"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": false,
+    "mentions_battery": false,
+    "mentions_motor": true
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v2-T0",
+  "source_sha256": "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+  "input_text_sha256": "d771f1223e02817ebdbdbf2b4967d86de451c9a392a73ddb376b3b491858b2dd",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

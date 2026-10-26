@@ -1,0 +1,167 @@
+{
+  "document_id": "HR-0415",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\en\\HR-0415.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v1",
+    "sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T00:43:56.810598+00:00",
+  "latency_seconds": 3.6874506999738514,
+  "status": "repaired",
+  "first_pass_valid": false,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-670",
+            "object": "chat.completion",
+            "created": 1792975440,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"wifi\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 464,
+              "prompt_tokens_details": {
+                "cached_tokens": 153
+              },
+              "completion_tokens": 101,
+              "total_tokens": 565
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.172314399969764
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 464,
+        "prompt_tokens_details": {
+          "cached_tokens": 153
+        },
+        "completion_tokens": 101,
+        "total_tokens": 565
+      },
+      "generation_id": "chatcmpl-670",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\", \"arduino\"], \"mentioned_interfaces\": [\"wifi\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\", \"bluetooth\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}",
+      "result": null,
+      "error": "[{\"type\": \"value_error\", \"loc\": [\"mentioned_platforms\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}, {\"type\": \"value_error\", \"loc\": [\"mentioned_interfaces\"], \"msg\": \"Value error, Теги у списку повинні бути унікальними.\"}]",
+      "repairable": true,
+      "kind": "initial"
+    },
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-831",
+            "object": "chat.completion",
+            "created": 1792975440,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\"], \"mentioned_interfaces\": [\"bluetooth\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 707,
+              "prompt_tokens_details": {
+                "cached_tokens": 476
+              },
+              "completion_tokens": 58,
+              "total_tokens": 765
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 0.388670300017111
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 707,
+        "prompt_tokens_details": {
+          "cached_tokens": 476
+        },
+        "completion_tokens": 58,
+        "total_tokens": 765
+      },
+      "generation_id": "chatcmpl-831",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"en\", \"primary_topic\": \"robotics_actuators\", \"mentioned_platforms\": [\"arduino\"], \"mentioned_interfaces\": [\"bluetooth\"], \"mentions_sensor\": false, \"mentions_display\": false, \"mentions_battery\": false, \"mentions_motor\": true}",
+      "result": {
+        "language": "en",
+        "primary_topic": "robotics_actuators",
+        "mentioned_platforms": [
+          "arduino"
+        ],
+        "mentioned_interfaces": [
+          "bluetooth"
+        ],
+        "mentions_sensor": false,
+        "mentions_display": false,
+        "mentions_battery": false,
+        "mentions_motor": true
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "repair"
+    }
+  ],
+  "result": {
+    "language": "en",
+    "primary_topic": "robotics_actuators",
+    "mentioned_platforms": [
+      "arduino"
+    ],
+    "mentioned_interfaces": [
+      "bluetooth"
+    ],
+    "mentions_sensor": false,
+    "mentions_display": false,
+    "mentions_battery": false,
+    "mentions_motor": true
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v1-T07",
+  "source_sha256": "5da9fb045c0892cd0852d21c8922391ae3e5a7f98d2866129667fa7866ff9602",
+  "input_text_sha256": "fde69fca168205e2db2fcfde30bd8c62619ed9982ef1ae9b56a0e779267aed83",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

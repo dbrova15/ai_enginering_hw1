@@ -1,5 +1,31 @@
 # HardwareResearch AI
 
+## Schema v2 — перевірений конвеєр і результати120
+
+Основна демонстраційна команда після налаштування активного провайдера:
+
+```powershell
+.\.venv\Scripts\python.exe main.py --schema-version v2 --document data/sourses/hm1/texts/uk/HR-0187.txt
+```
+
+Без `--prompt` вона обирає `prompts/schema_v2/v1.txt`, ізольований новий каталог `results/schema_v2/baseline/<uuid>` та сувору Schema v2. Без `--schema-version` збережено попередню поведінку v1. Реальна демонстрація викликає модель; хмарні запуски виконувати тільки в погодженому бюджеті.
+
+```powershell
+# Усі 30 документів, T0:
+.\.venv\Scripts\python.exe main.py --schema-version v2 --all-documents --temperature 0 --top-p 1 --output-dir results/schema_v2/NEW-EXPERIMENT
+# Рівно 10 еталонних ID, T07:
+.\.venv\Scripts\python.exe main.py --schema-version v2 --document-ids data/sourses/hm1/golden_v2_ids.txt --temperature 0.7 --top-p 1 --output-dir results/schema_v2/ANOTHER-EXPERIMENT
+# Лише збережені результати, без API та .env; каталог NEW-EVALUATION має бути новим:
+.\.venv\Scripts\python.exe evaluate_v2.py --golden data/sourses/hm1/golden_v2.json --runs results/schema_v2/NEW-EXPERIMENT --output-dir results/schema_v2/NEW-EVALUATION
+```
+
+`--temperature` та `--top-p` замінюють тільки явно задані значення Settings; `0` має пріоритет над config `0.7`. Допустимі скінченні temperature `[0,2]`, top_p `(0,1]`; без аргументів діє `.env`. ID-файл містить тільки ID, по одному на рядок; unknown/duplicate/empty відхиляються до HTTP. Каталоги v1/непорожні outputs захищені. Для approved-еталона додати evaluator `--strict-golden`; поточні10 еталонів вручну approved і приймаються у strict.
+
+План **120 primary** (2×30 baseline + 6×10), hashes, D/G і кошторис: [plan.md](results/schema_v2/plan.md), [plan.json](results/schema_v2/plan.json). Виконано120/120 primary у8 конфігураціях і4 успішні реальні probes2×2. Prompt-v2 зафіксовано за помилками3 non-golden текстів D до оцінювання G, D∩G=∅. Попереднє використання G у v1/evaluator обмежує незалежність фінального тесту.
+
+[Контракт, підготовка тексту та метрики](docs/SCHEMA_V2.md). [Затверджені людські рішення](data/golden_v2_review.md). Якість рахується на G=10: content 7G=70, aggregate 8G=80, незалежно від N=30 чи N=10. Runtime golden_10 порівнюється окремо від baseline_all_30. Версії й hashes schema/prompt/source/prepared input записані в кожному новому v2 run; старі TXT/v1 не змінюються.
+
+
 Скрипт витягує дані з **однієї TXT-статті або всіх TXT корпусу** через OpenRouter, прямий OpenAI API або локальну Ollama, перевіряє JSON погодженою Pydantic-схемою та зберігає звіти. Потрібні Python 3.11+ та модель; для хмарних сервісів — ключ активного сервісу.
 
 ## Підготовка
@@ -54,7 +80,7 @@ API-ключ для локального маршруту не потрібни�
 
 Запуск той самий: `python main.py`. Якщо модель не завантажена або сервер не працює, запит завершується `failed` зі збереженим звітом; програма не встановлює Ollama, не завантажує модель і не перемикається на платний API автоматично.
 
-Перше звернення може довше завантажувати модель у пам'ять. За потреби збільшіть спільний REQUEST_TIMEOUT_SECONDS, наприклад до 180. Для майбутніх замірів вимірюйте cold start окремо від прогрітих запусків. У поточному звіті загальний latency включає це завантаження, якщо воно сталося; окремої метрики cold start ще немає. Якість витягування на llama3.2:3b потрібно перевірити реальним прогоном за golden set. Локальних API-платежів немає, але витрати ресурсів комп'ютера не вимірюються.
+Перше звернення може довше завантажувати модель у пам'ять. За потреби збільшіть спільний REQUEST_TIMEOUT_SECONDS, наприклад до 180. Для майбутніх замірів вимірюйте cold start окремо від прогрітих запусків. У поточному звіті загальний latency включає це завантаження, якщо воно сталося; окремої метрики cold start ще немає. Якість Schema v2 на llama3.2:3b вже перевірено реальними прогонами на approved golden; див. REPORT.md. Локальних API-платежів немає, але витрати ресурсів комп'ютера не вимірюються.
 
 ## Спільні налаштування та відмінності API
 
@@ -137,7 +163,7 @@ Timeout httpx обмежує очікування окремих мережев�
 
 `main.py` читає аргументи й координує запуск; `src/document_runner.py` готує документи, обробляє їх послідовно та формує метадані й підсумок. `src/schema.py` описує дані; `src/config.py` перевіряє налаштування; `src/client_factory.py` вибирає активний клієнт; `src/chat_client.py` виконує спільні HTTP/retry. `src/openrouter_client.py`, `src/openai_client.py` та `src/ollama_client.py` задають адресу й параметри свого API; `src/extraction.py` перевіряє відповіді й керує repair; `src/result_writer.py` записує звіт. Класи й функції пояснені українськими docstring, які доступні також через `help()`.
 
-25.10.2026 baseline v1 прогнано на всіх 30 текстах моделлю GPT-4o mini: 29 документів через прямий OpenAI API та один попередній — через OpenRouter. Усі 30 відповідей отримали HTTP 200 й пройшли Pydantic з першої спроби; retry/repair не знадобилися. [Підсумок і відповідність ID файлам](results/baseline_v1_2026-10-25_summary.json) містить також usage та оцінку вартості 28 нових запитів — $0.03374880 за тарифом без знижки на кеш; це не підтвердження суми рахунку. Попередні два результати збережено без повторного виклику.
+25.10.2026 baseline v1 прогнано на всіх 30 текстах моделлю GPT-4o mini: 29 документів через прямий OpenAI API та один попередній — через OpenRouter. Усі 30 відповідей отримали HTTP 200 й пройшли Pydantic з першої спроби; retry/repair не знадобилися. Історичний summary `results/baseline_v1_2026-10-25_summary.json` зараз відсутній у дереві; доступні [сирі v1 результати](results/step1). У попередньому записі зафіксовано usage та оцінку вартості28 нових запитів — $0.03374880 за тарифом без знижки на кеш; це не підтвердження суми рахунку. Попередні два результати збережено без повторного виклику.
 
 Цей baseline-прогін виконано послідовними одиночними запусками до появи `--all-documents`; новий пакетний режим перевірено офлайновими тестами без повторного оплачуваного прогону. Поточні збережені результати провайдерської та локальної моделей містяться в `results/step1` та `results/step2`; оцінювач читає саме файли, а не історичний summary. Чернетки `golden.json` потребують ручної перевірки.
 
@@ -149,8 +175,26 @@ Timeout httpx обмежує очікування окремих мережев�
 
 Команда не викликає LLM і не читає `.env`. Вона створює `summary.json`, `details.json`, `comparison.md`; output має бути новим або порожнім каталогом. Для повторного запуску задайте інший `--output-dir`.
 
-Поточні 10 еталонів мають `needs_human_review`, тому оцінювання **provisional**. `--strict-golden` допускає лише `annotation_status=approved` і зараз очікувано відхиляє запуск. Статуси не змінюються автоматично. Оцінюються всі вісім полів, компоненти та параметри зіставляються один до одного, `needs_review` не зараховується як правильний факт.
+Історичні10 еталонів **Schema v1** мають `needs_human_review`, тому саме v1 оцінювання **provisional**. Окремий golden_v2 уже approved. `--strict-golden` допускає лише `annotation_status=approved` і зараз очікувано відхиляє запуск. Статуси не змінюються автоматично. Оцінюються всі вісім полів, компоненти та параметри зіставляються один до одного, `needs_review` не зараховується як правильний факт.
 
 Точна відповідність формулюванням/атрибутам не є семантичною точністю; обмежений словник aliases може не розпізнати правильне перефразування. Вартість без достовірного API cost або явно переданого `--pricing` лишається невідомою. Cold start не вгадується з першого запиту. Коди завершення: 0 — технічно повний звіт, 1 — звіт із missing/failed/invalid, 2 — фатальні входи/strict refusal/запис.
 
 [Методика, формули, aliases, тарифи, формати й обмеження](docs/EVALUATION.md). [Порівняльний звіт](results/evaluation/comparison.md).
+
+Оновлена політика `golden-evaluator-v2.0` розпізнає підтверджені міжмовні технічні поняття, одиниці й розміри. Непідтверджений subject лишається `needs_review`, а неправильні атрибути не дають full_fact TP. Нові результати не замінюють старих: [звіт v2](results/evaluation-semantic-v2/comparison.md), [порівняння evaluator до/після](results/evaluation-semantic-v2/before_after.md). Методика відтворення та `compare_evaluators.py` описані в [документації](docs/EVALUATION.md#відтворення-допісля).
+
+## Результат Schema v2 і рекомендований запуск
+
+[REPORT.md](REPORT.md) містить8 конфігурацій, якість на G=10, latency/cost,5 реальних помилок і погоджену автором умовну production-рекомендацію. Для індексації з пріоритетом точності тегів: **OpenAI gpt-4o-mini, Schema v2, prompt schema_v2/v1, temperature=0, top_p=1**. Content62/70, JSON validity100%; recall інтерфейсів лише3/7 — це суттєве обмеження, а не гарантія повноти.
+
+```powershell
+# Викликає модель; API key уже має бути у приватному .env або оточенні:
+$env:LLM_PROVIDER = 'openai'
+$env:OPENAI_MODEL = 'gpt-4o-mini'
+.\.venv\Scripts\python.exe main.py --schema-version v2 --document data/sourses/hm1/texts/uk/HR-0187.txt --temperature 0 --top-p 1
+# Повне offline відтворення на збережених120, без API/читання .env:
+.\.venv\Scripts\python.exe evaluate_v2.py --golden data/sourses/hm1/golden_v2.json --runs results/schema_v2/GPT-v1-T0 results/schema_v2/OSS-v1-T0 results/schema_v2/GPT-v1-T07 results/schema_v2/OSS-v1-T07 results/schema_v2/GPT-v2-T0 results/schema_v2/OSS-v2-T0 results/schema_v2/GPT-v2-T07 results/schema_v2/OSS-v2-T07 --output-dir results/schema_v2/NEW-EVALUATION --strict-golden --pricing results/schema_v2/pricing-final.json
+.\.venv\Scripts\python.exe -m src.evaluation_v2.matrix
+```
+
+Змінні вище діють у поточному PowerShell; файл .env не переписується. Повторний paid demo лише заради документації не потрібен: реальні результати вже збережені, demo smoke перевірений MockTransport. Output для evaluation має бути новим/порожнім. Метрики й hashes: [evaluation-final](results/schema_v2/evaluation-final/summary.json); витрати: [budget ledger](results/schema_v2/budget_ledger.json).

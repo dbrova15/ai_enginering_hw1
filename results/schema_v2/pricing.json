@@ -1,0 +1,24 @@
+[
+  {
+    "provider": "openai",
+    "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+    "as_of": "2026-10-26",
+    "input_per_million": 0.15,
+    "output_per_million": 0.6,
+    "cached_input_per_million": 0.075,
+    "currency": "USD",
+    "requested_model": "gpt-4o-mini",
+    "returned_model": null
+  },
+  {
+    "provider": "openai",
+    "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+    "as_of": "2026-10-26",
+    "input_per_million": 0.15,
+    "output_per_million": 0.6,
+    "cached_input_per_million": 0.075,
+    "currency": "USD",
+    "requested_model": "gpt-4o-mini",
+    "returned_model": "gpt-4o-mini-2024-07-18"
+  }
+]

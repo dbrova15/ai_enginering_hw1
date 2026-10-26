@@ -1,0 +1,2434 @@
+{
+  "schema_version": "v2",
+  "summary_sha256": "1ea20b349be7d8dcee07715e01c9fecdccff24a837a974fc6dbb46cf4ebed84b",
+  "primary_counts": {
+    "run_files": 120,
+    "generations": 136,
+    "http_requests": 136,
+    "repair_generations": 16,
+    "http_retries": 0
+  },
+  "probe_counts": {
+    "run_files": 4,
+    "generations": 4,
+    "http_requests": 4,
+    "repair_generations": 0,
+    "http_retries": 0
+  },
+  "recommendation": {
+    "experiment_id": "GPT-v1-T0",
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "returned_model": "gpt-4o-mini-2024-07-18",
+    "schema_version": "v2",
+    "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+    "prompt_namespace": "schema_v2",
+    "prompt_version": "v1",
+    "prompt_sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+    "temperature": 0,
+    "top_p": 1,
+    "author_review_status": "approved",
+    "author_review_date": "2026-10-26",
+    "author_decision": "погоджую"
+  },
+  "rows": [
+    {
+      "experiment_id": "GPT-v1-T0",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.9,
+          "numerator": 72,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.8857142857142857,
+          "numerator": 62,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": {
+              "value": 1.0,
+              "numerator": 9,
+              "denominator": 9,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.9,
+              "numerator": 9,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.9473684210526315,
+              "numerator": 18,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 4,
+            "precision": {
+              "value": 1.0,
+              "numerator": 3,
+              "denominator": 3,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.6,
+              "numerator": 6,
+              "denominator": 10,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 30,
+        "received_primary": 30,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 10
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.3237148499465548,
+          "p95": 1.5058248099463525,
+          "mean": 1.334212899999693,
+          "known_sum": 13.34212899999693,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 23810,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2381.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 467,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 46.7,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 24277,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 10240,
+            "known_requests": 10,
+            "all_requests": 10
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.0030837,
+            "priced_requests": 10,
+            "all_requests": 10,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "cost_per_1000_documents": 0.30837,
+            "methods": {
+              "tariff_with_cache": 10
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "OSS-v1-T0",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.3,
+            "numerator": 3,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.3,
+            "numerator": 3,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.45,
+          "numerator": 36,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.4142857142857143,
+          "numerator": 29,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 5,
+            "fp": 2,
+            "fn": 5,
+            "precision": {
+              "value": 0.7142857142857143,
+              "numerator": 5,
+              "denominator": 7,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.5,
+              "numerator": 5,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.5882352941176471,
+              "numerator": 10,
+              "denominator": 17,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 5,
+            "fp": 5,
+            "fn": 2,
+            "precision": {
+              "value": 0.5,
+              "numerator": 5,
+              "denominator": 10,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.7142857142857143,
+              "numerator": 5,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.5882352941176471,
+              "numerator": 10,
+              "denominator": 17,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 30,
+        "received_primary": 30,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "failed": 3,
+          "success": 7
+        },
+        "valid_final": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 3.2387840000446886,
+          "p95": 28.403574715001742,
+          "mean": 8.200729470013176,
+          "known_sum": 82.00729470013175,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 15634,
+            "known_requests": 11,
+            "all_requests": 11,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 1563.4,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 8762,
+            "known_requests": 11,
+            "all_requests": 11,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 876.2,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 24396,
+            "known_requests": 11,
+            "all_requests": 11,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 2441,
+            "known_requests": 11,
+            "all_requests": 11
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 11,
+            "complete_documents": 0,
+            "all_documents": 10,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 11
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "GPT-v1-T07",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.9,
+          "numerator": 72,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.8857142857142857,
+          "numerator": 62,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": {
+              "value": 1.0,
+              "numerator": 9,
+              "denominator": 9,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.9,
+              "numerator": 9,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.9473684210526315,
+              "numerator": 18,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 4,
+            "precision": {
+              "value": 1.0,
+              "numerator": 3,
+              "denominator": 3,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.6,
+              "numerator": 6,
+              "denominator": 10,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 10
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.3253370999591425,
+          "p95": 1.6702082000148943,
+          "mean": 1.3698048099991866,
+          "known_sum": 13.698048099991865,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 23810,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2381.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 467,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 46.7,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 24277,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 15872,
+            "known_requests": 10,
+            "all_requests": 10
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.0026613,
+            "priced_requests": 10,
+            "all_requests": 10,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "cost_per_1000_documents": 0.26613,
+            "methods": {
+              "tariff_with_cache": 10
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "OSS-v1-T07",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.3,
+            "numerator": 3,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.525,
+          "numerator": 42,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.5,
+          "numerator": 35,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 3,
+            "precision": {
+              "value": 0.875,
+              "numerator": 7,
+              "denominator": 8,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.7,
+              "numerator": 7,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.7777777777777778,
+              "numerator": 14,
+              "denominator": 18,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 5,
+            "fn": 4,
+            "precision": {
+              "value": 0.375,
+              "numerator": 3,
+              "denominator": 8,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.4,
+              "numerator": 6,
+              "denominator": 15,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 6,
+          "failed": 2,
+          "repaired": 2
+        },
+        "valid_final": {
+          "value": 0.8,
+          "numerator": 8,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 0.6,
+          "numerator": 6,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 0.6,
+          "numerator": 6,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 3.0980914999963716,
+          "p95": 3.7850511699740306,
+          "mean": 3.2465755299897863,
+          "known_sum": 32.465755299897864,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 20150,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2015.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 939,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 93.9,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 21089,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 18738,
+            "known_requests": 14,
+            "all_requests": 14
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 14,
+            "complete_documents": 0,
+            "all_documents": 10,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 14
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 0.8,
+          "numerator": 8,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "GPT-v2-T0",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.9,
+          "numerator": 72,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.8857142857142857,
+          "numerator": 62,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": {
+              "value": 1.0,
+              "numerator": 9,
+              "denominator": 9,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.9,
+              "numerator": 9,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.9473684210526315,
+              "numerator": 18,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 3,
+            "precision": {
+              "value": 0.8,
+              "numerator": 4,
+              "denominator": 5,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.5714285714285714,
+              "numerator": 4,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.6666666666666666,
+              "numerator": 8,
+              "denominator": 12,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 10
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.4048525000107475,
+          "p95": 1.5098651400592644,
+          "mean": 1.3890396000002512,
+          "known_sum": 13.89039600000251,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 27250,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2725.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 471,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 47.1,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 27721,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 8192,
+            "known_requests": 10,
+            "all_requests": 10
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.0037557,
+            "priced_requests": 10,
+            "all_requests": 10,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "cost_per_1000_documents": 0.37557,
+            "methods": {
+              "tariff_with_cache": 10
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "OSS-v2-T0",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 0.7,
+            "numerator": 7,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.0,
+            "numerator": 0,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 0.6,
+            "numerator": 6,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.4625,
+          "numerator": 37,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.42857142857142855,
+          "numerator": 30,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 4,
+            "precision": {
+              "value": 0.8571428571428571,
+              "numerator": 6,
+              "denominator": 7,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.6,
+              "numerator": 6,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.7058823529411765,
+              "numerator": 12,
+              "denominator": 17,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 3,
+            "fp": 21,
+            "fn": 4,
+            "precision": {
+              "value": 0.125,
+              "numerator": 3,
+              "denominator": 24,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.42857142857142855,
+              "numerator": 3,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.1935483870967742,
+              "numerator": 6,
+              "denominator": 31,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "failed": 3,
+          "repaired": 3,
+          "success": 4
+        },
+        "valid_final": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 0.4,
+          "numerator": 4,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 0.4,
+          "numerator": 4,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 3.7832800000323914,
+          "p95": 29.776901659992287,
+          "mean": 11.143355640000664,
+          "known_sum": 111.43355640000664,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 26424,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2642.4,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 12995,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 1299.5,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 39419,
+            "known_requests": 13,
+            "all_requests": 13,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 12552,
+            "known_requests": 13,
+            "all_requests": 13
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 13,
+            "complete_documents": 0,
+            "all_documents": 10,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 13
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 0.7,
+          "numerator": 7,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "GPT-v2-T07",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.8,
+            "numerator": 8,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 1.0,
+            "numerator": 10,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.9,
+            "numerator": 9,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.9,
+          "numerator": 72,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.8857142857142857,
+          "numerator": 62,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": {
+              "value": 1.0,
+              "numerator": 9,
+              "denominator": 9,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.9,
+              "numerator": 9,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.9473684210526315,
+              "numerator": 18,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 5,
+            "fp": 2,
+            "fn": 2,
+            "precision": {
+              "value": 0.7142857142857143,
+              "numerator": 5,
+              "denominator": 7,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.7142857142857143,
+              "numerator": 5,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.7142857142857143,
+              "numerator": 10,
+              "denominator": 14,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 10
+        },
+        "valid_final": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 1.4520936000044458,
+          "p95": 1.5051297349738888,
+          "mean": 1.4403300800244323,
+          "known_sum": 14.403300800244324,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 27250,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2725.0,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 474,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 47.4,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 27724,
+            "known_requests": 10,
+            "all_requests": 10,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 24960,
+            "known_requests": 10,
+            "all_requests": 10
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": 0.0024999,
+            "priced_requests": 10,
+            "all_requests": 10,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "cost_per_1000_documents": 0.24999,
+            "methods": {
+              "tariff_with_cache": 10
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": null,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    },
+    {
+      "experiment_id": "OSS-v2-T07",
+      "quality": {
+        "field_accuracy": {
+          "language": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "primary_topic": {
+            "value": 0.2,
+            "numerator": 2,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_platforms": {
+            "value": 0.3,
+            "numerator": 3,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentioned_interfaces": {
+            "value": 0.1,
+            "numerator": 1,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_sensor": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_display": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_battery": {
+            "value": 0.5,
+            "numerator": 5,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          },
+          "mentions_motor": {
+            "value": 0.4,
+            "numerator": 4,
+            "denominator": 10,
+            "method": "correct/G; missing and invalid=incorrect",
+            "basis": "golden_10",
+            "undefined_reason": null
+          }
+        },
+        "language_accuracy": {
+          "value": 0.4,
+          "numerator": 4,
+          "denominator": 10,
+          "method": "correct/G; missing and invalid=incorrect",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "aggregate_accuracy": {
+          "value": 0.35,
+          "numerator": 28,
+          "denominator": 80,
+          "method": "correct fields/(8G)",
+          "basis": "all golden IDs",
+          "undefined_reason": null
+        },
+        "content_accuracy": {
+          "value": 0.34285714285714286,
+          "numerator": 24,
+          "denominator": 70,
+          "method": "correct content fields/(7G)",
+          "basis": "golden without language",
+          "undefined_reason": null
+        },
+        "lists": {
+          "mentioned_platforms": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 7,
+            "precision": {
+              "value": 1.0,
+              "numerator": 3,
+              "denominator": 3,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.3,
+              "numerator": 3,
+              "denominator": 10,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.46153846153846156,
+              "numerator": 6,
+              "denominator": 13,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          },
+          "mentioned_interfaces": {
+            "tp": 1,
+            "fp": 11,
+            "fn": 6,
+            "precision": {
+              "value": 0.08333333333333333,
+              "numerator": 1,
+              "denominator": 12,
+              "method": "TP/(TP+FP)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "recall": {
+              "value": 0.14285714285714285,
+              "numerator": 1,
+              "denominator": 7,
+              "method": "TP/(TP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            },
+            "f1": {
+              "value": 0.10526315789473684,
+              "numerator": 2,
+              "denominator": 19,
+              "method": "2TP/(2TP+FP+FN)",
+              "basis": "golden tags",
+              "undefined_reason": null
+            }
+          }
+        }
+      },
+      "coverage": {
+        "planned_primary": 10,
+        "received_primary": 10,
+        "missing_primary_ids": [],
+        "golden_documents": 10,
+        "received_golden": 10,
+        "missing_golden_ids": []
+      },
+      "runtime": {
+        "documents": 10,
+        "status_counts": {
+          "success": 5,
+          "failed": 5
+        },
+        "valid_final": {
+          "value": 0.5,
+          "numerator": 5,
+          "denominator": 10,
+          "method": "validated result/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_known": {
+          "value": 0.5,
+          "numerator": 5,
+          "denominator": 10,
+          "method": "true/known first attempts",
+          "basis": "known first attempts",
+          "undefined_reason": null
+        },
+        "first_attempt_coverage": {
+          "value": 1.0,
+          "numerator": 10,
+          "denominator": 10,
+          "method": "known/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "valid_first_confirmed": {
+          "value": 0.5,
+          "numerator": 5,
+          "denominator": 10,
+          "method": "confirmed true/A",
+          "basis": "all runs",
+          "undefined_reason": null
+        },
+        "unknown_first_attempts": 0,
+        "latency": {
+          "p50": 3.3546662999433465,
+          "p95": 17.419217520003414,
+          "mean": 5.780871769995429,
+          "known_sum": 57.808717699954286,
+          "sample_count": 10,
+          "unknown_count": 0,
+          "numerator": null,
+          "denominator": null,
+          "basis": "all runs with known latency_seconds",
+          "method": "pipeline latency; linear interpolation (n-1)*q; includes recorded retry/repair",
+          "primary_attempt_latency": null,
+          "cold_start": "unknown_not_separated"
+        },
+        "usage": {
+          "prompt_tokens": {
+            "known_sum": 27793,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 2779.3,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "completion_tokens": {
+            "known_sum": 4977,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0,
+            "mean_per_complete_document": 497.7,
+            "complete_documents": 10,
+            "all_documents": 10,
+            "method": "sum HTTP usage including retry/repair / complete documents"
+          },
+          "total_tokens": {
+            "known_sum": 32770,
+            "known_requests": 14,
+            "all_requests": 14,
+            "unknown_requests": 0
+          },
+          "cached_tokens": {
+            "known_sum": 23655,
+            "known_requests": 14,
+            "all_requests": 14
+          },
+          "cost": {
+            "currency": "USD",
+            "partial_known_cost": null,
+            "priced_requests": 0,
+            "all_requests": 14,
+            "complete_documents": 0,
+            "all_documents": 10,
+            "cost_per_1000_documents": null,
+            "methods": {
+              "unknown": 14
+            },
+            "pricing": [
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": null
+              },
+              {
+                "provider": "openai",
+                "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+                "as_of": "2026-10-26",
+                "input_per_million": 0.15,
+                "output_per_million": 0.6,
+                "cached_input_per_million": 0.075,
+                "currency": "USD",
+                "requested_model": "gpt-4o-mini",
+                "returned_model": "gpt-4o-mini-2024-07-18"
+              }
+            ],
+            "method": "mean complete document cost * 1000; same token/cache distribution assumed",
+            "local_external_api_cost": 0,
+            "local_hardware_electricity_cost": null
+          }
+        },
+        "problems": [],
+        "basis": "golden_10",
+        "valid_over_golden": {
+          "value": 0.5,
+          "numerator": 5,
+          "denominator": 10,
+          "method": "V_G/G",
+          "basis": "golden_10",
+          "undefined_reason": null
+        },
+        "missing_documents": 0
+      }
+    }
+  ]
+}

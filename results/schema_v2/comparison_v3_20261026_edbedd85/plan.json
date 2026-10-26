@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-26T02:03:10.440611+00:00",
+  "source_prompt": "prompts\\schema_v2\\v3.txt",
+  "prompt_sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+  "schema_version": "v2",
+  "models": {
+    "openai": "gpt-4o-mini",
+    "ollama": "llama3.2:3b"
+  },
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1
+  },
+  "planned_per_model": 30,
+  "paid_primary": 30,
+  "max_tokens": 4096,
+  "max_retries": 2,
+  "max_http_per_document": 6,
+  "conservative_paid_upper_usd": 1.7183709677419354,
+  "remaining_authorized_estimate_before_usd": 4.93038255,
+  "budget_authorization": "user granted necessary spending within remaining $4.95; current request explicitly authorizes both new runs",
+  "prior_ollama_v3_prompt_hash_equal": true,
+  "evaluation_basis": "same approved golden10; exploratory repeated comparison after prior G exposure, not a blind holdout",
+  "received_per_model": 30,
+  "evaluation_status": "approved_golden_complete",
+  "new_openai_cost_usd": 0.01143105
+}

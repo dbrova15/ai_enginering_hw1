@@ -1,0 +1,118 @@
+{
+  "document_id": "HR-0056",
+  "source_path": "D:\\PycharmProjects\\AiEngenering\\data\\sourses\\hm1\\texts\\uk\\HR-0056.txt",
+  "schema_version": "v2",
+  "provider": "ollama",
+  "requested_model": "llama3.2:3b",
+  "prompt": {
+    "version": "v3",
+    "sha256": "f45f5854945d838277869421bed26a8cc1480082c5a7628c71896e9f3a439f7e",
+    "namespace": "schema_v2"
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "limits": {
+    "timeout_seconds": 60.0,
+    "max_retries": 2,
+    "max_tokens": 4096,
+    "retry_base_seconds": 1.0,
+    "max_retry_wait_seconds": 30.0
+  },
+  "started_at_utc": "2026-10-26T02:05:27.362397+00:00",
+  "latency_seconds": 3.1702683999901637,
+  "status": "success",
+  "first_pass_valid": true,
+  "retry_count": 0,
+  "attempts": [
+    {
+      "requests": [
+        {
+          "http_status": 200,
+          "response": {
+            "id": "chatcmpl-179",
+            "object": "chat.completion",
+            "created": 1792980330,
+            "model": "llama3.2:3b",
+            "system_fingerprint": "fp_ollama",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"language\": \"en\", \"primary_topic\": \"displays_indicators\", \"mentioned_platforms\": [\"stm32\"], \"mentioned_interfaces\": [\"uart\", \"i2c\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}"
+                },
+                "finish_reason": "stop"
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 2548,
+              "prompt_tokens_details": {
+                "cached_tokens": 252
+              },
+              "completion_tokens": 63,
+              "total_tokens": 2611
+            }
+          },
+          "error": null,
+          "retry_after": null,
+          "latency_seconds": 3.032591999974102
+        }
+      ],
+      "returned_model": "llama3.2:3b",
+      "usage": {
+        "prompt_tokens": 2548,
+        "prompt_tokens_details": {
+          "cached_tokens": 252
+        },
+        "completion_tokens": 63,
+        "total_tokens": 2611
+      },
+      "generation_id": "chatcmpl-179",
+      "finish_reason": "stop",
+      "raw_content": "{\"language\": \"en\", \"primary_topic\": \"displays_indicators\", \"mentioned_platforms\": [\"stm32\"], \"mentioned_interfaces\": [\"uart\", \"i2c\"], \"mentions_sensor\": true, \"mentions_display\": true, \"mentions_battery\": false, \"mentions_motor\": false}",
+      "result": {
+        "language": "en",
+        "primary_topic": "displays_indicators",
+        "mentioned_platforms": [
+          "stm32"
+        ],
+        "mentioned_interfaces": [
+          "i2c",
+          "uart"
+        ],
+        "mentions_sensor": true,
+        "mentions_display": true,
+        "mentions_battery": false,
+        "mentions_motor": false
+      },
+      "error": null,
+      "repairable": false,
+      "kind": "initial"
+    }
+  ],
+  "result": {
+    "language": "en",
+    "primary_topic": "displays_indicators",
+    "mentioned_platforms": [
+      "stm32"
+    ],
+    "mentioned_interfaces": [
+      "i2c",
+      "uart"
+    ],
+    "mentions_sensor": true,
+    "mentions_display": true,
+    "mentions_battery": false,
+    "mentions_motor": false
+  },
+  "error": null,
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "experiment_id": "OSS-v3-T0",
+  "source_sha256": "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f",
+  "input_text_sha256": "ccadabe05a03900397c56261ab8b5d7b7698d31825f5d7ec7b05a7f66c06fa4f",
+  "text_preparation_version": "schema-v2-text-v1",
+  "kind": "primary",
+  "output_mode": "chat_completions.json_schema.strict"
+}

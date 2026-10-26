@@ -1,0 +1,29 @@
+{
+  "experiment_id": "GPT-v1-T07",
+  "schema_version": "v2",
+  "schema_sha256": "8072bc4bea0cd5fd7d25cd2bda031de58b6acd1fad967d21c7e0e1e24c739c31",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 1
+  },
+  "prompt_namespace": "schema_v2",
+  "prompt_version": "v1",
+  "prompt_sha256": "7dc02d743950aa524fe4dc36f0804d433c88617672d2abe14b221fe358dfc5f5",
+  "planned_ids": [
+    "HR-0068",
+    "HR-0187",
+    "HR-0207",
+    "HR-0212",
+    "HR-0227",
+    "HR-0244",
+    "HR-0254",
+    "HR-0385",
+    "HR-0415",
+    "HR-0743"
+  ],
+  "planned_count": 10,
+  "processed_count": 10,
+  "status": "completed"
+}

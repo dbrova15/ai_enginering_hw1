@@ -1,0 +1,1126 @@
+{
+  "as_of": "2026-10-26",
+  "authorized_usd": 4.95,
+  "cost_from_usage_and_tariff_usd": 0.01961745,
+  "unknown_usage_reserve_usd": 0.0,
+  "conservative_remaining_usd": 4.93038255,
+  "pricing_method": "API usage.cost or token/cache usage at dated tariff; missing cache treated uncached upper estimate",
+  "calls": [
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_042e06fee9be4bfaaed0524133ab04a6.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00019710000000000002,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_06036dc192bc486f91cc43de8cedeb1f.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00036615000000000004,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_1ea81b49bdcb4c1cb5072f1e89382a01.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002331,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_400665ee95614f62bdff7df321b12f00.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00016289999999999998,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_43608e91f68d46f7ab48d5407c8ead1a.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.000177,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_56a3b652e9f94909a135db2f86acb48f.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00028695,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_57a349e7f4b94be38807f3cab0b8dd0b.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00019215,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_5c8259a2e6724495a65b196411e52a20.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001692,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_5e0840e308324afdb2c3edf01fc62afe.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00015914999999999997,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_67127d93ba254784be65d14d6e28712e.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001557,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_6c0580fdda4c41c2a8fdc8164e286049.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0005436,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_6e4a7361fa874334b6338456678803f4.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00021165,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_7d9534b69ee44b9592d88977e8823fe9.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002472,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_8af9982fe70846e39b4ee1fe75d7bbf5.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0010414499999999998,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_9d2388c707f64931bd1f18a12ca7238f.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002523,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_a249fb3ae628493fae00c73a8582eba9.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00046590000000000005,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_a8379e0bc1b24b20ad7c12a5534be824.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00026415,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_a94e1b186c7b4a8daed61364665143ad.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0005136,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_ab308f9a65f2498e88d58a3309697aa4.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002361,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_b0be6f9a041d454dbbaf6029105f6ebe.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00087,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_b883450564c742d1930af55c164913ed.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.000435,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_c3b63a750e804f678161c18b148cfc20.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00022380000000000002,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_c6021c1bd20449f487eb8d863458d06f.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.000276,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_cd9baf5e95d34f50bb0152dd352b1994.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0003537,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_dbb26dae49504d46b0270f31cb68aa0a.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0004314,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_e1365e7c56ea46a18b05afa716fe28d1.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00046665000000000004,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_e1996b19dfab4d2eb00bad6c73c7d95e.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00022739999999999997,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_ebd87853ca3a4029a7e9f9c065612f91.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00047535,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_f379637fda71432b9f4fde91ad712433.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00029580000000000003,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T0\\run_f97da0705d104481a2b9fb4e5815782b.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00045270000000000005,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_02a722ebf85749e9a95fbfd0547a3b2b.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00033240000000000006,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_14db9e0946ed4e40971a3e5e3ee3e166.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00047535,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_15fb5b774c6049a9953563ddc5b67387.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00022380000000000002,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_58f84cde0cdf4e6097a55e75ace8a8c4.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002778,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_7781bd3c592541ed8eb740d4e6665ec9.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00013995,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_809cd4bdfb9e42e897dda74c1fecb1b7.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00019215,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_8dbfb605a7024943a5d51fc7a861cf75.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00028695,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_90c52817e73249ecaa2bde0021e16d6d.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001365,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_a973ae4b0900484288f1c10e17bc143b.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00045270000000000005,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v1-T07\\run_acbe06166c234ec9ae2fc1985b139d3d.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001437,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_2ea1de050120440ca0e94904657dac77.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00024375,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_58c0744a434e42dcbd11b7efe5641947.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00041655,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_5aaee1d029e1423f97be3b9f6bec3498.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00021195000000000003,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_652f533d025642c9a139f2c38439f4a5.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0005269500000000001,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_6872fefbb0bb48a58ef54a13e58d9fbb.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00027539999999999997,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_756f7dcce280451887dc445b556fb5d0.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.000672,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_8f243b6120ee4fd3a661b155e49dea7d.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0005043000000000001,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_cf2463671d8243e481ec110ab9a95663.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00020730000000000002,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_d8b2b061f0f643358b495e759afaa344.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0002145,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T0\\run_f798655c97164fcf86bf079b0303c464.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.000483,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_09c094d63e254c8cbd7dd2fd7f286eba.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00035520000000000007,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_2e846f988f3d42c2b826b984948985c6.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00016395000000000003,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_58253406eacf445aa109b9f284223012.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00022455,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_667debfea9fc4695816024828aba3aa5.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00032655,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_6863647420f74f7286ce9950fcabe90a.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00020730000000000002,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_7ab46109db7041a89976a2b5c36a3808.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0003,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_854a44d87dd04dba9ff2cb09342b9628.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001665,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_8fd73d75b7d3461fbe4e2a87eae8aa94.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00024375,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_e2321b8174774952b0e5a8f7922cd8dc.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0003135,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\GPT-v2-T07\\run_fe4a0c20106f43a592da9e6ea4921ff1.json",
+      "kind": "primary",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001986,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_030be19327094f8c9c747498d010d6c5.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_055a977b79d44625b69b7f69d6d9f1fb.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_079b44eada874cedb43626c315ce263c.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_0c4af9041f4a4b668380049f13628696.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_1cb7ee4030b641ea823e08870443789c.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_1d977bd1fdfc4e99a1f3149b7b0a41f4.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_26995351e48c49209e562cee5490683e.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_3380b35590664a69bbfae7b36882114f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_3b294dda6fe44893982d92b85c1d6844.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_3c13c5412a5e465598ac8f6f2a09e2b6.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_61f84ad51b424f1390ec0c4e33cf655e.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_6713359be89145828cb7172e5ee2357f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_68fddf18a8594ce79f74ce71d5840329.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_69040e8542f24b1883832c9a5278cf20.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_80cb3b66aa9f416bb4566dd9171bf490.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_88620ac6f51b422d8ff6e260545a3394.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_8df88d6aa3124dd7842223cda495d1cc.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_8f1c14ba4917469d94b3ad956700bf27.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_961179caf3c44c30af0a11ca867e87d9.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_a6661ee7dff849fa8d1de2760dc10588.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_aab7b28f0f4e4e69b0958c02465e8c62.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_bb17688685ae4865b01f7229abc6ed8f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_bfe29027c41e4fc6ad7661d2bbf54dc5.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_c62337d877474cf9a816aea35563dca5.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_c6268794602b40be84016fa35ecb784f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_c8d89e64d906498b8105dd8dee846c54.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_cb8995e90d62472ab773dfdabd6ff245.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_f5bff8c2d73647b98212524da30a4363.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_f6937e0ab6df428188decb6a5dee68a3.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T0\\run_fd42d387c7944195b402378300b0bfc6.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_1847dd83134e4724bb26a98377f200be.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_19a5dd41a4b24970808532d91e9de9f3.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_547b77043a534eddb3756cf5dcf96958.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_6be73f9e08ef4939b48f06f873511f00.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_9b346145f2d343cbb12602131da56f92.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_ac24ffda4f5f4ba2a9798eada7d9ff60.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_bb35f5d0cb1c4d51a91c9d5bfc2b50b4.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_c4aa1e33797b4d498ae39929c31a2924.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_ecef2119fc5a48c5b9f04f0195cb0f83.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v1-T07\\run_fc160e31c5914063aad5964c9ff3bc7f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_2f110a15baff46c59a628d5d62773a6d.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_3cb8c537ec294c04888e11a8f1a83a18.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_3d87d3e0d51c40249a7df4736f77b0ac.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_4c2cd562cf6349739ec20b2a74ebc736.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_569de4f7af874610b90755bcc3bd7e9f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_5b323a8511e145aaa92773b5e892bd42.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_7cdda60905594f2bbcfa930d29ecf94f.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_7fc82d6895f8494a8e8a5ee0455aee4c.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_efbf78b57dfd49ab8464223cd79ab6bf.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "repaired",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T0\\run_f1de9fbd5fc94c90a9d85d21d21d6494.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_06e5802cec8d4df8825962b30ab4d545.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_6399f9335e4f4f06b1da81eeeef6c024.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_7734141e756d40e1b52e0bc903613aeb.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_8eb40bc555644dad9ad735f46ba036f2.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_9550a62e486a46e4a80ecb2ed9e51223.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_a757dbfec45c4b7595ed9240ae0e4aa1.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_c55f17bcb38a44c6b576fed9cca2d4dd.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_d28142f6a1b94fa6adbc69487c21557c.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_efe9d977675d4f618c9665a35a571964.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\OSS-v2-T07\\run_ff06f032086c40379cf6266f7b644501.json",
+      "kind": "primary",
+      "provider": "ollama",
+      "status": "failed",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\probes\\GPT-T0\\run_2a0fc862926f480e80833908849644b6.json",
+      "kind": "probe",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.0001968,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\probes\\GPT-T07\\run_1da0288d94f448e1b52f3ef7b8b5237e.json",
+      "kind": "probe",
+      "provider": "openai",
+      "status": "success",
+      "cost_from_usage_usd": 0.00012059999999999999,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\probes\\OSS-T0\\run_b211ff6f32454c7294df4d4ba901e45d.json",
+      "kind": "probe",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    },
+    {
+      "path": "results\\schema_v2\\probes\\OSS-T07\\run_4aa16c2a88c94564a08b73e031ff9aef.json",
+      "kind": "probe",
+      "provider": "ollama",
+      "status": "success",
+      "cost_from_usage_usd": 0.0,
+      "unknown_usage_requests": 0,
+      "unknown_usage_reserved_usd": 0.0
+    }
+  ]
+}

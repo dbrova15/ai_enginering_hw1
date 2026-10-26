@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-10-26",
+  "scope": "this new60 primary only; original120 experiment costs preserved separately",
+  "authorized_remaining_estimate_before_usd": 4.93038255,
+  "new_openai_cost_from_usage_and_tariff_usd": 0.01143105,
+  "unknown_pricing_requests": 0,
+  "remaining_estimate_after_this_run_usd": 4.9189515,
+  "external_ollama_api_cost_usd": 0,
+  "local_hardware_electricity_cost_usd": null,
+  "excludes_other_manual_account_spending": true,
+  "openai_requests": 31
+}

@@ -2,8 +2,9 @@
 
 from src.evaluation.matching import forced_pairs
 from src.evaluation.models import canonical_json
-from src.evaluation.normalization import alias, context_verdict, schematic_model, stripped_context, text
-from src.evaluation.quantities import compare_quantity, quantity, unit
+from src.evaluation.normalization import alias, schematic_model, text
+from src.evaluation.parameter_matching import parameter_checks, parameter_weight, pair_verdict
+from src.evaluation.semantics import component_weight, semantic_text
 
 SCALARS = ('document_type', 'primary_topic', 'main_subject', 'purpose')
 LISTS = ('components', 'technical_parameters', 'interfaces_protocols', 'software_tools')
@@ -26,7 +27,8 @@ def scalar(name: str, expected, predicted, kind: str = 'text') -> dict:
     elif expected is None or predicted is None or kind in ('enum', 'model', 'manufacturer'):
         verdict = 'mismatch'
     else:
-        verdict = 'needs_review'
+        namespace = 'purpose' if name == 'purpose' else 'role' if name.endswith('.role') else 'entity'
+        verdict = semantic_text(expected, predicted, namespace)
     if kind == 'model' and schematic_model(predicted):
         verdict = 'mismatch'
     return check(name, expected, predicted, verdict, 'scalar_' + kind, left, right)
@@ -44,51 +46,13 @@ def _groups(items: list[dict]) -> list[dict]:
 
 def _weight(left: dict, right: dict, field: str) -> int:
     """Створює доказову пару за сутністю/subject; однакове число не є доказом."""
-    if field == 'components':
-        if alias(left['name']) == alias(right['name']):
-            return 4
-        model = text(left['model'])
-        if model and not schematic_model(model):
-            if model == text(right['model']):
-                return 5
-            if model in (text(right['name']) or ''):
-                return 3
-        return 0
-    subject_match = alias(left['subject']) == alias(right['subject'])
-    name_match = stripped_context(left['name']) == stripped_context(right['name'])
-    return 4 if subject_match and name_match else 0
-
-
-def _parameter_checks(prefix: str, left: dict, right: dict) -> list[dict]:
-    """Перевіряє всі частини характеристики, не приховуючи втрату межі чи статусу."""
-    lq, rq = quantity(left['value'], left['unit']), quantity(right['value'], right['unit'])
-    verdict = compare_quantity(lq, rq)
-    checks = [scalar(prefix + '.subject', left['subject'], right['subject']),
-              scalar(prefix + '.name', stripped_context(left['name']), stripped_context(right['name']))]
-    # Числовий масштаб уже враховано у value; unit тут перевіряє розмірність.
-    lu, ru = unit(left['unit']), unit(right['unit'])
-    unit_verdict = 'match' if lu[0] == ru[0] else 'mismatch'
-    if left['unit'] is None or right['unit'] is None:
-        unit_verdict = 'match' if left['unit'] == right['unit'] else 'mismatch'
-    checks += [check(prefix + '.value', left['value'], right['value'], verdict,
-                     'quantity_bounds_units', _serial_quantity(lq), _serial_quantity(rq)),
-               check(prefix + '.unit', left['unit'], right['unit'], unit_verdict,
-                     'unit_dimension', lu[0], ru[0])]
-    lc = ' '.join(str(left[k] or '') for k in ('subject', 'name', 'value'))
-    rc = ' '.join(str(right[k] or '') for k in ('subject', 'name', 'value'))
-    checks.append(check(prefix + '.context', lc, rc, context_verdict(lc, rc), 'quantity_context'))
-    return checks
-
-
-def _serial_quantity(value: dict) -> dict:
-    """Представляє Decimal текстом для прозорого JSON без похибки float."""
-    return {k: [str(n) for n in v] if k == 'numbers' else v for k, v in value.items()}
+    return component_weight(left, right) if field == 'components' else parameter_weight(left, right)
 
 
 def _pair_checks(field: str, left: dict, right: dict, prefix: str, conflict: dict | None) -> list:
     """Створює атрибутні перевірки пари; source conflict ніколи не дає model TP."""
     if field == 'technical_parameters':
-        return _parameter_checks(prefix, left, right)
+        return parameter_checks(prefix, left, right)
     checks = [scalar(prefix + '.' + key, left[key], right[key], kind)
               for key, kind in [('name', 'text'), ('model', 'model'),
                                 ('manufacturer', 'manufacturer'), ('role', 'text')]]
@@ -114,7 +78,14 @@ def object_list(field: str, expected: list, predicted: list, conflict: dict | No
         attributes = _pair_checks(field, gold[i]['value'], pred[j]['value'], prefix, conflict)
         checks.extend([identity, *attributes])
         pairs.append({'expected_index': gi, 'predicted_index': pi, 'checks': attributes,
-                      'full_match': all(c['verdict'] == 'match' for c in attributes)})
+                      'full_match': all(c['verdict'] == 'match' for c in attributes),
+                      'identity_confirmed': True, 'verdict': pair_verdict(attributes)})
+    candidate_matching = _candidate_pairs(field, gold, pred, pairs)
+    candidates = candidate_matching['pairs']
+    matching['review_edges'].extend(candidate_matching['review_edges'])
+    for pair in candidates:
+        checks.extend(pair['checks'])
+    pairs.extend(candidates)
     used_g = {pair['expected_index'] for pair in pairs}
     used_p = {pair['predicted_index'] for pair in pairs}
     missing = [i for i in range(len(expected)) if i not in used_g]
@@ -127,11 +98,49 @@ def object_list(field: str, expected: list, predicted: list, conflict: dict | No
     strict_tp = sum(pair['full_match'] for pair in pairs)
     return {'exact': strict_tp == len(expected) == len(predicted) and not duplicate_gold,
             'pairs': pairs, 'checks': checks, 'missing': missing, 'extra_predicted': extras,
-            'identity': counts(len(pairs), len(expected), len(predicted)),
+            'identity': counts(sum(p['identity_confirmed'] for p in pairs), len(expected), len(predicted)),
             'full_fact': counts(strict_tp, len(expected), len(predicted)),
             'duplicate_golden': duplicate_gold,
             'duplicate_predicted': [g['indices'] for g in pred if len(g['indices']) > 1],
-            'ambiguous_pairing_groups': _review_groups(matching['review_edges'])}
+            'ambiguous_pairing_groups': _review_groups(matching['review_edges']),
+            'candidate_pairs': candidates,
+            'fact_assessment': {'confirmed_matches': strict_tp,
+                                'confirmed_contradictions': sum(_confirmed_contradiction(p) for p in pairs),
+                                'needs_review_pairs': sum(p['verdict'] == 'needs_review' for p in pairs),
+                                'unsupported_attribute_pairs': sum(any(c['verdict'] == 'mismatch' and
+                                    (c['expected'] is None or c['predicted'] is None) for c in p['checks']) for p in pairs),
+                                'missing': len(missing), 'extra_predicted': len(extras)}}
+
+
+def _confirmed_contradiction(pair: dict) -> bool:
+    """Не називає невідомий subject чи відсутній атрибут доведеною суперечністю факту."""
+    return pair['identity_confirmed'] and any(c['verdict'] == 'mismatch' and
+        c['expected'] is not None and c['predicted'] is not None for c in pair['checks'])
+
+
+def _candidate_pairs(field: str, gold: list, pred: list, pairs: list) -> dict:
+    """Шукає review-кандидатів лише серед незакритих параметрів, не забираючи доведені пари."""
+    if field != 'technical_parameters':
+        return {'pairs': [], 'review_edges': []}
+    used_g = {p['expected_index'] for p in pairs}
+    used_p = {p['predicted_index'] for p in pairs}
+    edges = {(i, j): 1 for i, g in enumerate(gold) for j, p in enumerate(pred)
+             if g['indices'][0] not in used_g and p['indices'][0] not in used_p
+             and parameter_weight(g['value'], p['value'], candidate=True)}
+    result = []
+    matching = forced_pairs(len(gold), len(pred), edges)
+    for i, j in matching['pairs']:
+        gi, pi = gold[i]['indices'][0], pred[j]['indices'][0]
+        checks = parameter_checks(f'{field}[{gi}:{pi}]', gold[i]['value'], pred[j]['value'])
+        disagreements = [c['check_id'] for c in checks if c['verdict'] == 'mismatch']
+        for c in checks:
+            if c['verdict'] == 'mismatch':
+                c.update(verdict='needs_review', conditional_verdict='mismatch',
+                         reason_code='conditional_' + c['reason_code'])
+        result.append({'expected_index': gi, 'predicted_index': pi, 'checks': checks,
+                       'identity_confirmed': False, 'full_match': False, 'verdict': 'needs_review',
+                       'conditional_disagreements': disagreements})
+    return {'pairs': result, 'review_edges': matching['review_edges']}
 
 
 def _review_groups(edges: list) -> list[list]:

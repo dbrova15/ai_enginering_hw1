@@ -70,9 +70,29 @@ def render_markdown(summary: dict, details: dict, output: Path) -> str:
                   else g['quality']['field_exact_accuracy'][field] for g in summary['groups']]
         lines.append('| ' + field + ' | ' + ' | '.join(f"{v['numerator']}/{v['denominator']} ({_display(v['value'], True)})" for v in values) + ' |')
     lines += _list_tables(summary)
+    lines += _fact_table(summary)
     lines += _examples(details, output)
     lines += _conclusions(summary)
     return '\n'.join(lines) + '\n'
+
+
+def _fact_table(summary: dict) -> list[str]:
+    """Відділяє фактні рішення від FP/FN, які також містять невизначені відповіді."""
+    lines = ['', '### Підтверджені факти та обмеження зіставлення', '',
+             '| Група | Поле | Match | Суперечності еталону | Review-пари | Ambiguous groups | Missing | Extra |',
+             '| --- | --- | --- | --- | --- | --- | --- | --- |']
+    for group in summary['groups']:
+        for field, counts in group['quality'].get('fact_assessment', {}).items():
+            values = [counts[k] for k in ('confirmed_matches', 'confirmed_contradictions', 'needs_review_pairs',
+                                         'ambiguous_groups', 'missing', 'extra_predicted')]
+            lines.append(f"| {group['group_id'][:8]} | {field} | " + ' | '.join(map(str, values)) + ' |')
+    lines += ['', 'Review-пари та неоднозначні групи не є доведеними помилками моделі й не дають TP. '
+              'Суперечності встановлені відносно еталона за підтвердженої identity; це не зовнішня перевірка джерела. '
+              'Непідтверджені model/manufacturer при golden null не називаються встановленою галюцинацією. '
+              'Якщо subject невідомий, навіть різні числа означають лише умовну розбіжність. '
+              'Missing/extra — незакриті факти; у review-групах це теж можуть бути потенційні відповідності. '
+              'Категорії не є єдиною розбивкою: unsupported атрибут і review іншого атрибута можуть співіснувати.']
+    return lines
 
 
 def _list_tables(summary: dict) -> list[str]:
